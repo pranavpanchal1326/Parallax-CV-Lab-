@@ -1,0 +1,86 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: E06 · S-EXP-02 · independent rehearsal
+  - heading "Change one variable. Keep your reasoning." [level=1]:
+    - text: Change one variable.
+    - emphasis: Keep your reasoning.
+  - paragraph: Does moving the light from the front to the side change what the annotation can show?
+  - paragraph: Two authored lighting illustrations; no camera, ray-tracing or detector calculation is running here. Rehearsal does not change bookings, physical setup, notebook claims or recorded evidence.
+  - paragraph:
+    - link "Rehearse camera framing with the existing Scene Studio geometry model →":
+      - /url: "#/scene/rehearsal"
+  - heading "1. Predict before comparing" [level=2]
+  - generic: What do you expect, and why?
+  - textbox "What do you expect, and why?"
+  - heading "2. Change one variable" [level=2]
+  - generic: Candidate light position
+  - combobox "Candidate light position":
+    - option "Frontal light · L1 on, L2 off"
+    - option "Side light · L2 on, L1 off" [selected]
+  - paragraph: "Source for the next run: Teaching fixture · method 01."
+  - button "Run rehearsal" [disabled]
+  - status: Write a prediction, choose one variable, then run the rehearsal.
+  - region "3. Compare under the declared model":
+    - heading "3. Compare under the declared model" [level=2]
+    - heading "Result follows your prediction" [level=3]
+    - paragraph: "Baseline: frontal light. The result is revealed when you run the candidate. No rehearsal result has been recorded yet."
+    - 'img "Prepared illustration: frontal light, short shadows. Annotation boxes are illustrative."':
+      - generic: ILL-L1-v1 · FRONT · ILLUSTRATION
+  - generic "Saved record and recovery"
+  - link "← Return to preparation":
+    - /url: "#/E06/prepare"
+  - link "Inspect recorded conditions":
+    - /url: "#/E06/conditions"
+  - link "Continue through the normal bench →":
+    - /url: "#/E06/bench"
+  - paragraph: The bench retains the approved example conditions. Additional sampling rates remain rehearsal-only; running this preview does not complete preparation or create an evidence record. Grounded assistance follows in U06.
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+  - generic "Accessibility diagnostic result": "{ \"path\": \"#/dashboard\", \"violations\": [], \"passedRules\": 42, \"incomplete\": [ { \"id\": \"color-contrast\", \"nodes\": [ { \"target\": [ \".migration-strip > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"a[href=\\\"/prototype/index.html\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"#current-view > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pull\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(1) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(2) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(3) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \"article:nth-child(4) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pzl[y=\\\"3.77\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"3.77\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"7.3\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[y=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[y=\\\"5.680000000000001\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"2.1\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"0.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.68\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"6.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > a[href$=\\\"#/environment\\\"][data-discover=\\\"true\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h2 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > p:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"button[aria-controls=\\\"session-activity\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > .quiet:nth-child(2)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".quiet:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" } ] } ], \"engine\": { \"name\": \"axe-core\", \"version\": \"4.10.2\" } }"

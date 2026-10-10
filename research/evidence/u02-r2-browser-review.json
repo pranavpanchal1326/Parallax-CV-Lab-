@@ -1,0 +1,18 @@
+{
+  "revision": "U02-R2",
+  "methodology": "secondary-research-only",
+  "primaryResearch": "excluded-by-user",
+  "phaseStatus": "complete",
+  "desktop": {
+    "client": 1265,
+    "completion": "U02 complete: secondary research and design analysis. No interviews or participant usability sessions are planned. Published evidence informs the design; local assumptions remain unvalidated. AI is a proposed U06 experience.",
+    "images": 7,
+    "method": "14reviewed sources20traced requirements15wireframesDeskresearch method",
+    "scroll": 1265
+  },
+  "narrow": {
+    "client": 305,
+    "scroll": 305
+  },
+  "scope": "Rendered scope/method text, image loading and page-width review; no participant study"
+}

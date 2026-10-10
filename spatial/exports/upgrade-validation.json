@@ -1,0 +1,88 @@
+{
+  "revision": "P4-D",
+  "checks": [
+    {
+      "name": "Zone area equals 70 m²",
+      "pass": true
+    },
+    {
+      "name": "Spine is at least 1.5 m",
+      "pass": true
+    },
+    {
+      "name": "Accessible floor is 1.2 × 0.9 m",
+      "pass": true
+    },
+    {
+      "name": "Accessible floor does not overlap spine",
+      "pass": true
+    },
+    {
+      "name": "Accessible floor does not overlap furniture",
+      "pass": true
+    },
+    {
+      "name": "Furniture stays outside spine",
+      "pass": true
+    },
+    {
+      "name": "Furniture stays in room",
+      "pass": true
+    },
+    {
+      "name": "Furniture footprints do not overlap",
+      "pass": true
+    },
+    {
+      "name": "Camera-to-subject meets 2 m planning rule",
+      "pass": true
+    },
+    {
+      "name": "Camera axis matches actual subject centre",
+      "pass": true
+    },
+    {
+      "name": "lab_blockout GLB header / chunks valid",
+      "pass": true
+    },
+    {
+      "name": "lab_blockout under 5 MB / 150k triangle budget",
+      "pass": true
+    },
+    {
+      "name": "lab_blockout furniture IDs preserved",
+      "pass": true
+    },
+    {
+      "name": "lab_studio GLB header / chunks valid",
+      "pass": true
+    },
+    {
+      "name": "lab_studio under 5 MB / 150k triangle budget",
+      "pass": true
+    },
+    {
+      "name": "lab_studio furniture IDs preserved",
+      "pass": true
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "cameraToSubject": 2.05,
+  "accessibleSpineOverlap": 0,
+  "exports": [
+    {
+      "name": "lab_blockout",
+      "bytes": 151456,
+      "triangles": 1260,
+      "meshNodes": 105
+    },
+    {
+      "name": "lab_studio",
+      "bytes": 2601516,
+      "triangles": 46172,
+      "meshNodes": 722
+    }
+  ],
+  "scope": "Geometric fit and GLB structure only; not code certification, usability testing, photometry, or hardware validation."
+}

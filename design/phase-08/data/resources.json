@@ -1,0 +1,32 @@
+{
+  "scope": "Prepared example state for the P8-A Lab Map. Not live; no device or booking system is connected.",
+  "updated": "2026-10-02T14:20:00+05:30",
+  "staleAfterMinutes": 15,
+  "modelBytes": 3313680,
+  "views": {
+    "overview":      { "label": "Overview",      "position": [-2.2, 9.6, 11.6],  "target": [5, 0, 3.4] },
+    "capture":       { "label": "Capture C1",    "position": [9.7, 3.4, 5.4],    "target": [8.4, 0.8, 1.8] },
+    "signal":        { "label": "Signal bench",  "position": [8.3, 3.6, 3.2],    "target": [8.3, 0.8, 6.6] },
+    "workstation":   { "label": "Workstations",  "position": [3.2, 4.6, 6.2],    "target": [3.2, 0.7, 1.4] },
+    "demonstration": { "label": "Demonstration", "position": [4.4, 3.2, 3.6],    "target": [3.1, 1.0, 6.8] }
+  },
+  "resources": [
+    { "id": "CV-01", "name": "Computing station", "zone": "CMP", "kind": "Station", "availability": "Bookable", "occupancy": "Free", "view": "workstation" },
+    { "id": "CV-02", "name": "Computing station", "zone": "CMP", "kind": "Station", "availability": "Bookable", "occupancy": "In use · B-2041", "view": "workstation" },
+    { "id": "CV-03", "name": "Computing station", "zone": "CMP", "kind": "Station", "availability": "Bookable", "occupancy": "In use · B-2042", "view": "workstation" },
+    { "id": "CV-04", "name": "Accessible computing station", "zone": "CMP", "kind": "Station", "availability": "Bookable", "occupancy": "Free", "view": "workstation", "note": "Rotated desk with a dedicated 1.2 × 0.9 m approach outside the spine." },
+    { "id": "CV-05", "name": "Computing station", "zone": "CMP", "kind": "Station", "availability": "Bookable", "occupancy": "Free", "view": "workstation" },
+    { "id": "CV-06", "name": "Computing station", "zone": "CMP", "kind": "Station", "availability": "Bookable", "occupancy": "Unknown", "view": "workstation", "note": "No check-in signal since 13:05 — occupancy unknown, not assumed free." },
+    { "id": "C1-CAM", "name": "Capture camera + lens", "zone": "C1", "kind": "Portable · KIT-C1-v1", "availability": "Restricted · RST-0417", "occupancy": "Free", "view": "capture", "note": "Being checked after ISS-0417. Staff notes are not shown here." },
+    { "id": "C1-L1", "name": "Softbox light L1", "zone": "C1", "kind": "Portable · LGT-01", "availability": "Bookable", "occupancy": "Free", "view": "capture" },
+    { "id": "C1-L2", "name": "Softbox light L2", "zone": "C1", "kind": "Portable · LGT-01", "availability": "Bookable", "occupancy": "Free", "view": "capture" },
+    { "id": "C1-TB", "name": "Object stage", "zone": "C1", "kind": "Fixed", "availability": "Bookable", "occupancy": "Free", "view": "capture" },
+    { "id": "CAL-01", "name": "Calibration target", "zone": "C1", "kind": "Portable · KIT-C1-v1", "availability": "Location unknown", "occupancy": "Unknown", "view": "capture", "home": { "x": 9.45, "y": 1.77, "w": 0.2, "d": 0.26, "source": "render_studio.py (portable item, not in plan geometry)" }, "note": "Not located at the last kit return (FU-2041). The model shows its home position only." },
+    { "id": "C1-BD", "name": "Matte backdrop", "zone": "C1", "kind": "Fixed", "availability": "Bookable", "occupancy": "Free", "view": "capture" },
+    { "id": "S1-B", "name": "Signal acquisition bench", "zone": "S1", "kind": "Fixed · KIT-S1-v1", "availability": "Bookable", "occupancy": "In use · B-2042", "view": "signal" },
+    { "id": "STO-1", "name": "Kit storage, 3 bays", "zone": "STO", "kind": "Fixed", "availability": "Staff managed", "occupancy": "—", "view": "workstation" },
+    { "id": "COL-T", "name": "Collaboration table", "zone": "COL", "kind": "Fixed", "availability": "Open use", "occupancy": "Free", "view": "demonstration" },
+    { "id": "COL-D", "name": "Demonstration display", "zone": "COL", "kind": "Fixed", "availability": "Staff managed", "occupancy": "Showing approved content", "view": "demonstration" },
+    { "id": "FAC-1", "name": "Faculty desk", "zone": "FAC", "kind": "Fixed", "availability": "Staff only", "occupancy": "—", "view": "demonstration" }
+  ]
+}

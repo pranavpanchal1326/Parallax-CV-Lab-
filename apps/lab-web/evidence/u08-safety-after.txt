@@ -1,0 +1,129 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: Safety orientation · geometry P4-D · concept only
+  - heading "Know the landmarks. Keep the routes clear." [level=1]:
+    - text: Know the landmarks.
+    - emphasis: Keep the routes clear.
+  - paragraph: This assumed room and its safety positions are design examples, not an approved emergency plan. Actual procedures, equipment suitability and installation require institutional confirmation.
+  - figure "Geometry P4-D · assumed envelope, not a surveyed room. React session state.":
+    - img "Conceptual safety landmarks from geometry P4-D. Every landmark is listed below as text. Not an approved emergency plan.":
+      - generic: CMP
+      - generic: STO
+      - generic: C1
+      - generic: SPN
+      - generic: FAC
+      - generic: COL
+      - generic: S1
+      - generic: CV-01
+      - generic: CV-02
+      - generic: CV-03
+      - generic: CV-05
+      - generic: CV-06
+      - generic: S1-B
+      - generic: FE-1
+      - generic: FE-2
+      - generic: FA-1
+      - generic: EPO-1
+      - generic: EPO-2
+      - generic: MCP-1
+      - generic: MCP-2
+      - generic: CCTV-1
+      - generic: CCTV-2
+      - generic: EX-1
+      - generic: EX-2
+    - generic: Geometry P4-D · assumed envelope, not a surveyed room. React session state.
+  - heading "Exit landmarks" [level=2]
+  - paragraph: D1 · west wall entry / D2 · east wall exit. Positions come from the canonical P4-D geometry.
+  - heading "Equipment landmarks" [level=2]
+  - list:
+    - code: FE-1
+    - text: · CO₂ extinguisher (electrical)
+    - generic: Plan x 0.15 m · y 5.7 m
+    - code: FE-2
+    - text: · CO₂ extinguisher (electrical)
+    - generic: Plan x 9.85 m · y 3.6 m
+    - code: FA-1
+    - text: · First-aid kit
+    - generic: Plan x 0.15 m · y 6.1 m
+    - code: EPO-1
+    - text: · Emergency power-off
+    - generic: Plan x 0.15 m · y 3.6 m
+    - code: EPO-2
+    - text: · Emergency power-off · S1
+    - generic: Plan x 9.85 m · y 5.8 m
+    - code: MCP-1
+    - text: · Fire alarm call point
+    - generic: Plan x 0.15 m · y 5.4 m
+    - code: MCP-2
+    - text: · Fire alarm call point
+    - generic: Plan x 9.85 m · y 5.4 m
+    - code: CCTV-1
+    - text: · Security CCTV (separate from research capture)
+    - generic: Plan x 0.25 m · y 0.25 m
+    - code: CCTV-2
+    - text: · Security CCTV
+    - generic: Plan x 9.75 m · y 6.75 m
+    - code: EX-1
+    - text: · Exit sign + emergency light
+    - generic: Plan x 0.15 m · y 4.65 m
+    - code: EX-2
+    - text: · Exit sign + emergency light
+    - generic: Plan x 9.85 m · y 4.65 m
+  - complementary:
+    - heading "Orientation and access" [level=2]
+    - paragraph: CV-04 has a dedicated approach floor; TC-1 marks a planned turning space. The circulation spine stays distinct from teaching furniture.
+    - paragraph: Use posted local procedures in an actual lab. This application does not call responders, operate emergency power-off or certify an installation.
+    - link "Return to the previous task":
+      - /url: "#/"
+    - heading "Related records" [level=2]
+    - paragraph:
+      - link "Art and physical-reference studio →":
+        - /url: "#/studio"
+    - link "Environment and ventilation concepts →":
+      - /url: "#/environment"
+    - paragraph: Sensor examples and energy previews cannot determine whether a room is safe.
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

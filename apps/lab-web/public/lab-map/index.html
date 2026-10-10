@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARALLAX — Lab Map (P8-C)</title>
+<script src="/design/theme.js"></script><link rel="stylesheet" href="/design/phase-08/assets/p8.css">
+<link rel="stylesheet" href="/design/phase-08/assets/console.css"><link rel="stylesheet" href="/design/edition.css">
+</head>
+<body class="ed dark lab">
+<a class="ed-skip" href="#list">Skip to resource list</a>
+<header class="shell mast"><span class="mast-brand">PARALLAX · linked map</span><a class="safety" href="#safety">+ Safety</a></header>
+<main class="lm">
+ <aside class="lm-rail" aria-label="Resources">
+  <div class="lm-head"><p class="tag">REACT PROJECTION / U03 · P4-D</p><h1>Find your place in the lab.</h1><p>One set of identifiers across list, plan and 3D model. Every task works from the list alone.</p></div>
+  <div class="lm-search">
+   <label for="q" class="visually-hidden">Search ID, name or zone</label>
+   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.8"/><path d="m11 11 3.2 3.2" stroke-linecap="round"/></svg>
+   <input id="q" type="search" placeholder="Search CV-04, C1, camera…" autocomplete="off" aria-describedby="qhint">
+   <span class="kbd" aria-hidden="true">/</span>
+   <span id="qhint" class="visually-hidden">Enter opens the first match. Press slash anywhere to focus search, Escape to clear the selection.</span>
+  </div>
+  <div class="lm-chips" id="zonechips" role="group" aria-label="Filter by zone"></div>
+  <div class="lm-count" id="count" role="status"></div>
+  <h2 class="visually-hidden">Resources by zone</h2><div class="list" id="list"><div id="groups"></div></div>
+  <p class="lm-foot">Waiting for the React equipment projection. Geometry: P4-D assumed envelope; model positions show home geometry, not tracked movement.</p>
+ </aside>
+ <section class="lm-stage" aria-label="Map viewer">
+  <div class="viewer" id="viewer"></div>
+  <div class="lm-top">
+   <div class="seg glass" role="group" aria-label="View mode"><button class="btn" id="mode-plan" aria-pressed="true">Floor plan</button><button class="btn" id="mode-3d" aria-pressed="false">3D model</button></div>
+   <div class="fresh glass" id="fresh" role="status"></div>
+  </div>
+  <div class="lm-bottom">
+   <div class="views glass" id="views" aria-label="Named viewpoints" hidden></div>
+   <div class="lm-opts glass"><label><input type="checkbox" id="follow" checked>Follow selection</label><label><input type="checkbox" id="halos" checked>Labels &amp; halos</label><label>Review state <select id="state" aria-label="Review state"><option value="normal">Normal</option><option value="stale">Stale data</option><option value="model-fail">3D model fails to load</option><option value="no-webgl">WebGL unavailable</option></select></label></div>
+  </div>
+  <section class="detail glass" id="detail" tabindex="0" aria-live="polite" aria-label="Selected resource"></section>
+ </section>
+</main>
+<dialog id="safety" aria-labelledby="safety-h"><p class="tag">SAFETY · ALWAYS AVAILABLE</p><h2 id="safety-h">Emergency information</h2>
+ <ul><li><b>EPO-1</b> emergency power-off: west wall, beside the entry.</li><li><b>EPO-2</b> emergency power-off: at the signal bench.</li><li><b>D1</b> exit door (west) and <b>D2</b> exit door (east).</li></ul>
+ <p class="small muted">Routes and positions shown on this map are illustrative and are not an approved emergency plan. Confirm with the institution before relying on them.</p>
+ <form method="dialog"><button class="btn primary" autofocus>Close</button></form></dialog>
+<script type="importmap">{"imports":{"three":"/design/phase-08/node_modules/three/build/three.module.js","three/addons/":"/design/phase-08/node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="bridge.js"></script>
+</body></html>

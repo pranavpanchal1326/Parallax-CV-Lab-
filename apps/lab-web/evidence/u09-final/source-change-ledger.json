@@ -1,0 +1,397 @@
+{
+  "revision": "U09-R1",
+  "date": "2026-10-04",
+  "changes": [
+    {
+      "path": "apps/lab-web/scripts/build-map.cjs",
+      "beforeSha256": "90d29e00abfe728836df58f69cbadfc79a0c327f3f4433c8b87e9c2caf37fcb0",
+      "afterSha256": "e6e9a55ee36ad8b8fded1340c9ec317e749aa64a38786fa869f8e89670fddb35",
+      "reason": "Copied renderer owns frame/visibility/detach/disposal resources; superseded highlight clones are released and base materials retained for final disposal; projected plan shapes/names refresh while preserving focus; original source preserved."
+    },
+    {
+      "path": "apps/lab-web/scripts/build-rehearsal.cjs",
+      "beforeSha256": "cd4b8cbe9f1b9083333744ee3fb8ebe9c264fd877300ec8115bb3080e7b1edec",
+      "afterSha256": "79a46b0f76efc29f6e16f551d6fb3ded62d061c6e588d706a1d7dd5fc95358a3",
+      "reason": "Copied renderer settles on demand and owns resources; scientific blocks preserved."
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u08.cjs",
+      "beforeSha256": "5c266fdee13b0b6010cbab2480bdda61420192693c5b78555cffb8e36e6481c2",
+      "afterSha256": "9e56272f56ac8982820612952e3b5904aa1d616ce8d6d11f8bcf902c44bf040d",
+      "reason": "Preserve the original U08 release gate using archived pre-U09 sources; independently assert reviewed U09 after hashes."
+    },
+    {
+      "path": "apps/lab-web/src/app/App.tsx",
+      "beforeSha256": "da6e63ca1029c18d55ed142b18487a6e5f6740f2e97b5f67479d254266073067",
+      "afterSha256": "e668860ebdfca5d3e46213546d7c5daa19a8631a4bdb5e9e4a1fd36a5cb65995",
+      "reason": "Current edition copy, explicit QA metrics and private exact-text export recovery. | U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only. | U13 detail pass, 5 October 2026: plan legend, icons, public-display photo, view transition and tablet menu wrap; presentation only. | U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed. | U16 play pass, 5 October 2026: sampling playground (reuses sampledAlias) and role menu as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/components/AccessReview.tsx",
+      "beforeSha256": "3f6b1ed0fc1fffea27fc639821595922e971144bbf4d497e6885c5a1188ef9c4",
+      "afterSha256": "1baedacdbab637ba72a8e4951e78155a1c0f1ffde01e8e264b58fe14343af252",
+      "reason": "Capture starting route and invalidate late results; retain the engine lock across navigation and skip obsolete work after dynamic import."
+    },
+    {
+      "path": "apps/lab-web/src/features/GeometryRehearsal.tsx",
+      "beforeSha256": "3707ece2b42a57126888b599e4be53582b7d1de0d3e13bceb8ae1599e29cdfb1",
+      "afterSha256": "1aeb380d0669c78fabbdf130a3914247b365e3edaaa2c147ebc1c50d49969ee2",
+      "reason": "Current guide link and explicitly gated local lifecycle diagnostics. | U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/features/Mobile.tsx",
+      "beforeSha256": "efabab20d06dc5e4bcfe0385affd13587399c9e19b1d877a699c265eb502253e",
+      "afterSha256": "8cf64d252ddd25e28ac94d8a257c34eafaa578c523defb10efc48e905c0ecbc7",
+      "reason": "Explicit text type restores inherited 16 px / 44 px field styling. | U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/features/OperationsDesk.tsx",
+      "beforeSha256": "854a309d0f7fb9a8557383fde088edecda63f59fa0b44bdf61b6d2fc313a9cf3",
+      "afterSha256": "83f4ca9c1fedd90b405cf550e15c284d4fd6efdf220d242d66b20e4492aa3120",
+      "reason": "Shared exact-text export recovery; operations domain unchanged. | U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/Rehearsal.tsx",
+      "beforeSha256": "90879ef794ca8d61167634d624d59abe6e4d94525ea06f1ab5bc3d103a580097",
+      "afterSha256": "88369b6ce69c89461c582107a378f2a2d5a53a448e8c0016f44b4f2d2016d3be",
+      "reason": "Shared exact-text export recovery and current guide link; model unchanged. | U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/features/ArtStudio.tsx",
+      "beforeSha256": "fb71b202db71caf6736a21d93a8a882e977378448215323d24adac6257249c27",
+      "afterSha256": "93b204976b990b2d10d2bc772e73ba5414b56e5c1595e21cd076c8135075977f",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/Assets.tsx",
+      "beforeSha256": "c2492fee4d7e028ed347cd8e4de52d7313a94e5501496d52dff4c868b7a84491",
+      "afterSha256": "09764e06208faa0fcdfebd2187cc4576e5eb2ee8fdb60b3bf1576ae2d816b188",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/Assistant.tsx",
+      "beforeSha256": "5515c408b09d59291c66e91861bb5d030c6cf65d76c4b652b61d1f63e3df8123",
+      "afterSha256": "8fdd0f453151a7da4dfcf172def31f468d3c195ecec925ede155658310b9caaf",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/Conditions.tsx",
+      "beforeSha256": "023d0cf94ff06109b9bd4797ae9b2fe15e68e2bbabe34a8a86c2062a35d39ed0",
+      "afterSha256": "ab3c952803c70961a05f317ebd0b3ab0c1a8877180d27eee84852030b46deb79",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/features/EnergyDesk.tsx",
+      "beforeSha256": "06af8d5ee5bef829bee558d53aceaf170af69a9f9a588c0eb8b8d98dedaa1461",
+      "afterSha256": "244f312c0689277052a60f8630cc1de2c81c415fe5aa9d42100d707a0a386c5b",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/Faculty.tsx",
+      "beforeSha256": "9ce471da5fd50ac229df0cad7efec75c139a553054f7bf95c7edf59633e02bbc",
+      "afterSha256": "29799428f9ffe64da2e3b00831a93f3412f8e14d621ca87fb7c9c9dd2db119f4",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/FaultWalkthrough.tsx",
+      "beforeSha256": "019a3ca770d4ba2029ac2c4f342abd0791205408dfdde5bf51af15ba8fc7fe19",
+      "afterSha256": "a41ef8af83ecacad848dad3d23e8cb674def3cd75994cc5e55251abe4d3be845",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/features/Operations.tsx",
+      "beforeSha256": "2593b04635655c9a88e8086397b197a3491b32af1a7fbae4efa19c46eacf3c11",
+      "afterSha256": "393acf02902529d402e6cea326c129297e32deb29313f452288e65c9ba39ae19",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U13 detail pass, 5 October 2026: plan legend, icons, public-display photo, view transition and tablet menu wrap; presentation only. | U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/features/Safety.tsx",
+      "beforeSha256": "54efeebc081347ba92deba2c2d57f292bdc3639634d92d2aeeefa1fee73ce903",
+      "afterSha256": "6616c2baddc4e722278af432dadde5294719df2e8efdc202dcdb9e720cf801c6",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/features/SmartLab.tsx",
+      "beforeSha256": "cd0104d5ec300be046118da8b7060815bb1e2bfdb18ec50ac6e04f8a703d957e",
+      "afterSha256": "764c26508ce1fc2fc7b62074a37f19dd1f663f8855f94bf4321aa51057068e88",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U14 artistry pass, 5 October 2026: dashboard interval chart and smart-features overview from existing example data, signal-rule motif; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/features/StudentJourney.tsx",
+      "beforeSha256": "6dbea4f8ae7d984471c981f11c7e81fe26ca190169d390d44b57db6b7bb61762",
+      "afterSha256": "3e061c321eddc1e6d19cc85f28aa64567016bcf2d0b2c5230c3b5a6948788f0a",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/. | U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only. | U16 play pass, 5 October 2026: sampling playground (reuses sampledAlias) and role menu as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/features/Sustainability.tsx",
+      "beforeSha256": "af33a2614dbc3d1ace5fe7871bf5eef8979eae7a1d28e20d5984d2372f362c48",
+      "afterSha256": "0176ceab59f32ed30dfe8bf96d648377c95371b1035ffdea29c15465a1d8a6fd",
+      "reason": "U11 presentation copy, 5 October 2026: page-header dates, internal phase/scenario codes and the edition strip removed at the user's request; no rule, data, model or control changed. Previous file preserved in planning/revisions/U11-before-copy-cleanup-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/app/EnvironmentProvider.tsx",
+      "beforeSha256": "87a1276775c5397180b0903639f78a6cd1869dd1848eee28f73ea82d7d5738d2",
+      "afterSha256": "b9c3f7d43fa48670e6e4209e74f1bc2f2f829a06c8255fde3d0f31103b87d0d7",
+      "reason": "U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/main.tsx",
+      "beforeSha256": "8332bff516d058e31d24a03f8425f39c244917ca7e82874517a707f704d1ed5e",
+      "afterSha256": "279d292c48ecfca70738485e1a07e2e8a95f3c30805a84b6f49e0985f601a82b",
+      "reason": "U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only. | U13 detail pass, 5 October 2026: plan legend, icons, public-display photo, view transition and tablet menu wrap; presentation only. | U14 artistry pass, 5 October 2026: dashboard interval chart and smart-features overview from existing example data, signal-rule motif; presentation only. | U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed. | U16 play pass, 5 October 2026: sampling playground (reuses sampledAlias) and role menu as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/components/LabPlan.tsx",
+      "beforeSha256": "d80c8cc9343eddbad7633e5d57d1a46552c8f1e950925b28e5b29b31453f3800",
+      "afterSha256": "96ef1474d726c21c439b8ca844049b3a2c4896dfc2cced1d32c3ef1cdd418617",
+      "reason": "U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only. | U13 detail pass, 5 October 2026: plan legend, icons, public-display photo, view transition and tablet menu wrap; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/components/LinkedMap.tsx",
+      "beforeSha256": "1fab4cd4b7dc3969523ec842e146535ec0fdb871f8894027e6400540e6bb1b0b",
+      "afterSha256": "f3c0499dcd138d0aa7288183e11a1fedfc587543f0118b5dae46ee22827d07cc",
+      "reason": "U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only. | U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only."
+    },
+    {
+      "path": "apps/lab-shared/studio-catalog.json",
+      "beforeSha256": "d71cd548a5f403236e6983961fe72ef4f3e39743cdd8aba650c99d5904033909",
+      "afterSha256": "89060451df9ca4aed9b99a4d457206edc5e8b8da80bb573a6a2937b187492bf5",
+      "reason": "U13 art footers, 5 October 2026: phase code and date removed from art, sign and plan footers and the reference packet at the user's request; artwork and data unchanged. Previous masters preserved in planning/revisions/U13-before-art-footers-20261005/."
+    },
+    {
+      "path": "apps/lab-shared/studio-graphics.mjs",
+      "beforeSha256": "26714de555d2e0cb10e9a31622955e11642bd954fe4fe157921a25d7ea01505d",
+      "afterSha256": "582d5cb9d8440d6799bc43b3fd05408dc3ea530bba349d8c60f746a7e9a01aa3",
+      "reason": "U13 art footers, 5 October 2026: phase code and date removed from art, sign and plan footers and the reference packet at the user's request; artwork and data unchanged. Previous masters preserved in planning/revisions/U13-before-art-footers-20261005/."
+    },
+    {
+      "path": "apps/lab-web/scripts/build-studio.cjs",
+      "beforeSha256": "991dc9ea8ae873262739cdf15b2fa9af7ec693e9a2ad9a0734d455d641797be7",
+      "afterSha256": "c0db3b876e4876092451898e0a22bef8e4ff1cc55d6586fe4faa17a01728bdba",
+      "reason": "U13 art footers, 5 October 2026: phase code and date removed from art, sign and plan footers and the reference packet at the user's request; artwork and data unchanged. Previous masters preserved in planning/revisions/U13-before-art-footers-20261005/."
+    }
+  ],
+  "additions": [
+    {
+      "path": "apps/lab-web/src/components/ExportFallback.tsx",
+      "sha256": "0fbe3dd86dc290cb7cc21b40f781be8113964e3811c9cdd2aeddb6df0fe8b0ab"
+    },
+    {
+      "path": "apps/lab-web/src/components/PerformanceReview.tsx",
+      "sha256": "486271fb8dfc98267e4e9805ee8a6e02c08fbcf8abcaefec50397975c607ba99"
+    },
+    {
+      "path": "apps/lab-web/tests/export.test.ts",
+      "sha256": "f98a118b8da63a66c64a52133713464b0a7dba3aa3441178ae88396f9809d3a4"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u09.cjs",
+      "sha256": "6948c47447b144decc3b3196b60ee55cc383aba5313fa23ac525da7147e10244"
+    },
+    {
+      "path": "apps/lab-web/src/styles/polish.css",
+      "sha256": "b5a4902d45a17be09a5a07a5e3e64599b779fedb99c6d8966e0ef125dcb553b8",
+      "reason": "U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/public/media/room-iso.jpg",
+      "sha256": "ca965f16a927756dd40b01b7853af882929cbaf455f3d73d3fe1b5678260cf66",
+      "reason": "U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/public/media/room-eye.jpg",
+      "sha256": "45d1f0f714390dcdf5bbb37682b53810022c9f45a94ed16a57603c6f98fe1f0b",
+      "reason": "U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/."
+    },
+    {
+      "path": "apps/lab-web/src/styles/polish-detail.css",
+      "sha256": "d31c9275b0fb5a46686c048502a9535cbbe3947577446c57272463a0b757486c",
+      "reason": "U13 detail pass, 5 October 2026: plan legend, icons, public-display photo, view transition and tablet menu wrap; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/styles/polish-art.css",
+      "sha256": "220b3f97722c21c0277804776af16fa4d04d5f6405799392beba0c91caea2975",
+      "reason": "U14 artistry pass, 5 October 2026: dashboard interval chart and smart-features overview from existing example data, signal-rule motif; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/assets/signal-rule.svg",
+      "sha256": "65bbbbbcf464c82e89133206cce34b07f1a78764ddfd82f2239e587f2c9f0d8f",
+      "reason": "U14 artistry pass, 5 October 2026: dashboard interval chart and smart-features overview from existing example data, signal-rule motif; presentation only."
+    },
+    {
+      "path": "apps/lab-web/src/styles/polish-ux.css",
+      "sha256": "a0b7a26649c5070eae86410af6394f5523ce0743c367e603bcc76a12c99ed504",
+      "reason": "U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/components/GuidedTour.tsx",
+      "sha256": "4bafe2fa18069167094e81715a9ce536fbd0a48c55840b0b0fd52aca83715a8d",
+      "reason": "U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/components/CommandPalette.tsx",
+      "sha256": "09132f88c835f16861bc9075a10bdbe164a91aaf95b9ec055d03ad6511774d70",
+      "reason": "U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/styles/polish-play.css",
+      "sha256": "28248f452e08866ceff772d86f17b011eaf7ae2c40e96bd1d12e8f01bc0a60e1",
+      "reason": "U16 play pass, 5 October 2026: sampling playground (reuses sampledAlias) and role menu as new presentation components; no domain rule, fixture, command or model changed."
+    },
+    {
+      "path": "apps/lab-web/src/components/SignalPlayground.tsx",
+      "sha256": "c15c231a3ab2610dd22464d9e851f994b120b669c266051db38523679c0bde30",
+      "reason": "U16 play pass, 5 October 2026: sampling playground (reuses sampledAlias) and role menu as new presentation components; no domain rule, fixture, command or model changed."
+    }
+  ],
+  "historicalU08Validation": "Existing U08 gate evaluates preserved pre-U09 files for the eight declared changes, while requiring current after hashes. Other files and scientific/art hashes retain the original checks.",
+  "copyCleanup": {
+    "date": "2026-10-05",
+    "paths": [
+      "apps/lab-web/src/app/App.tsx",
+      "apps/lab-web/src/features/ArtStudio.tsx",
+      "apps/lab-web/src/features/Assets.tsx",
+      "apps/lab-web/src/features/Assistant.tsx",
+      "apps/lab-web/src/features/Conditions.tsx",
+      "apps/lab-web/src/features/EnergyDesk.tsx",
+      "apps/lab-web/src/features/Faculty.tsx",
+      "apps/lab-web/src/features/FaultWalkthrough.tsx",
+      "apps/lab-web/src/features/GeometryRehearsal.tsx",
+      "apps/lab-web/src/features/Mobile.tsx",
+      "apps/lab-web/src/features/Operations.tsx",
+      "apps/lab-web/src/features/OperationsDesk.tsx",
+      "apps/lab-web/src/features/Rehearsal.tsx",
+      "apps/lab-web/src/features/Safety.tsx",
+      "apps/lab-web/src/features/SmartLab.tsx",
+      "apps/lab-web/src/features/StudentJourney.tsx",
+      "apps/lab-web/src/features/Sustainability.tsx"
+    ],
+    "note": "U09 evidence captures (screenshots, text receipts) predate this copy change and show the earlier header wording."
+  },
+  "laterReviews": [
+    {
+      "reason": "U12 product polish, 5 October 2026: shell (grouped menu, role indicator, footer, session tools folded), dashboard and page presentation, tabs on Environment and Operations desk, folded data notes, status marks, room render; default environment example changed from disconnected to recent example readings. No domain rule, fixture, scientific model or command changed. Previous source preserved in planning/revisions/U12-before-product-polish-20261005/.",
+      "changed": [
+        "apps/lab-web/src/app/App.tsx",
+        "apps/lab-web/src/app/EnvironmentProvider.tsx",
+        "apps/lab-web/src/features/Assets.tsx",
+        "apps/lab-web/src/features/Assistant.tsx",
+        "apps/lab-web/src/features/Faculty.tsx",
+        "apps/lab-web/src/features/FaultWalkthrough.tsx",
+        "apps/lab-web/src/features/GeometryRehearsal.tsx",
+        "apps/lab-web/src/features/Mobile.tsx",
+        "apps/lab-web/src/features/Operations.tsx",
+        "apps/lab-web/src/features/OperationsDesk.tsx",
+        "apps/lab-web/src/features/Rehearsal.tsx",
+        "apps/lab-web/src/features/SmartLab.tsx",
+        "apps/lab-web/src/features/StudentJourney.tsx",
+        "apps/lab-web/src/main.tsx"
+      ],
+      "added": [
+        "apps/lab-web/src/styles/polish.css",
+        "apps/lab-web/public/media/room-iso.jpg",
+        "apps/lab-web/public/media/room-eye.jpg"
+      ]
+    },
+    {
+      "reason": "U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only.",
+      "changed": [
+        "apps/lab-web/src/components/LabPlan.tsx",
+        "apps/lab-web/src/components/LinkedMap.tsx",
+        "apps/lab-web/src/features/ArtStudio.tsx",
+        "apps/lab-web/src/features/Assets.tsx",
+        "apps/lab-web/src/features/EnergyDesk.tsx",
+        "apps/lab-web/src/features/Faculty.tsx",
+        "apps/lab-web/src/features/OperationsDesk.tsx",
+        "apps/lab-web/src/features/StudentJourney.tsx"
+      ],
+      "added": []
+    },
+    {
+      "reason": "U12 product polish, 5 October 2026 (second pass): plain wording in place of framework and phase codes, Today status strip, plan caption; presentation only.",
+      "changed": [],
+      "added": []
+    },
+    {
+      "reason": "U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel, art-plate footers without phase code or date; presentation only.",
+      "changed": [
+        "apps/lab-shared/studio-graphics.mjs",
+        "apps/lab-web/src/app/App.tsx",
+        "apps/lab-web/src/components/LinkedMap.tsx",
+        "apps/lab-web/src/features/Assets.tsx",
+        "apps/lab-web/src/features/Assistant.tsx",
+        "apps/lab-web/src/features/OperationsDesk.tsx",
+        "apps/lab-web/src/features/StudentJourney.tsx",
+        "apps/lab-web/src/main.tsx"
+      ],
+      "added": []
+    },
+    {
+      "reason": "U12 product polish, 5 October 2026 (third pass): page titles, loading and not-found states, plain feedback wording, journey completion panel; presentation only.",
+      "changed": [],
+      "added": []
+    },
+    {
+      "reason": "U13 art footers, 5 October 2026: phase code and date removed from art, sign and plan footers and the reference packet at the user's request; artwork and data unchanged. Previous masters preserved in planning/revisions/U13-before-art-footers-20261005/.",
+      "changed": [
+        "apps/lab-shared/studio-catalog.json",
+        "apps/lab-shared/studio-graphics.mjs",
+        "apps/lab-web/scripts/build-studio.cjs"
+      ],
+      "added": []
+    },
+    {
+      "reason": "U13 detail pass, 5 October 2026: plan legend, icons, public-display photo, view transition and tablet menu wrap; presentation only.",
+      "changed": [
+        "apps/lab-web/src/app/App.tsx",
+        "apps/lab-web/src/components/LabPlan.tsx",
+        "apps/lab-web/src/features/Operations.tsx",
+        "apps/lab-web/src/main.tsx"
+      ],
+      "added": [
+        "apps/lab-web/src/styles/polish-detail.css"
+      ]
+    },
+    {
+      "reason": "U14 artistry pass, 5 October 2026: dashboard interval chart and smart-features overview from existing example data, signal-rule motif; presentation only.",
+      "changed": [
+        "apps/lab-web/src/features/SmartLab.tsx",
+        "apps/lab-web/src/main.tsx"
+      ],
+      "added": [
+        "apps/lab-web/src/styles/polish-art.css",
+        "apps/lab-web/src/assets/signal-rule.svg"
+      ]
+    },
+    {
+      "reason": "U15 experience pass, 5 October 2026: guided tour, quick search and page art added as new presentation components; no domain rule, fixture, command or model changed.",
+      "changed": [
+        "apps/lab-web/src/app/App.tsx",
+        "apps/lab-web/src/features/Operations.tsx",
+        "apps/lab-web/src/main.tsx"
+      ],
+      "added": [
+        "apps/lab-web/src/styles/polish-ux.css",
+        "apps/lab-web/src/components/GuidedTour.tsx",
+        "apps/lab-web/src/components/CommandPalette.tsx"
+      ]
+    },
+    {
+      "reason": "U16 play pass, 5 October 2026: sampling playground (reuses sampledAlias) and role menu as new presentation components; no domain rule, fixture, command or model changed.",
+      "changed": [
+        "apps/lab-web/src/app/App.tsx",
+        "apps/lab-web/src/features/StudentJourney.tsx",
+        "apps/lab-web/src/main.tsx"
+      ],
+      "added": [
+        "apps/lab-web/src/styles/polish-play.css",
+        "apps/lab-web/src/components/SignalPlayground.tsx"
+      ]
+    },
+    {
+      "reason": "Fix, 7 October 2026: the page-transition animation used transform with a persisting fill and displaced the fixed step bar when motion was enabled; it now uses the translate property, does not persist and skips the bar.",
+      "changed": [],
+      "added": []
+    }
+  ]
+}

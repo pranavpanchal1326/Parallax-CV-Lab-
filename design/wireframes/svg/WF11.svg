@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF11 · Technician: verify before release</title><desc id="desc">A technician handles an issue with visible consequences for bookings.. Interrupted verification keeps the restriction active; release is refused.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Technician: verify before release</text>
+<rect x="20" y="105" width="720" height="55" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / ISS-0417 / C1-CAM / reported symptom</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Report — classify — restrict — repair — verify — release</text>
+<rect x="20" y="181" width="435" height="144" fill="#fafafa" stroke="#555" />
+<text x="32" y="205" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Action record</text>
+<text x="32" y="225" font-family="Arial" font-size="12" font-weight="400" fill="#222">Classification / restriction RST-0417</text>
+<text x="32" y="245" font-family="Arial" font-size="12" font-weight="400" fill="#222">Repair note / verification outcome</text>
+<text x="32" y="265" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Verify ]  [ Release after verified ]</text>
+<rect x="475" y="181" width="265" height="144" fill="#fafafa" stroke="#555" />
+<text x="487" y="205" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Consequences</text>
+<text x="487" y="225" font-family="Arial" font-size="12" font-weight="400" fill="#222">Affected booking IDs</text>
+<text x="487" y="245" font-family="Arial" font-size="12" font-weight="400" fill="#222">Students / technician / wall</text>
+<text x="487" y="265" font-family="Arial" font-size="12" font-weight="400" fill="#222">Private detail stays off wall</text>
+<rect x="20" y="347" width="720" height="101" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="371" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Verification interrupted</text>
+<text x="32" y="391" font-family="Arial" font-size="12" font-weight="400" fill="#222">Restriction retained / release refused</text>
+<text x="32" y="411" font-family="Arial" font-size="12" font-weight="400" fill="#222">History records ownership and reason</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF11 / Reconstructed React view / low fidelity / no fieldwork claimed</text></svg>

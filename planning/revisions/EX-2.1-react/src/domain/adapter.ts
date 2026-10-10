@@ -1,0 +1,129 @@
+import * as legacy from "../../../../prototype/store.js";
+import { fixtures } from "../data/fixtures";
+import type { Booking, Command, DomainResult, Issue, LabState } from "./types";
+
+export const selectors = {
+  ...legacy,
+  myBooking: (state: LabState, exp: string): Booking | undefined =>
+    legacy.myBooking(state, exp),
+  openIssue: (state: LabState): Issue | undefined => legacy.openIssue(state),
+  publicNotices: (state: LabState): { asset: string; text: string }[] =>
+    legacy.publicNotices(state, fixtures),
+};
+export const initialState = (): LabState =>
+  structuredClone(legacy.createState(fixtures)) as unknown as LabState;
+
+// Legacy rules own this draft; React-owned input remains untouched, including on error.
+export function transition(
+  previous: LabState,
+  command: Command,
+): { state: LabState; result: DomainResult } {
+  const state = structuredClone(previous);
+  let result: DomainResult;
+  switch (command.type) {
+    case "prepare":
+      result = legacy.setPrepared(
+        state,
+        fixtures,
+        command.exp,
+        command.index,
+        command.checked,
+      );
+      break;
+    case "reserve":
+      result = legacy.reserve(state, fixtures, command.exp, command.slot);
+      break;
+    case "check-in":
+      result = legacy.checkIn(state, fixtures, command.exp, command.station);
+      break;
+    case "kit-item":
+      result = legacy.verifyKitItem(
+        state,
+        fixtures,
+        command.exp,
+        command.item,
+        command.quantity,
+      );
+      break;
+    case "return-item":
+      result = legacy.returnItem(
+        state,
+        fixtures,
+        command.exp,
+        command.item,
+        command.quantity,
+      );
+      break;
+    case "start":
+      result = legacy.startSession(state, fixtures, command.exp);
+      break;
+    case "capture":
+      result = legacy.capture(state, fixtures, command.exp, command.evidence, {
+        prepared: !!command.prepared,
+      });
+      break;
+    case "save-note":
+      result = legacy.saveNote(state, fixtures, command.exp, command.text, {
+        failSave: !!command.failSave,
+      });
+      break;
+    case "draft-note":
+      if (state.sessions[command.exp].receipt)
+        result = {
+          ok: false,
+          code: "frozen",
+          message:
+            "The submitted revision is frozen. Its notebook claim cannot be edited.",
+        };
+      else {
+        state.sessions[command.exp].note = command.text;
+        result = { ok: true };
+      }
+      break;
+    case "submit":
+      result = legacy.submit(state, fixtures, command.exp, {
+        dropAck: !!command.dropAck,
+      });
+      break;
+    case "close":
+      result = legacy.closeSession(state, fixtures, command.exp, {
+        withFollowUp: !!command.withFollowUp,
+      });
+      break;
+    case "interrupt-camera":
+      result = legacy.interruptCamera(state);
+      break;
+    case "report":
+      result = legacy.reportIssue(state, fixtures, command);
+      break;
+    case "triage":
+      result = legacy.triage(
+        state,
+        fixtures,
+        command.issue,
+        command.classification,
+      );
+      break;
+    case "restrict":
+      result = legacy.applyRestriction(state, fixtures, command.issue);
+      break;
+    case "repair":
+      result = legacy.recordRepair(
+        state,
+        fixtures,
+        command.issue,
+        command.text,
+      );
+      break;
+    case "verify":
+      result = legacy.verify(state, fixtures, command.issue, command.outcome);
+      break;
+    case "release":
+      result = legacy.release(state, fixtures, command.issue);
+      break;
+    case "locate":
+      result = legacy.locateItem(state, fixtures, command.exp);
+      break;
+  }
+  return { state, result };
+}

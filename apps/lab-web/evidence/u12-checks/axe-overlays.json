@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-05",
+  "engine": "axe-core 4.10.2",
+  "states": [
+    "light tour",
+    "light search",
+    "dark tour",
+    "dark search"
+  ],
+  "violations": {}
+}

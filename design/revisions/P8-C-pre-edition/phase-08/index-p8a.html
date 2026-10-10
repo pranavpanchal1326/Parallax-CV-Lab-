@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phase 8 · PARALLAX 3D & interaction</title>
+<script src="../theme.js"></script><link rel="stylesheet" href="assets/p8.css">
+<style>
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:48px;align-items:center;background:var(--inst);color:var(--inst-text);padding:56px 32px}
+.hero h1{font-size:clamp(40px,5vw,72px);line-height:1.02}
+.hero .manuscript{color:var(--inst-2text);margin-top:20px}
+.hero img{width:100%;display:block}
+.stats{display:flex;gap:32px;flex-wrap:wrap;margin-top:28px}.stats b{display:block;font:600 32px var(--display);color:var(--trace)}.stats span{font-size:13px;color:var(--inst-2text)}
+.protos{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:48px 0}
+.proto{background:var(--surface);padding:28px;display:grid;gap:12px;align-content:start;text-decoration:none;color:inherit;border:1px solid transparent}
+.proto:hover{border-color:var(--action)}.proto h2{font:600 32px var(--display)}
+.proto ul{margin:0;padding-left:18px;color:var(--text-2);font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:24px}
+figure{margin:0;background:var(--surface)}figure img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;background:#ccd1db}
+figcaption{padding:14px 16px;display:grid;gap:4px}figcaption b{font:12px var(--mono);color:var(--action)}figcaption span{font-size:14px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:14px}th,td{padding:12px 14px;border-bottom:1px solid var(--surface-subtle);text-align:left;vertical-align:top}th{font:12px var(--mono);color:var(--text-2);font-weight:400;background:var(--surface-subtle)}
+section{margin-top:56px}section>.tag{margin-bottom:8px}section>h2{font:600 32px var(--display);margin-bottom:20px}
+@media (max-width:900px){.hero,.protos,.compare{grid-template-columns:1fr}.hero{padding:32px 16px}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="shell"><a class="brand" href="index.html"><svg width="24" height="24" aria-hidden="true"><rect x="2" y="2" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/><rect x="8" y="8" width="14" height="14" fill="#3346D3"/></svg>PARALLAX</a>
+<nav aria-label="Primary"><a href="index.html" aria-current="page">Phase 8</a><a href="lab-map.html">Lab Map</a><a href="scene-studio.html">Scene Studio</a></nav><a class="safety" href="lab-map.html#safety">+ Safety</a></header>
+<div class="hero">
+ <div><p class="tag dark">PARALLAX / PHASE 8 / 3D & INTERACTION — P8-A</p><h1>The room you can study before you enter it.</h1>
+ <p class="manuscript">One model, three uses: renders that explain, a map that finds, and a studio that teaches what a camera can see.</p>
+ <div class="stats"><div><b>10</b><span>final renders R01–R08</span></div><div><b>43</b><span>resource-named 3D nodes</span></div><div><b>69k</b><span>triangles · budget 150k</span></div><div><b>3.3 MB</b><span>interactive model · budget 5 MB</span></div></div></div>
+ <img src="renders/R02_iso_cutaway.jpg" alt="Isometric cutaway of the 70 square metre lab with computing, capture, signal bench, collaboration, kit storage, the suspended signal-to-pixel sculpture and the Phase 7 zone signs">
+</div>
+<main id="main">
+<div class="protos">
+ <a class="proto" href="lab-map.html"><p class="tag">P10 · LAB MAP</p><h2>Find your place in the lab.</h2><p class="muted">Plan first, 3D on request. Search by ID, select from the list, plan or model, and read everything in an HTML drawer.</p>
+  <ul><li>Availability and occupancy shown as separate facts, with freshness and a stale state</li><li>Five named viewpoints, reset, follow-camera toggle</li><li>Model failure and no-WebGL fall back to the plan without losing selection</li></ul></a>
+ <a class="proto" href="scene-studio.html"><p class="tag">P13 · SCENE STUDIO · E12</p><h2>Explore the camera’s viewpoint.</h2><p class="muted">Scene, camera image and interpretation side by side. Every setting is a number you can reproduce at the C1 tripod.</p>
+  <ul><li>Visibility measured from an object-ID render, not guessed</li><li>Six presets including an occlusion example and an impossible position, explained</li><li>Snapshots keep settings with the explanation; a plan approximation works without WebGL</li></ul></a>
+</div>
+<section><p class="tag">SHOT LIST · G17 · CYCLES · 128 SAMPLES · DENOISED</p><h2>Renders that expose the designed features.</h2>
+<div class="gallery" id="gallery"></div></section>
+<section><p class="tag">ONE MODEL, TWO STATES</p><h2>The Phase 7 restriction, physically.</h2>
+<div class="compare"><figure><img src="renders/R04_capture.jpg" alt="C1 capture setup with camera, two softboxes, object stage and calibration target"><figcaption><b>R04 · AVAILABLE</b><span>C1-CAM on its tripod, 2.05 m from the stage centre.</span></figcaption></figure>
+<figure><img src="renders/R04_capture_restricted.jpg" alt="The same C1 view with a red S-05 restriction tag hanging from the camera"><figcaption><b>R04 · RESTRICTED · RST-0417</b><span>The S-05 hang tag says what not to do; the Lab Map shows the same state from data.</span></figcaption></figure></div></section>
+<section><p class="tag">3D INTERACTION CONTRACT · G16</p><h2>Optional, accessible, honest.</h2>
+<table><thead><tr><th>Rule</th><th>How P8-A meets it</th></tr></thead><tbody>
+<tr><td>G16.01–02 Readable default · named views</td><td>Overview cutaway plus Capture, Signal bench, Workstations and Demonstration viewpoints; no precision orbit required.</td></tr>
+<tr><td>G16.03 HTML detail panel</td><td>All resource facts and actions live in the drawer; the canvas carries no essential text.</td></tr>
+<tr><td>G16.04, 07, 12 Keyboard list, search, no silent loss</td><td>Every resource is in the searchable list and focusable on the plan, including items hidden in 3D.</td></tr>
+<tr><td>G16.05, 10 Reset · camera follow can be disabled</td><td>Reset view button; “Move the camera to the selected resource” toggle; reduced motion jumps instead of animating.</td></tr>
+<tr><td>G16.08–09 Availability ≠ occupancy · staleness</td><td>Two labelled facts per resource; timestamp and stale state reviewable from the state selector.</td></tr>
+<tr><td>G16.13–15 Capability detection · opt-in download · optional</td><td>Plan by default; WebGL2 detection; the 3.3 MB model loads only on request; failures return to the plan.</td></tr>
+<tr><td>G15.04, 07 Separate exports · asset IDs</td><td>lab_studio.glb for presentation, lab_interactive.glb with one node per resource ID for the map.</td></tr>
+<tr><td>G15.15 Not a live twin</td><td>States come from data/resources.json and are labelled example state.</td></tr></tbody></table></section>
+<p class="foot">Prepared study / Renders and models come from spatial/lab_geometry.json (P4-D conceptual envelope) via spatial/blender/render_phase8.py. Equipment forms are illustrative; Scene Studio is a simulation of geometry only. Participant and device testing belong to Phase 9.</p>
+</main>
+<script>
+const shots=[['R01_entry','R01 · ENTRY PERSPECTIVE','The spatial identity from D1: computing to the left, capture beyond, the spine and S-02 zone signs overhead.'],
+['R02_iso_cutaway','R02 · ISOMETRIC CUTAWAY','Every zone at once, with the signal-to-pixel sculpture above the 1.5 m spine.'],
+['R03_student_eye','R03 · STUDENT EYE · CV-05','Seated eye height at a computing station; screen traces are illustrative artwork.'],
+['R04_capture','R04 · CONTROLLED CAPTURE','Camera, L1/L2 softboxes, object stage and CAL-01 target on the 2.05 m axis.'],
+['R05_signal_bench','R05 · SIGNAL BENCH S1','Three illustrative instrument positions with the S1 zone header facing the spine.'],
+['R06_collaboration','R06 · COLLABORATION','Four places at the shared table facing the demonstration display.'],
+['R07_storage','R07 · KIT STORAGE STO-1','Three kit bays open into the computing aisle beside the C1 partition.'],
+['R08_plan','R08 · TOP PLAN BASE','Base for the services and circulation overlay; drawn from the same geometry as the plan.']];
+document.getElementById('gallery').innerHTML=shots.map(([f,t,c])=>`<figure><img src="renders/${f}.jpg" alt="${t}: ${c}" loading="lazy"><figcaption><b>${t}</b><span>${c}</span></figcaption></figure>`).join('');
+</script>
+</body></html>

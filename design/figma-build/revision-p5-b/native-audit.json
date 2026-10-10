@@ -1,0 +1,191 @@
+{
+  "baseLibrary": {
+    "families": 40,
+    "variants": 87,
+    "missing": [],
+    "changed": []
+  },
+  "previewChecks": [
+    {
+      "source": "2065:2587",
+      "copy": "2072:1596",
+      "scale": 0.6,
+      "textCount": 36,
+      "mismatches": []
+    },
+    {
+      "source": "2065:2662",
+      "copy": "2072:1675",
+      "scale": 0.6,
+      "textCount": 74,
+      "mismatches": []
+    },
+    {
+      "source": "2065:2954",
+      "copy": "2072:1833",
+      "scale": 0.6,
+      "textCount": 63,
+      "mismatches": []
+    },
+    {
+      "source": "2065:3333",
+      "copy": "2072:2025",
+      "scale": 0.6,
+      "textCount": 58,
+      "mismatches": []
+    },
+    {
+      "source": "2070:1612",
+      "copy": "2072:2164",
+      "scale": 0.6,
+      "textCount": 44,
+      "mismatches": []
+    },
+    {
+      "source": "2070:1727",
+      "copy": "2072:2283",
+      "scale": 0.6,
+      "textCount": 44,
+      "mismatches": []
+    }
+  ],
+  "scope": "11 composed views + showcase + navigation component",
+  "frames": [
+    {
+      "id": "2065:2586",
+      "name": "PH5B / Global navigation",
+      "width": 1488,
+      "height": 560
+    },
+    {
+      "id": "2065:2587",
+      "name": "P5-B / 01 Lab atlas",
+      "width": 1440,
+      "height": 1094
+    },
+    {
+      "id": "2065:2662",
+      "name": "P5-B / 02 Reservation",
+      "width": 1440,
+      "height": 1265
+    },
+    {
+      "id": "2065:2812",
+      "name": "P5-B / 03 Reservation conflict",
+      "width": 1440,
+      "height": 1265
+    },
+    {
+      "id": "2065:2954",
+      "name": "P5-B / 04 Vision workbench",
+      "width": 1440,
+      "height": 1119
+    },
+    {
+      "id": "2065:3142",
+      "name": "P5-B / 05 Device recovery",
+      "width": 1440,
+      "height": 1145
+    },
+    {
+      "id": "2065:3333",
+      "name": "P5-B / 06 Evidence notebook",
+      "width": 1440,
+      "height": 1219
+    },
+    {
+      "id": "2065:3464",
+      "name": "P5-B / 07 Evidence save recovery",
+      "width": 1440,
+      "height": 1219
+    },
+    {
+      "id": "2065:3595",
+      "name": "P5-B / 08 Mobile asset recovery",
+      "width": 390,
+      "height": 1213
+    },
+    {
+      "id": "2070:1494",
+      "name": "P5-B / 09 Plan & asset index",
+      "width": 1440,
+      "height": 1278
+    },
+    {
+      "id": "2070:1612",
+      "name": "P5-B / 10 Signal instrument",
+      "width": 1440,
+      "height": 968
+    },
+    {
+      "id": "2070:1727",
+      "name": "P5-B / 11 Sampling comparison",
+      "width": 1440,
+      "height": 947
+    },
+    {
+      "id": "2072:1569",
+      "name": "P5-B / 00 Editorial showcase",
+      "width": 1920,
+      "height": 4839.2001953125
+    }
+  ],
+  "issues": {
+    "overflow": [],
+    "unboundPaint": [],
+    "unstyledText": [],
+    "unresolvedInstances": [],
+    "brokenDestinations": [],
+    "placeholders": []
+  },
+  "counts": {
+    "COMPONENT_SET": 1,
+    "COMPONENT": 4,
+    "FRAME": 895,
+    "VECTOR": 224,
+    "TEXT": 988,
+    "RECTANGLE": 99,
+    "INSTANCE": 50,
+    "ELLIPSE": 63
+  },
+  "scaledPresentationOverrides": {
+    "count": 319,
+    "reason": "Six editable 0.6x presentation copies. Typography compared to original styled views; scale requires local font-size overrides."
+  },
+  "fonts": [
+    "DM Sans",
+    "JetBrains Mono",
+    "Familjen Grotesk",
+    "Newsreader"
+  ],
+  "images": [
+    {
+      "id": "2065:2635",
+      "name": "P4-D / studio isometric",
+      "hash": "6cc396c49564555cb889c3810ef2f62e6a917086"
+    },
+    {
+      "id": "2072:1588",
+      "name": "Current studio isometric / content asset",
+      "hash": "6cc396c49564555cb889c3810ef2f62e6a917086"
+    },
+    {
+      "id": "2072:1619",
+      "name": "P4-D / studio isometric",
+      "hash": "6cc396c49564555cb889c3810ef2f62e6a917086"
+    }
+  ],
+  "reactionCount": 95,
+  "destinations": [
+    "2065:2954",
+    "2065:2662",
+    "2065:3333",
+    "2070:1494",
+    "2065:2587",
+    "2065:2812",
+    "2065:3142",
+    "2065:3464",
+    "2070:1727",
+    "2070:1612"
+  ]
+}

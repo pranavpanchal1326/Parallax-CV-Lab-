@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "state": {
+    "version": 1,
+    "revision": 10,
+    "source": "U07 independent exercise",
+    "policies": {
+      "E01": {
+        "experiment": "E01",
+        "version": 1,
+        "methodRevision": "01",
+        "state": "published",
+        "owner": "faculty",
+        "existingSessions": "recorded-method",
+        "reason": "Prepared exercise method; not institutional approval",
+        "effectiveDay": "2026-10-06",
+        "reviewBy": "2026-10-06 17:00 IST"
+      },
+      "E06": {
+        "experiment": "E06",
+        "version": 2,
+        "methodRevision": "01",
+        "state": "withdrawn",
+        "owner": "faculty",
+        "existingSessions": "pause-for-review",
+        "reason": "PRIVATE-U07-REVIEW: prepared method needs an explicit faculty review.",
+        "effectiveDay": "2026-10-06",
+        "reviewBy": "2026-10-06 17:00 IST"
+      }
+    },
+    "resourceRevision": 1,
+    "restricted": [
+      "C1-CAM"
+    ],
+    "allocations": [
+      {
+        "id": "OP-BOOKING-1",
+        "requestId": "a26c88bf-afbc-4a1d-9527-bc78f05a2686",
+        "actor": "pairA",
+        "experiment": "E06",
+        "day": "2026-10-06",
+        "start": 600,
+        "end": 660,
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 1
+      },
+      {
+        "id": "OP-BOOKING-2",
+        "requestId": "bac4cab4-6f35-46f5-adf9-c1d983907ab0",
+        "actor": "pairA",
+        "experiment": "E06",
+        "day": "2026-10-06",
+        "start": 660,
+        "end": 720,
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 2
+      },
+      {
+        "id": "OP-BOOKING-3",
+        "requestId": "cc2429f4-8f79-4b13-ba42-6d7120946a10",
+        "actor": "pairA",
+        "experiment": "E01",
+        "day": "2026-10-06",
+        "start": 600,
+        "end": 660,
+        "resources": [
+          "CV-03",
+          "S1-B"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 3
+      }
+    ],
+    "events": [
+      {
+        "id": "OP-EVENT-1",
+        "revision": 1,
+        "actor": "pairA",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-1",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      },
+      {
+        "id": "OP-EVENT-2",
+        "revision": 2,
+        "actor": "pairA",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-2",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      },
+      {
+        "id": "OP-EVENT-3",
+        "revision": 3,
+        "actor": "pairA",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-3",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      },
+      {
+        "id": "OP-EVENT-4",
+        "revision": 4,
+        "actor": "faculty",
+        "action": "Method withdrawn",
+        "target": "E06",
+        "reason": "PRIVATE-U07-REVIEW: prepared method needs an explicit faculty review."
+      },
+      {
+        "id": "OP-EVENT-5",
+        "revision": 5,
+        "actor": "faculty",
+        "action": "Public consequence published",
+        "target": "OP-NOTICE-1",
+        "reason": "Only allowlisted consequence fields; private reason and person omitted"
+      },
+      {
+        "id": "OP-EVENT-6",
+        "revision": 6,
+        "actor": "faculty",
+        "action": "Handover recorded",
+        "target": "OP-HANDOVER-1",
+        "reason": "PRIVATE-U07-HANDOVER: keep the camera restricted until verification is recorded."
+      },
+      {
+        "id": "OP-EVENT-7",
+        "revision": 7,
+        "actor": "technician",
+        "action": "Handover accepted",
+        "target": "OP-HANDOVER-1",
+        "reason": "Named owner accepted the exercise responsibility"
+      },
+      {
+        "id": "OP-EVENT-8",
+        "revision": 8,
+        "actor": "technician",
+        "action": "Resource restricted",
+        "target": "C1-CAM",
+        "reason": "PRIVATE-U07-EQUIPMENT: prepared camera fault; verification is incomplete."
+      },
+      {
+        "id": "OP-EVENT-9",
+        "revision": 9,
+        "actor": "technician",
+        "action": "Public consequence published",
+        "target": "OP-NOTICE-2",
+        "reason": "Only allowlisted consequence fields; private reason and person omitted"
+      },
+      {
+        "id": "OP-EVENT-10",
+        "revision": 10,
+        "actor": "technician",
+        "action": "Public notice withdrawn",
+        "target": "OP-NOTICE-2",
+        "reason": "Publication history retained; underlying equipment/method condition unchanged"
+      }
+    ],
+    "handovers": [
+      {
+        "id": "OP-HANDOVER-1",
+        "owner": "technician",
+        "backup": "lab-lead",
+        "topic": "equipment",
+        "note": "PRIVATE-U07-HANDOVER: keep the camera restricted until verification is recorded.",
+        "status": "accepted",
+        "due": "Before the next capture session",
+        "createdRevision": 6,
+        "acceptedBy": "technician",
+        "acceptedRevision": 7
+      }
+    ],
+    "notices": [
+      {
+        "id": "OP-NOTICE-1",
+        "kind": "method-review",
+        "experiment": "E06",
+        "sourceVersion": 2,
+        "state": "published",
+        "createdRevision": 5
+      },
+      {
+        "id": "OP-NOTICE-2",
+        "kind": "equipment-restriction",
+        "asset": "C1-CAM",
+        "sourceVersion": 1,
+        "state": "withdrawn",
+        "createdRevision": 9
+      }
+    ],
+    "requests": [
+      {
+        "id": "a26c88bf-afbc-4a1d-9527-bc78f05a2686",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"a26c88bf-afbc-4a1d-9527-bc78f05a2686\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-1"
+        }
+      },
+      {
+        "id": "534bbf3a-1072-4e07-a5ba-c4dd1991aefa",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"534bbf3a-1072-4e07-a5ba-c4dd1991aefa\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-10-06",
+            "start": 660,
+            "end": 720
+          }
+        }
+      },
+      {
+        "id": "bac4cab4-6f35-46f5-adf9-c1d983907ab0",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",720],[\"experiment\",\"E06\"],[\"id\",\"bac4cab4-6f35-46f5-adf9-c1d983907ab0\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",660],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-2"
+        }
+      },
+      {
+        "id": "cc2429f4-8f79-4b13-ba42-6d7120946a10",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E01\"],[\"id\",\"cc2429f4-8f79-4b13-ba42-6d7120946a10\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-3"
+        }
+      },
+      {
+        "id": "3a75af54-31be-4aa1-9b32-a1b3601abeca",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"3a75af54-31be-4aa1-9b32-a1b3601abeca\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-10-06",
+            "start": 720,
+            "end": 780
+          }
+        }
+      },
+      {
+        "id": "f7d190b3-8430-4b42-9456-aa76743b210e",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"f7d190b3-8430-4b42-9456-aa76743b210e\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-10-06",
+            "start": 720,
+            "end": 780
+          }
+        }
+      },
+      {
+        "id": "b0b81b78-8483-4569-bcd1-a3e041d944d6",
+        "fingerprint": "[[\"existingSessions\",\"pause-for-review\"],[\"expected\",3],[\"experiment\",\"E06\"],[\"id\",\"b0b81b78-8483-4569-bcd1-a3e041d944d6\"],[\"reason\",\"PRIVATE-U07-REVIEW: prepared method needs an explicit faculty review.\"],[\"type\",\"withdraw-method\"]]",
+        "actor": "faculty",
+        "result": {
+          "ok": true,
+          "code": "method-withdrawn",
+          "message": "New exercise bookings are blocked. Recorded evidence and method revisions remain; the chosen existing-session rule is explicit."
+        }
+      },
+      {
+        "id": "c7f09977-1773-466b-b935-caa1f65720ee",
+        "fingerprint": "[[\"expected\",4],[\"experiment\",\"E06\"],[\"id\",\"c7f09977-1773-466b-b935-caa1f65720ee\"],[\"kind\",\"method-review\"],[\"type\",\"publish-notice\"]]",
+        "actor": "faculty",
+        "result": {
+          "ok": true,
+          "code": "notice-published",
+          "message": "The allowed consequence is published in the exercise preview only. No operational wall or external notification was changed."
+        }
+      },
+      {
+        "id": "b9649ff2-5b89-42e1-bfdb-7668708f3151",
+        "fingerprint": "[[\"due\",\"Before the next capture session\"],[\"expected\",5],[\"id\",\"b9649ff2-5b89-42e1-bfdb-7668708f3151\"],[\"note\",\"PRIVATE-U07-HANDOVER: keep the camera restricted until verification is recorded.\"],[\"owner\",\"technician\"],[\"topic\",\"equipment\"],[\"type\",\"handover\"]]",
+        "actor": "faculty",
+        "result": {
+          "ok": true,
+          "code": "handover-recorded",
+          "message": "Handover retained in this exercise. The next owner has not accepted it yet; no staff notification was sent.",
+          "recordId": "OP-HANDOVER-1"
+        }
+      },
+      {
+        "id": "92e43e42-66b1-4491-aa0d-0ee997476e4c",
+        "fingerprint": "[[\"expected\",6],[\"handoverId\",\"OP-HANDOVER-1\"],[\"id\",\"92e43e42-66b1-4491-aa0d-0ee997476e4c\"],[\"type\",\"accept-handover\"]]",
+        "actor": "faculty",
+        "result": {
+          "ok": false,
+          "code": "wrong-owner",
+          "message": "Only the named next-owner actor can accept this exercise handover."
+        }
+      },
+      {
+        "id": "7486c231-c532-47ce-b1b8-c81552bb04b0",
+        "fingerprint": "[[\"expected\",6],[\"handoverId\",\"OP-HANDOVER-1\"],[\"id\",\"7486c231-c532-47ce-b1b8-c81552bb04b0\"],[\"type\",\"accept-handover\"]]",
+        "actor": "technician",
+        "result": {
+          "ok": true,
+          "code": "handover-accepted",
+          "message": "The named owner accepted this exercise handover. Its original note and due condition remain."
+        }
+      },
+      {
+        "id": "52969e43-04db-4cab-a6f8-9d5149c034f4",
+        "fingerprint": "[[\"expected\",7],[\"id\",\"52969e43-04db-4cab-a6f8-9d5149c034f4\"],[\"reason\",\"PRIVATE-U07-EQUIPMENT: prepared camera fault; verification is incomplete.\"],[\"type\",\"restrict-camera\"]]",
+        "actor": "technician",
+        "result": {
+          "ok": true,
+          "code": "restricted",
+          "message": "C1-CAM is restricted in the exercise. Existing allocations remain recorded; eligibility changes separately. Signal equipment is unaffected."
+        }
+      },
+      {
+        "id": "f132244c-0896-4c1d-8103-59934a43a912",
+        "fingerprint": "[[\"asset\",\"C1-CAM\"],[\"expected\",8],[\"id\",\"f132244c-0896-4c1d-8103-59934a43a912\"],[\"kind\",\"equipment-restriction\"],[\"type\",\"publish-notice\"]]",
+        "actor": "technician",
+        "result": {
+          "ok": true,
+          "code": "notice-published",
+          "message": "The allowed consequence is published in the exercise preview only. No operational wall or external notification was changed."
+        }
+      },
+      {
+        "id": "02238d86-caff-459a-8da0-a463a3264396",
+        "fingerprint": "[[\"expected\",9],[\"id\",\"02238d86-caff-459a-8da0-a463a3264396\"],[\"noticeId\",\"OP-NOTICE-2\"],[\"type\",\"withdraw-notice\"]]",
+        "actor": "technician",
+        "result": {
+          "ok": true,
+          "code": "notice-withdrawn",
+          "message": "The public notice is withdrawn. Its history and underlying restriction or method state remain."
+        }
+      },
+      {
+        "id": "c54ab48e-ed28-4e6c-808b-aaa13937375b",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",900],[\"experiment\",\"E06\"],[\"id\",\"c54ab48e-ed28-4e6c-808b-aaa13937375b\"],[\"policyVersion\",2],[\"resourceRevision\",1],[\"start\",840],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": false,
+          "code": "method-withdrawn",
+          "message": "This method is withdrawn for new exercise bookings. Ask the method owner for a published applicable method."
+        }
+      }
+    ],
+    "sessions": [
+      {
+        "id": "OP-SESSION-E06",
+        "experiment": "E06",
+        "methodRevision": "01",
+        "captured": [
+          {
+            "id": "OP-CAPTURE-01",
+            "source": "Prepared illustration",
+            "text": "Compare the visible side-light shadow with the frontal illustration."
+          }
+        ]
+      }
+    ]
+  }
+}

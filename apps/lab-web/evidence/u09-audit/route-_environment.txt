@@ -1,0 +1,325 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: Environment & sustainability · local demonstrator
+  - heading "Understand the room. Before changing it." [level=1]:
+    - text: Understand the room.
+    - emphasis: Before changing it.
+  - paragraph: Every observation has a source. Every energy proposal has a boundary.
+  - navigation "Environment sections":
+    - button "Observations"
+    - button "Energy period"
+    - button "Standby review"
+    - button "Physical design sheet"
+  - heading "Observation desk" [level=2]
+  - generic: Environment demonstration
+  - combobox "Environment demonstration":
+    - option "No connected source" [selected]
+    - option "Connected example · reading missing"
+    - option "Recent example readings"
+    - option "Delayed example readings"
+    - option "Invalid example readings"
+    - option "Disconnected example · last reading retained"
+  - paragraph: No hardware is connected. Selection resets on reload; existing captures retain their original source records.
+  - button "Recover with a recent example"
+  - status: "Selected: No connected source. Dashboard and new captures use these same records."
+  - article:
+    - heading "Temperature" [level=3]
+    - paragraph:
+      - text: —
+      - generic: Reading unavailable
+    - paragraph: No reading · simulated
+    - paragraph: Source disconnected
+    - paragraph: Check the source with the technician; retained values cannot establish current conditions.
+    - paragraph:
+      - text: Observed unavailable IST
+      - text: Received unavailable IST
+    - generic "Source and quality"
+  - article:
+    - heading "CO₂" [level=3]
+    - paragraph:
+      - text: —
+      - generic: Reading unavailable
+    - paragraph: No reading · simulated
+    - paragraph: Source disconnected
+    - paragraph: Check the source with the technician; retained values cannot establish current conditions.
+    - paragraph:
+      - text: Observed unavailable IST
+      - text: Received unavailable IST
+    - generic "Source and quality"
+  - article:
+    - heading "Illuminance" [level=3]
+    - paragraph:
+      - text: —
+      - generic: Reading unavailable
+    - paragraph: No reading · simulated
+    - paragraph: Source disconnected
+    - paragraph: Check the source with the technician; retained values cannot establish current conditions.
+    - paragraph:
+      - text: Observed unavailable IST
+      - text: Received unavailable IST
+    - generic "Source and quality"
+  - paragraph: "Review clock: 09:40 IST on 1 October 2026. Source records stay fixed until a new example is selected or recovered. Normal local lab actions advance the example clock, so retained records can age. Five-minute freshness is a demonstration policy; hardware and approved room thresholds are absent."
+  - link "Manual safety and ventilation fallback →":
+    - /url: "#/safety"
+  - region "Power and energy are different records":
+    - heading "Power and energy are different records" [level=2]
+    - paragraph: Authored interval averages for 1 October 2026, 10:00–11:00 IST. These are simulated loads, not a connected meter or measured savings.
+    - generic: Example period
+    - combobox "Example period":
+      - option "10:00–10:30 IST · 30 minutes"
+      - option "10:00–11:00 IST · 60 minutes" [selected]
+    - generic: Example data coverage
+    - combobox "Example data coverage":
+      - option "One missing interval" [selected]
+      - option "All modelled intervals available"
+    - region "Energy by equipment group":
+      - table "Simulated source SIM-POWER-v1 · known intervals only":
+        - caption: Simulated source SIM-POWER-v1 · known intervals only
+        - rowgroup:
+          - row "Group / mapped resources Latest interval average Energy in known intervals Coverage":
+            - columnheader "Group / mapped resources"
+            - columnheader "Latest interval average"
+            - columnheader "Energy in known intervals"
+            - columnheader "Coverage"
+        - rowgroup:
+          - row "Capture lighting C1-L1 · C1-L2 120 W 10:45:00–11:00:00 IST 0.0810 kWh Period total unknown 45 / 60 minutes Gap retained":
+            - rowheader "Capture lighting C1-L1 · C1-L2":
+              - text: Capture lighting
+              - generic: C1-L1 · C1-L2
+            - cell "120 W 10:45:00–11:00:00 IST":
+              - text: 120 W
+              - generic: 10:45:00–11:00:00 IST
+            - cell "0.0810 kWh Period total unknown":
+              - text: 0.0810 kWh
+              - generic: Period total unknown
+            - cell "45 / 60 minutes Gap retained":
+              - text: 45 / 60 minutes
+              - generic: Gap retained
+          - row "Computing stations CV-01 · CV-02 · CV-03 · CV-04 · CV-05 · CV-06 600 W 10:45:00–11:00:00 IST 0.4050 kWh Period total unknown 45 / 60 minutes Gap retained":
+            - rowheader "Computing stations CV-01 · CV-02 · CV-03 · CV-04 · CV-05 · CV-06":
+              - text: Computing stations
+              - generic: CV-01 · CV-02 · CV-03 · CV-04 · CV-05 · CV-06
+            - cell "600 W 10:45:00–11:00:00 IST":
+              - text: 600 W
+              - generic: 10:45:00–11:00:00 IST
+            - cell "0.4050 kWh Period total unknown":
+              - text: 0.4050 kWh
+              - generic: Period total unknown
+            - cell "45 / 60 minutes Gap retained":
+              - text: 45 / 60 minutes
+              - generic: Gap retained
+          - row "Signal bench S1-B 50 W 10:45:00–11:00:00 IST 0.0338 kWh Period total unknown 45 / 60 minutes Gap retained":
+            - rowheader "Signal bench S1-B":
+              - text: Signal bench
+              - generic: S1-B
+            - cell "50 W 10:45:00–11:00:00 IST":
+              - text: 50 W
+              - generic: 10:45:00–11:00:00 IST
+            - cell "0.0338 kWh Period total unknown":
+              - text: 0.0338 kWh
+              - generic: Period total unknown
+            - cell "45 / 60 minutes Gap retained":
+              - text: 45 / 60 minutes
+              - generic: Gap retained
+          - row "Network and essential services Circuit map unavailable Unknown W 10:45:00–11:00:00 IST Unknown kWh Period total unknown 0 / 60 minutes Protected; no source":
+            - rowheader "Network and essential services Circuit map unavailable":
+              - text: Network and essential services
+              - generic: Circuit map unavailable
+            - cell "Unknown W 10:45:00–11:00:00 IST":
+              - text: Unknown W
+              - generic: 10:45:00–11:00:00 IST
+            - cell "Unknown kWh Period total unknown":
+              - text: Unknown kWh
+              - generic: Period total unknown
+            - cell "0 / 60 minutes Protected; no source":
+              - text: 0 / 60 minutes
+              - generic: Protected; no source
+    - generic "Inspect interval sources and calculation"
+  - region "Booking-aware standby preview":
+    - heading "Booking-aware standby preview" [level=2]
+    - paragraph: Calculate an illustrative upper bound on avoided energy, then review dependencies. No meter, switch or automatic action is connected.
+    - generic: Preview interval
+    - combobox "Preview interval":
+      - option "Next 15 minutes" [selected]
+      - option "Next 30 minutes"
+      - option "Next 60 minutes"
+    - article:
+      - heading "Capture lighting" [level=3]
+      - paragraph: Available for human review
+      - paragraph:
+        - text: ≤ 0.030
+        - generic: kWh modelled upper bound
+      - paragraph: 2 × 60 W illustrative assumption; actual wattage unverified
+      - paragraph: Nominal watts × 15/60 hours ÷ 1,000. Assumes the entire load is avoided; real load and standby consumption are unknown.
+      - button "Review capture lighting"
+    - article:
+      - heading "Computing stations" [level=3]
+      - paragraph: Available for human review
+      - paragraph:
+        - text: ≤ 0.150
+        - generic: kWh modelled upper bound
+      - paragraph: 6 × 100 W illustrative assumption; actual load unmetered
+      - paragraph: Nominal watts × 15/60 hours ÷ 1,000. Assumes the entire load is avoided; real load and standby consumption are unknown.
+      - button "Review computing stations"
+    - article:
+      - heading "Signal bench" [level=3]
+      - paragraph: Available for human review
+      - paragraph:
+        - text: ≤ 0.013
+        - generic: kWh modelled upper bound
+      - paragraph: 50 W illustrative assumption; actual equipment unverified
+      - paragraph: Nominal watts × 15/60 hours ÷ 1,000. Assumes the entire load is avoided; real load and standby consumption are unknown.
+      - button "Review signal bench"
+    - article:
+      - heading "Network and essential services" [level=3]
+      - paragraph: Protected from proposal
+      - paragraph: Protected boundary; no circuit inventory or meter connected
+      - list:
+        - listitem: Essential services are outside the standby proposal boundary.
+        - listitem: No power basis is available for this group.
+    - paragraph: Restrictions, active sessions and overlapping example reservations are excluded; energy previews conservatively protect 60-minute booking windows. Essential services are always excluded. A physical installation needs surveyed circuits, measured loads and approved asset-specific operating rules.
+  - region "Design for a longer useful life.":
+    - paragraph: SUS-U04 · physical design sheet · P4-D
+    - heading "Design for a longer useful life." [level=2]
+    - link "Open printable sheet ↗":
+      - /url: sustainability-sheet.html
+    - paragraph: Five assignment requirements, specific decisions and an owner for each. This is a designer-reviewed proposal for the assumed 10 × 7 m room; site measurements, supplier claims and institutional approvals remain unverified.
+    - figure "Geometry P4-D · assumed envelope, not a surveyed room. React session state.":
+      - img "Conceptual 10 by 7 metre floor plan from geometry revision P4-D. Equipment availability is listed below as text.":
+        - generic: CMP
+        - generic: STO
+        - generic: C1
+        - generic: SPN
+        - generic: FAC
+        - generic: COL
+        - generic: S1
+        - generic: CV-01
+        - generic: CV-02
+        - generic: CV-03
+        - generic: CV-05
+        - generic: CV-06
+        - generic: S1-B
+      - generic: Geometry P4-D · assumed envelope, not a surveyed room. React session state.
+    - heading "Physical anchors" [level=3]
+    - paragraph:
+      - text: W1 · south operable window, x 4.4–6.2 m.
+      - text: C1 · controlled capture, north-east.
+      - text: COL · collaboration beside W1.
+      - text: SPN · 1.5 m circulation spine.
+      - text: CV-04 · accessible workstation approach.
+    - link "Read safety landmarks and manual fallback →":
+      - /url: "#/safety"
+    - article:
+      - paragraph: SUS-01 · Lighting
+      - heading "Zone the light; preserve the experiment" [level=3]
+      - paragraph: Reviewed design proposal · no installed luminaires or lighting survey
+      - paragraph: "Owner: Facilities electrical lead + teaching technician"
+      - paragraph: Separate general task-light and capture-light circuits. Use maintainable LED luminaires with replaceable drivers; choose flicker and dimming performance against the camera method. Keep exit and emergency lighting outside standby.
+      - paragraph:
+        - strong: Trade-off.
+        - text: W1 daylight can support COL work; C1 needs repeatable illumination. Use an adjustable glare screen at W1 and capture-zone shielding without blocking ventilation or circulation.
+      - generic "Evidence and acceptance · SUS-01"
+    - article:
+      - paragraph: SUS-02 · Natural ventilation
+      - heading "An opening is a starting point" [level=3]
+      - paragraph: Reviewed concept · airflow, window state and approval unverified
+      - paragraph: "Owner: Facilities ventilation lead"
+      - paragraph: Retain manual access to the assumed south operable W1 (x 4.4–6.2 m). Review occupied-room airflow and outdoor conditions. D1/D2 are exit landmarks, not a proposed ventilation control or guaranteed cross-flow path.
+      - paragraph:
+        - strong: Trade-off.
+        - text: One assumed window does not prove cross-ventilation. Drafts, dust and changing light can disrupt C1; facilities must resolve these with the teaching method before operation.
+      - generic "Evidence and acceptance · SUS-02"
+    - article:
+      - paragraph: SUS-03 · Smart power
+      - heading "Review work before reducing load" [level=3]
+      - paragraph: Working local preview · hardware and policy approval pending
+      - paragraph: "Owner: Technician + facilities electrical lead"
+      - paragraph: Map lighting, computing and signal resources to separately reviewed circuits. Protect network, emergency services and any unmapped circuit. Check reservations, acquisition and saved work before a staff-reviewed standby proposal.
+      - paragraph:
+        - strong: Trade-off.
+        - text: A free booking slot does not establish an idle or safe-to-switch device. Warm-up, calibration, unsaved work and standby load remain asset-specific checks.
+      - generic "Evidence and acceptance · SUS-03"
+    - article:
+      - paragraph: SUS-04 · Recyclable furniture
+      - heading "Replace a part, keep the frame" [level=3]
+      - paragraph: Reviewed specification proposal · procurement evidence absent
+      - paragraph: "Owner: Procurement + technician"
+      - paragraph: "Candidate assembly: mechanically joined metal frame, removable worktop and independently replaceable cable tray/panels. Prefer documented parts and disassembly instructions to permanently bonded mixed materials."
+      - paragraph:
+        - strong: Trade-off.
+        - text: Recyclability depends on material separation and a local recovery route. Repair access must retain CV-04 approach space and bench stability; footprint alone does not prove accessibility.
+      - generic "Evidence and acceptance · SUS-04"
+    - article:
+      - paragraph: SUS-05 · Green materials
+      - heading "Make each claim traceable" [level=3]
+      - paragraph: Reviewed specification proposal · no certified product selection
+      - paragraph: "Owner: Procurement + facilities materials lead"
+      - paragraph: Compare durable, cleanable candidate worktops, floor finishes and low-emission coatings. Request product-specific emissions, composition, recycled-content and durability evidence; record manufacturer, revision and declared scope.
+      - paragraph:
+        - strong: Trade-off.
+        - text: A green label does not establish cleanability, camera glare, slip resistance or durability. Trial matte C1 surfaces against teaching use and protect the circulation spine from unsuitable finishes.
+      - generic "Evidence and acceptance · SUS-05"
+    - heading "Manual operation and fallback" [level=3]
+    - paragraph: Window position, occupied-room conditions and asset operating instructions must be checked by staff. Missing, stale or invalid observations cannot authorise operation or clear equipment restrictions. Use approved posted procedures when the app or network is unavailable; the safety view is an orientation concept.
+    - link "Equipment issue and technician recovery →":
+      - /url: "#/tech"
+    - paragraph:
+      - text: "Design context:"
+      - link "S09 · HSE CO₂ guidance":
+        - /url: https://www.hse.gov.uk/ventilation/using-co2-monitors.htm
+      - text: treats monitoring as broad ventilation context, not proof of safe air.
+      - link "S10 · UCL LEAF":
+        - /url: https://www.ucl.ac.uk/about/sustainability/campaigns-and-initiatives/leaf-laboratory-efficiency-assessment-framework
+      - text: informs the resource-use approach. These sources do not certify this room or its products. Specifications and acceptance criteria above are PARALLAX design inferences.
+  - link "← Smart Lab Dashboard":
+    - /url: "#/dashboard"
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+  - generic "Accessibility diagnostic result": "{ \"path\": \"#/dashboard\", \"violations\": [], \"passedRules\": 42, \"incomplete\": [ { \"id\": \"color-contrast\", \"nodes\": [ { \"target\": [ \".migration-strip > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"a[href=\\\"/prototype/index.html\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"#current-view > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pull\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(1) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(2) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(3) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \"article:nth-child(4) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pzl[y=\\\"3.77\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"3.77\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"7.3\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[y=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[y=\\\"5.680000000000001\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"2.1\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"0.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.68\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"6.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > a[href$=\\\"#/environment\\\"][data-discover=\\\"true\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h2 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > p:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"button[aria-controls=\\\"session-activity\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > .quiet:nth-child(2)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".quiet:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" } ] } ], \"engine\": { \"name\": \"axe-core\", \"version\": \"4.10.2\" } }"

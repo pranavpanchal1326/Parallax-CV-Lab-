@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARALLAX — Scene Studio (P8-C)</title>
+<script src="../theme.js"></script><link rel="stylesheet" href="assets/p8.css">
+<link rel="stylesheet" href="assets/console.css"><link rel="stylesheet" href="../edition.css">
+</head>
+<body class="ed dark studio">
+<a class="ed-skip" href="#presets">Skip to presets</a>
+<header class="shell mast">
+ <a class="mast-brand" href="../index.html" aria-label="PARALLAX — contents"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="14" height="14" fill="none" stroke-width="2"/><rect x="8" y="8" width="14" height="14"/></svg>PARALLAX</a>
+ <nav class="mast-nav" aria-label="Project sections"><a href="../index.html">Contents</a><a href="../research.html"><i>02</i>Research</a><a href="../direction.html"><i>03</i>Direction</a><a href="../review.html"><i>04</i>Space</a><a href="../system/index.html"><i>05</i>System</a><a href="../journey.html"><i>06</i>Journey</a><a href="../complete.html"><i>07</i>Roles</a><a href="../phase-08/index.html"><i>08</i>In 3D</a><a href="../../prototype/index.html"><i>09</i>Prototype</a><a href="../phase-08/lab-map.html">Lab Map</a><a href="../phase-08/scene-studio.html" aria-current="page">Scene Studio</a></nav>
+ <a class="safety" href="lab-map.html#safety">+ Safety</a>
+</header>
+<main><div class="st-wrap">
+<div class="st-head"><div style="display:grid;gap:12px"><p class="tag">E12 · CAMERA GEOMETRY / SCENE STUDIO / P13 · C1 CAPTURE ZONE</p><h1>Explore the camera’s <em>viewpoint.</em></h1>
+<p>Change one setting at a time and watch what the camera can and cannot see. Positions are measured in the C1 zone of the lab model, so a setting here can be reproduced at the real tripod.</p></div>
+<span class="badge">SIMULATION · computed from 3D primitives · not a physical capture</span></div>
+<div class="tabs" role="tablist" aria-label="Views"><button class="btn" role="tab" data-for="scene" aria-selected="false">Scene</button><button class="btn" role="tab" data-for="camera" aria-selected="true">Camera</button><button class="btn" role="tab" data-for="interp" aria-selected="false">Interpretation</button></div>
+<div class="tri stage-grid" id="tri">
+ <section class="pane cam" data-tab="camera" data-show="true" aria-labelledby="h-cam"><h2 id="h-cam" data-n="02">CAMERA IMAGE · 16:9 · WHAT THE CAMERA SEES</h2><div class="view cam" id="v-cam"><canvas class="ov" id="ov" aria-hidden="true"></canvas><span class="label" id="cam-label"></span></div>
+  <label class="cam-opts"><input type="checkbox" id="boxes" checked> Show object outlines (computed from geometry — not a detector result)</label></section>
+ <section class="pane scn" data-tab="scene" aria-labelledby="h-scene"><h2 id="h-scene" data-n="01">SCENE · C1 FROM ABOVE</h2><div class="view" id="v-scene"><span class="label">Drag to orbit · camera and field of view in mint</span></div>
+  <div class="plan2d" id="plan2d" aria-label="Top view plan"></div></section>
+ <section class="interp" data-tab="interp" aria-labelledby="h-int" aria-live="polite"><p class="tag" id="h-int">03 / INTERPRETATION</p><p class="explain" id="explain"></p><div id="objs"></div><div class="notice bad invalid" id="invalid"></div></section>
+</div>
+<div class="controls">
+ <section class="presets" id="presets" aria-labelledby="h-pre"><p class="tag" id="h-pre">START FROM A PRESET</p><div id="preset-list" style="display:grid;gap:8px"></div></section>
+ <section class="fine" aria-labelledby="h-fine"><p class="tag" id="h-fine" style="grid-column:1/-1">CAMERA SETTINGS · METRES AND DEGREES</p><div id="ctl-list" style="display:contents"></div>
+  <div class="actions"><button class="btn primary" id="snap">Take snapshot</button><button class="btn" id="reset">Reset scene</button><button class="btn" id="copy">Copy settings</button><span class="small muted" id="copied" role="status"></span></div></section>
+</div>
+<section class="snaps" aria-labelledby="h-snap"><p class="tag" id="h-snap">EVIDENCE SNAPSHOTS · THIS SESSION ONLY</p><p class="small muted" style="margin:6px 0 0">Each snapshot keeps its settings and explanation together. Recording to the notebook (P15) requires the full application.</p><ol id="snaps" style="list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px"><li class="muted" style="padding:12px">No snapshots yet.</li></ol></section>
+<p class="foot">Prepared study / Objects 01 BOX, 02 CYLINDER and 03 EXPECTED OBJECT match the P6 vision illustrations. Visibility is measured by rendering an object-ID image (320 × 180) and comparing each object with its unobstructed render. Lens distortion, exposure and sensor noise are not simulated.</p>
+</div></main>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="assets/scene-studio.js"></script>
+</body></html>

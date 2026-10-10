@@ -1,0 +1,68 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: Student · bookings · local example
+  - heading "Your next session." [level=1]:
+    - text: Your next
+    - emphasis: session.
+  - article:
+    - code: E06 · Not reserved
+    - heading "Object detection under changing light" [level=2]
+    - paragraph: Prepare and reserve the complete kit before arriving.
+    - link "Start preparation →":
+      - /url: "#/E06/prepare"
+  - article:
+    - code: E01 · Not reserved
+    - heading "Sampling and aliasing" [level=2]
+    - paragraph: Prepare and reserve the complete kit before arriving.
+    - link "Start preparation →":
+      - /url: "#/E01/prepare"
+  - link "Find stations on the lab plan →":
+    - /url: "#/map"
+  - paragraph:
+    - link "Rehearse allocation conflicts and request recovery →":
+      - /url: "#/operations"
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

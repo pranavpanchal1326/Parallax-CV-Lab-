@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARALLAX — Prototype</title>
+<meta name="description" content="PARALLAX P9-B: a runnable demonstrator of the student journey and an equipment fault, sharing one set of example records.">
+<script src="../design/theme.js"></script>
+<link rel="stylesheet" href="../design/system/tokens.css"><link rel="stylesheet" href="../design/edition.css"><link rel="stylesheet" href="proto.css">
+</head>
+<body class="ed proto">
+<a class="ed-skip" href="#view">Skip to the current step</a>
+<header class="mast">
+ <a class="mast-brand" href="../design/index.html" aria-label="PARALLAX — contents"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="14" height="14" fill="none" stroke-width="2"/><rect x="8" y="8" width="14" height="14"/></svg>PARALLAX</a>
+ <nav class="mast-nav" aria-label="Project sections"><a href="../design/index.html">Contents</a><a href="../design/research.html"><i>02</i>Research</a><a href="../design/direction.html"><i>03</i>Direction</a><a href="../design/review.html"><i>04</i>Space</a><a href="../design/system/index.html"><i>05</i>System</a><a href="../design/journey.html"><i>06</i>Journey</a><a href="../design/complete.html"><i>07</i>Roles</a><a href="../design/phase-08/index.html"><i>08</i>In 3D</a><a href="../prototype/index.html" aria-current="page"><i>09</i>Prototype</a><a href="../design/phase-08/lab-map.html">Lab Map</a><a href="../design/phase-08/scene-studio.html">Scene Studio</a></nav>
+</header>
+
+<div class="bar" role="region" aria-label="Demonstrator controls">
+ <nav class="roles" aria-label="Viewing as" id="roles"></nav>
+ <p class="bar-last" id="act-last"></p>
+ <button type="button" class="pbtn quiet" id="act-toggle" aria-expanded="false" aria-controls="activity">Activity</button>
+ <button type="button" class="pbtn quiet" id="reset">Start again</button>
+</div>
+
+<div class="frame">
+ <main id="view" tabindex="-1"><noscript><p class="msg warn">This demonstrator needs JavaScript. The designed screens are shown without it in Part 06 and Part 07.</p></noscript></main>
+ <aside class="record" id="activity" aria-labelledby="rec-h" hidden>
+  <h2 id="rec-h">Activity</h2>
+  <ol id="log" reversed></ol>
+  <p class="small"><a class="ed-link" href="#/record">Full record and limits</a></p>
+ </aside>
+</div>
+<nav class="dock" id="dock" aria-label="Previous and next step" hidden></nav>
+<div id="announce" class="vh" role="status" aria-live="polite"></div>
+
+<footer class="ed-colophon">
+ <div><b>PARALLAX</b>Part 09 · Prototype and verification. Demonstrator P9-B. Example data; nothing is sent.</div>
+ <div>Rules: <a href="store.js">store.js</a> · Records: <a href="fixtures.json">fixtures.json</a><br>Checks: <code>node prototype/validate.cjs</code></div>
+ <div>No device, booking system or account is connected.<br><a href="../design/read.html?doc=phase-09">Written record</a></div>
+</footer>
+<script type="module" src="app.js"></script>
+</body></html>

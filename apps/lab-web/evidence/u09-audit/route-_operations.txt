@@ -1,0 +1,319 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: U07 · operations desk · independent local exercise
+  - heading "Keep the next shift informed." [level=1]:
+    - text: Keep the next shift
+    - emphasis: informed.
+  - paragraph: A complete allocation, a clear owner and a traceable next step. Rehearse the decision before connecting an operational service.
+  - paragraph: This desk uses an independent prepared ledger. Bookings, staff actors, policies and notices are exercises; your student evidence, current React bookings and equipment records stay unchanged. No real notification or power/device action is sent.
+  - navigation "Operations desk sections":
+    - link "Allocation & recovery":
+      - /url: "#ops-allocation"
+    - link "Method applicability":
+      - /url: "#ops-method"
+    - link "Handover & notices":
+      - /url: "#ops-handover"
+    - link "Owners & runbooks":
+      - /url: "#ops-runbooks"
+  - generic: Prepared exercise actor
+  - combobox "Prepared exercise actor":
+    - option "Pair A · prepared example" [selected]
+    - option "Pair B · prepared example"
+    - option "Faculty · role preview"
+    - option "Technician · role preview"
+  - paragraph: These actors test responsibility rules. Selecting a preview is not authentication or an account permission.
+  - paragraph: Exercise record
+  - paragraph:
+    - strong: Revision 4
+    - text: · 4 complete allocations
+  - paragraph: This exercise revision is saved in this browser. No shared repository is connected.
+  - region "Allocate the whole kit.":
+    - paragraph: 01 · final conflict check
+    - heading "Allocate the whole kit." [level=2]
+    - generic: Experiment
+    - combobox "Experiment":
+      - option "E06 · Capture kit" [selected]
+      - option "E01 · Signal kit"
+    - generic: Exercise date
+    - textbox "Exercise date": 2026-10-06
+    - generic: Start time · IST
+    - combobox "Start time · IST":
+      - option "10:00" [selected]
+      - option "11:00"
+      - option "14:00"
+    - generic: Duration
+    - combobox "Duration":
+      - option "60 minutes" [selected]
+      - option "120 minutes"
+    - generic: Delivery scenario
+    - combobox "Delivery scenario":
+      - option "Normal acknowledgement" [selected]
+      - option "Response deliberately lost after commit"
+      - option "Offline draft only"
+    - paragraph: Exercise window 09:00–17:00. Final checks use interval overlap, current policy and component restrictions. A drawn free slot is not a reservation.
+    - button "Request exercise allocation"
+    - button "Compete Pair A & Pair B for this interval"
+    - generic "Required component manifest"
+    - status "Exercise request result":
+      - paragraph: No booking request yet.
+    - generic "Recover a retained request after reload"
+    - heading "Complete allocations in this exercise" [level=3]
+    - region "Exercise allocation ledger":
+      - table:
+        - rowgroup:
+          - row "Record / pair Interval · IST Kit / method Components":
+            - columnheader "Record / pair"
+            - columnheader "Interval · IST"
+            - columnheader "Kit / method"
+            - columnheader "Components"
+        - rowgroup:
+          - row "OP-BOOKING-1 Pair B · prepared example 2026-11-06 14:00–15:00 E06 method 01 policy v1 7 held together":
+            - rowheader "OP-BOOKING-1 Pair B · prepared example":
+              - text: OP-BOOKING-1
+              - generic: Pair B · prepared example
+            - cell "2026-11-06 14:00–15:00":
+              - text: 2026-11-06
+              - text: 14:00–15:00
+            - cell "E06 method 01 policy v1":
+              - text: E06
+              - text: method 01
+              - text: policy v1
+            - cell "7 held together":
+              - text: 7 held together
+              - generic "Inspect components"
+          - row "OP-BOOKING-2 Pair B · prepared example 2026-11-06 11:00–12:00 E06 method 01 policy v1 7 held together":
+            - rowheader "OP-BOOKING-2 Pair B · prepared example":
+              - text: OP-BOOKING-2
+              - generic: Pair B · prepared example
+            - cell "2026-11-06 11:00–12:00":
+              - text: 2026-11-06
+              - text: 11:00–12:00
+            - cell "E06 method 01 policy v1":
+              - text: E06
+              - text: method 01
+              - text: policy v1
+            - cell "7 held together":
+              - text: 7 held together
+              - generic "Inspect components"
+          - row "OP-BOOKING-3 Pair A · prepared example 2026-11-06 10:00–11:00 E06 method 01 policy v1 7 held together":
+            - rowheader "OP-BOOKING-3 Pair A · prepared example":
+              - text: OP-BOOKING-3
+              - generic: Pair A · prepared example
+            - cell "2026-11-06 10:00–11:00":
+              - text: 2026-11-06
+              - text: 10:00–11:00
+            - cell "E06 method 01 policy v1":
+              - text: E06
+              - text: method 01
+              - text: policy v1
+            - cell "7 held together":
+              - text: 7 held together
+              - generic "Inspect components"
+          - row "OP-BOOKING-4 Pair A · prepared example 2026-10-06 10:00–11:00 E06 method 01 policy v1 7 held together":
+            - rowheader "OP-BOOKING-4 Pair A · prepared example":
+              - text: OP-BOOKING-4
+              - generic: Pair A · prepared example
+            - cell "2026-10-06 10:00–11:00":
+              - text: 2026-10-06
+              - text: 10:00–11:00
+            - cell "E06 method 01 policy v1":
+              - text: E06
+              - text: method 01
+              - text: policy v1
+            - cell "7 held together":
+              - text: 7 held together
+              - generic "Inspect components"
+    - paragraph: Allocation, occupancy, equipment condition and method applicability are separate facts. This exercise allocates time; it does not check in a person, start equipment or prove readiness.
+  - region "Preserve the work when a method changes.":
+    - paragraph: 02 · publication versus recorded revision
+    - heading "Preserve the work when a method changes." [level=2]
+    - paragraph: "E06 method owner: Faculty role preview. Scope: the independent teaching exercise. U06 guides and student methods are unchanged."
+    - generic: Treatment of the existing exercise session
+    - combobox "Treatment of the existing exercise session":
+      - option "Choose an explicit transition" [selected]
+      - option "Pause further exercise work for faculty review"
+      - option "Retain the recorded exercise method"
+    - generic: Reason for withdrawal and applicability decision
+    - textbox "Reason for withdrawal and applicability decision"
+    - button "Withdraw E06 method in this exercise"
+    - generic: Equipment restriction reason · technician owner
+    - textbox "Equipment restriction reason · technician owner"
+    - button "Restrict camera in this exercise"
+    - paragraph: A method exception cannot bypass this condition. Use the existing technician verification/release workflow for operational examples.
+    - term: E01 · published · policy v1
+    - definition:
+      - text: Method 01 · Faculty owner
+      - text: Effective exercise date 2026-10-06
+      - text: Review by 2026-10-06 17:00 IST
+      - text: Prepared method publication; not institutional approval.
+    - term: E06 · published · policy v1
+    - definition:
+      - text: Method 01 · Faculty owner
+      - text: Effective exercise date 2026-10-06
+      - text: Review by 2026-10-06 17:00 IST
+      - text: Prepared method publication; not institutional approval.
+    - paragraph: "Scope: all new allocations in this independent exercise. Dates are prepared policy metadata; no clock, automatic expiry or institutional approval is simulated."
+    - article:
+      - heading "OP-SESSION-E06 · retained evidence" [level=3]
+      - paragraph: Recorded method 01; current policy v1.
+      - paragraph:
+        - strong: May continue under the exercise rule
+        - text: "· next owner: Student under the recorded exercise method."
+      - paragraph: The published exercise method applies.
+      - blockquote:
+        - code: OP-CAPTURE-01 · Prepared illustration
+        - paragraph: Compare the visible side-light shadow with the frontal illustration.
+  - region "Hand over the next action.":
+    - paragraph: 03 · owner, acceptance and permitted consequence
+    - heading "Hand over the next action." [level=2]
+    - generic: Handover topic
+    - combobox "Handover topic":
+      - option "Equipment condition" [selected]
+      - option "Method applicability"
+      - option "Missing acknowledgement"
+    - generic: Named next owner
+    - combobox "Named next owner":
+      - option "Technician" [selected]
+      - option "Faculty method owner"
+    - generic: Due condition
+    - textbox "Due condition": Before the next capture session
+    - generic: Preserved fact and next action
+    - textbox "Preserved fact and next action"
+    - paragraph: Use prepared exercise facts. Keep personal information out. If the named owner is absent, escalate to the lab lead; a record alone does not prove acceptance.
+    - button "Record exercise handover"
+    - button "Publish E06 method consequence"
+    - button "Publish camera consequence"
+    - paragraph: No handover recorded. Record a fact, next owner and due condition; then exercise acceptance with that owner's actor.
+    - region "Allowlisted public exercise projection":
+      - paragraph: Public preview · exercise revision 4
+      - heading "Only the permitted consequence." [level=3]
+      - paragraph: No published exercise consequences.
+      - paragraph: The projection contains no actor, request, booking, handover note, private reason or evidence. It does not change the operational wall display.
+  - region "Keep a reviewable record.":
+    - heading "Keep a reviewable record." [level=2]
+    - status: Exercise changes are in memory until you explicitly save a snapshot.
+    - button "Save exercise snapshot"
+    - button "Export current exercise"
+    - button "Export retained saved text"
+    - button "Export & start a fresh in-memory exercise"
+    - generic "Review exportable exercise JSON"
+    - paragraph: Saving archives the prior raw snapshot first and refuses a competing write or failed archive. This key is separate from all student records. Pending request drafts are included in export; they are not confirmed and are not restored automatically on reload.
+    - generic "Exercise audit · 4 committed events"
+  - region "A named owner for each recovery.":
+    - paragraph: 04 · responsibility and recovery
+    - heading "A named owner for each recovery." [level=2]
+    - paragraph: The primary React session remains an example record. Institutional reservations, attendance, maintenance and policy systems remain the authority for any actual lab. Pilot reconciliation needs a named owner; this desk creates no second operational register.
+    - term: Open and close a booked investigation
+    - definition:
+      - strong: Student / session supervisor
+      - paragraph:
+        - text: "Backup: Faculty / lab lead"
+        - text: "Record: Confirmed applicable booking, station, kit, evidence and return record"
+      - link "Open the existing local workflow →":
+        - /url: "#/bookings"
+    - term: Publish methods and handle session changes
+    - definition:
+      - strong: Faculty method owner
+      - paragraph:
+        - text: "Backup: Lab lead"
+        - text: "Record: Method revision, effective scope and existing-session decision"
+      - link "Open the existing local workflow →":
+        - /url: "#/faculty"
+    - term: Attendance and evidence review
+    - definition:
+      - strong: Faculty
+      - paragraph:
+        - text: "Backup: Designated teaching lead"
+        - text: "Record: Append-only correction or frozen feedback revision"
+      - link "Open the existing local workflow →":
+        - /url: "#/faculty/attendance"
+    - term: Equipment condition, location and release
+    - definition:
+      - strong: Technician
+      - paragraph:
+        - text: "Backup: Lab lead; keep restriction if qualified owner is unavailable"
+        - text: "Record: Restriction, movement, repair and completed verification"
+      - link "Open the existing local workflow →":
+        - /url: "#/tech"
+    - term: Maintain guide sources and review AI flags
+    - definition:
+      - strong: Guide owner + application maintainer
+      - paragraph:
+        - text: "Backup: Faculty for content; use manual fallback for service outage"
+        - text: "Record: Published source revision and explicit local-review record"
+      - link "Open the existing local workflow →":
+        - /url: "#/assistant"
+    - heading "Current React example · read only here" [level=3]
+    - paragraph:
+      - strong: E06
+      - text: · No availability blockers in this React example
+    - paragraph:
+      - strong: E01
+      - text: · No availability blockers in this React example
+    - paragraph: "Operational activity: 0. Exercise requests use a separate ledger."
+    - link "Read current local bookings →":
+      - /url: "#/bookings"
+    - link "Read camera location and maintenance →":
+      - /url: "#/assets/C1-CAM"
+    - paragraph: Calibration examples and observations do not automatically prove fitness, safety or readiness.
+    - generic "A complete kit is already allocated"
+    - generic "The acknowledgement did not arrive"
+    - generic "A booking draft reconnects"
+    - generic "A method changes during work"
+    - generic "A browser write fails or another tab changes the record"
+    - generic "A camera fault or interrupted verification"
+    - generic "The local assistant or source is unavailable"
+    - generic "An observation is stale or the 3D model fails"
+    - paragraph:
+      - link "Open the printable operating reference →":
+        - /url: ./operations-runbook.html
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+  - generic "Accessibility diagnostic result": "{ \"path\": \"#/dashboard\", \"violations\": [], \"passedRules\": 42, \"incomplete\": [ { \"id\": \"color-contrast\", \"nodes\": [ { \"target\": [ \".migration-strip > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"a[href=\\\"/prototype/index.html\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"#current-view > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pull\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(1) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(2) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(3) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \"article:nth-child(4) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pzl[y=\\\"3.77\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"3.77\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"7.3\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[y=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[y=\\\"5.680000000000001\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"2.1\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"0.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.68\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"6.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > a[href$=\\\"#/environment\\\"][data-discover=\\\"true\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h2 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > p:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"button[aria-controls=\\\"session-activity\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > .quiet:nth-child(2)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".quiet:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" } ] } ], \"engine\": { \"name\": \"axe-core\", \"version\": \"4.10.2\" } }"

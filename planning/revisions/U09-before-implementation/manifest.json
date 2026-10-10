@@ -1,0 +1,534 @@
+{
+  "reviewedDate": "2026-10-04",
+  "timezone": "Asia/Calcutta",
+  "method": "Desk/source and bounded technical/browser audit; no participant study. Product sources and active dist were not edited.",
+  "freshChecks": {
+    "reactTests": {
+      "passed": 138,
+      "total": 138,
+      "command": "npm run lab:test"
+    },
+    "assistantTests": {
+      "passed": 16,
+      "total": 16,
+      "command": "npm run assistant:test"
+    },
+    "root": {
+      "command": "npm run check",
+      "exitCode": 0,
+      "prototype": 65,
+      "scene": 25,
+      "spatial": 16,
+      "contrastPairs": 14,
+      "componentIDs": 40
+    },
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "cwd": "apps/lab-web",
+      "exitCode": 0
+    },
+    "productionBuild": {
+      "command": "node node_modules/vite/bin/vite.js build --outDir ../../planning/revisions/U09-audit-build-2026-10-04",
+      "cwd": "apps/lab-web",
+      "exitCode": 0,
+      "warnings": [
+        "Outside-root audit output was not emptied.",
+        "QA-only axe chunk exceeds 500 kB raw."
+      ]
+    },
+    "preservation": {
+      "U02": "852/852; 317 links/assets; 11 protected hashes",
+      "U03": "pass",
+      "U04": "pass",
+      "U05": "pass",
+      "U06": "pass",
+      "U07": "pass",
+      "U08": "pass; 57 byte-identical files and 4 previously approved scoped U08 changes"
+    },
+    "productionDependencyAudit": {
+      "command": "npm audit --omit=dev --json",
+      "cwd": "apps/lab-web",
+      "knownVulnerabilities": 0,
+      "scope": "Registry advisory result at audit time, production dependency graph only; not application security certification."
+    }
+  },
+  "buildComparison": {
+    "total": 43,
+    "matching": 43,
+    "differences": []
+  },
+  "bundleInspection": {
+    "bundles": [
+      {
+        "path": "apps/lab-web/dist/assets/ArtStudio-DRxKuLwF.js",
+        "bytes": 32770,
+        "gzipBytes": 11890,
+        "sha256": "5c8d9059e6198cc155988d0950a4579f69828f990494fd1520e4c775119b95d8"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/Assistant-B_5gBmH2.js",
+        "bytes": 20169,
+        "gzipBytes": 7182,
+        "sha256": "a4c3fc03a972ec40eff5c79355b2198d33a27c9208329683e98868c463b014b4"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/axe-arASbXvi.js",
+        "bytes": 559569,
+        "gzipBytes": 151915,
+        "sha256": "67ea42f1f6a5babc7d005b7bb72ea657c18db484e232e7fc5c60a359f8c134e6"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/FaultWalkthrough-D7B4PBHs.js",
+        "bytes": 12148,
+        "gzipBytes": 4098,
+        "sha256": "39fe93d9430c9d0a97c7b7934be5a77607c24adbe0fe8bf51285891ba425ee5f"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/GeometryRehearsal-CuARrHip.js",
+        "bytes": 8330,
+        "gzipBytes": 2940,
+        "sha256": "c7b8e23455d4725dde2383df5b3471a5e9bc1e4df417bd2a3b2b1abc09c86493"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/index-BZag4-I7.js",
+        "bytes": 370959,
+        "gzipBytes": 109922,
+        "sha256": "9900b45e6551d1d87ac7e89b98ca4acffc9573f0bbf598637fb16e3652c8e7a7"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/index-D-kGYww0.css",
+        "bytes": 69687,
+        "gzipBytes": 14417,
+        "sha256": "df5b9a31b9e1d081cbbebbd8c63ad364123725966c925fd1f7a1562393960696"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/jsx-runtime-DPT-l8d2.js",
+        "bytes": 101153,
+        "gzipBytes": 33111,
+        "sha256": "d7d18c9e902878c8031d180e7ba8666be56badff37b50b29b29e425100d3f387"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/OperationsDesk-C5vV4In-.js",
+        "bytes": 49049,
+        "gzipBytes": 14211,
+        "sha256": "653205e95f457ae7f7367e7f994019a1e5101cbc73f593f6bf42058f1b7807f7"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/Rehearsal-Bc8OJT_-.js",
+        "bytes": 15933,
+        "gzipBytes": 5354,
+        "sha256": "72b5797af75eb34660c2df449431b231258413dc4614a0140d3f22942819a0a2"
+      },
+      {
+        "path": "apps/lab-web/dist/assets/rolldown-runtime-hePW80VL.js",
+        "bytes": 716,
+        "gzipBytes": 428,
+        "sha256": "580ad8c58061a4dde99bde0a56905e382f0568516ee2f5b84dbfb52085709021"
+      }
+    ],
+    "initialJs": [
+      "index-BZag4-I7.js",
+      "rolldown-runtime-hePW80VL.js",
+      "jsx-runtime-DPT-l8d2.js"
+    ],
+    "initialGzipBytes": 143461,
+    "limitation": "File compression estimate; server uses no content encoding. No network/device/interaction timing or GPU memory measurement."
+  },
+  "deliverableInventory": [
+    {
+      "path": "design/phase-08/media/A01_orbit.mp4",
+      "bytes": 3518707
+    },
+    {
+      "path": "Final Year Project Assignment.docx",
+      "bytes": 21436
+    },
+    {
+      "path": "spatial/exports/lab_studio.blend",
+      "bytes": 420762
+    },
+    {
+      "path": "spatial/renders/phase-08b/A01_orbit.mp4",
+      "bytes": 3518707
+    }
+  ],
+  "localMarkdownLinks": {
+    "documents": 62,
+    "checked": 284,
+    "broken": [],
+    "sourceTemplateLinks": [
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/E01/prepare",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/map",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/E06/conditions",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/E01/rehearsal",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/E06/rehearsal",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/assets/C1-CAM",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/mobile",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/walkthrough",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      },
+      {
+        "document": "apps/lab-web/public/studio/reference.md",
+        "target": "../index.html#/E01/rehearsal",
+        "exists": false,
+        "copiedBuildTargetExists": true
+      }
+    ],
+    "limitation": "File existence only; generated public templates checked in copied dist context. External URLs and fragment correctness not covered."
+  },
+  "builtHtmlLinks": {
+    "checked": 70,
+    "broken": [],
+    "limitation": "Static src/href file existence only; not external availability or dynamically fetched assets."
+  },
+  "sources": [
+    {
+      "path": "apps/lab-server/assistant.mjs",
+      "sha256": "1d5f747615e1efb933cd98d9eb179b713d7655fe5ba1f8f191e61a9febf44bce"
+    },
+    {
+      "path": "apps/lab-server/evaluate.mjs",
+      "sha256": "c2be59b450ccf8785299802c2f5906ca7a968f90aa6c52e609ab723ef6e867b2"
+    },
+    {
+      "path": "apps/lab-server/README.md",
+      "sha256": "75fcc6aca96c73f39d8fbdf739107e6b1e6af6c9618c9f4ee6441d31955bbdea"
+    },
+    {
+      "path": "apps/lab-server/server.mjs",
+      "sha256": "e6ce372330c21d9c56f148877aa705691905f374e86c96be2fbbf9d2ec9bd679"
+    },
+    {
+      "path": "apps/lab-server/tests/assistant.test.mjs",
+      "sha256": "6258781f17cffc65283f08216e3eee62f6ed0fc07964901d6a430fa2f89c16da"
+    },
+    {
+      "path": "apps/lab-shared/assistant-knowledge.json",
+      "sha256": "69fa42ed9017db2868c774ea717f2c46f940cac200b88dc50ced846e4165c16e"
+    },
+    {
+      "path": "apps/lab-shared/studio-catalog.json",
+      "sha256": "d71cd548a5f403236e6983961fe72ef4f3e39743cdd8aba650c99d5904033909"
+    },
+    {
+      "path": "apps/lab-shared/studio-graphics.mjs",
+      "sha256": "26714de555d2e0cb10e9a31622955e11642bd954fe4fe157921a25d7ea01505d"
+    },
+    {
+      "path": "apps/lab-web/scripts/build-map.cjs",
+      "sha256": "90d29e00abfe728836df58f69cbadfc79a0c327f3f4433c8b87e9c2caf37fcb0"
+    },
+    {
+      "path": "apps/lab-web/scripts/build-operations.cjs",
+      "sha256": "9afe348ba32251a512a0cdfa9a7218ba15341f45623d6bcc21465b1a26243b60"
+    },
+    {
+      "path": "apps/lab-web/scripts/build-rehearsal.cjs",
+      "sha256": "cd4b8cbe9f1b9083333744ee3fb8ebe9c264fd877300ec8115bb3080e7b1edec"
+    },
+    {
+      "path": "apps/lab-web/scripts/build-studio.cjs",
+      "sha256": "991dc9ea8ae873262739cdf15b2fa9af7ec693e9a2ad9a0734d455d641797be7"
+    },
+    {
+      "path": "apps/lab-web/scripts/build-u04-sheet.cjs",
+      "sha256": "7a97aee45af89beba7d5c41dc5e008ca74677349bdc20ae6a1a2e18d194fcaa5"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u03.cjs",
+      "sha256": "8c3ec47bc1c4d874e66f2dec7373668b50348505dcca03920eb782106e77222d"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u04.cjs",
+      "sha256": "7eb8840f8ec8838a10666e300edf7402d4bba2365937985e878e011698487111"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u05.cjs",
+      "sha256": "0a0fd8fb46c4d02c325d0e0f218eb9b6df3468487e444ba25fa9231fa0e5629c"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u06.cjs",
+      "sha256": "1fa4b87315f00e1bfb29d8fb2ccdc7d97cf115493e1e671786d542dd37d6a1c6"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u07.cjs",
+      "sha256": "d9c9af01f6c20fb39104c8d733c221159c27d837d1d484fceb9ef6c5fa25f0c0"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u08.cjs",
+      "sha256": "5c266fdee13b0b6010cbab2480bdda61420192693c5b78555cffb8e36e6481c2"
+    },
+    {
+      "path": "apps/lab-web/src/app/App.tsx",
+      "sha256": "da6e63ca1029c18d55ed142b18487a6e5f6740f2e97b5f67479d254266073067"
+    },
+    {
+      "path": "apps/lab-web/src/app/context.ts",
+      "sha256": "d1f80b549b48bdfb9f3bf633c4c2f3855adf48db0d5274b233f4b71748c6727d"
+    },
+    {
+      "path": "apps/lab-web/src/app/environmentContext.ts",
+      "sha256": "cab2c4dd17d2d03539b11e269c48615a1103312c5b708c17e0c4c76d6086f417"
+    },
+    {
+      "path": "apps/lab-web/src/app/EnvironmentProvider.tsx",
+      "sha256": "87a1276775c5397180b0903639f78a6cd1869dd1848eee28f73ea82d7d5738d2"
+    },
+    {
+      "path": "apps/lab-web/src/app/LabProvider.tsx",
+      "sha256": "00d3ee61c3589bc43d12d7d2df5ee6aa03d0284c193c2da2ec05fc19e5908816"
+    },
+    {
+      "path": "apps/lab-web/src/app/model.ts",
+      "sha256": "1d44f72b1d2726cb256770de221ec8d878791740aea2399ee1af608a0473c8f9"
+    },
+    {
+      "path": "apps/lab-web/src/components/AccessReview.tsx",
+      "sha256": "3f6b1ed0fc1fffea27fc639821595922e971144bbf4d497e6885c5a1188ef9c4"
+    },
+    {
+      "path": "apps/lab-web/src/components/ExperimentArt.tsx",
+      "sha256": "c8cb646afc1fbbdca3414d492f5643a5422eebb514deb7143ce9f303013354bb"
+    },
+    {
+      "path": "apps/lab-web/src/components/LabPlan.tsx",
+      "sha256": "d80c8cc9343eddbad7633e5d57d1a46552c8f1e950925b28e5b29b31453f3800"
+    },
+    {
+      "path": "apps/lab-web/src/components/LinkedMap.tsx",
+      "sha256": "1fab4cd4b7dc3969523ec842e146535ec0fdb871f8894027e6400540e6bb1b0b"
+    },
+    {
+      "path": "apps/lab-web/src/data/fixtures.ts",
+      "sha256": "12adce467aa93f96d3b33d112cae0e6ddfec25a88555bd552d4d428b83073fc1"
+    },
+    {
+      "path": "apps/lab-web/src/data/operationsPersistence.ts",
+      "sha256": "64d49fd6ccb5275a65c6e6a4e3f50986b60bc23aa2e6e98c4eb640964a64feaf"
+    },
+    {
+      "path": "apps/lab-web/src/data/operationsRunbooks.ts",
+      "sha256": "87e92295a4f836f77e25bf485db864dc9b62602a3525f229a2267acc34019c06"
+    },
+    {
+      "path": "apps/lab-web/src/data/persistence.ts",
+      "sha256": "d179161223b2d41cd9515dcce932f45300dbe11138b1565a9865282784b72e1f"
+    },
+    {
+      "path": "apps/lab-web/src/data/rehearsalPersistence.ts",
+      "sha256": "84f9a27b5404242bd94caae014e128068f5e031a37772926613a3afa37470971"
+    },
+    {
+      "path": "apps/lab-web/src/data/studio.ts",
+      "sha256": "d5cc376e5aa648681539d48afffd250a7c65ce45362c0c253bf15fd2eeff6fa3"
+    },
+    {
+      "path": "apps/lab-web/src/data/sustainability.ts",
+      "sha256": "ff7e67d59f5d4e61ce0e2c8a7b3ce0d0683fb46a303a103b0fafe67967f69548"
+    },
+    {
+      "path": "apps/lab-web/src/domain/adapter.ts",
+      "sha256": "7571208fbdf2ad305e964f5f7317809a40859175f6308c26b453a03b59057af4"
+    },
+    {
+      "path": "apps/lab-web/src/domain/conditions.ts",
+      "sha256": "174457799b4e945b9b6de93b7214e9aa114ebe01168d659da07d8890c8665c1b"
+    },
+    {
+      "path": "apps/lab-web/src/domain/energy.ts",
+      "sha256": "fb70787cee2ca52bf2cb12748d628012e14c0068d749b857022f234d03e72d84"
+    },
+    {
+      "path": "apps/lab-web/src/domain/energyPeriod.ts",
+      "sha256": "f9188273e836f23b595603569a58c64694e5a2455536e87ea430b4fe8d956c2d"
+    },
+    {
+      "path": "apps/lab-web/src/domain/faultStory.ts",
+      "sha256": "464db1fd789f370bcf9b7997dd9600dc896c9d17f9a4348ea6da8f5173547c7b"
+    },
+    {
+      "path": "apps/lab-web/src/domain/observations.ts",
+      "sha256": "4db0e391bff355a17cf96372831ed9fecb23f27b3a7a1b4b6f855e2c3502b38e"
+    },
+    {
+      "path": "apps/lab-web/src/domain/operationsDesk.ts",
+      "sha256": "6828510aac65fffc59220f4588edfe338662819e2110e9f1402f116b6562ac96"
+    },
+    {
+      "path": "apps/lab-web/src/domain/rehearsal.ts",
+      "sha256": "52a54e539d7b0fc7b1e139b190a8379aca0f5d5b1a8b487faf0de2deadae4c02"
+    },
+    {
+      "path": "apps/lab-web/src/domain/types.ts",
+      "sha256": "55743ebb0c6d0b76d4518cc37772b0a216cb7005cdd2b74337a476ad07a75fdc"
+    },
+    {
+      "path": "apps/lab-web/src/domain/workspace.ts",
+      "sha256": "de4fabd06e216f78d21c346349e5901c9cd57856231581f38b434246fc2a3f24"
+    },
+    {
+      "path": "apps/lab-web/src/features/ArtStudio.tsx",
+      "sha256": "fb71b202db71caf6736a21d93a8a882e977378448215323d24adac6257249c27"
+    },
+    {
+      "path": "apps/lab-web/src/features/Assets.tsx",
+      "sha256": "c2492fee4d7e028ed347cd8e4de52d7313a94e5501496d52dff4c868b7a84491"
+    },
+    {
+      "path": "apps/lab-web/src/features/Assistant.tsx",
+      "sha256": "5515c408b09d59291c66e91861bb5d030c6cf65d76c4b652b61d1f63e3df8123"
+    },
+    {
+      "path": "apps/lab-web/src/features/Conditions.tsx",
+      "sha256": "023d0cf94ff06109b9bd4797ae9b2fe15e68e2bbabe34a8a86c2062a35d39ed0"
+    },
+    {
+      "path": "apps/lab-web/src/features/EnergyDesk.tsx",
+      "sha256": "06af8d5ee5bef829bee558d53aceaf170af69a9f9a588c0eb8b8d98dedaa1461"
+    },
+    {
+      "path": "apps/lab-web/src/features/Faculty.tsx",
+      "sha256": "9ce471da5fd50ac229df0cad7efec75c139a553054f7bf95c7edf59633e02bbc"
+    },
+    {
+      "path": "apps/lab-web/src/features/FaultWalkthrough.tsx",
+      "sha256": "019a3ca770d4ba2029ac2c4f342abd0791205408dfdde5bf51af15ba8fc7fe19"
+    },
+    {
+      "path": "apps/lab-web/src/features/GeometryRehearsal.tsx",
+      "sha256": "3707ece2b42a57126888b599e4be53582b7d1de0d3e13bceb8ae1599e29cdfb1"
+    },
+    {
+      "path": "apps/lab-web/src/features/Mobile.tsx",
+      "sha256": "efabab20d06dc5e4bcfe0385affd13587399c9e19b1d877a699c265eb502253e"
+    },
+    {
+      "path": "apps/lab-web/src/features/Operations.tsx",
+      "sha256": "2593b04635655c9a88e8086397b197a3491b32af1a7fbae4efa19c46eacf3c11"
+    },
+    {
+      "path": "apps/lab-web/src/features/OperationsDesk.tsx",
+      "sha256": "854a309d0f7fb9a8557383fde088edecda63f59fa0b44bdf61b6d2fc313a9cf3"
+    },
+    {
+      "path": "apps/lab-web/src/features/Rehearsal.tsx",
+      "sha256": "90879ef794ca8d61167634d624d59abe6e4d94525ea06f1ab5bc3d103a580097"
+    },
+    {
+      "path": "apps/lab-web/src/features/Safety.tsx",
+      "sha256": "54efeebc081347ba92deba2c2d57f292bdc3639634d92d2aeeefa1fee73ce903"
+    },
+    {
+      "path": "apps/lab-web/src/features/SmartLab.tsx",
+      "sha256": "cd0104d5ec300be046118da8b7060815bb1e2bfdb18ec50ac6e04f8a703d957e"
+    },
+    {
+      "path": "apps/lab-web/src/features/StudentJourney.tsx",
+      "sha256": "6dbea4f8ae7d984471c981f11c7e81fe26ca190169d390d44b57db6b7bb61762"
+    },
+    {
+      "path": "apps/lab-web/src/features/Sustainability.tsx",
+      "sha256": "af33a2614dbc3d1ace5fe7871bf5eef8979eae7a1d28e20d5984d2372f362c48"
+    },
+    {
+      "path": "apps/lab-web/src/main.tsx",
+      "sha256": "8332bff516d058e31d24a03f8425f39c244917ca7e82874517a707f704d1ed5e"
+    },
+    {
+      "path": "apps/lab-web/src/styles/app.css",
+      "sha256": "16d625a1f611dfacfc2f650ef4b4d77225a4c6e2a7fc45d1e8d5c3640ee36a98"
+    },
+    {
+      "path": "apps/lab-web/src/styles/assistant.css",
+      "sha256": "65ee1548558e7086645061f6c6a143d31343b4ff52f4bd426284a082d6591076"
+    },
+    {
+      "path": "apps/lab-web/src/styles/operations-desk.css",
+      "sha256": "373ba99493a9eafe23376727c5f9352764e9134ea2f17eda6481239b7b516dd3"
+    },
+    {
+      "path": "apps/lab-web/src/styles/studio.css",
+      "sha256": "cb5113332220cb647d89dae1eab8e3f28a322047f4d76813021c0270674336cb"
+    },
+    {
+      "path": "apps/lab-web/tests/migration.test.ts",
+      "sha256": "3dfa5b1b34ad972edcf889ffe800c216faa399f179338de9448a856e626ea47a"
+    },
+    {
+      "path": "apps/lab-web/tests/public-view.test.tsx",
+      "sha256": "1eb30aa0d6643a929690926ae097d4a788ba654ba02ac405ed6fa39430776c7e"
+    },
+    {
+      "path": "apps/lab-web/tests/smart-lab.test.ts",
+      "sha256": "462df2dd4b390c82f5eff171b1bfbdc13c315f608aad8f67e074bf930db31f47"
+    },
+    {
+      "path": "apps/lab-web/tests/u04.test.tsx",
+      "sha256": "b97cc5f4c7f7e0a1ba2df3501c4422a73d6158b65d38d8a6424cd7cdd4541d3d"
+    },
+    {
+      "path": "apps/lab-web/tests/u05.test.tsx",
+      "sha256": "52f349c2761e7d9d0a499773aedf568e7553d31551e2fe52f5011bafe95b7174"
+    },
+    {
+      "path": "apps/lab-web/tests/u06.test.tsx",
+      "sha256": "8964f613406c809e11015c14c2c049ef4046311f975d907c8e69f1bbc5b49d76"
+    },
+    {
+      "path": "apps/lab-web/tests/u07.test.tsx",
+      "sha256": "a28c4fe380059c4f14290906d9a2f316edced030d08e3d82e318f2f6ec0d3109"
+    },
+    {
+      "path": "apps/lab-web/tests/u08.test.tsx",
+      "sha256": "ccd1190adbc2d2e3d0e944783cd30eb9a685ffb991867a9cee959844aa18443e"
+    },
+    {
+      "path": "apps/lab-web/tests/workspace.test.ts",
+      "sha256": "2b5e8d05ed21c10615794f7392fbce2e98b494424e5c1df3f47d8a2ef98ab26d"
+    }
+  ],
+  "assignment": {
+    "path": "Final Year Project Assignment.docx",
+    "sha256": "1316103445548015aebb35ec636443758b61f3836ea2256d6860acf57cef3a86",
+    "extractedText": "apps/lab-web/evidence/u09-audit/assignment-text.txt"
+  },
+  "browserEvidence": "apps/lab-web/evidence/u09-audit/routes.json"
+}

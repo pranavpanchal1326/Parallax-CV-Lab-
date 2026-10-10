@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-04",
+  "beforeFailures": {
+    "highlight": "Only current highlight clones may remain live\n\n3 !== 1\n",
+    "accessibilityImport": "A route invalidated before import settles must not be scanned\n\n1 !== 0\n",
+    "accessibilityOverlap": "Navigation must retain the active engine lock\n\nfalse !== true\n"
+  },
+  "highlight": {
+    "selections": 500,
+    "clonesAllocated": 750,
+    "clonesReleased": 750,
+    "liveAfterClear": 0
+  },
+  "accessibility": {
+    "cancelledBeforeImport": true,
+    "concurrentScanRefused": true,
+    "staleResultDiscarded": true,
+    "newRouteCanScan": true
+  },
+  "preservation": {
+    "canonicalFiles": 11,
+    "trackedSources": 76,
+    "byteIdentical": 67,
+    "changedPaths": [
+      "apps/lab-web/scripts/build-map.cjs",
+      "apps/lab-web/scripts/build-rehearsal.cjs",
+      "apps/lab-web/scripts/validate-u08.cjs",
+      "apps/lab-web/src/app/App.tsx",
+      "apps/lab-web/src/components/AccessReview.tsx",
+      "apps/lab-web/src/features/GeometryRehearsal.tsx",
+      "apps/lab-web/src/features/Mobile.tsx",
+      "apps/lab-web/src/features/OperationsDesk.tsx",
+      "apps/lab-web/src/features/Rehearsal.tsx"
+    ],
+    "baselineCopiesVerified": 68
+  },
+  "limits": "Controlled dependencies for the actual source functions/handlers; browser observations complement this. Not proof of global GPU leak freedom or complete accessibility conformance."
+}

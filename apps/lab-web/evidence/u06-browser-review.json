@@ -1,0 +1,1940 @@
+{
+  "revision": "U06-B1",
+  "scope": "Production browser designer/technical review; no participant, screen-reader, site approval or full conformance claim.",
+  "checks": [
+    {
+      "name": "live E01 answer",
+      "text": "SOURCE-BACKED PASSAGE\n\nFrom the guide\n\nAsked: Why can the 3 Hz samples show a 1 Hz alias?\n\nAn ambiguous low-rate trace\nAt 3 Hz, four samples cover 0 through 1 second. For the 2 Hz reference, a signed −1 Hz alias fits those same samples: its apparent frequency is 1 Hz. Matching the sample points does not identify the original waveform. Record the sampling rate and reference revision with your claim.\nE01 · revision 01 · E01-alias\nYour next step\n\nCould two different continuous signals pass through the same sample points?\n\nNo browser evidence, student records, current equipment status or connected measurements were supplied.\n\nHow this answer was produced\nFlag this answer for local review",
+      "focused": "assistant-answer-heading",
+      "activity": "Activity · 0"
+    },
+    {
+      "name": "citation focuses passage",
+      "focused": "source-E01-alias"
+    },
+    {
+      "name": "local review retained",
+      "text": "Flag retained for local review in this session. It does not change the model or guide."
+    },
+    {
+      "name": "final citation focuses passage",
+      "focused": "source-E01-alias",
+      "href": "#/assistant?guide=E01&revision=01&section=E01-alias"
+    },
+    {
+      "name": "private-context refusal",
+      "text": "This assistant has no access to student records, browser evidence or live observations. Read the guide, then check your own recorded context.",
+      "question": null,
+      "oldAnswerLabel": true
+    },
+    {
+      "name": "live E06 explanation",
+      "text": "SOURCE-BACKED PASSAGE\n\nFrom the guide\n\nAsked: Can these illustrations establish detection accuracy?\n\nDescribe what the source supports\nThese E06 images are prepared illustrations, not camera captures or measured detector outputs. You can describe visible shadows, highlights and edge differences. They cannot establish detection confidence, accuracy or current camera health. A claim about a real detector needs measured outputs and a documented method.\nE06 · revision 01 · E06-evidence\nYour next step\n\nCompare the cited guide with your own recorded settings and evidence. Write your own reasoning.\n\nNo browser evidence, student records, current equipment status or connected measurements were supplied.\n\nHow this answer was produced\nFlag this answer for local review"
+    },
+    {
+      "name": "interrupted verification guidance",
+      "text": "SOURCE-BACKED PASSAGE\n\nFrom the guide\n\nAsked: Does interrupted verification remove the restriction?\n\nRepair is not release\nRecording a repair does not prove verification. An interrupted verification leaves the restriction in place; release follows a recorded successful verification by the responsible workflow. The assistant cannot repair, verify, release equipment or make bookings. Contact responsible staff for an actual equipment decision.\nWORKFLOW · revision 01 · WORKFLOW-release\nYour next step\n\nWhat evidence must exist between recording a repair and releasing a restriction?\n\nNo browser evidence, student records, current equipment status or connected measurements were supplied.\n\nHow this answer was produced\nFlag this answer for local review"
+    },
+    {
+      "name": "cancellation with deliberate 8 second adapter delay",
+      "alert": "Request cancelled. Your question is retained; you can read the guide or ask again.",
+      "question": "Does interrupted verification remove the restriction?"
+    },
+    {
+      "name": "provider unavailable retains reader and question",
+      "alert": "Ollama is unavailable. The guides remain readable.",
+      "question": "Does interrupted verification remove the restriction?",
+      "manual": true
+    },
+    {
+      "name": "API offline readable fallback",
+      "alert": "The local assistant service is unavailable. You can still read the bundled guides; their current publication status has not been checked.",
+      "question": "Does interrupted verification remove the restriction?",
+      "askEnabled": false,
+      "manual": "READABLE WITHOUT AI\n\nEvidence & equipment decisions\n\nWORKFLOW · revision 01 · Bundled offline copy · publication status unchecked\n\nKeep the claim yours\n\nWrite your own notebook claim and connect it to recorded evidence, settings and source revisions. A local draft is not a saved claim, and a saved claim is not a submission receipt. This assistant reads the selected public guide and your question; it cannot inspect browser evidence, verify your submission or author a notebook entry for you.\n\nSection WORKFLOW-notebook\nRestriction and occupancy differ\n\nA fault report alone does not impose a restriction. In the demonstrator, classification and a recorded restriction determine the affected component and kit. A restricted required camera makes its complete capture kit unavailable, while unrelated signal equipment stays available. Availability and current occupancy are separate states; this guide does not provide current booking or equipment status.\n\nSection WORKFLOW-restrict\nRepair is not release\n\nRecording a repair does not prove verification. An interrupted verification leaves the restriction in place; release follows a recorded successful verification by the responsible workflow. The assistant cannot repair, verify, release equipment or make bookings. Contact responsible staff for an actual equipment decision.\n\nSection WORKFLOW-release\nSource scope & lifecycle"
+    },
+    {
+      "name": "service restored answer",
+      "text": "SOURCE-BACKED PASSAGE\n\nFrom the guide\n\nAsked: Why does a repair need verification before release?\n\nRepair is not release\nRecording a repair does not prove verification. An interrupted verification leaves the restriction in place; release follows a recorded successful verification by the responsible workflow. The assistant cannot repair, verify, release equipment or make bookings. Contact responsible staff for an actual equipment decision.\nWORKFLOW · revision 01 · WORKFLOW-release\nYour next step\n\nWhat evidence must exist between recording a repair and releasing a restriction?\n\nNo browser evidence, student records, current equipment status or connected measurements were supplied.\n\nHow this answer was produced\nFlag this answer for local review",
+      "connection": true
+    },
+    {
+      "name": "live geometry answer",
+      "text": "SOURCE-BACKED PASSAGE\n\nFrom the guide\n\nAsked: What changes when the field of view widens?\n\nField of view changes framing\nThe geometry rehearsal compares fields of view of 18°, 40° and 90° with the camera and objects fixed. A wider field includes more of the conceptual scene while each object occupies less of the frame. This is a teaching model, not a surveyed installation or a calibration of a real lens.\nGEOMETRY · revision 01 · GEOMETRY-field\nYour next step\n\nWhat happens to an object's share of the frame as the field of view widens?\n\nNo browser evidence, student records, current equipment status or connected measurements were supplied.\n\nHow this answer was produced\nFlag this answer for local review"
+    },
+    {
+      "name": "contextual E06 guide entry",
+      "value": "E06",
+      "url": "http://127.0.0.1:4180/apps/lab-web/dist/index.html?qa=1#/assistant?guide=E06"
+    },
+    {
+      "name": "public view excludes assistant",
+      "assistantLinks": 0,
+      "text": "PUBLIC DISPLAY · EXAMPLE RECORDS\n\nThe lab, at a glance.\n\nEquipment notices and orientation.\n\nLocal example projection · example clock 09:40. No live operational feed.\n\nNo equipment restriction notices.\n\nComputing · CMP / Controlled capture · C1 / Signal bench · S1 / Kit storage · STO\n\nThis public projection omits private issue, booking and notebook records. No connected sensor readings are available in this build.\n\nDisplay recovery demonstration"
+    },
+    {
+      "name": "clean final production answer",
+      "text": "SOURCE-BACKED PASSAGE\n\nFrom the guide\n\nAsked: Why can the 3 Hz samples show a 1 Hz alias?\n\nAn ambiguous low-rate trace\nAt 3 Hz, four samples cover 0 through 1 second. For the 2 Hz reference, a signed −1 Hz alias fits those same samples: its apparent frequency is 1 Hz. Matching the sample points does not identify the original waveform. Record the sampling rate and reference revision with your claim.\nE01 · revision 01 · E01-alias\nYour next step\n\nCould two different continuous signals pass through the same sample points?\n\nNo browser evidence, student records, current equipment status or connected measurements were supplied.\n\nHow this answer was produced\nFlag this answer for local review",
+      "focused": "assistant-answer-heading",
+      "activity": "Activity · 0"
+    }
+  ],
+  "audits": [
+    {
+      "name": "live E01 answer",
+      "path": "#/assistant?guide=E01",
+      "violations": [],
+      "passedRules": 41,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-reference > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-reference > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-reference > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-alias > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-alias > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-alias > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-boundary > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-boundary > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-boundary > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-higher > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-higher > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E01-higher > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "name": "final E06 explanation",
+      "path": "#/assistant?guide=E06",
+      "violations": [],
+      "passedRules": 41,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-control > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-control > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-control > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-evidence > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-evidence > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-evidence > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-handling > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-handling > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-handling > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "name": "E06 explanation 320 night",
+      "path": "#/assistant?guide=E06",
+      "violations": [],
+      "passedRules": 40,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-control > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-control > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-control > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-evidence > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-evidence > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-evidence > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-handling > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-handling > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-E06-handling > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "name": "cancelled request 320 night",
+      "path": "#/assistant?guide=WORKFLOW",
+      "violations": [],
+      "passedRules": 44,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".msg"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "name": "provider unavailable 320 night",
+      "path": "#/assistant?guide=WORKFLOW",
+      "violations": [],
+      "passedRules": 44,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".msg"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "name": "offline reader 320 night",
+      "path": "#/assistant?guide=WORKFLOW",
+      "violations": [],
+      "passedRules": 44,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "p[role=\"alert\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-notebook > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-restrict > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-WORKFLOW-release > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "name": "final geometry answer",
+      "path": "#/assistant?guide=GEOMETRY",
+      "violations": [],
+      "passedRules": 41,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".migration-strip > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#current-view > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-intro"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-ask"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-boundary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-guide\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "fieldset > label:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "label[for=\"assistant-question\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#assistant-question"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#question-help"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-service > .quiet"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-return"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .ed-kicker"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#manual-heading"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual-head > .assistant-small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-GEOMETRY-field > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-GEOMETRY-field > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-GEOMETRY-field > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-GEOMETRY-occlusion > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-GEOMETRY-occlusion > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#source-GEOMETRY-occlusion > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-manual > details > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".assistant-local-reviews > summary"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".quiet:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".session-tools > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                ".access-review > .small"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    }
+  ],
+  "reflow": [
+    {
+      "name": "E06 explanation light",
+      "document": 1351,
+      "viewport": 1366
+    },
+    {
+      "name": "E06 explanation light",
+      "document": 753,
+      "viewport": 768
+    },
+    {
+      "name": "E06 explanation light",
+      "document": 305,
+      "viewport": 320
+    },
+    {
+      "name": "E06 explanation night",
+      "document": 305,
+      "viewport": 320
+    },
+    {
+      "name": "offline reader 320 night",
+      "document": 305,
+      "viewport": 320
+    },
+    {
+      "name": "geometry answer desktop",
+      "document": 1265,
+      "viewport": 1280
+    },
+    {
+      "name": "geometry answer narrow",
+      "document": 305,
+      "viewport": 320
+    }
+  ],
+  "console": [],
+  "createdAt": "2026-10-03T16:16:02.442Z"
+}

@@ -1,0 +1,69 @@
+{
+  "method": "Automated rendered-deck traversal, no human speech or live-demo action performed",
+  "started": "2026-10-03T20:21:35.891Z",
+  "elapsedSeconds": 900.005,
+  "plannedSeconds": 900,
+  "complete": true,
+  "entries": [
+    {
+      "slide": 1,
+      "atSeconds": 0
+    },
+    {
+      "slide": 2,
+      "atSeconds": 55.01
+    },
+    {
+      "slide": 3,
+      "atSeconds": 110.01
+    },
+    {
+      "slide": 4,
+      "atSeconds": 165.01
+    },
+    {
+      "slide": 5,
+      "atSeconds": 220.01
+    },
+    {
+      "slide": 6,
+      "atSeconds": 275.01
+    },
+    {
+      "slide": 7,
+      "atSeconds": 330.01
+    },
+    {
+      "slide": 8,
+      "atSeconds": 385.01
+    },
+    {
+      "slide": 9,
+      "atSeconds": 440.01
+    },
+    {
+      "slide": 10,
+      "atSeconds": 530.01
+    },
+    {
+      "slide": 11,
+      "atSeconds": 605
+    },
+    {
+      "slide": 12,
+      "atSeconds": 695.01
+    },
+    {
+      "slide": 13,
+      "atSeconds": 770.01
+    },
+    {
+      "slide": 14,
+      "atSeconds": 830.01
+    },
+    {
+      "slide": 15,
+      "atSeconds": 870
+    }
+  ]
+}

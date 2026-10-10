@@ -1,0 +1,43 @@
+# PARALLAX React lab · U05
+
+React + TypeScript + Vite demonstrator with both scientific student journeys, faculty teaching/attendance/assessment, technician fault/asset/calibration records, mobile typed-ID/report recovery, bookings, linked map, safety and public display. [Coverage ledger](PARITY.md) records functional parity and deliberate design equivalents. Actual accounts, staff authorization, grades, authoritative reservations and devices are not connected.
+
+From the project root, start the edition server for reference, geometry and model assets:
+
+```powershell
+npm start
+```
+
+Then, in another terminal:
+
+```powershell
+npm run lab:dev
+```
+
+Open `http://localhost:4190/`. Or build and use the existing edition server at `http://localhost:4180/apps/lab-web/dist/index.html`:
+
+```powershell
+npm run lab:test
+npm run lab:build
+npm run check
+node research/validate-u02.cjs
+node apps/lab-web/scripts/validate-u03.cjs
+node apps/lab-web/scripts/validate-u04.cjs
+node apps/lab-web/scripts/validate-u05.cjs
+```
+
+Dependencies are pinned in package/lockfile. On a fresh checkout use `npm ci --prefix apps/lab-web`. Build regenerates the isolated map bridge; it never edits the original map. Optional 3D loads only when requested. `?qa=1` adds an explicit local axe-core 4.10.2 diagnostic button; its large QA-only chunk is loaded on demand. Normal views do not load it.
+
+State uses `parallax-react-state-v1`, schema 1. The app never writes either legacy state key or legacy map projection. Old React records remain readable without invented historical context. The optional versioned workspace extension keeps persistent drafts and append-only example teaching/asset records. Cross-tab changes pause saving; incompatible records are retained. Reset and restore first save recovery copies, and refuse the operation if the copy cannot be saved. "Restore previous example session" can undo a reset/restore; each explicit recovery also keeps an archived browser copy.
+
+Core destinations: `#/faculty`, `#/faculty/attendance`, `#/faculty/assessment`, `#/tech`, `#/assets/C1-CAM`, `#/assets/C1-CAM/calibration`, `#/mobile`, `#/mobile/report`, `#/bookings`, `#/map`, `#/safety`, `#/wall`. All share canonical IDs. Teaching/assessment examples are distinct from the student's records; actual React receipts link to their frozen submission views. Deliberate failure controls are labelled as demonstrations. Live QR recognition and network synchronization are not implied by typed lookup or deferred-report examples.
+
+EX-2.2 dashboard, environment, energy previews and immutable replay are preserved at `#/dashboard`, `#/environment`, `#/E01/conditions` and `#/E06/conditions`. Observations, loads, protection windows and sustainability material remain examples/concepts. Recorded signal reference and capture context are retained; energy previews do not report metered savings or operate power.
+
+U02-R2 is complete for the user's secondary-research-only scope. Fifteen wireframes are at `../../design/wireframes/index.html`, and the evidence edition is at `../../design/research-u02/index.html`. No interviews or participant usability studies will be conducted; local user/site assumptions remain unvalidated. There is no guaranteed rubric score.
+
+U03 local functional parity and U04/U05 local delivery are complete; U06 AI is planned and U07–U10 continue in the [phase tracker](../../planning/EXCELLENCE_EXECUTION_PHASES.md). See [verification](VERIFICATION.md), [U05 delivery](../../planning/U05_DELIVERY_RECORD.md) and [master blueprint](../../PARALLAX_EXCELLENCE_BLUEPRINT.md) before reporting results. The original project entrypoints are retained.
+
+U04 delivery: [record](../../planning/U04_DELIVERY_RECORD.md), [physical specification](../../planning/U04_SUSTAINABILITY_SPECIFICATION.md), and packaged `sustainability-sheet.html`. The six source scenarios retain timestamps until explicitly changed/recovered; new captures use the same records as the dashboard. Energy periods show known kWh and retained gaps separately from W averages. Standby review confirms a local simulation only. Node.js 24 is the verified runtime; build regenerates the printable/specification artifacts from the shared UI data. Run `node apps/lab-web/scripts/validate-u04.cjs` from the project root for evidence/preservation checks.
+
+U05 adds `#/E01/rehearsal`, `#/E06/rehearsal`, `#/scene/rehearsal` and `#/walkthrough`. Predict, vary one supported parameter, compare under the declared model and reflect. E01 is generated; E06 lighting is authored; Scene Studio reuses the original geometric calculation with fixed-camera 18°/40°/90° choices and an explicit plan-only fallback. Rehearsal notes save under separate versioned browser keys, with competing-write refusal and archived reset/restore. Unsaved drafts remain in memory; save/export before leaving. Rehearsal never creates experiment evidence or completes preparation. The ten-stage fault sandbox commits existing rules independently, retaining evidence and exposing permitted consequences. U05 views load on demand. Build generates the fixed-model wrapper without changing the original Scene Studio; its reference assets require the edition server, as the linked map does. [Delivery and limits](../../planning/U05_DELIVERY_RECORD.md).

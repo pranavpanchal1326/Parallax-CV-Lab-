@@ -1,0 +1,37 @@
+[
+  {
+    "case": "map-repeated-highlight",
+    "selections": 12,
+    "selected": "CMP · COMPUTING · STATION\n\nCV-02\n\nComputing station\n\nAVAILABILITY\nBookable\nOCCUPANCY\nFree\nPlan position\nx 2.10 m · y 0.00 m\nFootprint\n1.4 × 0.7 m\nViewpoint\nWorkstations\nALSO IN CMP\nCV-01\nCV-03\nCV-04\nCV-05\nCV-06\nOpen React asset record\nShow in plan",
+    "planKeyboardFocus": true,
+    "activity": "Activity · 0"
+  },
+  {
+    "case": "scan-navigation-in-flight",
+    "observation": "The immediate navigation accessibility tree showed a disabled Checking this view control. By the later receipt read it had settled; no stale report appeared.",
+    "route": "http://127.0.0.1:4191/apps/lab-web/dist/index.html?qa=1#/mobile",
+    "busy": 0,
+    "staleReports": 0
+  },
+  {
+    "case": "export-selection",
+    "schemaVersion": 1,
+    "logLength": 0,
+    "selectedAll": true
+  },
+  {
+    "case": "public-export-isolation",
+    "exportFields": 0,
+    "accessReports": 0,
+    "privateFixtureIdentifiersInBody": []
+  },
+  {
+    "case": "navigation-clears-export",
+    "exportFields": 0
+  },
+  {
+    "case": "export-does-not-mutate-session",
+    "samePayload": true,
+    "activity": "Activity · 0"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "experiment": "E01",
+  "prediction": "A prediction written for the export check.",
+  "reflection": "",
+  "parameter": 4,
+  "reference": {
+    "id": "REF-2HZ-v1",
+    "formula": "y(t) = sin(4πt) V",
+    "frequencyHz": 2,
+    "durationS": 1,
+    "amplitudeV": 1
+  },
+  "sourceLabel": "Teaching fixture · method 01",
+  "runAt": "2026-10-07T03:56:40.783Z",
+  "heldSettings": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "parallax",
+  "private": true,
+  "description": "PARALLAX: Signal and Computer Vision Lab. Local edition and prototype; no dependencies to install.",
+  "scripts": {
+    "start": "node design/serve-review.cjs 4180",
+    "check": "node prototype/validate.cjs && node design/system/validate.cjs && node design/phase-08/validate.cjs && node spatial/validate-upgrade.cjs && node .design/phase-01-04-audit-checks.cjs"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "phase": "U08",
+  "artworkDate": "2026-10-03",
+  "verifiedDate": "2026-10-04",
+  "sourceFiles": [
+    {
+      "file": "apps/lab-shared/studio-catalog.json",
+      "sha256": "89060451df9ca4aed9b99a4d457206edc5e8b8da80bb573a6a2937b187492bf5"
+    },
+    {
+      "file": "apps/lab-shared/studio-graphics.mjs",
+      "sha256": "582d5cb9d8440d6799bc43b3fd05408dc3ea530bba349d8c60f746a7e9a01aa3"
+    },
+    {
+      "file": "prototype/fixtures.json",
+      "sha256": "53ef14be6b468aa0b7b380d98dd1e82d5c07eadfb1a53a2cbe8602d57a2ac60d"
+    },
+    {
+      "file": "spatial/lab_geometry.json",
+      "sha256": "772cc7617573e064feb1f0a38ffbf20a7e42da57f56fd6711b14bfa43c2b3f57"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "ART-01.svg",
+      "sha256": "dc950aae4a4dbff19654df57297103d7003104fb40e233394095fc8354271551",
+      "bytes": 15317,
+      "renderSha256": "3c1c2b394882ed54e2813aca2f9480568d44c998eccef9cdabf1c6e04d06380e"
+    },
+    {
+      "file": "ART-02.svg",
+      "sha256": "0c76cfc97187eb440ee1c044abac69059b90b08f43fb886e14e649f8c5d9eb60",
+      "bytes": 3473,
+      "renderSha256": "5ddc5771708e956753c009686ead8381056476e971e3b73b0bc119877ce032b8"
+    },
+    {
+      "file": "ART-03.svg",
+      "sha256": "f19535aa095733cc2d38b90d4189a30afa6e12fb5c0ec38dea1605156ade160b",
+      "bytes": 3463,
+      "renderSha256": "ab901458044a4092d4a4ce37b6c1bef0f5f6b498fcfc4dcc1eff2fddd1732e2b"
+    },
+    {
+      "file": "ART-04-E01.svg",
+      "sha256": "d399dd114edb5f0d7539458e6b667927aa18fcc42a82fbee94203c8b8014723c",
+      "bytes": 26893,
+      "renderSha256": "a8289120effff7577a651d2e9ead4da94fbf15142ff09b6804e40fd4260add97"
+    },
+    {
+      "file": "ART-04-E06.svg",
+      "sha256": "1cc94b0d964d9325f0315e3e2c0277ab2e691f4bc8f7058100a0bcbb378d278f",
+      "bytes": 5285,
+      "renderSha256": "9d4a282e98b7c59baf16d433319c13ab2b6e4d86bee88c0d6c7c2c45975bbc48"
+    },
+    {
+      "file": "ART-05.svg",
+      "sha256": "09efa980f0d856abfe935a87379b94f5197cb1c15d485bc4caf7293a8b773c92",
+      "bytes": 3254,
+      "renderSha256": "b5c26e60c83b9d1792196bf69be20e4522941dce60df101e84b64c2a1fbe4b96"
+    },
+    {
+      "file": "ART-06.svg",
+      "sha256": "6c937eb41d5323dc68b072cd51a394ce437a0ee3884691f8e30fddafccca3f43",
+      "bytes": 2990,
+      "renderSha256": "f7ed0b7cec7d42ca1005a41007ebf68189c1f5c13bc6f4aef8a59c9bea2813e2"
+    },
+    {
+      "file": "ART-07.svg",
+      "sha256": "a2abb96d6c66ce5614513a82f91d5bf62b6579915ef5793dd772d1c873e2417d",
+      "bytes": 16108,
+      "renderSha256": "418890f4187b9ccf2d354bb232607268eba842dde6ad93c818d2c1bc12c158db"
+    },
+    {
+      "file": "ART-08-20Hz.svg",
+      "sha256": "d4954f121fb66148c348f67cfa91f09c577b7a2a29946f8177837137995d2e54",
+      "bytes": 14372,
+      "renderSha256": "7e455ba388112be3128af45a9d8a04287872b8d8bb20d1f9f528a877ee417511"
+    },
+    {
+      "file": "ART-08.svg",
+      "sha256": "c0057ce6d71236546649dd89432796b803b9ab458776223f474353c39de1e357",
+      "bytes": 15358,
+      "renderSha256": "4a3513caea0cab1fb387c9f986a4cf65e6b26f19016edea4e3079a57981fd444"
+    },
+    {
+      "file": "index.html",
+      "sha256": "c8c57cb8b04fc08c208ed784871a7d1514ec25b0a5ba8793550dfc3d5a8f308c",
+      "bytes": 22194
+    },
+    {
+      "file": "plan-cctv.svg",
+      "sha256": "5adfb7aa0d156081a518e17eb369dea8c244f72b8407cad6b0c382b96948fd73",
+      "bytes": 6848,
+      "renderSha256": "da78757df23ff64acec4ab4b37b2864be3b726b13b91405b5346c1873c4551f4"
+    },
+    {
+      "file": "plan-emergency.svg",
+      "sha256": "61de4eab9c4725d5e89b5f66b1afae2b34e41e36024e90b16bc202090250f863",
+      "bytes": 8078,
+      "renderSha256": "8247e718b676e04cc54209fb649d079052c9ddecc5c9c035160e51cf435e6ec4"
+    },
+    {
+      "file": "plan-installation.svg",
+      "sha256": "82aa80445d89f9e7acf64f960bab5ef072263bd5abcd157d9705bc3595c7c4f1",
+      "bytes": 6405,
+      "renderSha256": "c3b5f2608cdb15f2f083c9675376b3f2d280b7c97f2628dac0446c2478fbdeae"
+    },
+    {
+      "file": "plan-orientation.svg",
+      "sha256": "9ab8019028636be6d00680cd751c73e69e79f4f4f81e65f26dd55cac4e22ffb5",
+      "bytes": 6414,
+      "renderSha256": "1ec4c4c0de0add77cfb160b738a7727d29c65683ffdd676d890a22fbdfbfe19a"
+    },
+    {
+      "file": "plan-ventilation.svg",
+      "sha256": "8b86acdf8881610202f2cf2aa5d2bddaab9b04db2296fceffbdfb21e04038a59",
+      "bytes": 7171,
+      "renderSha256": "218d8e2c258db5ffca60ccfe90289063be5afeaa70bc3f2454bc012f579762b7"
+    },
+    {
+      "file": "reference.md",
+      "sha256": "082928142356c31d2a25a52e53c7e59875c020b49a705027f299b6d44c8f4675",
+      "bytes": 13859
+    },
+    {
+      "file": "S-01.svg",
+      "sha256": "d1e0e9f74aef6656c84141ca21475d98674dec58c40801c9f6147ecf04daf37a",
+      "bytes": 854,
+      "renderSha256": "9650d3ebce1749192dbb756629dfb99944b90ad012f7f46c57900298682ccc47"
+    },
+    {
+      "file": "S-02.svg",
+      "sha256": "f307116ec11fc38856bc91dd0dc43c559499d151f6e40d1a42acae3c57a4e18a",
+      "bytes": 913,
+      "renderSha256": "b5c989f98f6c7be33e56ceae5bc6e18be36a8ac7fd9dff42935075cd84bfc2ac"
+    },
+    {
+      "file": "S-03.svg",
+      "sha256": "c0bdb459b1ca568a6b4dcab65f7d847548ef47f0c3bf2e269d625442053e1993",
+      "bytes": 856,
+      "renderSha256": "cfbd4e441c2abfffd24efee13994ede0b2fef23548d6e1237f49cfb1ad9c0da8"
+    },
+    {
+      "file": "S-04.svg",
+      "sha256": "6a6ccc9218e2b8ab6db47daa44cce057e6b149aab24d7dbf84a7f3bc575be928",
+      "bytes": 901,
+      "renderSha256": "976963e6bf4897de64eb25174e768b6433cfe3610318a5619a12c1324a71c286"
+    },
+    {
+      "file": "S-05.svg",
+      "sha256": "80e6014b2acfaf205074f6803598b6ffc4785a90b4b20365dd190f9ac87eec0d",
+      "bytes": 934,
+      "renderSha256": "aee4c6248e790a89d37b948f8661a022d98635e3e36c1eb9f9e7eea708a2a5c8"
+    },
+    {
+      "file": "S-06.svg",
+      "sha256": "05756906a9ee22a0a85a47d988d97a1fe90a91787399d0e1a1e38e7d7b6e5179",
+      "bytes": 924,
+      "renderSha256": "bada67edaa06115870d0ed1197f5c291951bc27a6c565d8ddc1dfbe0a5871b6a"
+    }
+  ],
+  "revised": {
+    "date": "2026-10-05",
+    "change": "Footers no longer carry a phase code or date; artwork, geometry and scientific content unchanged. Previous masters and renders preserved in planning/revisions/U13-before-art-footers-20261005/.",
+    "renderMethod": "Edge via Playwright at each SVG's native pixel size"
+  }
+}

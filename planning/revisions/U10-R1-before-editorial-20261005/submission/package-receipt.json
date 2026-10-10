@@ -1,0 +1,12 @@
+{
+  "revision": "U10-R1",
+  "entries": 2116,
+  "sourceBytes": 213168940,
+  "zipBytes": 175113724,
+  "zipSha256": "9cf69ee67de50f4c277caaca9634300d9af1800f988a6a659e9bfccf91dffb5b",
+  "zipCrcCheck": "pass",
+  "archiveEntriesVerified": 2115,
+  "archiveManifestHashes": "pass",
+  "currentSelectedSourceHashes": "pass",
+  "review": "senior regression follow-up; final source and evidence metadata verified"
+}

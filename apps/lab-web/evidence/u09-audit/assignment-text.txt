@@ -1,0 +1,196 @@
+Final Year Project Assignment
+UI/UX Design Proposal for State-of-the-Art Engineering Laboratories
+Course
+UI/UX Design / Human Computer Interaction / Product Design
+Assignment Title
+Designing User-Centered UI/UX Solutions for Modern Engineering Laboratories
+Background
+Engineering laboratories are evolving into smart, technology-enabled learning environments that promote innovation, collaboration, safety, and experiential learning. A well-designed laboratory should provide intuitive navigation, effective space utilization, accessibility, safety, digital interaction, and an engaging learning experience.
+As a final-year engineering student, you are required to develop a comprehensive UI/UX solution for one of the proposed laboratories in the new Engineering Innovation Centre.
+Each laboratory has an available area of 70 m² and should be designed considering modern educational practices, Industry 4.0 concepts, sustainability, accessibility, and smart laboratory management.
+
+Laboratories
+Each student/team will be assigned one of the following laboratories:
+Embedded Systems Lab (70 m²) 
+Digital Electronics Lab (70 m²) 
+Semiconductor / VLSI Lab (70 m²) 
+Communication Lab (70 m²) 
+Product Design Lab (70 m²) 
+Signal & Computer Vision Lab (70 m²) 
+Basic Electronics Lab (70 m²) 
+Basic Electrical Lab (70 m²) 
+Texas Instruments Centre of Excellence (70 m²) 
+IIT Bombay Robotics Centre of Excellence (70 m²) 
+
+Problem Statement
+Design a complete UI/UX solution for the assigned laboratory that enhances student learning, improves usability, ensures safety, and creates an engaging smart laboratory environment.
+The design should focus on both physical user experience (space, furniture, movement, accessibility) and digital user experience (interactive displays, dashboards, mobile/web interfaces, booking systems, digital signage, IoT integration, etc.).
+Objectives
+The proposed solution should:
+Improve user experience 
+Enhance laboratory safety 
+Increase equipment accessibility 
+Simplify laboratory management 
+Encourage collaborative learning 
+Support smart and digital learning 
+Follow universal accessibility principles 
+Optimize utilization of the available 70 m² space 
+Scope of Work
+Each team should design the following components.
+1. User Research
+Identify
+Target users 
+User needs 
+Pain points 
+Laboratory activities 
+Learning workflow 
+Deliverables
+User Persona 
+Empathy Map 
+User Journey Map 
+
+2. Laboratory Space Planning
+Design an optimized layout for
+Workstations 
+Faculty Area 
+Equipment Storage 
+Collaboration Zone 
+Demonstration Area 
+Safety Equipment 
+Entry & Exit 
+Power and Network Points 
+Deliverable
+Scaled Floor Plan (70 m²)
+
+3. UI/UX Design
+Design interfaces for
+Smart Lab Dashboard 
+Equipment Booking System 
+Attendance System 
+Asset Tracking 
+Digital Notice Board 
+Experiment Scheduling 
+QR Code-based Equipment Information 
+Mobile Application 
+Deliverables
+Wireframes 
+High-Fidelity UI 
+Interactive Prototype 
+
+4. Smart Laboratory Features
+Include innovative ideas such as
+IoT Sensors 
+AI Assistant 
+Digital Twin 
+Voice Assistant 
+AR/VR-based Learning 
+Smart Energy Monitoring 
+Equipment Health Monitoring 
+Digital Experiment Manual 
+
+5. User Experience Design
+Explain
+Navigation Flow 
+Information Architecture 
+User Flow 
+Accessibility 
+Color Scheme 
+Typography 
+Design System 
+
+6. Safety Design
+Include
+Emergency Exit 
+Fire Extinguisher 
+Electrical Safety 
+First Aid 
+CCTV 
+Ventilation 
+Hazard Indicators 
+
+7. Sustainability
+Include
+Energy-efficient lighting 
+Natural ventilation 
+Smart power management 
+Recyclable furniture 
+Green materials 
+
+Expected Deliverables
+Each team shall submit:
+Report
+Introduction 
+Problem Analysis 
+User Research 
+UI/UX Methodology 
+Design Process 
+Wireframes 
+Final Prototype 
+Floor Plan 
+Technology Stack 
+Conclusion 
+
+Design Deliverables
+User Personas 
+User Journey Map 
+Information Architecture 
+Wireframes 
+High Fidelity Screens 
+Interactive Prototype (Figma/Adobe XD) 
+Laboratory Floor Plan 
+Equipment Layout 
+Signage Design 
+
+Presentation
+15-minute presentation including
+Problem Statement 
+Design Thinking Process 
+UI Screens 
+Laboratory Layout 
+Demonstration 
+
+Recommended Tools
+Figma 
+Adobe XD 
+Sketch 
+Canva 
+AutoCAD 
+Visio 
+Miro 
+Blender (Optional) 
+
+Evaluation Rubrics (100 Marks)
+Criteria
+Marks
+User Research
+10
+Problem Analysis
+10
+Space Planning (70 m²)
+15
+UI Design
+15
+UX Design
+15
+Innovation & Smart Features
+10
+Accessibility & Safety
+10
+Prototype & Demonstration
+10
+Presentation & Documentation
+5
+Total
+100
+
+Expected Learning Outcomes
+After completing this assignment, students will be able to:
+Apply Design Thinking principles to engineering spaces. 
+Conduct user-centered research for laboratory design. 
+Design intuitive UI/UX solutions for smart laboratories. 
+Create interactive prototypes using industry-standard tools. 
+Optimize engineering laboratory layouts within a 70 m² area. 
+Integrate Industry 4.0 technologies, IoT, AI, and digital systems into laboratory environments. 
+Present professional design solutions with appropriate documentation and usability considerations. 
+Submission Deadline: 5th August.
+Team Size: 3 students per team.

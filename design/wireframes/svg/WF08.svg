@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF08 · Submit: pending is not complete</title><desc id="desc">A student confirms that a submission has a receipt.. Lost acknowledgement remains pending; retry uses the same request identity.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Submit: pending is not complete</text>
+<rect x="20" y="105" width="720" height="110" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Submission summary</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Evidence IDs / revision / saved notebook</text>
+<text x="32" y="169" font-family="Arial" font-size="12" font-weight="400" fill="#222">Required evidence gaps listed before completion</text>
+<text x="32" y="189" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Submit revision ]</text>
+<rect x="20" y="237" width="348" height="110" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="261" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Acknowledgement pending</text>
+<text x="32" y="281" font-family="Arial" font-size="12" font-weight="400" fill="#222">Request EX-REQ-2042 retained</text>
+<text x="32" y="301" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Retry acknowledgement ]</text>
+<text x="32" y="321" font-family="Arial" font-size="12" font-weight="400" fill="#222">No success receipt yet</text>
+<rect x="390" y="237" width="350" height="110" fill="#fafafa" stroke="#555" />
+<text x="402" y="261" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Confirmed alternative state</text>
+<text x="402" y="281" font-family="Arial" font-size="12" font-weight="400" fill="#222">Receipt EX-SUB-2042</text>
+<text x="402" y="301" font-family="Arial" font-size="12" font-weight="400" fill="#222">Submitted revision frozen</text>
+<text x="402" y="321" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Close E01 session ]</text>
+<rect x="20" y="369" width="720" height="79" fill="#fafafa" stroke="#555" />
+<text x="32" y="393" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Separate session-close responsibility</text>
+<text x="32" y="413" font-family="Arial" font-size="12" font-weight="400" fill="#222">E01: close fixed bench / E06: return portable kit</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF08 / Reconstructed React view / low fidelity / no fieldwork claimed</text></svg>

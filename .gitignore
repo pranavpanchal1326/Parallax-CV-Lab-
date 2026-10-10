@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Build and preview output
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+.next/
+out/
+
+# Large generated archive packages (>100MB GitHub limit)
+*.zip
+*.tar.gz
+*.tgz
+
+# Environment & local secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local tooling and temporary files
+.agents/
+.temp/
+.tmp/
+.cache/
+**/.cache/
+
+# Local verification copies and duplicate media
+planning/u10-clean-check-*/
+skills-lock.json
+/PARALLAX-Walkthrough-Narrated.mp4
+
+# Generated build scratch (contact sheets, render checks, candidate decks)
+planning/u10-build/*.png
+planning/u10-build/*.pptx
+planning/u10-build/*.ndjson
+planning/u10-build/*.html
+planning/u10-build/*.layout.json
+planning/u10-build/capture-ui-result.json
+planning/u10-build/report-render*/
+planning/u10-build/build-deck.mjs
+planning/revisions/U10-R1-before-editorial-20261005/planning/build-deck.mjs

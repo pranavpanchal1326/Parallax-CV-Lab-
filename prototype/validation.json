@@ -1,0 +1,398 @@
+{
+  "date": "2026-10-03",
+  "kind": "Scripted rule checks; not participant tests",
+  "passed": 65,
+  "total": 65,
+  "checks": [
+    {
+      "task": "T00",
+      "name": "Vision identities match P6-A contracts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T00",
+      "name": "Signal identities match P6-A contracts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T00",
+      "name": "Fault identities match P7-A contracts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T00",
+      "name": "Every resource exists in P4-D geometry or the Lab Map data (TRP-04 is a kit item only)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T00",
+      "name": "Every kit item is a known resource",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Reserving before preparation is refused",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "One booking holds every item of KIT-C1-v1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Starting before check-in is refused",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Check-in accepts the booked station typed loosely (cv2 → CV-02)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Check-in marks the kit as in use, separately from availability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Session cannot start until the kit matches the manifest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Session starts with a complete kit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Evidence keeps its settings and source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Recorded evidence cannot be overwritten",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Submitting without a saved claim returns to review with the gap named",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Submission issues the P6-A receipt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "A second submit returns the same receipt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T01",
+      "name": "Complete return closes the session and frees every resource",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T02",
+      "name": "Signal session starts with no portable items to count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T02",
+      "name": "Signal submission issues its own receipt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T02",
+      "name": "Signal session closes without a kit return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T02",
+      "name": "The drawn alias passes through every sample (max error < 1e-9)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T02",
+      "name": "3 Hz sampling of 2 Hz aliases to 1 Hz; 20 Hz does not alias",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T03",
+      "name": "A taken slot is refused and names the clash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T03",
+      "name": "The refusal offers the compatible 11:00 slot (P6-A recovery contract)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T03",
+      "name": "The conflict does not block the signal kit at the same time",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T04",
+      "name": "Wrong station is refused, names the expected one, and records no attendance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T04",
+      "name": "An unknown ID gets a format hint rather than a wrong-station message",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Device failure preserves saved captures and blocks new ones",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Report creates ISS-0417 linked to the booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "A report alone restricts nothing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "A second report for the same asset is not duplicated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Restriction is refused before classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Triage previews the bookings that hold the asset",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Restriction is scoped to C1-CAM only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "B-2047 and B-2049 are affected; B-2048 and KIT-S1-v1 are not (P7-A contract)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Equipment list, kit, slots and Lab Map data all show the restriction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Public notice names the equipment but no issue, person, booking or cause",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "The student can finish with a prepared condition, labelled as such",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Release is refused before verification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Verification is refused before a repair is recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Interrupted verification keeps the issue open and the restriction on (unknown cause)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Release lifts the restriction and restores B-2047 and B-2049",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Maintenance history records report, classification, restriction, repair, both verifications and release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T05",
+      "name": "Every log line has actor, time, reference and action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T06",
+      "name": "Reserving a kit with a restricted item is refused and names the item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T06",
+      "name": "The signal experiment can still be reserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T07",
+      "name": "Quality classification leaves the asset bookable and closes without verification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T08",
+      "name": "A failed save keeps the text and does not claim it was saved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T08",
+      "name": "An unsaved claim blocks submission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T08",
+      "name": "A missing acknowledgement is not reported as submitted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T08",
+      "name": "Retry uses the same request and yields one receipt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T08",
+      "name": "A too-short claim is refused with the reason",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T09",
+      "name": "A short return blocks closing and names CAL-01 0 of 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T09",
+      "name": "Closing with a follow-up raises FU-2041 and marks CAL-01 location unknown",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T09",
+      "name": "The missing item blocks the next reservation of the kit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T09",
+      "name": "Open bookings that hold CAL-01 are marked affected; the signal booking is not",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T09",
+      "name": "Locating the item closes FU-2041 and restores the kit and its bookings",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "State is plain data: a storage round trip changes nothing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "Prototype file present: index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "Prototype file present: app.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "Prototype file present: store.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "Prototype file present: proto.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "Prototype file present: fixtures.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "task": "T10",
+      "name": "Page declares a language, a skip link, a main landmark and a live region",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

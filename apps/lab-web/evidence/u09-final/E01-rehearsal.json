@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "experiment": "E01",
+  "prediction": "At 3 Hz, different continuous signals can pass through the same samples. I expect an ambiguous lower-frequency trace.",
+  "reflection": "",
+  "parameter": 3,
+  "reference": {
+    "id": "REF-2HZ-v1",
+    "formula": "y(t) = sin(4πt) V",
+    "frequencyHz": 2,
+    "durationS": 1,
+    "amplitudeV": 1
+  },
+  "sourceLabel": "Teaching fixture · method 01",
+  "runAt": "2026-10-03T20:03:55.828Z",
+  "heldSettings": {}
+}

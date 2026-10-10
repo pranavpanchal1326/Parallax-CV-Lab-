@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-04",
+  "rows": [
+    {
+      "path": "submission/presentation.html",
+      "navigationRegionsNamed": 2,
+      "beforeSha256": "ae651043f1ac60a13b339b9f734caffb97f82a89af9ab69fbf5139463c175ace",
+      "afterSha256": "8d37e58257b6789f453f8e641dfd24cb493441a54837f1a55c7df73a267798d0",
+      "otherBytesUnchanged": true
+    },
+    {
+      "path": "submission/demo/index.html",
+      "navigationRegionsNamed": 2,
+      "beforeSha256": "57533b894fef137b007a5f13db22fddc75c35d8546b45d0e7672029b3cb85222",
+      "afterSha256": "2cb0e96ca19741f2b39611e63d8f68839479fb280372e5ff1c9b7c6f784dd1c2",
+      "otherBytesUnchanged": true
+    },
+    {
+      "path": "planning/u10-build/build-handoff.cjs",
+      "navigationRegionsNamed": 4,
+      "beforeSha256": "209b9a722f6091a5c27ae3a00767edd2f78ee3a8c64d63a22f9813b9a7b32075",
+      "afterSha256": "80806ff58b95230c0e2a179786703ec49e2ac7902a8a7060a86fe20bf0bf688d",
+      "otherBytesUnchanged": true
+    }
+  ],
+  "scope": "Distinct navigation names only; scripts, styling, timing, images and text preserved byte-for-byte."
+}

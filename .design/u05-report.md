@@ -1,0 +1,11 @@
+# U05 finish review · 3 October 2026
+
+The scientific experience now follows a visible reasoning sequence: prediction, one supported parameter, declared-model consequence and reflection. Matched waveform plates carry the strongest visual evidence; the quieter control rail holds the student's prediction and source. Extra sampling rates stay in rehearsal. Scene Studio receives a fixed-camera field-of-view wrapper around its existing model, preserving the distinction between computed geometry and E06's authored lighting illustrations.
+
+Condition replay retains both records and highlights the selected condition. Each difference can be inspected with its A/B values and a comparison question. Missing context remains visibly not comparable. Source, geometry and resource IDs connect replay to the method and physical setup; the student follows the normal bench/preparation route to transfer any choice. No unsupported causal conclusion is inserted into the notebook.
+
+The fault composition uses a stage rail and a named resource/plan anchor, followed by student, kit, faculty and public consequences. Each stage names its next owner. Interrupted verification and refused release remain explicit states. Mobile collapses the ten-stage rail behind a labelled chooser, while Previous/Next and Restart remain native keyboard-operable buttons. Public consequences receive a supported region role and a strict permitted projection.
+
+Screenshots inspect desktop hierarchy and narrow light/night compositions. Discrete comparisons and text/table/plan equivalents require no animated transition or pointer dragging. Twelve checked page widths reflow without horizontal document overflow; wide comparison tables retain their own labelled, focusable scroll regions. A complete screen-reader, zoom and embedded-model access review remains U09.
+
+Verification authority: [U05 delivery](../planning/U05_DELIVERY_RECORD.md) and [browser evidence](../apps/lab-web/evidence/u05-browser-review.json). Eighty-eight tests and type/build pass; seven final access scans have no confirmed violations, with contrast and embedded-frame coverage incomplete. No participant study, real device, physical certification or guaranteed learning/rubric outcome is claimed. U05 is complete for the local demonstrator. AI stays U06.

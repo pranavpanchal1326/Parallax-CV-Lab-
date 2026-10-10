@@ -1,0 +1,376 @@
+
+> check
+> node prototype/validate.cjs && node design/system/validate.cjs && node design/phase-08/validate.cjs && node spatial/validate-upgrade.cjs && node .design/phase-01-04-audit-checks.cjs
+
+PASS T00 Vision identities match P6-A contracts
+PASS T00 Signal identities match P6-A contracts
+PASS T00 Fault identities match P7-A contracts
+PASS T00 Every resource exists in P4-D geometry or the Lab Map data (TRP-04 is a kit item only)
+PASS T00 Every kit item is a known resource
+PASS T01 Reserving before preparation is refused
+PASS T01 One booking holds every item of KIT-C1-v1
+PASS T01 Starting before check-in is refused
+PASS T01 Check-in accepts the booked station typed loosely (cv2 → CV-02)
+PASS T01 Check-in marks the kit as in use, separately from availability
+PASS T01 Session cannot start until the kit matches the manifest
+PASS T01 Session starts with a complete kit
+PASS T01 Evidence keeps its settings and source
+PASS T01 Recorded evidence cannot be overwritten
+PASS T01 Submitting without a saved claim returns to review with the gap named
+PASS T01 Submission issues the P6-A receipt
+PASS T01 A second submit returns the same receipt
+PASS T01 Complete return closes the session and frees every resource
+PASS T02 Signal session starts with no portable items to count
+PASS T02 Signal submission issues its own receipt
+PASS T02 Signal session closes without a kit return
+PASS T02 The drawn alias passes through every sample (max error < 1e-9)
+PASS T02 3 Hz sampling of 2 Hz aliases to 1 Hz; 20 Hz does not alias
+PASS T03 A taken slot is refused and names the clash
+PASS T03 The refusal offers the compatible 11:00 slot (P6-A recovery contract)
+PASS T03 The conflict does not block the signal kit at the same time
+PASS T04 Wrong station is refused, names the expected one, and records no attendance
+PASS T04 An unknown ID gets a format hint rather than a wrong-station message
+PASS T05 Device failure preserves saved captures and blocks new ones
+PASS T05 Report creates ISS-0417 linked to the booking
+PASS T05 A report alone restricts nothing
+PASS T05 A second report for the same asset is not duplicated
+PASS T05 Restriction is refused before classification
+PASS T05 Triage previews the bookings that hold the asset
+PASS T05 Restriction is scoped to C1-CAM only
+PASS T05 B-2047 and B-2049 are affected; B-2048 and KIT-S1-v1 are not (P7-A contract)
+PASS T05 Equipment list, kit, slots and Lab Map data all show the restriction
+PASS T05 Public notice names the equipment but no issue, person, booking or cause
+PASS T05 The student can finish with a prepared condition, labelled as such
+PASS T05 Release is refused before verification
+PASS T05 Verification is refused before a repair is recorded
+PASS T05 Interrupted verification keeps the issue open and the restriction on (unknown cause)
+PASS T05 Release lifts the restriction and restores B-2047 and B-2049
+PASS T05 Maintenance history records report, classification, restriction, repair, both verifications and release
+PASS T05 Every log line has actor, time, reference and action
+PASS T06 Reserving a kit with a restricted item is refused and names the item
+PASS T06 The signal experiment can still be reserved
+PASS T07 Quality classification leaves the asset bookable and closes without verification
+PASS T08 A failed save keeps the text and does not claim it was saved
+PASS T08 An unsaved claim blocks submission
+PASS T08 A missing acknowledgement is not reported as submitted
+PASS T08 Retry uses the same request and yields one receipt
+PASS T08 A too-short claim is refused with the reason
+PASS T09 A short return blocks closing and names CAL-01 0 of 1
+PASS T09 Closing with a follow-up raises FU-2041 and marks CAL-01 location unknown
+PASS T09 The missing item blocks the next reservation of the kit
+PASS T09 Open bookings that hold CAL-01 are marked affected; the signal booking is not
+PASS T09 Locating the item closes FU-2041 and restores the kit and its bookings
+PASS T10 State is plain data: a storage round trip changes nothing
+PASS T10 Prototype file present: index.html
+PASS T10 Prototype file present: app.js
+PASS T10 Prototype file present: store.js
+PASS T10 Prototype file present: proto.css
+PASS T10 Prototype file present: fixtures.json
+PASS T10 Page declares a language, a skip link, a main landmark and a live region
+65 / 65 pass
+{
+  "revision": "P5-A",
+  "components": 40,
+  "uniqueIDs": 40,
+  "missingContractsOrSpecimens": [],
+  "contrast": [
+    {
+      "fg": "text",
+      "bg": "canvas",
+      "ratio": 13.92,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "textSecondary",
+      "bg": "canvas",
+      "ratio": 6.09,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "actionText",
+      "bg": "action",
+      "ratio": 7.1,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "actionText",
+      "bg": "actionHover",
+      "ratio": 9.52,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "success",
+      "bg": "successSurface",
+      "ratio": 5.27,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "danger",
+      "bg": "dangerSurface",
+      "ratio": 5.78,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "warning",
+      "bg": "warningSurface",
+      "ratio": 5.9,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "instrumentText",
+      "bg": "instrument",
+      "ratio": 16.27,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "instrumentSecondary",
+      "bg": "instrument",
+      "ratio": 10.33,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "trace",
+      "bg": "instrument",
+      "ratio": 11.64,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "instrumentWarning",
+      "bg": "instrument",
+      "ratio": 10.48,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "border",
+      "bg": "surface",
+      "ratio": 4.26,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "action",
+      "bg": "canvas",
+      "ratio": 6.29,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "disabledText",
+      "bg": "disabled",
+      "ratio": 4.93,
+      "minimum": 4.5,
+      "pass": true
+    }
+  ],
+  "scope": "Source coverage and exact token pairs. Does not certify all rendered states, assistive technology or real lab integrations."
+}
+PASS Every Lab Map resource is a named node in lab_interactive.glb
+PASS Every resource has plan geometry or a declared home position
+PASS Portable items outside plan geometry are declared (CAL-01)
+PASS Every resource zone exists in geometry
+PASS Every resource has a defined named viewpoint
+PASS Five named viewpoints (G16.02)
+PASS Interactive triangles within 150,000 budget
+PASS Interactive GLB within 5 MB budget
+PASS modelBytes in resources.json matches the GLB
+PASS Availability and occupancy recorded separately for every resource
+PASS C1-CAM carries the Phase 7 restriction RST-0417
+PASS Prototype file present: lab-map.html
+PASS Prototype file present: scene-studio.html
+PASS Prototype file present: index.html
+PASS Prototype file present: assets/lab-map.js
+PASS Prototype file present: assets/lab-3d.js
+PASS Prototype file present: assets/scene-studio.js
+PASS Prototype file present: node_modules/three/build/three.module.js
+PASS All 10 shot-list renders exist (full and web size)
+PASS P8-B: 11 look-dev renders exist (full and web size), incl. new H01, R09, R10
+PASS P8-B: A01 orbit animation present for the hub hero
+PASS P8-B: A03 signal-to-pixel module present
+PASS P8-B: P8-A hub page preserved as index-p8a.html
+PASS P8-B: P8-A renders untouched (10 originals still present)
+PASS A03: alias curve passes through every sample (max error < 1e-9)
+25 / 25 pass
+{
+  "revision": "P4-D",
+  "checks": [
+    {
+      "name": "Zone area equals 70 m²",
+      "pass": true
+    },
+    {
+      "name": "Spine is at least 1.5 m",
+      "pass": true
+    },
+    {
+      "name": "Accessible floor is 1.2 × 0.9 m",
+      "pass": true
+    },
+    {
+      "name": "Accessible floor does not overlap spine",
+      "pass": true
+    },
+    {
+      "name": "Accessible floor does not overlap furniture",
+      "pass": true
+    },
+    {
+      "name": "Furniture stays outside spine",
+      "pass": true
+    },
+    {
+      "name": "Furniture stays in room",
+      "pass": true
+    },
+    {
+      "name": "Furniture footprints do not overlap",
+      "pass": true
+    },
+    {
+      "name": "Camera-to-subject meets 2 m planning rule",
+      "pass": true
+    },
+    {
+      "name": "Camera axis matches actual subject centre",
+      "pass": true
+    },
+    {
+      "name": "lab_blockout GLB header / chunks valid",
+      "pass": true
+    },
+    {
+      "name": "lab_blockout under 5 MB / 150k triangle budget",
+      "pass": true
+    },
+    {
+      "name": "lab_blockout furniture IDs preserved",
+      "pass": true
+    },
+    {
+      "name": "lab_studio GLB header / chunks valid",
+      "pass": true
+    },
+    {
+      "name": "lab_studio under 5 MB / 150k triangle budget",
+      "pass": true
+    },
+    {
+      "name": "lab_studio furniture IDs preserved",
+      "pass": true
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "cameraToSubject": 2.05,
+  "accessibleSpineOverlap": 0,
+  "exports": [
+    {
+      "name": "lab_blockout",
+      "bytes": 151456,
+      "triangles": 1260,
+      "meshNodes": 105
+    },
+    {
+      "name": "lab_studio",
+      "bytes": 2601516,
+      "triangles": 46172,
+      "meshNodes": 722
+    }
+  ],
+  "scope": "Geometric fit and GLB structure only; not code certification, usability testing, photometry, or hardware validation."
+}
+{
+  "date": "2026-10-02",
+  "geometryRevision": "P4-D",
+  "roomArea": 70,
+  "zoneAreas": [
+    {
+      "id": "CMP",
+      "area": 24.96
+    },
+    {
+      "id": "STO",
+      "area": 3.12
+    },
+    {
+      "id": "C1",
+      "area": 10.92
+    },
+    {
+      "id": "SPN",
+      "area": 15
+    },
+    {
+      "id": "FAC",
+      "area": 3.2
+    },
+    {
+      "id": "COL",
+      "area": 7.04
+    },
+    {
+      "id": "S1",
+      "area": 5.76
+    }
+  ],
+  "zoneAreaTotal": 70,
+  "zoneOverlaps": [],
+  "furnitureOutsideRoom": [],
+  "furnitureFootprintOverlaps": [],
+  "glb": {
+    "magic": "glTF",
+    "version": 2,
+    "declaredBytes": 151456,
+    "actualBytes": 151456,
+    "chunkEndsAtFileEnd": true,
+    "meshNodes": 105,
+    "triangles": 1260,
+    "missingFurnitureIDPrefixes": [],
+    "statsMatch": true
+  },
+  "clearance": {
+    "spineDepth": 1.5,
+    "statedMinimum": 1.5,
+    "accessibleFloorFrontStart": 2.6,
+    "accessibleFloorFrontEnd": 3.5,
+    "overlapWithSpine": 0,
+    "remainingSpineAtOccupiedClearFloor": 1.5,
+    "note": "Geometric overlap only. This is not certification; simultaneous use and route policy need review."
+  },
+  "capture": {
+    "cameraCentre": [
+      7.5,
+      1.9000000000000001
+    ],
+    "stageCentre": [
+      9.55,
+      1.9
+    ],
+    "cameraToStageCentre": 2.05,
+    "cameraAxisToBackdrop": 2.05,
+    "statedPlanningMinimum": 2,
+    "note": "The 2.05 m backdrop distance is different from distance to the object stage."
+  },
+  "documents": {
+    "phase2OpenGateCount": 5,
+    "phase3OpenGateCount": 3,
+    "phase4BrowserViewerPending": false,
+    "phase4ContainsOldMetrics": false
+  },
+  "limitations": [
+    "Figma tools returned unknown-tool errors.",
+    "Direct browser could not access the documented file.",
+    "No live browser model viewer was available in this workspace.",
+    "Academic and physical-standard claims are not recertified by these calculations."
+  ]
+}

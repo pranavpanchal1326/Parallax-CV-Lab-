@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF05 · Bench: capture with context</title><desc id="desc">A student records evidence and retains the method and source.. Interrupted camera retains recorded work and offers a labelled prepared illustration.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Bench: capture with context</text>
+<rect x="20" y="105" width="720" height="55" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Evidence boundary</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Illustrative or generated / not a device performance measurement</text>
+<rect x="20" y="181" width="348" height="158" fill="#fafafa" stroke="#555" />
+<text x="32" y="205" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Frontal condition</text>
+<text x="32" y="225" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ illustration / retained settings ]</text>
+<text x="32" y="245" font-family="Arial" font-size="12" font-weight="400" fill="#222">Source / ID / capture time</text>
+<text x="32" y="265" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Record condition ]</text>
+<rect x="390" y="181" width="350" height="158" fill="#fafafa" stroke="#555" />
+<text x="402" y="205" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Side condition</text>
+<text x="402" y="225" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ illustration / retained settings ]</text>
+<text x="402" y="245" font-family="Arial" font-size="12" font-weight="400" fill="#222">Prepared source if interrupted</text>
+<text x="402" y="265" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Record condition ]</text>
+<rect x="20" y="360" width="720" height="88" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="384" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Feed stopped — original evidence retained</text>
+<text x="32" y="404" font-family="Arial" font-size="12" font-weight="400" fill="#222">Prepared condition remains explicitly labelled</text>
+<text x="32" y="424" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Review recorded conditions ]   [ Report issue ]</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF05 / React extension implemented / low fidelity / no fieldwork claimed</text></svg>

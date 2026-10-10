@@ -1,0 +1,9 @@
+{
+  "method": "80-second recording of ten captured UI frames with captions",
+  "elapsedSeconds": 80.253,
+  "bytes": 3187869,
+  "mime": "video/webm;codecs=vp9",
+  "frames": 10,
+  "recorded": "2026-10-05",
+  "note": "Re-encoded after the interface polish from re-captured frames; not an uninterrupted live screen recording."
+}

@@ -1,0 +1,28 @@
+{
+  "revision": "U10-R3",
+  "pages": 23,
+  "sectionHeadings": [
+    "1. Introduction",
+    "2. Problem Analysis",
+    "3. User Research",
+    "4. UI/UX Methodology",
+    "5. Design Process",
+    "6. Wireframes",
+    "7. Final Prototype",
+    "8. Floor Plan",
+    "9. Technology Stack",
+    "10. Conclusion"
+  ],
+  "characters": 39784,
+  "figures": 11,
+  "researchFigures": [
+    "User personas",
+    "Empathy map",
+    "User journey map"
+  ],
+  "sources": 14,
+  "requirements": 20,
+  "teamDeclared": false,
+  "allOriginalParagraphsPresent": true,
+  "scope": "Text structure verified; rendered pages are inspected separately."
+}

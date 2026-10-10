@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "state": {
+    "revision": "P9-A",
+    "minute": 580,
+    "prepared": {
+      "E06": [
+        false,
+        false,
+        false
+      ],
+      "E01": [
+        false,
+        false,
+        false
+      ]
+    },
+    "resources": {
+      "CV-01": {
+        "restriction": null,
+        "located": true
+      },
+      "CV-02": {
+        "restriction": null,
+        "located": true
+      },
+      "CV-03": {
+        "restriction": null,
+        "located": true
+      },
+      "CV-04": {
+        "restriction": null,
+        "located": true
+      },
+      "CV-05": {
+        "restriction": null,
+        "located": true
+      },
+      "CV-06": {
+        "restriction": null,
+        "located": true
+      },
+      "C1": {
+        "restriction": null,
+        "located": true
+      },
+      "C1-CAM": {
+        "restriction": null,
+        "located": true
+      },
+      "C1-L1": {
+        "restriction": null,
+        "located": true
+      },
+      "C1-L2": {
+        "restriction": null,
+        "located": true
+      },
+      "TRP-04": {
+        "restriction": null,
+        "located": true
+      },
+      "CAL-01": {
+        "restriction": null,
+        "located": true
+      },
+      "S1-B": {
+        "restriction": null,
+        "located": true
+      }
+    },
+    "bookings": [
+      {
+        "id": "B-2040",
+        "who": "Another group",
+        "day": "Thu 1 Oct",
+        "slot": "10:00",
+        "kit": "KIT-C1-v1",
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "status": "Confirmed",
+        "label": "Existing booking"
+      },
+      {
+        "id": "B-2047",
+        "who": "Teaching session EX-TS-07 · C1 rotation",
+        "day": "Tue 6 Oct",
+        "slot": "10:00–12:00",
+        "kit": "KIT-C1-v1",
+        "resources": [
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "status": "Confirmed",
+        "label": "Teaching"
+      },
+      {
+        "id": "B-2048",
+        "who": "Teaching session EX-TS-07 · S1 rotation",
+        "day": "Tue 6 Oct",
+        "slot": "10:00–12:00",
+        "kit": "KIT-S1-v1",
+        "resources": [
+          "S1-B"
+        ],
+        "status": "Confirmed",
+        "label": "Teaching"
+      },
+      {
+        "id": "B-2049",
+        "who": "A student",
+        "day": "Wed 7 Oct",
+        "slot": "14:00",
+        "kit": "KIT-C1-v1",
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "status": "Confirmed",
+        "label": "Student"
+      }
+    ],
+    "sessions": {
+      "E06": {
+        "checkedIn": false,
+        "station": null,
+        "kit": {},
+        "started": false,
+        "interrupted": false,
+        "usedPrepared": false,
+        "captures": [],
+        "note": "",
+        "noteSaved": null,
+        "ackPending": false,
+        "receipt": null,
+        "returned": {},
+        "closed": false,
+        "followUp": null
+      },
+      "E01": {
+        "checkedIn": false,
+        "station": null,
+        "kit": {},
+        "started": false,
+        "interrupted": false,
+        "usedPrepared": false,
+        "captures": [],
+        "note": "",
+        "noteSaved": null,
+        "ackPending": false,
+        "receipt": null,
+        "returned": {},
+        "closed": false,
+        "followUp": null
+      }
+    },
+    "issues": [],
+    "log": []
+  }
+}

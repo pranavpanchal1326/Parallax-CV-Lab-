@@ -1,0 +1,122 @@
+{
+  "R01": {
+    "file": "R01_entry.png",
+    "loc": [
+      0.55,
+      -4.65,
+      1.62
+    ],
+    "target": [
+      8.2,
+      -2.6,
+      1.15
+    ],
+    "lens": 17,
+    "purpose": "Entry perspective: spatial identity from D1"
+  },
+  "R02": {
+    "file": "R02_iso_cutaway.png",
+    "loc": [
+      -7.8,
+      -15.6,
+      11.8
+    ],
+    "target": [
+      5,
+      -3.5,
+      0.7
+    ],
+    "ortho": 14.8,
+    "purpose": "Isometric cutaway showing every zone and the P7 signage"
+  },
+  "R03": {
+    "file": "R03_student_eye.png",
+    "loc": [
+      3.5,
+      -3.75,
+      1.2
+    ],
+    "target": [
+      3.5,
+      -0.8,
+      1.02
+    ],
+    "lens": 22,
+    "purpose": "Student-eye view at CV-05"
+  },
+  "R04": {
+    "file": "R04_capture.png",
+    "loc": [
+      9.8,
+      -3.72,
+      2.45
+    ],
+    "target": [
+      8.35,
+      -1.7,
+      0.95
+    ],
+    "lens": 17,
+    "purpose": "Controlled capture: camera, lights, target and stage on the 2.05 m axis"
+  },
+  "R05": {
+    "file": "R05_signal_bench.png",
+    "loc": [
+      8.3,
+      -4.0,
+      2.25
+    ],
+    "target": [
+      8.3,
+      -6.75,
+      0.85
+    ],
+    "lens": 19,
+    "purpose": "Signal bench S1 with illustrative instruments"
+  },
+  "R06": {
+    "file": "R06_collaboration.png",
+    "loc": [
+      5.6,
+      -4.25,
+      1.6
+    ],
+    "target": [
+      3.1,
+      -6.6,
+      0.95
+    ],
+    "lens": 22,
+    "purpose": "Collaboration table and demonstration display"
+  },
+  "R07": {
+    "file": "R07_storage.png",
+    "loc": [
+      4.55,
+      -3.3,
+      1.75
+    ],
+    "target": [
+      6.5,
+      -1.15,
+      1.0
+    ],
+    "lens": 19,
+    "purpose": "Kit storage STO-1 beside the computing aisle"
+  },
+  "R08": {
+    "file": "R08_plan.png",
+    "loc": [
+      5,
+      -3.5,
+      18
+    ],
+    "target": [
+      5,
+      -3.5,
+      0
+    ],
+    "ortho": 12.3,
+    "purpose": "Top plan base for the services and circulation overlay"
+  }
+}

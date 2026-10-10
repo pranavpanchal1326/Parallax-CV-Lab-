@@ -1,0 +1,112 @@
+{
+  "path": "#/mobile",
+  "violations": [],
+  "passedRules": 38,
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "target": [
+            ".migration-strip > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href=\"/prototype/index.html\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "em"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".mobile-workspace > p:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".mobile-workspace > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#lookup-help"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".quiet.pbtn[href$=\"#/map\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "button[aria-controls=\"session-activity\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > .quiet:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > .quiet:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "h2"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".access-review > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        }
+      ]
+    }
+  ],
+  "engine": {
+    "name": "axe-core",
+    "version": "4.10.2"
+  }
+}

@@ -1,0 +1,201 @@
+[
+  {
+    "kind": "frame",
+    "number": 2,
+    "status": "Frame 2 of 10",
+    "caption": "E06: authored frontal and side-light conditions. Compare the shadow and name the detector-accuracy limit.",
+    "image": "../assets/E06-side.png"
+  },
+  {
+    "kind": "frame",
+    "number": 3,
+    "status": "Frame 3 of 10",
+    "caption": "Real local Ollama selection: E01 revision 01 / E01-alias. Reviewed source wording and an independent reasoning prompt.",
+    "image": "../assets/assistant-answer.png"
+  },
+  {
+    "kind": "frame",
+    "number": 4,
+    "status": "Frame 4 of 10",
+    "caption": "Fault stage 5: camera restriction propagates through the complete kit and dependent bookings.",
+    "image": "../assets/fault-5.png"
+  },
+  {
+    "kind": "frame",
+    "number": 5,
+    "status": "Frame 5 of 10",
+    "caption": "Fault stage 7: interrupted verification keeps the restriction.",
+    "image": "../assets/fault-7.png"
+  },
+  {
+    "kind": "frame",
+    "number": 6,
+    "status": "Frame 6 of 10",
+    "caption": "Fault stage 8: early release is refused without recorded verification.",
+    "image": "../assets/fault-8.png"
+  },
+  {
+    "kind": "frame",
+    "number": 7,
+    "status": "Frame 7 of 10",
+    "caption": "Fault stage 10: restoration follows recorded verification, with a limited public projection.",
+    "image": "../assets/fault-10.png"
+  },
+  {
+    "kind": "frame",
+    "number": 8,
+    "status": "Frame 8 of 10",
+    "caption": "Geometry: keyboard-selected plan approximation remains labelled. It does not equal 3D object-ID measurement.",
+    "image": "../assets/plan-fallback.png"
+  },
+  {
+    "kind": "frame",
+    "number": 9,
+    "status": "Frame 9 of 10",
+    "caption": "Typed-ID lookup: 16 px text, 44 px control and a camera-free route.",
+    "image": "../assets/mobile-viewport.png"
+  },
+  {
+    "kind": "frame",
+    "number": 10,
+    "status": "Frame 10 of 10",
+    "caption": "Exact-text export fallback: select the same serialized record if native download is unavailable.",
+    "image": "../assets/export-fallback.png"
+  },
+  {
+    "kind": "frame-boundaries",
+    "end": {
+      "nextDisabled": true,
+      "previousEnabled": true
+    },
+    "startPreviousDisabled": true,
+    "startStatus": "Frame 1 of 10"
+  },
+  {
+    "kind": "slide",
+    "number": 2,
+    "status": "Slide 2 of 15 · scheduled 55 seconds",
+    "caption": "A practical depends on more than a free station",
+    "notesPresent": true,
+    "image": "deck-slides/slide-02.png"
+  },
+  {
+    "kind": "slide",
+    "number": 3,
+    "status": "Slide 3 of 15 · scheduled 55 seconds",
+    "caption": "Fourteen sources inform the design",
+    "notesPresent": true,
+    "image": "deck-slides/slide-03.png"
+  },
+  {
+    "kind": "slide",
+    "number": 4,
+    "status": "Slide 4 of 15 · scheduled 55 seconds",
+    "caption": "The journey keeps ownership visible",
+    "notesPresent": true,
+    "image": "deck-slides/slide-04.png"
+  },
+  {
+    "kind": "slide",
+    "number": 5,
+    "status": "Slide 5 of 15 · scheduled 55 seconds",
+    "caption": "Fifteen boards make decisions inspectable",
+    "notesPresent": true,
+    "image": "deck-slides/slide-05.png"
+  },
+  {
+    "kind": "slide",
+    "number": 6,
+    "status": "Slide 6 of 15 · scheduled 55 seconds",
+    "caption": "P4-D fits the assumed seventy square metres",
+    "notesPresent": true,
+    "image": "deck-slides/slide-06.png"
+  },
+  {
+    "kind": "slide",
+    "number": 7,
+    "status": "Slide 7 of 15 · scheduled 55 seconds",
+    "caption": "The dashboard shows what its sources can support",
+    "notesPresent": true,
+    "image": "deck-slides/slide-07.png"
+  },
+  {
+    "kind": "slide",
+    "number": 8,
+    "status": "Slide 8 of 15 · scheduled 55 seconds",
+    "caption": "Sustainability proposals carry assumptions and owners",
+    "notesPresent": true,
+    "image": "deck-slides/slide-08.png"
+  },
+  {
+    "kind": "slide",
+    "number": 9,
+    "status": "Slide 9 of 15 · scheduled 90 seconds",
+    "caption": "E01 reveals an ambiguous sampling choice",
+    "notesPresent": true,
+    "image": "deck-slides/slide-09.png"
+  },
+  {
+    "kind": "slide",
+    "number": 10,
+    "status": "Slide 10 of 15 · scheduled 75 seconds",
+    "caption": "E06 asks for a bounded comparison",
+    "notesPresent": true,
+    "image": "deck-slides/slide-10.png"
+  },
+  {
+    "kind": "slide",
+    "number": 11,
+    "status": "Slide 11 of 15 · scheduled 90 seconds",
+    "caption": "A repair keeps restrictions until verification",
+    "notesPresent": true,
+    "image": "deck-slides/slide-11.png"
+  },
+  {
+    "kind": "slide",
+    "number": 12,
+    "status": "Slide 12 of 15 · scheduled 75 seconds",
+    "caption": "Local Ollama returns a passage with its revision",
+    "notesPresent": true,
+    "image": "deck-slides/slide-12.png"
+  },
+  {
+    "kind": "slide",
+    "number": 13,
+    "status": "Slide 13 of 15 · scheduled 60 seconds",
+    "caption": "The operations exercise preserves complete dependencies",
+    "notesPresent": true,
+    "image": "deck-slides/slide-13.png"
+  },
+  {
+    "kind": "slide",
+    "number": 14,
+    "status": "Slide 14 of 15 · scheduled 40 seconds",
+    "caption": "The final checks retain the original behavior",
+    "notesPresent": true,
+    "image": "deck-slides/slide-14.png"
+  },
+  {
+    "kind": "slide",
+    "number": 15,
+    "status": "Slide 15 of 15 · scheduled 30 seconds",
+    "caption": "One current entry opens the whole submission",
+    "notesPresent": true,
+    "image": "deck-slides/slide-15.png"
+  },
+  {
+    "kind": "slide-boundaries",
+    "end": {
+      "nextDisabled": true,
+      "previousEnabled": true
+    },
+    "previousFocused": true,
+    "statusAfterBack": "Slide 14 of 15 · scheduled 40 seconds"
+  },
+  {
+    "kind": "entry-keyboard-order",
+    "focused": true,
+    "href": "PARALLAX-Final-Report.pdf",
+    "outline": "rgb(51, 70, 211) solid 2.4px"
+  }
+]

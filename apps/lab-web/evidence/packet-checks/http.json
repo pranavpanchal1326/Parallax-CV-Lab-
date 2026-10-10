@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/submission/PARALLAX-Final-Report.pdf",
+    "status": 200,
+    "type": "application/pdf"
+  },
+  {
+    "path": "/submission/PARALLAX-Presentation-Final.pptx",
+    "status": 200,
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+  },
+  {
+    "path": "/submission/demo/PARALLAX-Recorded-Walkthrough.webm",
+    "status": 200,
+    "type": "video/webm"
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "revision": "U03",
+  "date": "2026-10-03",
+  "checked": 11,
+  "allUnchanged": true,
+  "excluded": "root package.json: earlier authorised script additions",
+  "files": [
+    {
+      "path": "prototype/index.html",
+      "sha256": "c5a5d53900343eecf863de41b16ce62074cec84a66a0feb21693fda5c5d9089c",
+      "unchanged": true
+    },
+    {
+      "path": "prototype/app.js",
+      "sha256": "bf0af623744c7363472cc6714c802a25a0dfb4ca7c99b8808a8615ee749ee912",
+      "unchanged": true
+    },
+    {
+      "path": "prototype/store.js",
+      "sha256": "3d4f982f91e203bd007cbf9f4c81ca3a575f9c8ac7ff237facca331fb6d34754",
+      "unchanged": true
+    },
+    {
+      "path": "prototype/proto.css",
+      "sha256": "04ec0773d604d4ee326d113d55712c6af3bad8148c4423afaaad421d896d48ab",
+      "unchanged": true
+    },
+    {
+      "path": "prototype/fixtures.json",
+      "sha256": "53ef14be6b468aa0b7b380d98dd1e82d5c07eadfb1a53a2cbe8602d57a2ac60d",
+      "unchanged": true
+    },
+    {
+      "path": "prototype/validate.cjs",
+      "sha256": "8332fee65b620986a8f96a5fc6cfd5d698c12ffa70b32c55505f11fec84f60cc",
+      "unchanged": true
+    },
+    {
+      "path": "design/system/tokens.css",
+      "sha256": "d94b906cb93233aa8c057191b08bc1806bc3244d7e0e7793d2215c0015b17210",
+      "unchanged": true
+    },
+    {
+      "path": "design/system/token-source.json",
+      "sha256": "601cc03473740a04d49dd65c651e42a7e4cdec256c3670ab97af7e82edba0338",
+      "unchanged": true
+    },
+    {
+      "path": "design/edition.css",
+      "sha256": "841f2af933de669b56633ba0e69ddc63bbcaa968f721958b3f3e816337a9d5c8",
+      "unchanged": true
+    },
+    {
+      "path": "design/theme.js",
+      "sha256": "b758ab34ec870cf5a80e17cf41a5cb3a8d0de4385e984b426fc03934cd984769",
+      "unchanged": true
+    },
+    {
+      "path": "spatial/lab_geometry.json",
+      "sha256": "772cc7617573e064feb1f0a38ffbf20a7e42da57f56fd6711b14bfa43c2b3f57",
+      "unchanged": true
+    }
+  ],
+  "accessViews": 31,
+  "narrowViews": 31,
+  "confirmedViolations": 0,
+  "incompleteRules": [
+    "color-contrast"
+  ],
+  "scope": "Local functional parity with reviewed design equivalents; not live operational services, full accessibility certification or participant validation"
+}

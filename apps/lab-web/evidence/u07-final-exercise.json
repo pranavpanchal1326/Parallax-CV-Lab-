@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "state": {
+    "version": 1,
+    "revision": 4,
+    "source": "U07 independent exercise",
+    "policies": {
+      "E01": {
+        "experiment": "E01",
+        "version": 1,
+        "methodRevision": "01",
+        "state": "published",
+        "owner": "faculty",
+        "existingSessions": "recorded-method",
+        "reason": "Prepared exercise method; not institutional approval",
+        "effectiveDay": "2026-10-06",
+        "reviewBy": "2026-10-06 17:00 IST"
+      },
+      "E06": {
+        "experiment": "E06",
+        "version": 1,
+        "methodRevision": "01",
+        "state": "published",
+        "owner": "faculty",
+        "existingSessions": "recorded-method",
+        "reason": "Prepared exercise method; not institutional approval",
+        "effectiveDay": "2026-10-06",
+        "reviewBy": "2026-10-06 17:00 IST"
+      }
+    },
+    "resourceRevision": 0,
+    "restricted": [],
+    "allocations": [
+      {
+        "id": "OP-BOOKING-1",
+        "requestId": "94389913-935f-4f4a-b5fb-3a1f30b2f575",
+        "actor": "pairB",
+        "experiment": "E06",
+        "day": "2026-11-06",
+        "start": 840,
+        "end": 900,
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 1
+      },
+      {
+        "id": "OP-BOOKING-2",
+        "requestId": "8d724897-7651-43ee-bc2d-0ecd5a2b9532",
+        "actor": "pairB",
+        "experiment": "E06",
+        "day": "2026-11-06",
+        "start": 660,
+        "end": 720,
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 2
+      },
+      {
+        "id": "OP-BOOKING-3",
+        "requestId": "1b3242fb-12d2-4ab4-8435-0544ea4e29d1",
+        "actor": "pairA",
+        "experiment": "E06",
+        "day": "2026-11-06",
+        "start": 600,
+        "end": 660,
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 3
+      },
+      {
+        "id": "OP-BOOKING-4",
+        "requestId": "d7dddcb6-5715-461a-ab43-86fea41b5828",
+        "actor": "pairA",
+        "experiment": "E06",
+        "day": "2026-10-06",
+        "start": 600,
+        "end": 660,
+        "resources": [
+          "CV-02",
+          "C1",
+          "C1-CAM",
+          "C1-L1",
+          "C1-L2",
+          "TRP-04",
+          "CAL-01"
+        ],
+        "methodRevision": "01",
+        "policyVersion": 1,
+        "createdRevision": 4
+      }
+    ],
+    "events": [
+      {
+        "id": "OP-EVENT-1",
+        "revision": 1,
+        "actor": "pairB",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-1",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      },
+      {
+        "id": "OP-EVENT-2",
+        "revision": 2,
+        "actor": "pairB",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-2",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      },
+      {
+        "id": "OP-EVENT-3",
+        "revision": 3,
+        "actor": "pairA",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-3",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      },
+      {
+        "id": "OP-EVENT-4",
+        "revision": 4,
+        "actor": "pairA",
+        "action": "Complete kit allocated",
+        "target": "OP-BOOKING-4",
+        "reason": "Final interval, manifest, method and restriction check inside the local exercise transition"
+      }
+    ],
+    "handovers": [],
+    "notices": [],
+    "requests": [
+      {
+        "id": "94389913-935f-4f4a-b5fb-3a1f30b2f575",
+        "fingerprint": "[[\"day\",\"2026-11-06\"],[\"end\",900],[\"experiment\",\"E06\"],[\"id\",\"94389913-935f-4f4a-b5fb-3a1f30b2f575\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",840],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-1"
+        }
+      },
+      {
+        "id": "026e20fa-637f-4fe1-8792-7f6e412a7550",
+        "fingerprint": "[[\"day\",\"2026-11-06\"],[\"end\",900],[\"experiment\",\"E06\"],[\"id\",\"026e20fa-637f-4fe1-8792-7f6e412a7550\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",840],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-11-06",
+            "start": 900,
+            "end": 960
+          }
+        }
+      },
+      {
+        "id": "8d724897-7651-43ee-bc2d-0ecd5a2b9532",
+        "fingerprint": "[[\"day\",\"2026-11-06\"],[\"end\",720],[\"experiment\",\"E06\"],[\"id\",\"8d724897-7651-43ee-bc2d-0ecd5a2b9532\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",660],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-2"
+        }
+      },
+      {
+        "id": "1b3242fb-12d2-4ab4-8435-0544ea4e29d1",
+        "fingerprint": "[[\"day\",\"2026-11-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"1b3242fb-12d2-4ab4-8435-0544ea4e29d1\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-3"
+        }
+      },
+      {
+        "id": "f0c144ea-675d-4af6-881f-2f33a682162e",
+        "fingerprint": "[[\"day\",\"2026-11-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"f0c144ea-675d-4af6-881f-2f33a682162e\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-11-06",
+            "start": 720,
+            "end": 780
+          }
+        }
+      },
+      {
+        "id": "6d801d0b-0c44-45ba-af61-ed5bd9d07e28",
+        "fingerprint": "[[\"day\",\"2026-11-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"6d801d0b-0c44-45ba-af61-ed5bd9d07e28\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-11-06",
+            "start": 720,
+            "end": 780
+          }
+        }
+      },
+      {
+        "id": "d7dddcb6-5715-461a-ab43-86fea41b5828",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"d7dddcb6-5715-461a-ab43-86fea41b5828\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairA",
+        "result": {
+          "ok": true,
+          "code": "confirmed",
+          "message": "Complete kit allocated in this independent exercise. This is not a real lab reservation.",
+          "recordId": "OP-BOOKING-4"
+        }
+      },
+      {
+        "id": "db504230-bb86-40af-805e-3f47aaf06e46",
+        "fingerprint": "[[\"day\",\"2026-10-06\"],[\"end\",660],[\"experiment\",\"E06\"],[\"id\",\"db504230-bb86-40af-805e-3f47aaf06e46\"],[\"policyVersion\",1],[\"resourceRevision\",0],[\"start\",600],[\"type\",\"reserve\"]]",
+        "actor": "pairB",
+        "result": {
+          "ok": false,
+          "code": "conflict",
+          "message": "The interval overlaps an existing complete-kit allocation. No partial hold was created.",
+          "resources": [
+            "CV-02",
+            "C1",
+            "C1-CAM",
+            "C1-L1",
+            "C1-L2",
+            "TRP-04",
+            "CAL-01"
+          ],
+          "alternative": {
+            "day": "2026-10-06",
+            "start": 660,
+            "end": 720
+          }
+        }
+      }
+    ],
+    "sessions": [
+      {
+        "id": "OP-SESSION-E06",
+        "experiment": "E06",
+        "methodRevision": "01",
+        "captured": [
+          {
+            "id": "OP-CAPTURE-01",
+            "source": "Prepared illustration",
+            "text": "Compare the visible side-light shadow with the frontal illustration."
+          }
+        ]
+      }
+    ]
+  },
+  "lastRequest": {
+    "command": {
+      "type": "reserve",
+      "experiment": "E06",
+      "day": "2026-10-06",
+      "start": 600,
+      "end": 660,
+      "policyVersion": 1,
+      "resourceRevision": 0,
+      "id": "db504230-bb86-40af-805e-3f47aaf06e46"
+    },
+    "actor": "pairB"
+  }
+}

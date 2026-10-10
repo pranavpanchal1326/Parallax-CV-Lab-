@@ -1,0 +1,219 @@
+{
+  "artPlates": [
+    {
+      "id": "ART-01",
+      "file": "ART-01",
+      "title": "From signal to understanding",
+      "kind": "entrance",
+      "job": "Establish the lab's identity through continuous waveform and discrete sample rhythm.",
+      "source": "REF-2HZ-v1 · canonical ideal sine reference",
+      "equivalent": "A 2 Hz ideal reference becomes four samples over one second at 3 Hz. This is generated art, not acquisition.",
+      "route": "/E01/prepare",
+      "scale": "Entrance identity study · 1280 × 900 vector master; viewing-distance and mounting review pending"
+    },
+    {
+      "id": "ART-02",
+      "file": "ART-02",
+      "title": "A rhythm above the room",
+      "kind": "installation",
+      "job": "Develop the existing segmented-fin installation with a readable assembly and light study.",
+      "source": "ARTWORK-CAND04 · existing P8-B sculpture concept / P4-D circulation zone",
+      "equivalent": "Waveform-shaped fins resolve into discrete illuminated segments. Separate frame, fins and replaceable light modules are candidates; no structure or photometry is certified.",
+      "route": "/map",
+      "scale": "Installation study · schematic assembly; no fabrication dimensions"
+    },
+    {
+      "id": "ART-03",
+      "file": "ART-03",
+      "title": "Read the conditions, keep the evidence",
+      "kind": "atlas",
+      "job": "Make aligned frontal and side-light illustrations readable with their source and condition labels.",
+      "source": "ILL-L1-v1 / ILL-L2-v1 · canonical prepared illustrations",
+      "equivalent": "Both plates show the same illustrative objects and framing. Frontal light has short authored shadows; side light has longer authored shadows. No camera frames, detector accuracy or causal measurement is asserted.",
+      "route": "/E06/conditions",
+      "scale": "Conditions atlas · aligned illustration plates with identical framing"
+    },
+    {
+      "id": "ART-04",
+      "file": "ART-04-E01",
+      "title": "Predict before sampling",
+      "kind": "signal-story",
+      "job": "Tell the E01 learning sequence through a restrained five-frame storyboard.",
+      "source": "E01 / KIT-S1-v1 / REF-2HZ-v1 · canonical fixtures",
+      "equivalent": "Predict, prepare the signal kit, inspect 3 Hz samples, compare with 20 Hz samples, then write a supported reflection. The sampling model does not replace acquisition.",
+      "route": "/E01/rehearsal",
+      "scale": "E01 storyboard · five illustrated steps and text equivalent"
+    },
+    {
+      "id": "ART-04",
+      "file": "ART-04-E06",
+      "title": "Change the light, own the interpretation",
+      "kind": "vision-story",
+      "job": "Tell the E06 sequence while keeping illustration and student interpretation distinct.",
+      "source": "E06 / KIT-C1-v1 / ILL-L1-v1 / ILL-L2-v1",
+      "equivalent": "Predict, match the full kit, observe a frontal illustration, compare the side-light illustration, then reflect on what the illustration cannot establish.",
+      "route": "/E06/rehearsal",
+      "scale": "E06 storyboard · five illustrated steps and text equivalent"
+    },
+    {
+      "id": "ART-05",
+      "file": "ART-05",
+      "title": "Every part belongs to the kit",
+      "kind": "equipment",
+      "job": "Give each capture component its canonical identity without substituting an invented inventory.",
+      "source": "KIT-C1-v1 · canonical complete manifest",
+      "equivalent": "The capture kit includes CV-02, C1, C1-CAM, both C1-L1 and C1-L2, TRP-04 and CAL-01. Shapes are schematic and do not establish current availability or calibration.",
+      "route": "/assets/C1-CAM",
+      "scale": "Equipment illustration plate · canonical component labels"
+    },
+    {
+      "id": "ART-06",
+      "file": "ART-06",
+      "title": "One vocabulary from door to return",
+      "kind": "wayfinding",
+      "job": "Carry existing S-01–S-06 sign identities through entrance, zone, station, asset, restriction and safety touchpoints.",
+      "source": "P7-A signage family · P4-D destination anchors",
+      "equivalent": "Entrance identifies the subject; zone and station signs match the booking; the asset tag gives a typed ID; a restriction tag names only the equipment consequence; the safety reference points to posted local procedures.",
+      "route": "/mobile",
+      "scale": "Sign family · six individual vector studies; sizes/installation require local review"
+    },
+    {
+      "id": "ART-07",
+      "file": "ART-07",
+      "title": "Evidence first, interpretation second",
+      "kind": "report",
+      "job": "Provide an authored report/presentation spread using a clear figure, caption and evidence hierarchy.",
+      "source": "Authored spread · REF-2HZ-v1 generated signal and illustrative fault dependency",
+      "equivalent": "The main generated signal figure is separated from the supporting camera-to-kit consequence diagram, source captions and limitations. This is a reusable visual master, not the final U10 report or deck.",
+      "route": "/walkthrough",
+      "scale": "Report/presentation visual master · 1280 × 900 SVG"
+    },
+    {
+      "id": "ART-08",
+      "file": "ART-08",
+      "title": "A sample becomes a pixel",
+      "kind": "pixel",
+      "job": "Inspect how each ideal sine sample maps to a normalized display value.",
+      "source": "REF-2HZ-v1 · 2 Hz / 1 V / 1 s mathematical model",
+      "equivalent": "For each sample v, display value is (v + amplitude) / (2 × amplitude). The mapping is a decorative display model, not calibrated luminance or measured energy.",
+      "route": "/E01/rehearsal",
+      "scale": "Discrete interactive study · static default, no autoplay or animation"
+    }
+  ],
+  "signStudies": [
+    {
+      "id": "S-01",
+      "title": "PARALLAX",
+      "detail": "Signal & Computer Vision Lab",
+      "anchor": "D1",
+      "job": "Identify the subject at the main entry."
+    },
+    {
+      "id": "S-02",
+      "title": "C1 · Controlled capture",
+      "detail": "Match the kit and method before work",
+      "anchor": "C1",
+      "job": "Identify the destination without implying equipment readiness."
+    },
+    {
+      "id": "S-03",
+      "title": "CV-02",
+      "detail": "Match this station to your booking",
+      "anchor": "CV-02",
+      "job": "Preserve the canonical station identifier."
+    },
+    {
+      "id": "S-04",
+      "title": "C1-CAM",
+      "detail": "Typed ID · passport · manual · issue record",
+      "anchor": "C1-CAM",
+      "job": "Provide a readable equipment lookup independent of QR/camera permission."
+    },
+    {
+      "id": "S-05",
+      "title": "C1-CAM · restricted",
+      "detail": "Capture kit unavailable · contact technician",
+      "anchor": "C1-CAM",
+      "job": "Show an allowed equipment consequence without private fault or person details."
+    },
+    {
+      "id": "S-06",
+      "title": "Know the landmark",
+      "detail": "FE-1 · reference posted local procedures",
+      "anchor": "FE-1",
+      "job": "Identify an existing safety point; this study is not approved emergency signage."
+    }
+  ],
+  "physicalStudies": [
+    {
+      "id": "PHYS-01",
+      "layer": "orientation",
+      "title": "Keep orientation separate from obstruction",
+      "anchors": ["D1", "D2", "SPN", "TC-1", "AC-CV04"],
+      "owner": "Facilities/access lead + teaching technician",
+      "proposal": "Retain the concept circulation spine, exit openings, turning space and CV-04 approach floor. Use destination IDs on existing signs rather than adding floor-standing art in the route.",
+      "review": "Survey the room, review concurrent movement, mounting and sight lines, and confirm local access/emergency procedures. Static geometric fit does not establish whole-class comfort or approved capacity.",
+      "fallback": "Posted local procedures and readable destination/station IDs; plan/list remain available without AI or 3D."
+    },
+    {
+      "id": "PHYS-02",
+      "layer": "emergency",
+      "title": "Landmarks before decorative warnings",
+      "anchors": [
+        "FE-1",
+        "FE-2",
+        "FA-1",
+        "EPO-1",
+        "EPO-2",
+        "MCP-1",
+        "MCP-2",
+        "EX-1",
+        "EX-2"
+      ],
+      "owner": "Institutional safety lead + qualified facilities staff",
+      "proposal": "Preserve the canonical equipment and exit landmarks. Separate electrical-control, capture-light/cable and exit-clearance review from artwork. Warning meaning comes from approved procedures, not an ambient colour effect.",
+      "review": "Confirm equipment type, suitability, access, emergency instructions, sign artwork and installations. These identifiers locate concept fixtures and give no equipment-use instruction or certified hazard assessment.",
+      "fallback": "Actual posted emergency instructions and designated staff remain authoritative. This reference places no calls and operates no power or alarm."
+    },
+    {
+      "id": "PHYS-03",
+      "layer": "cctv",
+      "title": "Security cameras have a different purpose",
+      "anchors": ["CCTV-1", "CCTV-2", "C1-CAM"],
+      "owner": "Institutional security/privacy owner",
+      "proposal": "Locate the two concept security-camera markers separately from the C1 experiment camera. The entry notice should identify the approved surveillance purpose and responsible contact before installation.",
+      "review": "Purpose, lawful access, retention, staff visibility, signage and actual camera coverage require institutional decisions. Coverage is unverified; no viewing cones, monitoring feed, biometric attendance or readiness inference is supplied.",
+      "fallback": "Readable awareness notice and responsible contact after policy approval. Typed station/asset lookup does not require surveillance or camera permission."
+    },
+    {
+      "id": "PHYS-04",
+      "layer": "ventilation",
+      "title": "An opening does not establish airflow",
+      "anchors": ["W1", "VS-1", "VS-2", "VE-1", "VE-2", "C1"],
+      "owner": "Facilities ventilation lead + faculty method owner",
+      "proposal": "Show the assumed operable W1 and concept supply/extract terminals. W1 daylight and drafts can affect C1 repeatability; the capture partition and shielding need joint method/facilities review.",
+      "review": "Occupied airflow, outdoor conditions, opening suitability and terminal performance remain unmeasured. D1/D2 are exit landmarks, not ventilation controls. No universal air-quality threshold or guaranteed cross-flow is asserted.",
+      "fallback": "Approved manual facilities procedure and current source/freshness labels. Unconnected or stale readings cannot certify safe air."
+    },
+    {
+      "id": "PHYS-05",
+      "layer": "installation",
+      "title": "A ceiling study, not a structure",
+      "anchors": ["SPN", "COL", "C1", "W1"],
+      "owner": "Facilities/structural lead + art maintainer",
+      "proposal": "Develop ARTWORK-CAND04 as a segmented-fin and replaceable-light candidate above the concept spine. Keep mounting separate from circulation, emergency lighting and capture task-light circuits.",
+      "review": "Suspension, clearance, stability, fire behaviour, glare, cleanability, driver access and replacement need qualified review. The schematic disassembly study specifies no fasteners, loads, products or fabrication dimensions.",
+      "fallback": "Static waveform/sample poster and physical text labels convey the same subject without powered artwork. No quantified energy saving follows."
+    },
+    {
+      "id": "PHYS-06",
+      "layer": "orientation",
+      "title": "Follow the class through the touchpoints",
+      "anchors": ["D1", "CV-02", "STO-1", "C1", "COL", "S1", "D2"],
+      "owner": "Faculty session lead + technician",
+      "proposal": "Desk scenario: arrival at D1; match booked station; collect the complete kit from STO-1; rotate through C1/S1; retain work during a fault; return every component; review at COL; depart by the approved local route.",
+      "review": "Simultaneous collection/return, queues, sight lines, cable movement, cleanup and assisted approach need a measured occupied-room review. The plan does not prove dynamic circulation or capacity.",
+      "fallback": "Same station/asset IDs, manually posted instructions and named staff recovery. No second operational register or automatic attendance is created."
+    }
+  ]
+}

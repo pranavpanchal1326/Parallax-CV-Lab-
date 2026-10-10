@@ -1,0 +1,87 @@
+{
+  "baseFamilies": {
+    "familyCount": 40,
+    "variantCount": 87,
+    "missing": [],
+    "wrongParent": []
+  },
+  "sourceViews": [
+    {
+      "id": "2065:2587",
+      "name": "P5-B / 01 Lab atlas",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1094
+    },
+    {
+      "id": "2070:1494",
+      "name": "P5-B / 09 Plan & asset index",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1278
+    },
+    {
+      "id": "2065:2662",
+      "name": "P5-B / 02 Reservation",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1265
+    },
+    {
+      "id": "2065:2812",
+      "name": "P5-B / 03 Reservation conflict",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1265
+    },
+    {
+      "id": "2065:2954",
+      "name": "P5-B / 04 Vision workbench",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1119
+    },
+    {
+      "id": "2065:3142",
+      "name": "P5-B / 05 Device recovery",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1145
+    },
+    {
+      "id": "2070:1612",
+      "name": "P5-B / 10 Signal instrument",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 968
+    },
+    {
+      "id": "2070:1727",
+      "name": "P5-B / 11 Sampling comparison",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 947
+    },
+    {
+      "id": "2065:3333",
+      "name": "P5-B / 06 Evidence notebook",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1219
+    },
+    {
+      "id": "2065:3464",
+      "name": "P5-B / 07 Evidence save recovery",
+      "parent": "2045:22",
+      "width": 1440,
+      "height": 1219
+    },
+    {
+      "id": "2072:1569",
+      "name": "P5-B / 00 Editorial showcase",
+      "parent": "2045:22",
+      "width": 1920,
+      "height": 4839.2001953125
+    }
+  ]
+}

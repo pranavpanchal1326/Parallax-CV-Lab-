@@ -1,0 +1,183 @@
+// Prepared additive Figma Plugin API build. NOT EXECUTED in this session.
+// use_figma: fileKey QaLr3W9rzW1WGhkDeHx9WF; skills figma-use,figma-generate-library
+const TOKEN_SOURCE = {
+  "version": "P5-A",
+  "direction": "Atlas+ provisional",
+  "primitives": {
+    "paper": "#F4F1E9",
+    "white": "#FFFFFF",
+    "paper2": "#EAE6DC",
+    "ink": "#20232B",
+    "muted": "#535B66",
+    "line": "#747B87",
+    "blue": "#3346D3",
+    "blueHover": "#2737A9",
+    "blueSoft": "#E6E9FF",
+    "green": "#1C7148",
+    "greenSoft": "#E8F3EC",
+    "red": "#B42318",
+    "redSoft": "#FDEDEA",
+    "amber": "#795700",
+    "amberSoft": "#FFF1D0",
+    "graphite": "#151922",
+    "graphite2": "#202936",
+    "mint": "#6EE7C5",
+    "gold": "#F2C14E",
+    "light": "#F4F6FB",
+    "secondary": "#BDC7D9",
+    "disabled": "#E4E6EA",
+    "disabledText": "#596270",
+    "marker": "#D9EF73"
+  },
+  "semantic": {
+    "canvas": "paper",
+    "surface": "white",
+    "surfaceSubtle": "paper2",
+    "text": "ink",
+    "textSecondary": "muted",
+    "border": "line",
+    "action": "blue",
+    "actionHover": "blueHover",
+    "actionText": "white",
+    "actionSoft": "blueSoft",
+    "success": "green",
+    "successSurface": "greenSoft",
+    "danger": "red",
+    "dangerSurface": "redSoft",
+    "warning": "amber",
+    "warningSurface": "amberSoft",
+    "instrument": "graphite",
+    "instrumentRaised": "graphite2",
+    "instrumentText": "light",
+    "instrumentSecondary": "secondary",
+    "trace": "mint",
+    "instrumentWarning": "gold",
+    "disabled": "disabled",
+    "disabledText": "disabledText",
+    "marker": "marker"
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48,
+    "4xl": 64
+  },
+  "radius": {
+    "none": 0,
+    "control": 4,
+    "dialog": 8
+  },
+  "motion": {
+    "feedback": 120,
+    "change": 180,
+    "dialog": 220,
+    "camera": 400
+  },
+  "typography": {
+    "display": {
+      "family": "Familjen Grotesk",
+      "fallback": "Arial, sans-serif",
+      "size": 64,
+      "lineHeight": 1.04
+    },
+    "heading": {
+      "family": "Familjen Grotesk",
+      "fallback": "Arial, sans-serif",
+      "size": 32,
+      "lineHeight": 1.15
+    },
+    "body": {
+      "family": "DM Sans",
+      "fallback": "Segoe UI, sans-serif",
+      "size": 16,
+      "lineHeight": 1.6
+    },
+    "label": {
+      "family": "DM Sans",
+      "fallback": "Segoe UI, sans-serif",
+      "size": 14,
+      "lineHeight": 1.4
+    },
+    "data": {
+      "family": "JetBrains Mono",
+      "fallback": "Consolas, monospace",
+      "size": 12,
+      "lineHeight": 1.6
+    },
+    "editorial": {
+      "family": "Newsreader",
+      "fallback": "Georgia, serif",
+      "size": 48,
+      "lineHeight": 1.1
+    }
+  },
+  "responsive": {
+    "compactMax": 639,
+    "mediumMax": 1023,
+    "wideMin": 1024
+  }
+};
+const ids=[],varIds=[],styleIds=[],families=[];
+const PAGE='Phase 5 · Design System — P5-A';
+const ownedPage=figma.root.children.find(p=>p.name===PAGE);
+const fonts=await figma.listAvailableFontsAsync();
+const needed=[{family:'DM Sans',style:'Regular'},{family:'DM Sans',style:'Bold'},{family:'Familjen Grotesk',style:'Regular'},{family:'JetBrains Mono',style:'Regular'}];
+for(const font of needed){if(!fonts.some(f=>f.fontName.family===font.family&&f.fontName.style===font.style))throw new Error('Required font unavailable: '+font.family+' '+font.style+'. No changes made.');}
+await Promise.all(needed.map(f=>figma.loadFontAsync(f)));
+let page=ownedPage;if(!page){page=figma.createPage();page.name=PAGE;ids.push(page.id);}
+await figma.setCurrentPageAsync(page);
+if(page.children.some(n=>n.name==='P5-A / Build complete'))return {status:'Existing completed build preserved. Inspect before revising.',pageId:page.id,createdNodeIds:ids};
+if(page.children.length)throw new Error('The P5-A destination is already populated. Inspect the exact nodes and recover before rebuilding; existing content was preserved.');
+const collections=await figma.variables.getLocalVariableCollectionsAsync();
+const localVariables=await figma.variables.getLocalVariablesAsync();
+function collection(name){let c=collections.find(x=>x.name===name);if(!c){c=figma.variables.createVariableCollection(name);c.renameMode(c.modes[0].modeId,'Value');collections.push(c);}return c;}
+const prim=collection('PH5 · Primitives / P5-A'),semantic=collection('PH5 · Semantic / P5-A'),space=collection('PH5 · Geometry / P5-A');
+const rgb=h=>({r:parseInt(h.slice(1,3),16)/255,g:parseInt(h.slice(3,5),16)/255,b:parseInt(h.slice(5,7),16)/255});
+function variable(name,c,type,value,scopes,css){let v=localVariables.find(x=>x.name===name&&x.variableCollectionId===c.id);if(!v){v=figma.variables.createVariable(name,c,type);localVariables.push(v);}v.scopes=scopes;v.setValueForMode(c.modes[0].modeId,value);v.setVariableCodeSyntax('WEB','var(--'+css+')');varIds.push(v.id);return v;}
+const pv={},sv={},gv={};
+for(const [name,hex]of Object.entries(TOKEN_SOURCE.primitives))pv[name]=variable('primitive/'+name,prim,'COLOR',rgb(hex),[],'primitive-'+name);
+for(const [name,target]of Object.entries(TOKEN_SOURCE.semantic)){const css=name.replace(/[A-Z]/g,m=>'-'+m.toLowerCase());sv[name]=variable('color/'+name,semantic,'COLOR',figma.variables.createVariableAlias(pv[target]),['FRAME_FILL','SHAPE_FILL','TEXT_FILL','STROKE_COLOR'],css);}
+for(const [name,value]of Object.entries(TOKEN_SOURCE.spacing))gv[name]=variable('spacing/'+name,space,'FLOAT',value,['GAP'],'space-'+name);
+for(const [name,value]of Object.entries(TOKEN_SOURCE.radius))gv['radius/'+name]=variable('radius/'+name,space,'FLOAT',value,['CORNER_RADIUS'],'radius-'+name);
+const localStyles=await figma.getLocalTextStylesAsync(),styles={};
+for(const [name,family,size,line]of [['Body','DM Sans',16,24],['Label','DM Sans',14,20],['Heading','Familjen Grotesk',28,34],['Data','JetBrains Mono',12,18]]){
+ let st=localStyles.find(s=>s.name==='PH5/'+name);if(!st){st=figma.createTextStyle();st.name='PH5/'+name;}
+ st.fontName={family,style:'Regular'};st.fontSize=size;st.lineHeight={unit:'PIXELS',value:line};styles[name]=st;styleIds.push(st.id);
+}
+function record(n){ids.push(n.id);return n;}
+function fill(v){return [figma.variables.setBoundVariableForPaint({type:'SOLID',color:{r:0,g:0,b:0}},'color',v)];}
+function text(parent,copy,role='Body',color='text',width=320){const n=record(figma.createText());n.fontName=styles[role].fontName;n.textStyleId=styles[role].id;n.characters=copy;n.fills=fill(sv[color]);n.textAutoResize='HEIGHT';n.resize(width,Math.max(20,n.height));parent.appendChild(n);return n;}
+function auto(parent,name,width=480){const n=record(figma.createAutoLayout());n.name=name;n.layoutMode='VERTICAL';n.resize(width,100);n.primaryAxisSizingMode='AUTO';n.counterAxisSizingMode='FIXED';n.itemSpacing=16;n.paddingTop=n.paddingBottom=n.paddingLeft=n.paddingRight=24;n.fills=fill(sv.surface);parent.appendChild(n);n.setBoundVariable('itemSpacing',gv.lg);return n;}
+function base(name,width=300){const c=record(figma.createComponent());c.name=name;c.layoutMode='VERTICAL';c.resize(width,100);c.primaryAxisSizingMode='AUTO';c.counterAxisSizingMode='FIXED';c.itemSpacing=12;c.paddingTop=c.paddingBottom=c.paddingLeft=c.paddingRight=16;c.fills=fill(sv.surface);c.setBoundVariable('itemSpacing',gv.md);c.setBoundVariable('cornerRadius',gv['radius/control']);return c;}
+function set(components,name,x,y){const owner=record(figma.combineAsVariants(components,page));owner.name=name;owner.description='PARALLAX P5-A development component. See local component contracts for behaviour and implementation limits.';owner.x=x;owner.y=y;owner.fills=fill(sv.canvas);owner.layoutMode='NONE';for(let i=0;i<components.length;i++){components[i].x=24+(i%3)*340;components[i].y=24+Math.floor(i/3)*220;}owner.resizeWithoutConstraints(1040,Math.ceil(components.length/3)*220+48);families.push({name,id:owner.id,variants:components.map(c=>c.id)});return owner;}
+const review=auto(page,'P5-A / Review specimens',1120);review.x=40;review.y=40;review.paddingTop=review.paddingBottom=review.paddingLeft=review.paddingRight=40;
+text(review,'PARALLAX / DESIGN SYSTEM','Data','action',1040);text(review,'Consistent controls. Distinct compositions.','Heading','text',1040);text(review,'Atlas+ development baseline. Example evidence only; research and final acceptance remain open. Main components live outside this review frame.','Body','textSecondary',1040);
+const button=[];
+for(const style of ['Primary','Secondary'])for(const state of ['Default','Hover','Pressed','Focus','Loading','Disabled']){
+ const c=base('Style='+style+', State='+state,280);c.layoutMode='HORIZONTAL';c.primaryAxisSizingMode='FIXED';c.counterAxisSizingMode='FIXED';c.resize(280,48);c.primaryAxisAlignItems='CENTER';c.counterAxisAlignItems='CENTER';
+ const bg=state==='Disabled'?'disabled':style==='Primary'?(state==='Hover'||state==='Pressed'?'actionHover':'action'):'surface';
+ const fg=state==='Disabled'?'disabledText':style==='Primary'?'actionText':'text';c.fills=fill(sv[bg]);c.strokes=fill(sv[state==='Focus'?'action':'border']);c.strokeWeight=state==='Focus'?3:1;
+ const label=text(c,state==='Loading'?'Saving example…':'Save evidence','Label',fg,230);label.textAlignHorizontal='CENTER';button.push(c);
+}
+const bs=set(button,'C03 / Action',1300,40);const labelKey=bs.addComponentProperty('Label','TEXT','Save evidence');
+for(const c of button){const label=c.children.find(n=>n.type==='TEXT');label.componentPropertyReferences={characters:labelKey};}
+const status=[];
+for(const [state,bg,fg]of [['Ready','successSurface','success'],['Restricted','dangerSurface','danger'],['Review','warningSurface','warning'],['Unknown','surfaceSubtle','textSecondary']]){const c=base('State='+state,280);c.fills=fill(sv[bg]);text(c,state,'Label',fg,240);status.push(c);}
+set(status,'C06 / Status',1300,1000);
+const param=[];
+for(const state of ['Enabled','Disabled']){const c=base('State='+state,300);text(c,'Sample rate / 20 Hz','Label',state==='Disabled'?'disabledText':'text',260);const track=record(figma.createRectangle());track.resize(260,4);track.fills=fill(sv[state==='Disabled'?'disabled':'action']);c.appendChild(track);text(c,'Generated input • 2 Hz reference','Data','textSecondary',260);param.push(c);}
+set(param,'C17 / Parameter',1300,1540);
+const evidence=[];
+for(const state of ['Ready','Empty','Error']){const c=base('State='+state,300);text(c,state==='Ready'?'01 / Sampling investigation':state==='Empty'?'No evidence yet':'Example unavailable','Heading','text',260);text(c,state==='Ready'?'A generated 2 Hz sine sampled at 20 Hz. Interpret the points; state the limitations.':state==='Empty'?'Prepare a setup and save input settings with your observation.':'The settings remain intact. Retry to restore the local example.','Body','textSecondary',260);text(c,'INPUT GENERATED / EXAMPLE-01','Data','textSecondary',260);evidence.push(c);}
+set(evidence,'C28 / Evidence',1300,2100);
+const viewer=base('Source=Generated, State=Ready',640);viewer.name='C21 / Waveform viewer';viewer.fills=fill(sv.instrument);text(viewer,'TIME DOMAIN / GENERATED EXAMPLE','Data','instrumentText',600);
+const waveform=record(figma.createNodeFromSvg('<svg width="600" height="180" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><path d="M30 10V150H580" stroke="#BDC7D9" fill="none"/><path d="M30 80 C75 -10 120 -10 165 80 S255 170 300 80 S390 -10 435 80 S525 170 570 80" stroke="#6EE7C5" stroke-width="2" fill="none"/></svg>'));viewer.appendChild(waveform);waveform.findAll(n=>{ids.push(n.id);return false;});
+text(viewer,'Amplitude / V • time / s • 2 Hz reference • no hardware','Data','instrumentSecondary',600);page.appendChild(viewer);viewer.x=1300;viewer.y=2700;families.push({name:viewer.name,id:viewer.id,variants:[viewer.id]});
+for(const family of families){const c=await figma.getNodeByIdAsync(family.variants[0]);const i=record(c.createInstance());review.appendChild(i);}
+text(review,'Imported subset: C03, C06, C17, C21, C28. The local laboratory includes all 40 pattern specimens; other Figma families are pending.','Body','textSecondary',1040);
+const marker=record(figma.createFrame());marker.name='P5-A / Build complete';marker.resize(1,1);marker.x=2500;marker.y=3400;marker.visible=false;page.appendChild(marker);
+return {pageId:page.id,reviewFrameId:review.id,createdNodeIds:ids,variableIds:varIds,textStyleIds:styleIds,collections:[prim.id,semantic.id,space.id],families,scope:'Foundations and five reusable component families. Other Figma families pending. Screenshot and binding QA still required after execution.'};

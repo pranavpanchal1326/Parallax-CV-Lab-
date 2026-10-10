@@ -1,0 +1,10 @@
+{
+  "engine": "BLENDER_EEVEE",
+  "blender": "5.2.2 LTS",
+  "geometry_revision": "P4-D",
+  "mesh_objects": 105,
+  "triangles": 1260,
+  "glb_bytes": 151456,
+  "budget_triangles": 150000,
+  "budget_bytes": 5242880
+}

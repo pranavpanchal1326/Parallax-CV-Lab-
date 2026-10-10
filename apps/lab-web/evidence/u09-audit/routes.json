@@ -1,0 +1,258 @@
+[
+  {
+    "route": "/",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Today in the lab.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/environment",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Understand the room.Before changing it.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/E01/prepare",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Sampling and aliasing",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/E06/prepare",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Object detection under changing light",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/E01/conditions",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Replay the conditions.Keep the context.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/E06/conditions",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Replay the conditions.Keep the context.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/E01/rehearsal",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Change one variable.Keep your reasoning.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  },
+  {
+    "route": "/E06/rehearsal",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Change one variable.Keep your reasoning.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  },
+  {
+    "route": "/scene/rehearsal",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Predict the frame.Keep the scene fixed.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  },
+  {
+    "route": "/walkthrough",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Follow one interruption.See each consequence.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  },
+  {
+    "route": "/assistant?guide=E01",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "A question, with a source.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  },
+  {
+    "route": "/operations",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Keep the next shift informed.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  },
+  {
+    "route": "/faculty",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Prepare the next investigation.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/faculty/attendance",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Correct the record.Keep the original.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/faculty/assessment",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Evidence first.Judgement with a reason.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/tech",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Follow the fault.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/assets/C1-CAM",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "C1-CAMCapture camera + lens",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/assets/C1-CAM/calibration",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Keep calibrationtraceable.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/mobile",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "One printed ID.The right record.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/mobile/report",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Describe the problem.Keep the draft.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/bookings",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Your next session.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/map",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Find your place.Read its condition.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/safety",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Know the landmarks.Keep the routes clear.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/wall",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "The lab, at a glance.",
+    "images": [],
+    "viewport": 1280
+  },
+  {
+    "route": "/studio",
+    "activity": "Activity · 0",
+    "bodyError": false,
+    "document": 1265,
+    "focus": "current-view",
+    "heading": "Make the science visible.",
+    "images": [],
+    "viewport": 1280,
+    "waitedForRouteHeading": true
+  }
+]

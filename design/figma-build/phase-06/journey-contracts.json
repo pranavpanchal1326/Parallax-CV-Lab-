@@ -1,0 +1,179 @@
+{
+  "scope": "Static Figma journey contracts; fixture identities, not live institutional records.",
+  "vision": {
+    "experiment": "E06",
+    "methodRevision": "01",
+    "manifest": "KIT-C1-v1",
+    "booking": "B-2041",
+    "session": "EX-S-2041",
+    "fixedResources": [
+      {
+        "id": "CV-02",
+        "quantity": 1
+      },
+      {
+        "id": "C1",
+        "areaM2": 10.92
+      }
+    ],
+    "portableResources": [
+      {
+        "id": "C1-CAM",
+        "quantity": 1
+      },
+      {
+        "id": "LGT-01",
+        "quantity": 2,
+        "members": [
+          "C1-L1",
+          "C1-L2"
+        ]
+      },
+      {
+        "id": "TRP-04",
+        "quantity": 1
+      },
+      {
+        "id": "CAL-01",
+        "quantity": 1
+      }
+    ],
+    "evidence": [
+      "ILL-L1-v1",
+      "ILL-L2-v1"
+    ],
+    "settings": {
+      "exposure": "1/120 s",
+      "gain": "0 dB",
+      "lightIntensity": "40%"
+    },
+    "revision": "EVID-E06-r03",
+    "request": "EX-REQ-2041",
+    "receipt": "EX-SUB-2041",
+    "returnException": "EX-RETURN-2041"
+  },
+  "signal": {
+    "experiment": "E01",
+    "methodRevision": "01",
+    "manifest": "KIT-S1-v1",
+    "booking": "B-2042",
+    "resources": [
+      {
+        "id": "CV-03",
+        "quantity": 1
+      },
+      {
+        "id": "S1-B",
+        "quantity": 1
+      }
+    ],
+    "source": {
+      "id": "REF-2HZ-v1",
+      "kind": "generated mathematical input",
+      "formula": "y(t)=sin(4*pi*t) V",
+      "durationSeconds": 1,
+      "amplitudeV": 1
+    },
+    "runs": [
+      {
+        "id": "EX-RUN-20",
+        "sampleRateHz": 20
+      },
+      {
+        "id": "EX-RUN-03",
+        "sampleRateHz": 3
+      }
+    ],
+    "revision": "EVID-E01-r03",
+    "request": "EX-REQ-2042",
+    "receipt": "EX-SUB-2042"
+  },
+  "prototype": {
+    "page": "2089:42",
+    "entryPoints": [
+      {
+        "nodeId": "2089:1400",
+        "name": "PARALLAX / Student journeys"
+      },
+      {
+        "nodeId": "2089:1401",
+        "name": "Start an experiment"
+      }
+    ],
+    "paths": [
+      [
+        "cover",
+        "library",
+        "prepareVision",
+        "bookingVision",
+        "checkinVision",
+        "vision",
+        "notebookVision",
+        "reviewVision",
+        "receiptVision",
+        "returnVision",
+        "atlas"
+      ],
+      [
+        "cover",
+        "library",
+        "prepareSignal",
+        "bookingSignal",
+        "checkinSignal",
+        "signal20",
+        "signal3",
+        "notebookSignal",
+        "reviewSignal",
+        "receiptSignal",
+        "atlas"
+      ],
+      [
+        "prepareVision",
+        "calibrationMissing",
+        "prepareVision"
+      ],
+      [
+        "bookingVision",
+        "bookingConflict",
+        "bookingVision"
+      ],
+      [
+        "checkinVision",
+        "wrongStation",
+        "checkinVision"
+      ],
+      [
+        "vision",
+        "visionOffline",
+        "vision"
+      ],
+      [
+        "notebookVision",
+        "saveFailed",
+        "notebookVision"
+      ],
+      [
+        "reviewVision",
+        "submitFailedVision",
+        "receiptVision"
+      ],
+      [
+        "reviewSignal",
+        "submitFailedSignal",
+        "receiptSignal"
+      ],
+      [
+        "returnVision",
+        "returnMissing",
+        "returnVision"
+      ]
+    ]
+  },
+  "implementationRequirements": [
+    "Persistent evidence drafts and revision snapshots",
+    "Submission retry reconciliation using one request identity",
+    "Inventory-backed kit and quantity verification",
+    "Booking-based authorised attendance records",
+    "Actor, time, reason and verification for return exceptions"
+  ]
+}

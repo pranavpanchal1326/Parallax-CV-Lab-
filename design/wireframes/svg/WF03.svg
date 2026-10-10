@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF03 · Reserve: complete-kit conflict</title><desc id="desc">A student recovers from a booking that conflicts with one kit item.. 10:00 conflicts with an existing booking; choose the offered compatible slot.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Reserve: complete-kit conflict</text>
+<rect x="20" y="105" width="435" height="70" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / 10:00 unavailable</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Existing booking holds part of this kit</text>
+<rect x="20" y="195" width="435" height="130" fill="#fafafa" stroke="#555" />
+<text x="32" y="219" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Pick a compatible time</text>
+<text x="32" y="239" font-family="Arial" font-size="12" font-weight="400" fill="#222">10:00 — taken / reason</text>
+<text x="32" y="259" font-family="Arial" font-size="12" font-weight="400" fill="#222">11:00 — all kit items available</text>
+<text x="32" y="279" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Reserve 11:00 ]</text>
+<rect x="475" y="105" width="265" height="220" fill="#fafafa" stroke="#555" />
+<text x="487" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / One booking holds this kit</text>
+<text x="487" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Station / camera / lights</text>
+<text x="487" y="169" font-family="Arial" font-size="12" font-weight="400" fill="#222">Tripod / target / quantities</text>
+<text x="487" y="189" font-family="Arial" font-size="12" font-weight="400" fill="#222">Availability checked together</text>
+<rect x="20" y="347" width="720" height="100" fill="#ddd" stroke="#555" />
+<text x="32" y="371" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Confirmation after success</text>
+<text x="32" y="391" font-family="Arial" font-size="12" font-weight="400" fill="#222">B-2041 / time / station / manifest</text>
+<text x="32" y="411" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Continue to arrival ]</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF03 / Reconstructed React view / low fidelity / no fieldwork claimed</text></svg>

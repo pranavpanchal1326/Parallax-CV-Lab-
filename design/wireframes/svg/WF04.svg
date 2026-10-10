@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF04 · Arrive: typed ID and kit check</title><desc id="desc">A student checks in without relying on a camera or QR scanner.. CV-04 is refused for this booking; retain entered value and explain CV-02.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Arrive: typed ID and kit check</text>
+<rect x="20" y="105" width="330" height="340" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Mobile task stack</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Booked station: CV-02</text>
+<text x="32" y="169" font-family="Arial" font-size="12" font-weight="400" fill="#222">Station ID [ CV-04 ]</text>
+<text x="32" y="189" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Check in ]</text>
+<text x="32" y="209" font-family="Arial" font-size="12" font-weight="400" fill="#222">Wrong station / explanation</text>
+<text x="32" y="229" font-family="Arial" font-size="12" font-weight="400" fill="#222">Kit quantities [ 0 ] [ 0 ]</text>
+<text x="32" y="249" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Start session ]</text>
+<text x="32" y="269" font-family="Arial" font-size="12" font-weight="400" fill="#222">Incomplete kit keeps gate closed</text>
+<rect x="380" y="105" width="360" height="100" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="392" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Recovery remains adjacent</text>
+<text x="392" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Typed ID is a first-class route</text>
+<text x="392" y="169" font-family="Arial" font-size="12" font-weight="400" fill="#222">No camera permission required</text>
+<rect x="380" y="227" width="360" height="100" fill="#fafafa" stroke="#555" />
+<text x="392" y="251" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Count the physical kit</text>
+<text x="392" y="271" font-family="Arial" font-size="12" font-weight="400" fill="#222">Names / IDs / required quantities</text>
+<text x="392" y="291" font-family="Arial" font-size="12" font-weight="400" fill="#222">Do not assume scan means complete</text>
+<rect x="380" y="349" width="360" height="96" fill="#ddd" stroke="#555" />
+<text x="392" y="373" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Start after confirmation</text>
+<text x="392" y="393" font-family="Arial" font-size="12" font-weight="400" fill="#222">Arrival and start are separate states</text>
+<text x="392" y="413" font-family="Arial" font-size="12" font-weight="400" fill="#222">Keyboard and labelled form controls</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF04 / Narrow reconstruction of React view / low fidelity / no fieldwork claimed</text></svg>

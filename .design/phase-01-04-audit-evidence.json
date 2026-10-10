@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-02",
+  "geometryRevision": "P4-D",
+  "roomArea": 70,
+  "zoneAreas": [
+    {
+      "id": "CMP",
+      "area": 24.96
+    },
+    {
+      "id": "STO",
+      "area": 3.12
+    },
+    {
+      "id": "C1",
+      "area": 10.92
+    },
+    {
+      "id": "SPN",
+      "area": 15
+    },
+    {
+      "id": "FAC",
+      "area": 3.2
+    },
+    {
+      "id": "COL",
+      "area": 7.04
+    },
+    {
+      "id": "S1",
+      "area": 5.76
+    }
+  ],
+  "zoneAreaTotal": 70,
+  "zoneOverlaps": [],
+  "furnitureOutsideRoom": [],
+  "furnitureFootprintOverlaps": [],
+  "glb": {
+    "magic": "glTF",
+    "version": 2,
+    "declaredBytes": 151456,
+    "actualBytes": 151456,
+    "chunkEndsAtFileEnd": true,
+    "meshNodes": 105,
+    "triangles": 1260,
+    "missingFurnitureIDPrefixes": [],
+    "statsMatch": true
+  },
+  "clearance": {
+    "spineDepth": 1.5,
+    "statedMinimum": 1.5,
+    "accessibleFloorFrontStart": 2.6,
+    "accessibleFloorFrontEnd": 3.5,
+    "overlapWithSpine": 0,
+    "remainingSpineAtOccupiedClearFloor": 1.5,
+    "note": "Geometric overlap only. This is not certification; simultaneous use and route policy need review."
+  },
+  "capture": {
+    "cameraCentre": [
+      7.5,
+      1.9000000000000001
+    ],
+    "stageCentre": [
+      9.55,
+      1.9
+    ],
+    "cameraToStageCentre": 2.05,
+    "cameraAxisToBackdrop": 2.05,
+    "statedPlanningMinimum": 2,
+    "note": "The 2.05 m backdrop distance is different from distance to the object stage."
+  },
+  "documents": {
+    "phase2OpenGateCount": 5,
+    "phase3OpenGateCount": 3,
+    "phase4BrowserViewerPending": false,
+    "phase4ContainsOldMetrics": false
+  },
+  "limitations": [
+    "Figma tools returned unknown-tool errors.",
+    "Direct browser could not access the documented file.",
+    "No live browser model viewer was available in this workspace.",
+    "Academic and physical-standard claims are not recertified by these calculations."
+  ]
+}

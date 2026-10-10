@@ -1,0 +1,149 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main:
+  - paragraph: S-EXP-03 · assessor walkthrough · independent sandbox
+  - heading "Follow one interruption. See each consequence." [level=1]:
+    - text: Follow one interruption.
+    - emphasis: See each consequence.
+  - paragraph: C1-CAM → KIT-C1-v1 → the work depending on it.
+  - paragraph: This authored scenario commits the existing domain rules to an independent fixture state. Controls replay sandbox snapshots; your operational session, bookings, evidence and technician records remain unchanged. No real notification or device action is sent.
+  - navigation "Walkthrough stages":
+    - list:
+      - button "01 Before interruption":
+        - generic: "01"
+        - text: Before interruption
+      - button "02 Feed interrupted":
+        - generic: "02"
+        - text: Feed interrupted
+      - button "03 Report created":
+        - generic: "03"
+        - text: Report created
+      - button "04 Risk classified":
+        - generic: "04"
+        - text: Risk classified
+      - button "05 Restriction propagated":
+        - generic: "05"
+        - text: Restriction propagated
+      - button "06 Repair recorded":
+        - generic: "06"
+        - text: Repair recorded
+      - button "07 Verification interrupted":
+        - generic: "07"
+        - text: Verification interrupted
+      - button "08 Early release refused":
+        - generic: "08"
+        - text: Early release refused
+      - button "09 Verification recorded":
+        - generic: "09"
+        - text: Verification recorded
+      - button "10 Released after verification":
+        - generic: "10"
+        - text: Released after verification
+  - region "Restriction propagated":
+    - paragraph: Stage 5 / 10 · 10:04:00 IST example clock
+    - heading "Restriction propagated" [level=2]
+    - paragraph: Only C1-CAM is restricted. The complete capture kit and its bookings become unavailable; the S1 signal kit and B-2048 stay separate. The public display receives only the permitted consequence.
+    - paragraph:
+      - strong: "Who acts next:"
+      - text: Technician + faculty. Investigate and record the example repair; faculty reviews affected rotations.
+    - status: "Stage 5: Restriction propagated. Sandbox step recorded."
+    - button "Previous stage"
+    - button "Next stage" [active]
+    - button "Restart walkthrough"
+    - paragraph: One named resource
+    - heading "C1-CAM" [level=3]
+    - paragraph: Restricted · RST-0417
+    - paragraph: In use · B-2041. Availability and occupancy remain separate.
+    - paragraph: ISS-0417 · Restricted
+    - figure "Geometry P4-D · assumed envelope, not a surveyed room. Independent sandbox projection.":
+      - img "Conceptual 10 by 7 metre floor plan from geometry revision P4-D. Equipment availability is listed below as text.":
+        - generic: CMP
+        - generic: STO
+        - generic: C1
+        - generic: SPN
+        - generic: FAC
+        - generic: COL
+        - generic: S1
+        - generic: CV-01
+        - generic: CV-02
+        - generic: CV-03
+        - generic: CV-05
+        - generic: CV-06
+        - generic: S1-B
+      - generic: Geometry P4-D · assumed envelope, not a surveyed room. Independent sandbox projection.
+    - article:
+      - paragraph: Student / saved work
+      - heading "Feed interrupted; evidence retained" [level=3]
+      - paragraph: ILL-L1-v1 · Frontal light · 1 retained condition. The walkthrough never replaces this record.
+      - paragraph: "Student next action: Use the named report/recovery path; any prepared illustration remains labelled."
+    - article:
+      - paragraph: Complete kit / reservations
+      - heading "Capture kit has a blocker" [level=3]
+      - paragraph: C1-CAM
+      - paragraph: "Signal kit: available independently."
+      - paragraph: Reservations are affected through their actual camera dependency; a light or unrelated station is not automatically restricted.
+    - article:
+      - paragraph: Faculty / rotation plan
+      - heading "Capture rotation needs review" [level=3]
+      - paragraph:
+        - text: "B-2047 · C1 capture: affected."
+        - text: "B-2048 · S1 sampling: not affected."
+      - paragraph: "Faculty next action: inspect the shortfall and publish a reviewed alternative if needed. This walkthrough creates no new timetable or automatic rebooking."
+    - region "Public projection only":
+      - heading "Public display" [level=3]
+      - paragraph:
+        - strong: C1-CAM
+        - text: · Capture camera + lens is being checked and cannot be booked for now.
+      - paragraph: Only the permitted equipment consequence. No reporter, issue, booking, repair detail or student evidence is included.
+    - generic "Read affected booking dependencies"
+    - generic "Read committed sandbox history and evidence"
+  - link "Return to E06 preparation":
+    - /url: "#/E06/prepare"
+  - link "Operational dashboard":
+    - /url: "#/dashboard"
+  - link "Technician task and current records":
+    - /url: "#/tech"
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

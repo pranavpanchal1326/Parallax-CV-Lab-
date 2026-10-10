@@ -1,0 +1,15 @@
+{
+  "name": "parallax",
+  "private": true,
+  "description": "PARALLAX: preserved local edition and prototype, with a separate React migration app.",
+  "scripts": {
+    "start": "node design/serve-review.cjs 4180",
+    "lab:dev": "npm --prefix apps/lab-web run dev",
+    "lab:build": "npm --prefix apps/lab-web run build",
+    "lab:test": "npm --prefix apps/lab-web test",
+    "assistant:start": "node apps/lab-server/server.mjs",
+    "assistant:test": "node --test apps/lab-server/tests/*.test.mjs",
+    "assistant:eval": "node apps/lab-server/evaluate.mjs",
+    "check": "node prototype/validate.cjs && node design/system/validate.cjs && node design/phase-08/validate.cjs && node spatial/validate-upgrade.cjs && node .design/phase-01-04-audit-checks.cjs"
+  }
+}

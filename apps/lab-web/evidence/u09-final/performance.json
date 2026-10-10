@@ -1,0 +1,230 @@
+{
+  "method": "event capture to two animation frames; local desktop browser",
+  "initialRenderedMs": 465,
+  "samples": [
+    {
+      "event": "click",
+      "label": "Use an example question",
+      "ms": 21.8,
+      "route": "#/assistant"
+    },
+    {
+      "event": "click",
+      "label": "Find a hint",
+      "ms": 12.5,
+      "route": "#/assistant"
+    },
+    {
+      "event": "click",
+      "label": "Smart Lab",
+      "ms": 9.1,
+      "route": "#/dashboard"
+    },
+    {
+      "event": "click",
+      "label": "Environment & energy ↗",
+      "ms": 11.3,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "No connected sourceConnected example · reading missingRecent example readingsDelayed example reading",
+      "ms": 18.1,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "No connected sourceConnected example · reading missingRecent example readingsDelayed example reading",
+      "ms": 17.1,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "No connected sourceConnected example · reading missingRecent example readingsDelayed example reading",
+      "ms": 14.5,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "No connected sourceConnected example · reading missingRecent example readingsDelayed example reading",
+      "ms": 14.2,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "No connected sourceConnected example · reading missingRecent example readingsDelayed example reading",
+      "ms": 12.1,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "No connected sourceConnected example · reading missingRecent example readingsDelayed example reading",
+      "ms": 12.4,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 12.9,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 11.5,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 13.8,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 11.9,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 10.6,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 8.4,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 9.9,
+      "route": "#/environment"
+    },
+    {
+      "event": "change",
+      "label": "One missing intervalAll modelled intervals available",
+      "ms": 9.6,
+      "route": "#/environment"
+    },
+    {
+      "event": "click",
+      "label": "On site",
+      "ms": 9.3,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 13.3,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 7.9,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 6.4,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 7.4,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 12.3,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 12.5,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 12.4,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 12.6,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 11.4,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 6.5,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 13.1,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Find the record",
+      "ms": 6.3,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Smart Lab",
+      "ms": 8.9,
+      "route": "#/dashboard"
+    },
+    {
+      "event": "click",
+      "label": "On site",
+      "ms": 14.5,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Smart Lab",
+      "ms": 25.5,
+      "route": "#/dashboard"
+    },
+    {
+      "event": "click",
+      "label": "On site",
+      "ms": 15.3,
+      "route": "#/mobile"
+    },
+    {
+      "event": "click",
+      "label": "Smart Lab",
+      "ms": 20.4,
+      "route": "#/dashboard"
+    },
+    {
+      "event": "click",
+      "label": "On site",
+      "ms": 13.6,
+      "route": "#/mobile"
+    }
+  ],
+  "scope": "Two-frame visual feedback proxy. AI inference completion is excluded. Local loopback, no network throttling. Initial value measures shell rendering for this run.",
+  "count": 37
+}

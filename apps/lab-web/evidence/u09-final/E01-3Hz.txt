@@ -1,0 +1,113 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · local edition · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main:
+  - paragraph: E01 · S-EXP-02 · independent rehearsal
+  - heading "Change one variable. Keep your reasoning." [level=1]:
+    - text: Change one variable.
+    - emphasis: Keep your reasoning.
+  - paragraph: What happens to a 2 Hz reference when it is sampled at 20 Hz and at 3 Hz?
+  - paragraph: Generated sine model; no acquisition device is connected. Rehearsal does not change bookings, physical setup, notebook claims or recorded evidence.
+  - heading "1. Predict before comparing" [level=2]
+  - generic: What do you expect, and why?
+  - textbox "What do you expect, and why?": At 3 Hz, different continuous signals can pass through the same samples. I expect an ambiguous lower-frequency trace.
+  - heading "2. Change one variable" [level=2]
+  - generic: Candidate sampling rate
+  - combobox "Candidate sampling rate":
+    - option "3 Hz" [selected]
+    - option "4 Hz"
+    - option "8 Hz"
+    - option "20 Hz"
+  - paragraph: "Source for the next run: Teaching fixture · method 01. REF-2HZ-v1 · 2 Hz · 1 V · 1 s."
+  - button "Run another rehearsal" [active]
+  - status: Rehearsal computed. Your prediction is retained with this run; compare the result and write your reflection. It has not been saved yet.
+  - region "3. Compare under the declared model":
+    - heading "3. Compare under the declared model" [level=2]
+    - paragraph: Run 04/10/2026, 01:33:55 IST · Teaching fixture · method 01 · unsaved rehearsal
+    - blockquote:
+      - paragraph:
+        - strong: Your prediction.
+        - text: At 3 Hz, different continuous signals can pass through the same samples. I expect an ambiguous lower-frequency trace.
+    - figure "Baseline · 20 Hz":
+      - generic: Baseline · 20 Hz
+      - img "Generated 2 Hz, 1 volt sine reference over 1 seconds, sampled at 20 Hz. This is computed, not device data.":
+        - generic: REF-2HZ-v1 · GENERATED · 20 Hz SAMPLES
+        - generic: 0 s
+        - generic: 1 s
+        - generic: 1 V
+    - figure "Candidate · 3 Hz":
+      - generic: Candidate · 3 Hz
+      - img "Generated 2 Hz, 1 volt sine reference over 1 seconds, sampled at 3 Hz. This is computed, not device data.":
+        - generic: REF-2HZ-v1 · GENERATED · 3 Hz SAMPLES
+        - generic: 0 s
+        - generic: 1 s
+        - generic: 1 V
+        - generic: "DASHED: 1 Hz ALIAS · SAME SAMPLE VALUES"
+    - paragraph:
+      - strong: 4 samples
+      - text: "over 1 s, including t = 0. Candidate interval: 1/3 s."
+    - paragraph: The dashed 1.000 Hz alias has the same sample values under this ideal sine model; it does not establish the original signal uniquely.
+    - paragraph: "Held constant: reference frequency, amplitude, phase (zero) and duration. y[n] = A sin(2π f n / fs). Dashed alias uses f − fs round(f/fs). This model omits noise, acquisition timing error and anti-alias filtering."
+    - generic "Read candidate sample values"
+  - heading "4. Reflect in your own words" [level=2]
+  - paragraph: What changed, what stayed fixed, and what can this result support? Name one limitation. Rehearsal notes are separate from your experimental notebook.
+  - generic: Your reflection
+  - textbox "Your reflection"
+  - button "Save rehearsal reflection" [disabled]
+  - button "Export rehearsal"
+  - generic "Saved record and recovery"
+  - link "← Return to preparation":
+    - /url: "#/E01/prepare"
+  - link "Inspect recorded conditions":
+    - /url: "#/E01/conditions"
+  - link "Continue through the normal bench →":
+    - /url: "#/E01/bench"
+  - paragraph: The bench retains the approved example conditions. Additional sampling rates remain rehearsal-only; running this preview does not complete preparation or create an evidence record. Grounded assistance follows in U06.
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+- generic "Local performance receipt"

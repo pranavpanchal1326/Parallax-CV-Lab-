@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF01 · Today: choose the next task</title><desc id="desc">A student finds preparation and their next action.. Unavailable kit keeps the task visible and explains the blocker.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Today: choose the next task</text>
+<rect x="20" y="105" width="720" height="55" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Notice when a resource is restricted</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Named resource / consequence / review route</text>
+<rect x="20" y="182" width="348" height="170" fill="#fafafa" stroke="#555" />
+<text x="32" y="206" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Vision experiment</text>
+<text x="32" y="226" font-family="Arial" font-size="12" font-weight="400" fill="#222">Question and evidence boundary</text>
+<text x="32" y="246" font-family="Arial" font-size="12" font-weight="400" fill="#222">Kit / preparation state</text>
+<text x="32" y="266" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Prepare E06 ]</text>
+<rect x="390" y="182" width="350" height="170" fill="#fafafa" stroke="#555" />
+<text x="402" y="206" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Signal experiment</text>
+<text x="402" y="226" font-family="Arial" font-size="12" font-weight="400" fill="#222">Question and generated source</text>
+<text x="402" y="246" font-family="Arial" font-size="12" font-weight="400" fill="#222">Kit / preparation state</text>
+<text x="402" y="266" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Prepare E01 ]</text>
+<rect x="20" y="374" width="720" height="80" fill="#fafafa" stroke="#555" />
+<text x="32" y="398" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Supporting equipment list</text>
+<text x="32" y="418" font-family="Arial" font-size="12" font-weight="400" fill="#222">Availability and occupancy in separate columns</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF01 / Reconstructed React view / low fidelity / no fieldwork claimed</text></svg>

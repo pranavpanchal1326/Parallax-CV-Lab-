@@ -1,0 +1,134 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · local edition · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main:
+  - status:
+    - paragraph: Another tab changed the React record. This tab has stopped saving. Export this session before reloading or start a fresh example explicitly.
+    - button "Export retained record"
+  - paragraph: E12 · S-EXP-02 · Scene Studio geometry rehearsal
+  - heading "Predict the frame. Keep the scene fixed." [level=1]:
+    - text: Predict the frame.
+    - emphasis: Keep the scene fixed.
+  - paragraph: How does field of view change what fits in the camera image?
+  - paragraph: "The existing Scene Studio model computes object visibility from conceptual P4-D geometry. This is separate from E06's lighting illustrations: geometric visibility does not establish detector accuracy, real lens behaviour or a safe physical setup."
+  - heading "1. Predict" [level=2]
+  - generic: Geometry prediction and reason
+  - textbox "Geometry prediction and reason"
+  - heading "2. Change field of view" [level=2]
+  - generic: Candidate horizontal field of view
+  - combobox "Candidate horizontal field of view":
+    - option "18° · narrow" [selected]
+    - option "40° · repeat baseline"
+    - option "90° · wide"
+  - button "Run geometry rehearsal" [disabled]
+  - status: Predict before revealing a candidate geometry view.
+  - generic "Fixed model settings"
+  - heading "3. Inspect the model consequence" [level=2]
+  - paragraph: Baseline · 40° · same scene, camera position, height, pan and tilt.
+  - button "Show 40° baseline" [disabled]
+  - button "Show retained candidate" [disabled]
+  - button "Use 3D when available" [active] [pressed]
+  - paragraph: Use Scene, Camera and Interpretation inside the model. The text interpretation names clipping and occlusion; the plan remains available without pointer dragging or WebGL. Plan-only results are angular approximations, not 3D measurements. Rendering at 320 × 180 gives model-dependent visible fractions; it does not measure a physical camera.
+  - iframe:
+    - link "Skip to model views":
+      - /url: "#h-cam"
+    - banner:
+      - generic: PARALLAX · fixed geometry rehearsal
+      - button "Switch to dark theme":
+    - main:
+      - paragraph: E12 · CAMERA GEOMETRY / SCENE STUDIO / P13 · C1 CAPTURE ZONE
+      - heading "Explore the camera’s viewpoint." [level=1]:
+        - text: Explore the camera’s
+        - emphasis: viewpoint.
+      - paragraph: Change one setting and watch what the camera can and cannot see. Only horizontal field of view differs from the 40° baseline. P4-D is conceptual geometry; no physical setup is changed or validated.
+      - generic: SIMULATION · computed from 3D primitives · not a physical capture
+      - region "02 CAMERA IMAGE · 16:9 · WHAT THE CAMERA SEES":
+        - heading "02 CAMERA IMAGE · 16:9 · WHAT THE CAMERA SEES" [level=2]
+        - paragraph: CAMERA IMAGE UNAVAILABLE
+        - paragraph: This browser cannot draw 3D. The top view and a plan approximation remain, and the React field-of-view choices still work.
+      - region "01 SCENE · C1 FROM ABOVE":
+        - heading "01 SCENE · C1 FROM ABOVE" [level=2]
+        - generic "Top view plan":
+          - 'img "Top view of C1: camera at 2.05 m from the stage, 0.00 m sideways, field of view 40 degrees."':
+            - generic: "01"
+            - generic: "02"
+            - generic: "03"
+            - generic: CAMERA
+            - generic: C1 TOP VIEW · 1 m = 100 px · north up
+      - region "03 / INTERPRETATION":
+        - paragraph: 03 / INTERPRETATION
+        - paragraph: All three objects are fully visible.
+        - text: 01 · BOX
+        - generic: visible
+        - img "100 percent visible"
+        - text: 100% in frame · 0% occluded
+        - text: 02 · CYLINDER
+        - generic: visible
+        - img "100 percent visible"
+        - text: 100% in frame · 0% occluded
+        - text: 03 · EXPECTED OBJECT
+        - generic: visible
+        - img "100 percent visible"
+        - text: 100% in frame · 0% occluded
+        - paragraph: "Plan approximation: ignores height and lens projection."
+      - paragraph: Prepared study / Objects 01 BOX, 02 CYLINDER and 03 EXPECTED OBJECT match the P6 vision illustrations. Visibility is measured by rendering an object-ID image (320 × 180) and comparing each object with its unobstructed render. Lens distortion, exposure and sensor noise are not simulated.
+  - generic "Geometry record and recovery"
+  - link "E06 lighting illustration":
+    - /url: "#/E06/rehearsal"
+  - link "Return through normal preparation":
+    - /url: "#/E06/prepare"
+  - link "Original unrestricted Scene Studio ↗":
+    - /url: /design/phase-08/scene-studio.html
+  - paragraph:
+    - text: All changes stay in rehearsal. No physical setting is transferred automatically. Save is guarded against another tab's changed record; export remains available.
+    - link "Read the camera geometry guide":
+      - /url: "#/assistant?guide=GEOMETRY"
+    - text: for source-based help.
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Start fresh React example"
+  - generic: Session retained in memory
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+- generic "Local performance receipt"

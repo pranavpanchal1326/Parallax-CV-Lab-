@@ -1,0 +1,152 @@
+[
+  {
+    "route": "/dashboard",
+    "activity": "Activity · 0",
+    "controls": [],
+    "document": 305,
+    "viewport": 320
+  },
+  {
+    "route": "/environment",
+    "activity": "Activity · 0",
+    "controls": [
+      {
+        "font": "16px",
+        "label": "environment-example"
+      },
+      {
+        "font": "16px",
+        "label": "energy-period"
+      },
+      {
+        "font": "16px",
+        "label": "energy-coverage"
+      },
+      {
+        "font": "16px",
+        "label": "standby-duration"
+      }
+    ],
+    "document": 305,
+    "viewport": 320
+  },
+  {
+    "route": "/mobile",
+    "activity": "Activity · 0",
+    "controls": [
+      {
+        "font": "13.3333px",
+        "label": "lookup"
+      }
+    ],
+    "document": 305,
+    "viewport": 320
+  },
+  {
+    "route": "/map",
+    "activity": "Activity · 0",
+    "controls": [],
+    "document": 305,
+    "viewport": 320
+  },
+  {
+    "route": "/assistant?guide=E01",
+    "activity": "Activity · 0",
+    "controls": [
+      {
+        "font": "16px",
+        "label": "assistant-guide"
+      },
+      {
+        "font": "16px",
+        "label": "assistant-question"
+      }
+    ],
+    "document": 305,
+    "viewport": 320
+  },
+  {
+    "route": "/operations",
+    "activity": "Activity · 0",
+    "controls": [
+      {
+        "font": "16px",
+        "label": "ops-actor"
+      },
+      {
+        "font": "16px",
+        "label": "ops-experiment"
+      },
+      {
+        "font": "16px",
+        "label": "ops-day"
+      },
+      {
+        "font": "16px",
+        "label": "ops-start"
+      },
+      {
+        "font": "16px",
+        "label": "ops-duration"
+      },
+      {
+        "font": "16px",
+        "label": "ops-delivery"
+      },
+      {
+        "font": "16px",
+        "label": "ops-lookup-id"
+      },
+      {
+        "font": "16px",
+        "label": "ops-existing-rule"
+      },
+      {
+        "font": "16px",
+        "label": "ops-policy-reason"
+      },
+      {
+        "font": "16px",
+        "label": "ops-equipment-reason"
+      },
+      {
+        "font": "16px",
+        "label": "ops-topic"
+      },
+      {
+        "font": "16px",
+        "label": "ops-next-owner"
+      },
+      {
+        "font": "16px",
+        "label": "ops-due"
+      },
+      {
+        "font": "16px",
+        "label": "ops-handover-note"
+      }
+    ],
+    "document": 305,
+    "viewport": 320
+  },
+  {
+    "route": "/studio",
+    "activity": "Activity · 0",
+    "controls": [
+      {
+        "font": "16px",
+        "label": "studio-plate"
+      },
+      {
+        "font": "16px",
+        "label": "studio-study"
+      },
+      {
+        "font": "16px",
+        "label": "studio-sign"
+      }
+    ],
+    "document": 305,
+    "viewport": 320
+  }
+]

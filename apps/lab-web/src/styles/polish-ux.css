@@ -1,0 +1,187 @@
+/* Product polish, experience layer: guided tour, quick search and page art.
+   Presentation only; loaded last. */
+
+/* ---------- guided tour ---------- */
+.tour-strip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px 24px;
+  padding: 12px var(--ed-gut);
+  background: var(--ed-plate);
+  color: var(--ed-plate-text);
+}
+.tour-count {
+  margin: 0;
+  font: 500 11px/1 var(--ed-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ed-trace);
+  white-space: nowrap;
+}
+.tour-say {
+  margin: 0;
+  font: 400 16px/1.45 var(--ed-body);
+  max-width: none;
+}
+.tour-say strong {
+  font: italic 400 18px/1.3 var(--ed-serif);
+  margin-right: 4px;
+}
+.tour-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.lab-app .tour-strip .pbtn {
+  min-height: 38px;
+  font-size: 14px;
+}
+.lab-app .tour-strip .pbtn.quiet {
+  color: var(--ed-plate-text);
+  border-color: var(--ed-plate-rule);
+}
+.lab-app .tour-strip .pbtn.quiet:hover {
+  background: var(--ed-plate-2);
+  color: var(--ed-plate-text);
+  border-color: var(--ed-plate-text);
+}
+.lab-app .tour-strip .pbtn:disabled,
+.lab-app .tour-strip .pbtn:disabled:hover {
+  color: var(--ed-plate-muted);
+  border-color: var(--ed-plate-rule);
+}
+.lab-app .tour-strip :focus-visible {
+  outline-color: var(--ed-trace);
+}
+@media (max-width: 900px) {
+  .tour-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- masthead tools ---------- */
+.lab-app .mast .tour-open,
+.lab-app .mast .palette-open {
+  min-height: 36px;
+  padding: 0 12px;
+  gap: 8px;
+  border-color: var(--ed-rule);
+}
+.lab-app .mast .tour-open[aria-pressed="true"] {
+  background: var(--ed-ink);
+  color: var(--ed-paper);
+  border-color: var(--ed-ink);
+}
+.tour-open svg,
+.palette-open svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.lab-app kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border: 1px solid var(--ed-rule);
+  border-bottom-width: 2px;
+  font: 500 11px/1 var(--ed-mono);
+  color: var(--ed-ink-2);
+  background: var(--ed-card);
+}
+@media (max-width: 700px) {
+  .lab-app .mast .palette-open span,
+  .lab-app .mast .palette-open kbd,
+  .lab-app .mast .tour-open span {
+    display: none;
+  }
+}
+
+/* ---------- quick search ---------- */
+.palette {
+  width: min(620px, calc(100vw - 32px));
+  margin-top: 12vh;
+  padding: 0;
+  border: 1px solid var(--ed-ink);
+  background: var(--ed-card);
+  color: var(--ed-ink);
+  box-shadow: 10px 10px 0 rgba(32, 35, 43, 0.18);
+}
+.palette::backdrop {
+  background: rgba(21, 25, 34, 0.45);
+}
+.palette form {
+  margin: 0;
+  padding: 20px 22px 16px;
+}
+.lab-app .palette label {
+  display: block;
+  margin-bottom: 8px;
+  font: 500 11px/1.4 var(--ed-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+}
+.lab-app .palette input {
+  font-size: 18px;
+  min-height: 52px;
+}
+.palette ul {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--ed-rule);
+}
+.palette li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--ed-rule-soft);
+  font: 400 16px/1.3 var(--ed-body);
+  cursor: pointer;
+}
+.palette li small {
+  font: 500 11px/1 var(--ed-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+}
+.palette li[aria-selected="true"] {
+  background: var(--ed-spot);
+  color: var(--ed-on-spot);
+}
+.palette li[aria-selected="true"] small {
+  color: var(--ed-on-spot);
+}
+.palette .palette-empty {
+  cursor: default;
+  color: var(--ed-ink-2);
+}
+.palette-help {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--ed-ink-2);
+}
+
+/* ---------- page art: the project's own plates on the pages they describe ---------- */
+.page-art {
+  margin: 44px 0 0;
+  max-width: 760px;
+}
+.page-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ed-rule);
+}
+.page-art figcaption {
+  margin-top: 10px;
+  font: 13px/1.5 var(--ed-mono);
+  color: var(--ed-ink-2);
+}

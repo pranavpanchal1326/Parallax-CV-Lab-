@@ -1,0 +1,53 @@
+{
+  "scope": "Static Figma P7-A fixtures. Example staff, inventory, attendance and evidence states continuing the P6-A identities; not institutional records, measured results or live device data.",
+  "dates": { "today": "Fri 2 Oct 2026", "teachingSession": "Tue 6 Oct 2026 10:00–12:00" },
+  "faultThread": {
+    "issue": "ISS-0417",
+    "asset": "C1-CAM",
+    "origin": "P6-A 14 · Device recovery (session EX-S-2041, B-2041)",
+    "symptom": "Image feed stops during capture; reconnecting restores it",
+    "classification": "Intermittent connection / cause not yet confirmed",
+    "restriction": "RST-0417: C1-CAM not bookable for capture until verified",
+    "kitImpact": "KIT-C1-v1 unavailable while C1-CAM is restricted",
+    "affectedBookings": ["B-2047 (EX-TS-07 C1 rotation, Tue 10:00–12:00)", "B-2049 (student, Wed 14:00)"],
+    "unaffected": ["B-2048 (EX-TS-07 S1 rotation)", "KIT-S1-v1"],
+    "repair": "MNT-0417-01: USB-C cable CBL-07 replaced; port inspected",
+    "verification": "VER-0417: 20 min continuous capture at 1/120 s, 0 dB with CAL-01; no interruption observed (example)",
+    "release": "RST-0417 lifted after verification; B-2047 and B-2049 restored",
+    "unknownCauseVariant": "Verification interrupted → issue stays open and restriction stays"
+  },
+  "returnFollowUp": { "exception": "EX-RETURN-2041", "item": "CAL-01", "located": "0 of 1", "followUp": "FU-2041" },
+  "calibration": {
+    "asset": "C1-CAM",
+    "method": "CAL-M-01 v1 · planar target CAL-01",
+    "records": ["CALREC-C1-r01 (preserved)", "CALREC-C1-r02 (draft, after MNT-0417-01)"],
+    "views": "11 of 15 planned reference captures",
+    "metricLabel": "RMS reprojection error, pixels, for this record's views and resolution; example value only",
+    "policy": "Fitness-for-use decision is institution-owned; no universal threshold"
+  },
+  "teaching": {
+    "session": "EX-TS-07",
+    "title": "Seeing and sampling — rotation",
+    "cohort": "12 students · 6 pairs (P1–P6)",
+    "templates": ["E06 method r01", "E01 method r01"],
+    "bookings": ["B-2047 · C1 + KIT-C1-v1", "B-2048 · S1-B + KIT-S1-v1", "CV-01…CV-06"],
+    "readiness": "Preparation gaps, not scores; refreshed 08:40 (may be stale)",
+    "attendanceCorrection": "ATT-0712: P4 / STU-0147 checked in at CV-04 instead of CV-03; corrected by faculty with reason; original record kept"
+  },
+  "assessment": {
+    "submission": "EX-SUB-2041",
+    "revision": "EVID-E06-r03",
+    "changedRevision": "EVID-E06-r04 received after review began",
+    "rubric": ["Controlled method", "Evidence provenance", "Claim within evidence", "Limitations stated"],
+    "feedbackState": "Draft feedback private until published under course policy"
+  },
+  "mobile": {
+    "frame": "390×844",
+    "destinations": ["Today", "Scan", "Report", "Bookings"],
+    "assetDeepLink": "parallax.lab/a/C1-CAM (example)",
+    "pendingReport": "DRAFT-ISS-local-01 (offline, not submitted)",
+    "wrongLabAsset": "SPL-CAM-03 belongs to Speech Lab (not this lab)"
+  },
+  "display": { "frame": "1920×1080", "privacy": "No names, private results or staff notes; read-only" },
+  "signage": ["S-01 Door identification", "S-02 Zone blade", "S-03 Station label", "S-04 Asset tag", "S-05 Restricted asset tag", "S-06 Safety point"]
+}

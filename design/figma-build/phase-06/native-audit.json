@@ -1,0 +1,643 @@
+{
+  "pageId": "2089:42",
+  "frames": [
+    {
+      "key": "atlas",
+      "id": "2089:43",
+      "name": "P6-A / 05 · Lab atlas",
+      "x": 40,
+      "y": 2000,
+      "width": 1440,
+      "height": 1094
+    },
+    {
+      "key": "plan",
+      "id": "2089:118",
+      "name": "P6-A / 06 · Spatial plan & asset index",
+      "x": 1600,
+      "y": 2000,
+      "width": 1440,
+      "height": 1278
+    },
+    {
+      "key": "bookingVision",
+      "id": "2089:250",
+      "name": "P6-A / 07 · Vision reservation",
+      "x": 3160,
+      "y": 2000,
+      "width": 1440,
+      "height": 1265
+    },
+    {
+      "key": "bookingConflict",
+      "id": "2089:402",
+      "name": "P6-A / 08 · Reservation conflict",
+      "x": 4720,
+      "y": 2000,
+      "width": 1440,
+      "height": 1265
+    },
+    {
+      "key": "vision",
+      "id": "2089:546",
+      "name": "P6-A / 13 · Vision workbench",
+      "x": 40,
+      "y": 6500,
+      "width": 1440,
+      "height": 1119
+    },
+    {
+      "key": "visionOffline",
+      "id": "2089:734",
+      "name": "P6-A / 14 · Device recovery",
+      "x": 1600,
+      "y": 6500,
+      "width": 1440,
+      "height": 1145
+    },
+    {
+      "key": "signal20",
+      "id": "2089:925",
+      "name": "P6-A / 15 · Signal sampling · 20 Hz",
+      "x": 3160,
+      "y": 6500,
+      "width": 1440,
+      "height": 997
+    },
+    {
+      "key": "signal3",
+      "id": "2089:1040",
+      "name": "P6-A / 16 · Signal sampling · 3 Hz",
+      "x": 4720,
+      "y": 6500,
+      "width": 1440,
+      "height": 997
+    },
+    {
+      "key": "notebookVision",
+      "id": "2089:1138",
+      "name": "P6-A / 17 · Vision notebook",
+      "x": 40,
+      "y": 8200,
+      "width": 1440,
+      "height": 1253
+    },
+    {
+      "key": "saveFailed",
+      "id": "2089:1269",
+      "name": "P6-A / 18 · Save recovery",
+      "x": 1600,
+      "y": 8200,
+      "width": 1440,
+      "height": 1219
+    },
+    {
+      "key": "cover",
+      "id": "2089:1400",
+      "name": "P6-A / 00 · Student journey cover",
+      "x": 40,
+      "y": -3000,
+      "width": 1920,
+      "height": 2558
+    },
+    {
+      "key": "library",
+      "id": "2089:1401",
+      "name": "P6-A / 01 · Experiment library",
+      "x": 40,
+      "y": 40,
+      "width": 1440,
+      "height": 1284
+    },
+    {
+      "key": "prepareVision",
+      "id": "2089:1402",
+      "name": "P6-A / 02 · Vision preparation",
+      "x": 1600,
+      "y": 40,
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "key": "prepareSignal",
+      "id": "2089:1403",
+      "name": "P6-A / 03 · Signal preparation",
+      "x": 3160,
+      "y": 40,
+      "width": 1440,
+      "height": 1399
+    },
+    {
+      "key": "calibrationMissing",
+      "id": "2089:1404",
+      "name": "P6-A / 04 · Calibration target missing",
+      "x": 4720,
+      "y": 40,
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "key": "bookingSignal",
+      "id": "2089:1405",
+      "name": "P6-A / 09 · Signal reservation",
+      "x": 6280,
+      "y": 2000,
+      "width": 1440,
+      "height": 1043
+    },
+    {
+      "key": "checkinVision",
+      "id": "2089:1406",
+      "name": "P6-A / 10 · Vision arrival",
+      "x": 40,
+      "y": 4200,
+      "width": 1440,
+      "height": 1292
+    },
+    {
+      "key": "wrongStation",
+      "id": "2089:1407",
+      "name": "P6-A / 11 · Workstation mismatch",
+      "x": 1600,
+      "y": 4200,
+      "width": 1440,
+      "height": 1292
+    },
+    {
+      "key": "checkinSignal",
+      "id": "2089:1408",
+      "name": "P6-A / 12 · Signal arrival",
+      "x": 3160,
+      "y": 4200,
+      "width": 1440,
+      "height": 983
+    },
+    {
+      "key": "notebookSignal",
+      "id": "2089:1409",
+      "name": "P6-A / 19 · Signal notebook",
+      "x": 3160,
+      "y": 8200,
+      "width": 1440,
+      "height": 1355
+    },
+    {
+      "key": "reviewVision",
+      "id": "2089:1410",
+      "name": "P6-A / 20 · Vision revision review",
+      "x": 40,
+      "y": 10000,
+      "width": 1440,
+      "height": 1165
+    },
+    {
+      "key": "reviewSignal",
+      "id": "2089:1411",
+      "name": "P6-A / 21 · Signal revision review",
+      "x": 1600,
+      "y": 10000,
+      "width": 1440,
+      "height": 1289
+    },
+    {
+      "key": "submitFailedVision",
+      "id": "2089:1412",
+      "name": "P6-A / 22 · Vision acknowledgement missing",
+      "x": 3160,
+      "y": 10000,
+      "width": 1440,
+      "height": 1165
+    },
+    {
+      "key": "submitFailedSignal",
+      "id": "2089:1413",
+      "name": "P6-A / 23 · Signal acknowledgement missing",
+      "x": 4720,
+      "y": 10000,
+      "width": 1440,
+      "height": 1289
+    },
+    {
+      "key": "receiptVision",
+      "id": "2089:1414",
+      "name": "P6-A / 24 · Vision submission receipt",
+      "x": 40,
+      "y": 11700,
+      "width": 1440,
+      "height": 1141
+    },
+    {
+      "key": "receiptSignal",
+      "id": "2089:1415",
+      "name": "P6-A / 25 · Signal submission receipt",
+      "x": 1600,
+      "y": 11700,
+      "width": 1440,
+      "height": 1141
+    },
+    {
+      "key": "returnVision",
+      "id": "2089:1416",
+      "name": "P6-A / 26 · Kit return",
+      "x": 3160,
+      "y": 11700,
+      "width": 1440,
+      "height": 1057
+    },
+    {
+      "key": "returnMissing",
+      "id": "2089:1417",
+      "name": "P6-A / 27 · Return item missing",
+      "x": 4720,
+      "y": 11700,
+      "width": 1440,
+      "height": 1057
+    }
+  ],
+  "issues": {
+    "overflow": [],
+    "unboundPaint": [],
+    "unstyledText": [],
+    "unresolvedInstances": [],
+    "brokenDestinations": [],
+    "crossPageDestinations": [],
+    "placeholders": [],
+    "topLevelOverlap": [],
+    "disabledActions": []
+  },
+  "counts": {
+    "FRAME": 1173,
+    "INSTANCE": 116,
+    "VECTOR": 223,
+    "TEXT": 1499,
+    "RECTANGLE": 167,
+    "ELLIPSE": 129
+  },
+  "fonts": [
+    "DM Sans",
+    "JetBrains Mono",
+    "Familjen Grotesk",
+    "Newsreader"
+  ],
+  "images": [
+    {
+      "id": "2089:66",
+      "name": "P4-D / studio isometric",
+      "hash": "6cc396c49564555cb889c3810ef2f62e6a917086"
+    },
+    {
+      "id": "2095:787",
+      "name": "Current P4-D room / content asset",
+      "hash": "6cc396c49564555cb889c3810ef2f62e6a917086"
+    },
+    {
+      "id": "2090:332",
+      "name": "Controlled capture / room study",
+      "hash": "6cc396c49564555cb889c3810ef2f62e6a917086"
+    }
+  ],
+  "scaledOverrideCount": 96,
+  "previewChecks": [
+    {
+      "source": "2089:1402",
+      "copy": "2095:806",
+      "scale": 0.6,
+      "textCount": 61,
+      "mismatch": []
+    },
+    {
+      "source": "2089:1414",
+      "copy": "2095:936",
+      "scale": 0.6,
+      "textCount": 35,
+      "mismatch": []
+    }
+  ],
+  "linkCount": 217,
+  "graph": {
+    "atlas": [
+      "library",
+      "bookingVision",
+      "notebookVision",
+      "prepareVision",
+      "plan"
+    ],
+    "plan": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "prepareVision"
+    ],
+    "bookingVision": [
+      "library",
+      "atlas",
+      "notebookVision",
+      "checkinVision",
+      "bookingConflict"
+    ],
+    "bookingConflict": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision"
+    ],
+    "vision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "visionOffline"
+    ],
+    "visionOffline": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "vision"
+    ],
+    "signal20": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal",
+      "signal3"
+    ],
+    "signal3": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal",
+      "signal20"
+    ],
+    "notebookVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "reviewVision",
+      "vision",
+      "saveFailed"
+    ],
+    "saveFailed": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "vision"
+    ],
+    "cover": [
+      "library",
+      "prepareSignal",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "calibrationMissing",
+      "prepareVision",
+      "returnVision",
+      "reviewVision",
+      "receiptVision"
+    ],
+    "library": [
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "prepareVision",
+      "prepareSignal"
+    ],
+    "prepareVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "calibrationMissing"
+    ],
+    "prepareSignal": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal"
+    ],
+    "calibrationMissing": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "prepareVision"
+    ],
+    "bookingSignal": [
+      "library",
+      "atlas",
+      "notebookSignal",
+      "checkinSignal",
+      "prepareSignal"
+    ],
+    "checkinVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "plan",
+      "vision",
+      "wrongStation",
+      "prepareVision"
+    ],
+    "wrongStation": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "plan",
+      "checkinVision",
+      "prepareVision"
+    ],
+    "checkinSignal": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal",
+      "plan",
+      "signal20",
+      "prepareSignal"
+    ],
+    "notebookSignal": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "reviewSignal",
+      "signal3"
+    ],
+    "reviewVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "receiptVision",
+      "submitFailedVision"
+    ],
+    "reviewSignal": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal",
+      "receiptSignal",
+      "submitFailedSignal"
+    ],
+    "submitFailedVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "receiptVision",
+      "reviewVision"
+    ],
+    "submitFailedSignal": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal",
+      "receiptSignal",
+      "reviewSignal"
+    ],
+    "receiptVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "returnVision",
+      "reviewVision"
+    ],
+    "receiptSignal": [
+      "library",
+      "bookingSignal",
+      "atlas",
+      "notebookSignal",
+      "reviewSignal"
+    ],
+    "returnVision": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "returnMissing",
+      "receiptVision"
+    ],
+    "returnMissing": [
+      "library",
+      "bookingVision",
+      "atlas",
+      "notebookVision",
+      "returnVision",
+      "receiptVision"
+    ]
+  },
+  "pathChecks": [
+    {
+      "path": [
+        "cover",
+        "library",
+        "prepareVision",
+        "bookingVision",
+        "checkinVision",
+        "vision",
+        "notebookVision",
+        "reviewVision",
+        "receiptVision",
+        "returnVision",
+        "atlas"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "cover",
+        "library",
+        "prepareSignal",
+        "bookingSignal",
+        "checkinSignal",
+        "signal20",
+        "signal3",
+        "notebookSignal",
+        "reviewSignal",
+        "receiptSignal",
+        "atlas"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "prepareVision",
+        "calibrationMissing",
+        "prepareVision"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "bookingVision",
+        "bookingConflict",
+        "bookingVision"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "checkinVision",
+        "wrongStation",
+        "checkinVision"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "vision",
+        "visionOffline",
+        "vision"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "notebookVision",
+        "saveFailed",
+        "notebookVision"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "reviewVision",
+        "submitFailedVision",
+        "receiptVision"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "reviewSignal",
+        "submitFailedSignal",
+        "receiptSignal"
+      ],
+      "missingEdges": []
+    },
+    {
+      "path": [
+        "returnVision",
+        "returnMissing",
+        "returnVision"
+      ],
+      "missingEdges": []
+    }
+  ],
+  "unreachable": [],
+  "flowStartingPoints": [
+    {
+      "nodeId": "2089:1400",
+      "name": "PARALLAX / Student journeys"
+    },
+    {
+      "nodeId": "2089:1401",
+      "name": "Start an experiment"
+    }
+  ],
+  "finalization": "Only frame names and page flow-start metadata changed after geometry/reaction audit."
+}

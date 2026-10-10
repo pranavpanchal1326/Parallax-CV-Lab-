@@ -1,0 +1,429 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Light edition"
+- region "Example session identity":
+  - generic: PARALLAX · local edition · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main:
+  - paragraph: Shared lab map · geometry P4-D · React example state
+  - heading "Find your place. Read its condition." [level=1]:
+    - text: Find your place.
+    - emphasis: Read its condition.
+  - figure "Geometry P4-D · assumed envelope, not a surveyed room. React session state.":
+    - img "Conceptual 10 by 7 metre floor plan from geometry revision P4-D. Equipment availability is listed below as text.":
+      - generic: CMP
+      - generic: STO
+      - generic: C1
+      - generic: SPN
+      - generic: FAC
+      - generic: COL
+      - generic: S1
+      - generic: CV-01
+      - generic: CV-02
+      - generic: CV-03
+      - generic: CV-05
+      - generic: CV-06
+      - generic: S1-B
+    - generic: Geometry P4-D · assumed envelope, not a surveyed room. React session state.
+  - paragraph: Availability and occupancy are separate. A bookable station may already be in use. This plan is derived from the canonical geometry; the 10 × 7 m room remains an assumed envelope.
+  - region "Equipment availability and occupancy":
+    - table:
+      - rowgroup:
+        - row "ID Item Availability Occupancy":
+          - columnheader "ID"
+          - columnheader "Item"
+          - columnheader "Availability"
+          - columnheader "Occupancy"
+      - rowgroup:
+        - row "CV-01 Computing station Bookable Free":
+          - rowheader "CV-01":
+            - link "CV-01":
+              - /url: "#/assets/CV-01"
+              - code: CV-01
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-02 Computing station Bookable Free":
+          - rowheader "CV-02":
+            - link "CV-02":
+              - /url: "#/assets/CV-02"
+              - code: CV-02
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-03 Computing station Bookable In use · B-2042":
+          - rowheader "CV-03":
+            - link "CV-03":
+              - /url: "#/assets/CV-03"
+              - code: CV-03
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "In use · B-2042"
+        - row "CV-04 Accessible computing station Bookable Free":
+          - rowheader "CV-04":
+            - link "CV-04":
+              - /url: "#/assets/CV-04"
+              - code: CV-04
+          - cell "Accessible computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-05 Computing station Bookable Free":
+          - rowheader "CV-05":
+            - link "CV-05":
+              - /url: "#/assets/CV-05"
+              - code: CV-05
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-06 Computing station Bookable Free":
+          - rowheader "CV-06":
+            - link "CV-06":
+              - /url: "#/assets/CV-06"
+              - code: CV-06
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1 Capture area Bookable Free":
+          - rowheader "C1":
+            - link "C1":
+              - /url: "#/assets/C1"
+              - code: C1
+          - cell "Capture area"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1-CAM Capture camera + lens Bookable Free":
+          - rowheader "C1-CAM":
+            - link "C1-CAM":
+              - /url: "#/assets/C1-CAM"
+              - code: C1-CAM
+          - cell "Capture camera + lens"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1-L1 Softbox light L1 Bookable Free":
+          - rowheader "C1-L1":
+            - link "C1-L1":
+              - /url: "#/assets/C1-L1"
+              - code: C1-L1
+          - cell "Softbox light L1"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1-L2 Softbox light L2 Bookable Free":
+          - rowheader "C1-L2":
+            - link "C1-L2":
+              - /url: "#/assets/C1-L2"
+              - code: C1-L2
+          - cell "Softbox light L2"
+          - cell "Bookable"
+          - cell "Free"
+        - row "TRP-04 Tripod Bookable Free":
+          - rowheader "TRP-04":
+            - link "TRP-04":
+              - /url: "#/assets/TRP-04"
+              - code: TRP-04
+          - cell "Tripod"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CAL-01 Calibration target Bookable Free":
+          - rowheader "CAL-01":
+            - link "CAL-01":
+              - /url: "#/assets/CAL-01"
+              - code: CAL-01
+          - cell "Calibration target"
+          - cell "Bookable"
+          - cell "Free"
+        - row "S1-B Signal acquisition bench Bookable In use · B-2042":
+          - rowheader "S1-B":
+            - link "S1-B":
+              - /url: "#/assets/S1-B"
+              - code: S1-B
+          - cell "Signal acquisition bench"
+          - cell "Bookable"
+          - cell "In use · B-2042"
+  - complementary:
+    - heading "Equipment index" [level=2]
+    - list:
+      - link "CV-01 Computing station":
+        - /url: "#/assets/CV-01"
+        - code: CV-01
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-02 Computing station":
+        - /url: "#/assets/CV-02"
+        - code: CV-02
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-03 Computing station":
+        - /url: "#/assets/CV-03"
+        - code: CV-03
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-04 Accessible computing station":
+        - /url: "#/assets/CV-04"
+        - code: CV-04
+        - generic: Accessible computing station
+      - generic: CMP · Bookable
+      - link "CV-05 Computing station":
+        - /url: "#/assets/CV-05"
+        - code: CV-05
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-06 Computing station":
+        - /url: "#/assets/CV-06"
+        - code: CV-06
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "C1 Capture area":
+        - /url: "#/assets/C1"
+        - code: C1
+        - generic: Capture area
+      - generic: C1 · Bookable
+      - link "C1-CAM Capture camera + lens":
+        - /url: "#/assets/C1-CAM"
+        - code: C1-CAM
+        - generic: Capture camera + lens
+      - generic: C1 · Bookable
+      - link "C1-L1 Softbox light L1":
+        - /url: "#/assets/C1-L1"
+        - code: C1-L1
+        - generic: Softbox light L1
+      - generic: C1 · Bookable
+      - link "C1-L2 Softbox light L2":
+        - /url: "#/assets/C1-L2"
+        - code: C1-L2
+        - generic: Softbox light L2
+      - generic: C1 · Bookable
+      - link "TRP-04 Tripod":
+        - /url: "#/assets/TRP-04"
+        - code: TRP-04
+        - generic: Tripod
+      - generic: C1 · Bookable
+      - link "CAL-01 Calibration target":
+        - /url: "#/assets/CAL-01"
+        - code: CAL-01
+        - generic: Calibration target
+      - generic: C1 · Bookable
+      - link "S1-B Signal acquisition bench":
+        - /url: "#/assets/S1-B"
+        - code: S1-B
+        - generic: Signal acquisition bench
+      - generic: S1 · Bookable
+    - link "Open original map reference ↗":
+      - /url: /design/phase-08/lab-map.html
+    - paragraph: The reference keeps its original demonstrator state. Load the linked explorer below to see the React projection.
+  - heading "Optional plan and 3D explorer" [level=2]
+  - paragraph: Search, filter and select with the list. The optional model uses the same geometry and React availability projection. Model positions show home geometry, not tracked equipment movement.
+  - status: React projection linked. Select 3D model inside the explorer to load geometry.
+  - iframe [active]:
+    - link "Skip to resource list":
+      - /url: "#list"
+    - banner:
+      - generic: PARALLAX · linked map
+      - link "+ Safety":
+        - /url: "#safety"
+      - button "Switch to light theme":
+    - main:
+      - complementary "Resources":
+        - paragraph: REACT PROJECTION / U03 · P4-D
+        - heading "Find your place in the lab." [level=1]
+        - paragraph: One set of identifiers across list, plan and 3D model. Every task works from the list alone.
+        - generic: Search ID, name or zone
+        - searchbox "Search ID, name or zone"
+        - generic: /
+        - generic: Enter opens the first match. Press slash anywhere to focus search, Escape to clear the selection.
+        - group "Filter by zone":
+          - button "All" [pressed]
+          - button "CMP"
+          - button "C1"
+          - button "S1"
+          - button "STO"
+          - button "COL"
+          - button "FAC"
+        - status: 17 of 17 resources
+        - heading "Resources by zone" [level=2]
+        - heading "CMP · COMPUTING" [level=3]
+        - button "CV-01 Computing station Bookable · Free":
+          - generic: CV-01
+          - generic: Computing station
+          - generic: Bookable
+          - text: · Free
+        - button "CV-02 Computing station Bookable · Free":
+          - generic: CV-02
+          - generic: Computing station
+          - generic: Bookable
+          - text: · Free
+        - button "CV-03 Computing station Bookable · In use · B-2042":
+          - generic: CV-03
+          - generic: Computing station
+          - generic: Bookable
+          - text: · In use · B-2042
+        - button "CV-04 Accessible computing station Bookable · Free":
+          - generic: CV-04
+          - generic: Accessible computing station
+          - generic: Bookable
+          - text: · Free
+        - button "CV-05 Computing station Bookable · Free":
+          - generic: CV-05
+          - generic: Computing station
+          - generic: Bookable
+          - text: · Free
+        - button "CV-06 Computing station Bookable · Free":
+          - generic: CV-06
+          - generic: Computing station
+          - generic: Bookable
+          - text: · Free
+        - heading "C1 · CONTROLLED CAPTURE" [level=3]
+        - button "C1-CAM Capture camera + lens Bookable · Free":
+          - generic: C1-CAM
+          - generic: Capture camera + lens
+          - generic: Bookable
+          - text: · Free
+        - button "C1-L1 Softbox light L1 Bookable · Free":
+          - generic: C1-L1
+          - generic: Softbox light L1
+          - generic: Bookable
+          - text: · Free
+        - button "C1-L2 Softbox light L2 Bookable · Free":
+          - generic: C1-L2
+          - generic: Softbox light L2
+          - generic: Bookable
+          - text: · Free
+        - button "C1-TB Object stage Unknown · Unknown":
+          - generic: C1-TB
+          - generic: Object stage
+          - generic: Unknown
+          - text: · Unknown
+        - button "CAL-01 Calibration target Bookable · Free":
+          - generic: CAL-01
+          - generic: Calibration target
+          - generic: Bookable
+          - text: · Free
+        - button "C1-BD Matte backdrop Unknown · Unknown":
+          - generic: C1-BD
+          - generic: Matte backdrop
+          - generic: Unknown
+          - text: · Unknown
+        - heading "S1 · SIGNAL BENCH" [level=3]
+        - button "S1-B Signal acquisition bench Bookable · In use · B-2042":
+          - generic: S1-B
+          - generic: Signal acquisition bench
+          - generic: Bookable
+          - text: · In use · B-2042
+        - heading "STO · KIT STORAGE" [level=3]
+        - button "STO-1 Kit storage, 3 bays Unknown · Unknown":
+          - generic: STO-1
+          - generic: Kit storage, 3 bays
+          - generic: Unknown
+          - text: · Unknown
+        - heading "COL · COLLABORATION" [level=3]
+        - button "COL-T Collaboration table Unknown · Unknown":
+          - generic: COL-T
+          - generic: Collaboration table
+          - generic: Unknown
+          - text: · Unknown
+        - button "COL-D Demonstration display Unknown · Unknown":
+          - generic: COL-D
+          - generic: Demonstration display
+          - generic: Unknown
+          - text: · Unknown
+        - heading "FAC · FACULTY" [level=3]
+        - button "FAC-1 Faculty desk Unknown · Unknown":
+          - generic: FAC-1
+          - generic: Faculty desk
+          - generic: Unknown
+          - text: · Unknown
+        - paragraph: React example availability and occupancy. Model positions show home geometry, not tracked movement. No live observations.
+      - region "Map viewer":
+        - generic "3D lab model. Use the resource list, the labelled pins or named viewpoints; drag to orbit."
+        - generic "Labelled resources in the model":
+          - button "CV-01, Computing station, Bookable, Free": CV-01
+          - button "CV-02, Computing station, Bookable, Free": CV-02
+          - button "CV-03, Computing station, Bookable, In use · B-2042": CV-03
+          - button "CV-04, Accessible computing station, Bookable, Free": CV-04
+          - button "CV-05, Computing station, Bookable, Free": CV-05
+          - button "CV-06, Computing station, Bookable, Free": CV-06
+          - button "C1-CAM, Capture camera + lens, Bookable, Free": C1-CAM
+          - button "C1-L1, Softbox light L1, Bookable, Free": C1-L1
+          - button "C1-L2, Softbox light L2, Bookable, Free": C1-L2
+          - button "C1-TB, Object stage, Unknown, Unknown": C1-TB
+          - button "CAL-01, Calibration target, Bookable, Free": CAL-01
+          - button "C1-BD, Matte backdrop, Unknown, Unknown": C1-BD
+          - button "S1-B, Signal acquisition bench, Bookable, In use · B-2042": S1-B
+          - button "STO-1, Kit storage, 3 bays, Unknown, Unknown": STO-1
+          - button "COL-T, Collaboration table, Unknown, Unknown": COL-T
+          - button "COL-D, Demonstration display, Unknown, Unknown": COL-D
+          - button "FAC-1, Faculty desk, Unknown, Unknown": FAC-1
+        - group "View mode":
+          - button "Floor plan"
+          - button "3D model" [pressed]
+        - status: REACT EXAMPLE · updated at example time 09:55
+        - generic "Named viewpoints":
+          - button "Overview"
+          - button "Capture C1"
+          - button "Signal bench"
+          - button "Workstations"
+          - button "Demonstration"
+          - button "Reset view"
+        - checkbox "Follow selection" [checked]
+        - text: Follow selection
+        - checkbox "Labels & halos" [checked]
+        - text: Labels & halos
+        - text: Review state
+        - combobox "Review state":
+          - option "Normal" [selected]
+          - option "Stale data"
+          - option "3D model fails to load"
+          - option "WebGL unavailable"
+        - region "Selected resource":
+          - paragraph: NOTHING SELECTED
+          - heading "Choose a resource" [level=2]
+          - paragraph: Pick from the list, the plan or the model. Details always appear here as text — the model never holds information on its own.
+          - generic: AVAILABILITY
+          - text: Can it be booked?
+          - generic: OCCUPANCY
+          - text: Is someone using it now?
+          - paragraph: Different facts, never merged into one colour.
+          - paragraph: / search · Enter open first match · Esc clear
+  - paragraph: If the explorer cannot load, every equipment task works through the React list and asset records above.
+  - paragraph:
+    - link "Explore art, wayfinding and physical references →":
+      - /url: "#/studio"
+- region "Example session controls":
+  - button "Activity · 5"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

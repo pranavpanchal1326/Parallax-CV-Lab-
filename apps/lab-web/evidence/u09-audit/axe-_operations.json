@@ -1,0 +1,826 @@
+{
+  "path": "#/operations",
+  "violations": [],
+  "passedRules": 52,
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "target": [
+            ".migration-strip > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href=\"/prototype/index.html\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#current-view > .ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "em"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-intro"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#ops-allocation\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#ops-method\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#ops-handover\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#ops-runbooks\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-actor\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(1) > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(2) > .ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-identity > div:nth-child(2) > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-identity > div:nth-child(2) > p:nth-child(2) > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-identity > div:nth-child(2) > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-allocation > .ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-allocation-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-experiment\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-day\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-start\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-duration\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-delivery\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-allocation > .ops-workspace > .ops-controls > form > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-controls > .quiet"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-controls > details > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-lookup > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-ledger > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "th[scope=\"col\"]:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "th[scope=\"col\"]:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "th[scope=\"col\"]:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "th[scope=\"col\"]:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(1) > th[scope=\"row\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(1) > th[scope=\"row\"] > small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(1) > td:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(1) > td:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(1) > td:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(1) > td:nth-child(4) > details > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(2) > th[scope=\"row\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(2) > th[scope=\"row\"] > small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(2) > td:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(2) > td:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(2) > td:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(2) > td:nth-child(4) > details > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(3) > th[scope=\"row\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(3) > th[scope=\"row\"] > small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(3) > td:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(3) > td:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(3) > td:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(3) > td:nth-child(4) > details > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(4) > th[scope=\"row\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(4) > th[scope=\"row\"] > small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(4) > td:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(4) > td:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(4) > td:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "tr:nth-child(4) > td:nth-child(4) > details > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-ledger > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-method > .ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-method-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-method > .ops-workspace > .ops-controls > form:nth-child(1) > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-existing-rule\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-policy-reason\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-policy-reason"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "target": [
+            "label[for=\"ops-equipment-reason\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-equipment-reason"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "target": [
+            "form:nth-child(2) > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-policy-facts > div:nth-child(1) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-policy-facts > div:nth-child(1) > dd"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-policy-facts > div:nth-child(2) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-policy-facts > div:nth-child(2) > dd"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-method > .ops-workspace > div:nth-child(2) > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-handover > .ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-handover-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-topic\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-next-owner\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-due\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"ops-handover-note\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-handover-note"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "target": [
+            "#ops-handover > .ops-workspace > .ops-controls > form > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-empty"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-save-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "p[role=\"status\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-actions > .quiet:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-actions > .quiet:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-actions > .quiet:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-export > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "section[aria-labelledby=\"ops-save-title\"] > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "section[aria-labelledby=\"ops-save-title\"] > details:nth-child(6) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-runbooks > .ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#ops-runbooks-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-workspace > div:nth-child(1) > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-owners > div:nth-child(1) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(1) > dd > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(1) > dd > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "dd > a[href$=\"#/bookings\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-owners > div:nth-child(2) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(2) > dd > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(2) > dd > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "dd > a[href$=\"#/faculty\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-owners > div:nth-child(3) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(3) > dd > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(3) > dd > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#/faculty/attendance\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-owners > div:nth-child(4) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(4) > dd > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(4) > dd > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "dd > a[href$=\"#/tech\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-owners > div:nth-child(5) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(5) > dd > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(5) > dd > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "dd > a[href$=\"#/assistant\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > p:nth-child(2) > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > p:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > p:nth-child(3) > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > p:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > a[href$=\"#/bookings\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#/assets/C1-CAM\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-current > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-runbook-list > details:nth-child(1) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-runbook-list > details:nth-child(2) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-runbook-list > details:nth-child(3) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-runbook-list > details:nth-child(4) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "details:nth-child(5) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ops-runbook-list > details:nth-child(6) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "details:nth-child(7) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "details:nth-child(8) > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"operations-runbook.html\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "button[aria-controls=\"session-activity\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > .quiet:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > .quiet:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".access-review > h2"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".access-review > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        }
+      ]
+    }
+  ],
+  "engine": {
+    "name": "axe-core",
+    "version": "4.10.2"
+  }
+}

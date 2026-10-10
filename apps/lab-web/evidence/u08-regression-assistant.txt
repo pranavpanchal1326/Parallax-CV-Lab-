@@ -1,0 +1,104 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: Learning support · U06 · public project guides
+  - heading "A question, with a source." [level=1]:
+    - text: A question,
+    - emphasis: with a source.
+  - paragraph: Get a hint or find an explanation in a reviewed guide. Check the passage, then make the reasoning your own.
+  - region "Ask the guide":
+    - heading "Ask the guide" [level=2]
+    - paragraph: Your question and selected guide go to local Ollama. Browser evidence, notebook entries and private records are not included.
+    - generic: Project guide
+    - combobox "Project guide":
+      - option "E01 · Sampling & aliasing" [selected]
+      - option "E06 · Light & image evidence"
+      - option "WORKFLOW · Evidence & equipment decisions"
+      - option "GEOMETRY · Camera geometry rehearsal"
+    - group "How would you like to start?":
+      - generic: How would you like to start?
+      - radio "A hint first" [checked]
+      - text: A hint first
+      - radio "More explanation"
+      - text: More explanation
+    - generic: Your question
+    - textbox "Your question"
+    - paragraph: Ask about the method or the limits of its evidence. Keep personal information out of your question.
+    - button "Use an example question"
+    - button "Find a hint" [disabled]
+    - paragraph:
+      - strong: Manual reader available
+      - text: Checking the local service…
+    - button "Checking…" [disabled]
+    - link "Return to E01 preparation →":
+      - /url: "#/E01/prepare"
+  - region "The source stays in view.":
+    - paragraph: Begin with what is known
+    - heading "The source stays in view." [level=2]
+    - paragraph: Your answer will link to the guide revision and section used. Local AI selects passages; their wording comes directly from the reviewed guide.
+  - region "Sampling & aliasing":
+    - paragraph: Readable without AI
+    - heading "Sampling & aliasing" [level=2]
+    - paragraph: E01 · revision 01 · Bundled offline copy · publication status unchecked
+    - article:
+      - heading "Keep the reference fixed" [level=3]
+      - paragraph: "The E01 reference is REF-2HZ-v1: sin(4πt) volts, with frequency 2 Hz, amplitude 1 V and duration 1 second. Keep that reference fixed when comparing sampling rates. These are generated teaching samples, not readings from a connected device."
+      - generic: Section E01-reference
+    - article:
+      - heading "An ambiguous low-rate trace" [level=3]
+      - paragraph: "At 3 Hz, four samples cover 0 through 1 second. For the 2 Hz reference, a signed −1 Hz alias fits those same samples: its apparent frequency is 1 Hz. Matching the sample points does not identify the original waveform. Record the sampling rate and reference revision with your claim."
+      - generic: Section E01-alias
+    - article:
+      - heading "The 4 Hz boundary" [level=3]
+      - paragraph: A rate of 4 Hz is exactly twice the 2 Hz reference frequency. For this zero-phase sine reference, every sample at that boundary is zero within numerical precision. This boundary is an ambiguous demonstration, not a reliable reconstruction. A different phase would change the sampled values.
+      - generic: Section E01-boundary
+    - article:
+      - heading "Compare higher rates" [level=3]
+      - paragraph: Across the inclusive interval from 0 to 1 second, 8 Hz produces 9 samples and 20 Hz produces 21 samples. Both rates exceed twice the 2 Hz reference frequency. More sample points show the reference more clearly in this ideal example; they do not establish the accuracy of a real instrument.
+      - generic: Section E01-higher
+    - generic "Source scope & lifecycle"
+  - generic "Your local review flags · 0"
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

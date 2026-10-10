@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARALLAX — 3D and interaction (P8-B)</title>
+<meta name="description" content="PARALLAX Signal & Computer Vision Lab — renders, Lab Map and Scene Studio prototypes.">
+<script src="../theme.js"></script><link rel="stylesheet" href="assets/p8.css"><link rel="stylesheet" href="../edition.css">
+<style>
+main{padding:0}
+.sec{padding:clamp(56px,8vw,120px) 0;border-top:1px solid var(--ed-ink)}
+.sec.ed-plate{border-top:0}
+.sec.tint{background:var(--ed-paper-2)}
+.sec-head{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:20px clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(28px,4vw,56px)}
+.sec-head .ed-h2{max-width:14ch}
+.sec-head .ed-dek{font-size:clamp(17px,1.4vw,20px)}
+/* opener */
+.opener{padding:clamp(36px,5.5vw,84px) 0 clamp(24px,3vw,40px)}
+.opener .ed-h1{max-width:14ch}
+.opener-foot{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,5vw,80px);align-items:end;margin-top:clamp(28px,4vw,56px);padding-top:22px;border-top:1px solid var(--ed-ink)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.film .frame{position:relative;background:#0E131C;aspect-ratio:16/9;overflow:hidden}
+.film video,.film .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.film-cap{display:flex;justify-content:space-between;align-items:center;gap:12px 28px;flex-wrap:wrap;padding:12px 14px 0}
+.film-cap .ed-cap{padding:0;margin:0}
+.media-ctl{min-height:38px;padding:7px 14px;font-size:13px}
+.opener .ed-figures{margin-top:clamp(36px,5vw,72px)}
+/* signal to pixel */
+.sp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(28px,5vw,80px);align-items:center}
+.sp .ed-h2{margin:0 0 22px}
+.sp-stage{position:relative;background:#0A0E15;border:1px solid var(--ed-plate-rule);aspect-ratio:16/9}
+.sp-stage canvas{width:100%;height:100%;display:block}
+.sp-read{position:absolute;left:14px;right:14px;bottom:12px;font:13px/1.5 var(--ed-body);color:var(--ed-plate-text);background:rgba(10,14,21,.82);padding:8px 12px;border-left:3px solid var(--ed-trace)}
+.sp-read.warn{border-left-color:var(--ed-gold)}
+.sp-ctl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 20px;align-items:center;margin-top:16px}
+.sp-ctl label{grid-column:1/-1;display:flex;justify-content:space-between;font:500 11px var(--ed-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ed-plate-muted)}
+.sp-ctl output{color:var(--ed-plate-text);letter-spacing:.04em}
+.sp-ctl input[type=range]{accent-color:var(--ed-trace)}
+.sp-hint{grid-column:1/-1;font-size:13px;color:var(--ed-plate-muted)}
+.sp-btn{grid-row:2;grid-column:2;min-width:86px;min-height:38px;font:500 13px var(--ed-sans);letter-spacing:.04em;background:transparent;color:var(--ed-plate-text);border:1px solid var(--ed-plate-text);border-radius:0;padding:7px 14px;cursor:pointer}
+.sp-btn:hover{background:var(--ed-plate-text);color:var(--ed-plate)}
+/* prototypes */
+.protos{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--ed-ink)}
+.proto{display:grid;grid-template-rows:auto 1fr;gap:22px;padding:28px clamp(16px,2.6vw,40px) 8px 0;text-decoration:none;color:inherit}
+.proto+.proto{padding:28px 0 8px clamp(16px,2.6vw,40px);border-left:1px solid var(--ed-ink)}
+.proto .ph{overflow:hidden;background:#111}
+.proto img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform .7s var(--ed-ease)}
+.proto:hover img{transform:scale(1.03)}
+.proto .in{display:grid;gap:14px;align-content:start}
+.proto .ed-h3{font-size:clamp(28px,3vw,44px);transition:color .2s}
+.proto:hover .ed-h3{color:var(--ed-spot)}
+.proto ul{margin:0;padding:0;list-style:none;border-top:1px solid var(--ed-rule);color:var(--ed-ink-2);font-size:15px}
+.proto li{padding:10px 0;border-bottom:1px solid var(--ed-rule)}
+.proto .open{font:500 12px var(--ed-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ed-spot);display:flex;gap:10px;align-items:center;padding:6px 0 0}
+.proto .open::after{content:'→';font-size:15px;transition:transform .25s var(--ed-ease)}.proto:hover .open::after{transform:translateX(5px)}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,2.6vw,36px) clamp(14px,1.8vw,24px)}
+.gal button{all:unset;box-sizing:border-box;cursor:zoom-in;display:grid;grid-template-rows:minmax(0,1fr) auto;min-width:0}
+.gal button:focus-visible{outline:2px solid var(--ed-spot);outline-offset:4px}
+.gal .ph{position:relative;overflow:hidden;background:#111;min-height:120px}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s var(--ed-ease)}
+.gal button:hover img{transform:scale(1.03)}
+.gal .cap{display:block;padding:10px 0 0;border-top:1px solid var(--ed-ink);margin-top:10px;font:400 14px/1.45 var(--ed-body);color:var(--ed-ink-2)}
+.gal .cap b{display:block;font:500 11px var(--ed-mono);letter-spacing:.12em;color:var(--ed-ink);margin-bottom:3px}
+.gal .g-a{grid-column:span 8}.g-a .ph{aspect-ratio:16/9.3}.gal .g-b{grid-column:span 4}.gal .g-c{grid-column:span 4}.g-c .ph{aspect-ratio:4/3}.gal .g-w{grid-column:span 6}.g-w .ph{aspect-ratio:16/9.3}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(94vw,1800px);width:94vw}
+dialog.lb::backdrop{background:rgba(6,9,14,.94)}
+dialog.lb img{width:100%;max-height:82vh;object-fit:contain;display:block}
+dialog.lb p{color:#E8ECF4;font:400 18px/1.4 var(--ed-serif);margin:14px 0 0}dialog.lb .bar{display:flex;justify-content:space-between;gap:12px;margin-top:12px}
+dialog.lb button{font:500 13px var(--ed-sans);letter-spacing:.04em;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:0;padding:9px 16px;cursor:pointer}
+dialog.lb button:hover{background:#fff;color:#0A0E15}
+dialog.lb :focus-visible{outline:2px solid #6EE7C5;outline-offset:3px}
+/* compare */
+.cmp{position:relative;aspect-ratio:1800/1250;overflow:hidden;background:#111;--x:50%}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp .after{clip-path:inset(0 0 0 var(--x))}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--x);width:2px;margin-left:-1px;background:#F4F1E9}
+.cmp .bar::after{content:'↔';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:44px;height:44px;background:#F4F1E9;color:#20232B;border:1px solid #20232B;font:16px var(--ed-mono)}
+.cmp .lbl{position:absolute;top:14px;font:500 11px var(--ed-mono);letter-spacing:.12em;background:#F4F1E9;color:#20232B;border:1px solid #20232B;padding:5px 9px}
+.cmp .lbl.a{left:14px}.cmp .lbl.b{right:14px}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cmp:focus-within{outline:2px solid var(--ed-spot);outline-offset:4px}
+/* kit */
+.kit{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.kit .ed-h2{margin:0 0 20px}
+.kit ol{margin:26px 0 0;padding:0;list-style:none;border-top:1px solid var(--ed-ink)}
+.kit li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;align-items:baseline;font-size:15px;border-bottom:1px solid var(--ed-rule);padding:11px 0}
+.kit li b{font:500 12px var(--ed-mono);letter-spacing:.06em;color:var(--ed-spot)}
+/* contract */
+.table-scroll{overflow:auto}
+table{width:100%;border-collapse:collapse;background:none;font-size:15px}
+th,td{padding:15px 0;border-bottom:1px solid var(--ed-rule);text-align:left;vertical-align:top}
+thead th{font:500 11px var(--ed-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ed-ink-2);background:none;border-block:1px solid var(--ed-ink);padding:10px 0}
+td:first-child{width:38%;padding-right:28px;font:400 clamp(18px,1.5vw,21px)/1.25 var(--ed-serif);color:var(--ed-ink)}
+td:first-child code{display:block;font:500 11px var(--ed-mono);letter-spacing:.1em;color:var(--ed-spot);margin-bottom:4px}
+td:last-child{color:var(--ed-ink-2)}
+.foot{border-top:1px solid var(--ed-rule);margin-top:32px;padding-top:16px;font:12px/1.6 var(--ed-mono);color:var(--ed-ink-2)}
+@media (max-width:980px){.sp,.kit,.protos,.sec-head,.opener-foot{grid-template-columns:1fr}.cta{justify-content:flex-start}.proto,.proto+.proto{padding:24px 0 8px;border-left:0}.proto+.proto{border-top:1px solid var(--ed-ink)}.gal .g-a,.gal .g-b,.gal .g-c,.gal .g-w{grid-column:span 12}.g-b .ph{aspect-ratio:16/10}td:first-child{width:44%}}
+@media (max-width:560px){td,td:first-child{display:block;width:auto;padding-right:0}td:first-child{border-bottom:0;padding-bottom:4px}td:last-child{padding-top:0}thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.film-cap{padding:12px 0 0}}
+</style></head>
+<body class="ed">
+<a class="ed-skip" href="#main">Skip to content</a>
+<div class="ed-progress" aria-hidden="true"></div>
+<header class="mast">
+ <a class="mast-brand" href="../index.html" aria-label="PARALLAX — contents"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="14" height="14" fill="none" stroke-width="2"/><rect x="8" y="8" width="14" height="14"/></svg>PARALLAX</a>
+ <nav class="mast-nav" aria-label="Project sections"><a href="../index.html">Contents</a><a href="../research.html"><i>02</i>Research</a><a href="../direction.html"><i>03</i>Direction</a><a href="../review.html"><i>04</i>Space</a><a href="../system/index.html"><i>05</i>System</a><a href="../journey.html"><i>06</i>Journey</a><a href="../complete.html"><i>07</i>Roles</a><a href="../phase-08/index.html" aria-current="page"><i>08</i>In 3D</a><a href="../phase-08/lab-map.html">Lab Map</a><a href="../phase-08/scene-studio.html">Scene Studio</a></nav>
+ <a class="safety" href="lab-map.html#safety">+ Safety</a>
+</header>
+
+<main id="main">
+<section class="opener" aria-labelledby="hero-h"><div class="ed-wrap">
+ <p class="ed-kicker">Part 08 · 3D and interaction · P8-B</p>
+ <h1 class="ed-h1" id="hero-h">The room you can study <em>before</em> you enter it.</h1>
+ <div class="opener-foot">
+  <p class="ed-dek ed-dropcap">One model, three uses: images that explain the room, a map that finds what you booked, and a studio that teaches what a camera can and cannot see.</p>
+  <div class="cta"><a class="ed-btn primary" href="lab-map.html">Open the Lab Map <span class="arr" aria-hidden="true">→</span></a><a class="ed-btn" href="scene-studio.html">Open Scene Studio <span class="arr" aria-hidden="true">→</span></a></div>
+ </div>
+</div>
+<figure class="film ed-wrap" style="margin-top:clamp(28px,4vw,52px)"><div class="ed-crop"><div class="frame">
+  <img class="poster" src="renders-b/R02_iso_cutaway.jpg" alt="Isometric cutaway of the lab on a graphite plinth, lit by a low sun">
+  <video id="orbit" muted loop playsinline preload="metadata" poster="renders-b/R02_iso_cutaway.jpg" aria-hidden="true"><source src="media/A01_orbit.mp4" type="video/mp4"></video></div></div>
+ <figcaption class="film-cap"><p class="ed-cap"><span><b>Film A01</b>A slow orbit of the cutaway. Silent; it does not play if you have asked for reduced motion.</span></p>
+  <button class="ed-btn media-ctl" id="media-ctl" type="button" hidden>Pause motion</button></figcaption></figure>
+<div class="ed-wrap"><ul class="ed-figures" data-rv><li><b>11</b><span>stills from one shot list: H01 and R01–R10</span></li><li><b>43</b><span>3D nodes named by the same IDs as the booking data</span></li><li><b>69<sup>k</sup></b><span>triangles, against a budget of 150k</span></li><li><b>3.3<sup>MB</sup></b><span>interactive model, against a budget of 5 MB</span></li></ul></div>
+</section>
+
+<section class="sec ed-plate" aria-labelledby="sp-h"><div class="ed-wrap sp">
+ <div><p class="ed-kicker">A03 · Signal → pixel · live</p><h2 class="ed-h2" id="sp-h">Sampling, made <em>visible.</em></h2>
+ <p class="ed-dek">The sculpture above the spine turns a smooth waveform into discrete blocks. Here the same idea runs live: drag the rate below 4 Hz and the samples start telling a story the signal never told.</p>
+ <p class="ed-note" style="margin-top:18px">Generated 2 Hz reference — not a measurement. Connects to experiment E01.</p></div>
+ <div id="signal-pixel"></div>
+</div></section>
+
+<section class="sec" aria-labelledby="proto-h"><div class="ed-wrap">
+ <div class="sec-head"><div><p class="ed-kicker">Working prototypes</p><h2 class="ed-h2" id="proto-h">Find it. Then learn to <em>see</em> it.</h2></div>
+ <p class="ed-dek">Both run in the browser from the same room model and identifiers. Neither requires 3D to finish a task.</p></div>
+ <div class="protos">
+  <a class="proto" href="lab-map.html"><span class="ph"><img src="renders-b/R01_entry.jpg" alt="" loading="lazy"></span><div class="in"><p class="ed-kicker" style="margin:0">P10 · Lab Map</p><h3 class="ed-h3">Find your place in the lab.</h3>
+   <ul><li>Plan first; 3D with soft shadows, ID pins and availability halos on request</li><li>Availability and occupancy as separate facts, with freshness and a stale state</li><li>Failure and no-WebGL states keep the plan and your selection</li></ul><span class="open">Open the Lab Map</span></div></a>
+  <a class="proto" href="scene-studio.html"><span class="ph"><img src="renders-b/R04_capture.jpg" alt="" loading="lazy"></span><div class="in"><p class="ed-kicker" style="margin:0">P13 · Scene Studio · E12</p><h3 class="ed-h3">Explore the camera’s viewpoint.</h3>
+   <ul><li>Softbox-lit simulated image beside the scene and a measured interpretation</li><li>Visibility from an object-ID render; cause-and-effect explanations</li><li>Presets include an occlusion case and an impossible position, explained</li></ul><span class="open">Open Scene Studio</span></div></a>
+ </div>
+</div></section>
+
+<section class="sec tint" aria-labelledby="g-h"><div class="ed-wrap">
+ <div class="sec-head"><div><p class="ed-kicker">The shot list · G17 · Cycles</p><h2 class="ed-h2" id="g-h">Images that <em>expose</em> the design, not hide it.</h2></div>
+ <p class="ed-dek">Terrazzo floors, ash grain, lacquered fins and a low sun through W1. Every surface is procedural; every object comes from the same geometry as the plan. Select an image to view it full screen.</p></div>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section class="sec" aria-labelledby="cmp-h"><div class="ed-wrap">
+ <div class="sec-head"><div><p class="ed-kicker">P8-A → P8-B · same geometry, new light</p><h2 class="ed-h2" id="cmp-h">Drag to <em>compare.</em></h2></div>
+ <p class="ed-dek">Nothing moved. Materials, sky, sun, lens and post changed. The earlier study is kept as the record.</p></div>
+ <div class="cmp" id="cmp"><img src="renders/R02_iso_cutaway.jpg" alt="P8-A isometric study, flat studio light"><img class="after" src="renders-b/R02_iso_cutaway.jpg" alt="P8-B isometric study on a graphite plinth with a low warm sun">
+  <span class="bar" aria-hidden="true"></span><span class="lbl a">P8-A</span><span class="lbl b">P8-B</span>
+  <label class="visually-hidden" for="cmp-r">Comparison position</label><input id="cmp-r" type="range" min="0" max="100" value="50"></div>
+ <p class="ed-cap"><span><b>Fig. R02</b>Use the pointer, or focus the image and press the arrow keys.</span><a class="ed-link" href="index-p8a.html">Open the P8-A record</a></p>
+</div></section>
+
+<section class="sec tint" aria-labelledby="kit-h"><div class="ed-wrap kit">
+ <figure class="ed-crop"><img src="renders-b/R09_kit_layout.jpg" alt="Top-down layout of kit KIT-C1-v1: camera C1-CAM, tripod TRP-04, softboxes C1-L1 and C1-L2, calibration target CAL-01 and spare cable CBL-11, each labelled with its ID" loading="lazy"></figure>
+ <div><p class="ed-kicker">R09 · KIT-C1-v1 · G17.09</p><h2 class="ed-h2" id="kit-h">Everything you borrow has a <em>name.</em></h2>
+ <p class="ed-dek">The return check in Phase 6 and the technician’s passport in Phase 7 read the same IDs printed on these parts.</p>
+ <ol><li><b>C1-CAM</b>Camera + lens · restricted in the RST-0417 story</li><li><b>TRP-04</b>Tripod + mount</li><li><b>LGT-01 ×2</b>Softboxes C1-L1 and C1-L2</li><li><b>CAL-01</b>Calibration target · FU-2041 follow-up</li><li><b>CBL-11</b>Spare USB-C cable from MNT-0417-01</li></ol>
+ <p class="ed-note" style="margin-top:16px">Illustrative forms, not manufacturer models.</p></div>
+</div></section>
+
+<section class="sec" aria-labelledby="c-h"><div class="ed-wrap">
+ <div class="sec-head"><div><p class="ed-kicker">3D interaction contract · G15 / G16</p><h2 class="ed-h2" id="c-h">Optional, accessible, <em>honest.</em></h2></div>
+ <p class="ed-dek">Eight rules from the blueprint, and what the prototypes do about each one.</p></div>
+ <div class="table-scroll"><table><thead><tr><th scope="col">Rule</th><th scope="col">How P8-B meets it</th></tr></thead><tbody>
+ <tr><td><code>G16.01–02</code>A readable default and named views</td><td>Overview plus Capture, Signal bench, Workstations, Demonstration; eased camera moves.</td></tr>
+ <tr><td><code>G16.03</code>Details live in HTML</td><td>Facts live in the drawer; 3D pins are real buttons that open it.</td></tr>
+ <tr><td><code>G16.04 · 07 · 12</code>List, search, nothing hidden</td><td>Searchable list and focusable plan; pins declutter instead of disappearing.</td></tr>
+ <tr><td><code>G16.05 · 10</code>Reset, and following can be turned off</td><td>Reset view; follow toggle; halos and pins can be hidden; reduced motion removes pulse and easing.</td></tr>
+ <tr><td><code>G16.08–09</code>Availability is not occupancy</td><td>Two labelled facts; halos use shape and colour; reviewable stale state.</td></tr>
+ <tr><td><code>G16.13–15</code>Detect, ask first, stay optional</td><td>Plan by default; WebGL2 detection; model loads on request; failures return to the plan.</td></tr>
+ <tr><td><code>WCAG 2.2.2</code>Pause, stop, hide</td><td>The film has a pause control and does not autoplay under reduced motion; A03 has its own pause.</td></tr>
+ <tr><td><code>G15.15</code>Not a live twin</td><td>States come from data/resources.json and are labelled example state.</td></tr></tbody></table></div>
+ <p class="foot">Prepared study / Renders: spatial/blender/render_phase8b.py (P8-B look) on P4-D geometry; P8-A outputs retained. Equipment forms illustrative; Scene Studio and A03 are simulations. Participant and device testing belong to Phase 9.</p>
+</div></section>
+</main>
+<footer class="ed-colophon">
+ <div><b>PARALLAX</b>A living atlas of perception. Part 08: 3D and interaction.</div>
+ <div>Look P8-B on geometry P4-D.<br>The P8-A hub is kept as <a href="index-p8a.html">the record</a>.</div>
+ <div>Next: <a href="lab-map.html">Lab Map</a> · <a href="scene-studio.html">Scene Studio</a><br>Back to <a href="../index.html">Contents</a></div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Image viewer"><img id="lb-img" alt=""><p id="lb-cap"></p><div class="bar"><button id="lb-prev" type="button">← Previous</button><button id="lb-close" type="button">Close</button><button id="lb-next" type="button">Next →</button></div></dialog>
+
+<script src="../edition.js"></script>
+<script type="module">
+import { mountSignalPixel } from './assets/signal-pixel.js';
+mountSignalPixel(document.getElementById('signal-pixel'));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+// film: autoplay only without reduced motion; always pausable (WCAG 2.2.2)
+const v = document.getElementById('orbit'), ctl = document.getElementById('media-ctl');
+const ready = () => { ctl.hidden = false; if (!reduce) v.play().catch(() => {}); ctl.textContent = v.paused ? 'Play motion' : 'Pause motion'; };
+if (v.readyState >= 3) ready(); else v.addEventListener('canplay', ready, { once: true });
+v.addEventListener('error', () => { v.remove(); ctl.hidden = true; });
+ctl.onclick = () => { if (v.paused) v.play(); else v.pause(); };
+for (const ev of ['play', 'pause']) v.addEventListener(ev, () => { ctl.textContent = v.paused ? 'Play motion' : 'Pause motion'; });
+// gallery + lightbox
+const shots = [
+ ['H01_spine_golden','g-a','H01 · DOWN THE SPINE','Golden light through W1, the sculpture overhead, S-02 signs in depth.'],
+ ['R03_student_eye','g-b','R03 · STUDENT EYE · CV-05','Seated eye height; shallow depth of field on the illustrative trace.'],
+ ['R10_sculpture','g-c','R10 · SIGNAL → PIXEL','The analogue fins resolve into glowing samples above the spine.'],
+ ['R04_capture','g-c','R04 · CONTROLLED CAPTURE','Camera, L1/L2 softboxes, stage and CAL-01 on the 2.05 m axis.'],
+ ['R06_collaboration','g-c','R06 · COLLABORATION','Ash table and demonstration display in window light.'],
+ ['R01_entry','g-w','R01 · ENTRY FROM D1','Computing, capture beyond, zone headers overhead.'],
+ ['R05_signal_bench','g-w','R05 · SIGNAL BENCH S1','Illustrative instruments; S1 header faces the spine.'],
+ ['R07_storage','g-w','R07 · KIT STORAGE STO-1','Three kit bays open into the computing aisle.'],
+ ['R04_capture_restricted','g-w','R04 · RESTRICTED · RST-0417','The S-05 tag on C1-CAM — the Phase 7 fault, physically.']];
+const gal = document.getElementById('gal'), lb = document.getElementById('lb'), li = document.getElementById('lb-img'), lc = document.getElementById('lb-cap');
+let idx = 0;
+gal.innerHTML = shots.map(([f, c, t, s], i) => `<button class="${c}" data-i="${i}" data-rv aria-label="View ${t} full screen"><span class="ph"><img src="renders-b/${f}.jpg" alt="${t}: ${s}" loading="lazy"></span><span class="cap"><b>${t}</b>${s}</span></button>`).join('');
+window.edAdopt?.();
+function show(i) { idx = (i + shots.length) % shots.length; const [f, , t, s] = shots[idx]; li.src = `renders-b/${f}.jpg`; li.alt = `${t}: ${s}`; lc.textContent = `${t} — ${s}`; }
+gal.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; show(+b.dataset.i); lb.showModal(); });
+document.getElementById('lb-close').onclick = () => lb.close();
+document.getElementById('lb-prev').onclick = () => show(idx - 1);
+document.getElementById('lb-next').onclick = () => show(idx + 1);
+lb.addEventListener('keydown', e => { if (e.key === 'ArrowRight') show(idx + 1); if (e.key === 'ArrowLeft') show(idx - 1); });
+lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+// compare
+const cmp = document.getElementById('cmp'), r = document.getElementById('cmp-r');
+r.addEventListener('input', () => cmp.style.setProperty('--x', r.value + '%'));
+</script>
+</body></html>

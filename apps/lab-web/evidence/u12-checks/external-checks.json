@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-05",
+  "engines": [
+    {
+      "engine": "Microsoft Edge (Chromium)",
+      "version": "154.0.4258.53",
+      "tasks": {
+        "lookup": true,
+        "unknownIdRecovery": true,
+        "e01Result": true,
+        "planOnlyFallback": true,
+        "tabs": true,
+        "faultStage8": true,
+        "guidedTour": true,
+        "quickSearch": true,
+        "samplingPlayground": true,
+        "roleMenu": true,
+        "manualGuideReadable": true
+      },
+      "allPass": true,
+      "pageErrors": []
+    },
+    {
+      "engine": "Google Chrome",
+      "version": "154.0.8037.98",
+      "tasks": {
+        "lookup": true,
+        "unknownIdRecovery": true,
+        "e01Result": true,
+        "planOnlyFallback": true,
+        "tabs": true,
+        "faultStage8": true,
+        "guidedTour": true,
+        "quickSearch": true,
+        "samplingPlayground": true,
+        "roleMenu": true,
+        "manualGuideReadable": true
+      },
+      "allPass": true,
+      "pageErrors": []
+    },
+    {
+      "engine": "Firefox (Playwright build)",
+      "version": "153.0",
+      "tasks": {
+        "lookup": true,
+        "unknownIdRecovery": true,
+        "e01Result": true,
+        "planOnlyFallback": true,
+        "tabs": true,
+        "faultStage8": true,
+        "guidedTour": true,
+        "quickSearch": true,
+        "samplingPlayground": true,
+        "roleMenu": true,
+        "manualGuideReadable": true
+      },
+      "allPass": true,
+      "pageErrors": []
+    },
+    {
+      "engine": "WebKit (Playwright build, Safari engine)",
+      "version": "26.5",
+      "tasks": {
+        "lookup": true,
+        "unknownIdRecovery": true,
+        "e01Result": true,
+        "planOnlyFallback": true,
+        "tabs": true,
+        "faultStage8": true,
+        "guidedTour": true,
+        "quickSearch": true,
+        "samplingPlayground": true,
+        "roleMenu": true,
+        "manualGuideReadable": true
+      },
+      "allPass": true,
+      "pageErrors": []
+    }
+  ],
+  "downloads": [
+    {
+      "label": "Session export",
+      "file": "parallax-react-session.json",
+      "bytes": 3595,
+      "sha256": "e3d68cc8098026aa0dff0f5b2836a234da550b25118d1b40ade2a457a1840d98",
+      "parsesAsJson": true,
+      "identicalToDisplayedText": true
+    },
+    {
+      "label": "E01 rehearsal export",
+      "file": "parallax-E01-rehearsal.json",
+      "bytes": 397,
+      "sha256": "3dd7a1ede48bf0eaf6a2fdcff0533b14daffa151b753d28d70aa21a288dee18a",
+      "parsesAsJson": true,
+      "identicalToDisplayedText": true
+    },
+    {
+      "label": "E06 rehearsal export",
+      "file": "parallax-E06-rehearsal.json",
+      "bytes": 356,
+      "sha256": "1e6c96a263750be8893381aeb57cf0272bd91c0fb6843bf309c4f0786a58b0bb",
+      "parsesAsJson": true,
+      "identicalToDisplayedText": true
+    },
+    {
+      "label": "Operations exercise export",
+      "file": "parallax-operations-exercise.json",
+      "bytes": 1391,
+      "sha256": "97268f70e9dc1518671bf155bde3a0a84dbcd57aeb92cd8238323870c04ca92e",
+      "parsesAsJson": true,
+      "identicalToDisplayedText": true
+    }
+  ],
+  "zoom": [
+    {
+      "zoom": "200%",
+      "cssViewport": {
+        "width": 640,
+        "height": 400
+      },
+      "deviceScaleFactor": 2,
+      "routes": 14,
+      "routesWithPageOverflow": [],
+      "allHeadingsVisible": true,
+      "e01TaskCompletes": true,
+      "lookupTaskCompletes": true,
+      "method": "CSS viewport and device scale that a browser produces at this zoom on a 1280 x 800 window; the browser zoom menu itself was not operated."
+    },
+    {
+      "zoom": "400%",
+      "cssViewport": {
+        "width": 320,
+        "height": 256
+      },
+      "deviceScaleFactor": 4,
+      "routes": 14,
+      "routesWithPageOverflow": [],
+      "allHeadingsVisible": true,
+      "e01TaskCompletes": true,
+      "lookupTaskCompletes": true,
+      "method": "CSS viewport and device scale that a browser produces at this zoom on a 1280 x 800 window; the browser zoom menu itself was not operated."
+    }
+  ],
+  "keyboard": [
+    {
+      "task": "Typed lookup from page load using Tab, typing and Enter",
+      "tabStopsToField": 2,
+      "firstStop": "About scanning",
+      "everyStopHasVisibleIndicator": true,
+      "completed": true
+    },
+    {
+      "task": "E01 rehearsal: prediction, variable, run using Tab and Enter",
+      "focusOrderFieldSelectRun": true,
+      "runButtonIndicator": true,
+      "completed": true
+    },
+    {
+      "task": "Environment tabs by keyboard",
+      "completed": true
+    }
+  ],
+  "scope": "Automated checks on one Windows machine through Playwright. Not spoken assistive technology, not a physical phone, not a person presenting.",
+  "motionEnabled": {
+    "stepBarNextLinkInsideViewport": true,
+    "nextLinkClickable": true,
+    "note": "Added after a page-transition animation was found to displace the fixed step bar when motion was enabled; earlier runs only used reduced motion."
+  }
+}

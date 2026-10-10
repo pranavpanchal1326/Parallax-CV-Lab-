@@ -1,0 +1,86 @@
+[
+  {
+    "route": "/dashboard",
+    "path": "#/dashboard",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 65
+      }
+    ],
+    "passed": 41
+  },
+  {
+    "route": "/environment",
+    "path": "#/environment",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 125
+      }
+    ],
+    "passed": 52
+  },
+  {
+    "route": "/mobile",
+    "path": "#/mobile",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 16
+      }
+    ],
+    "passed": 38
+  },
+  {
+    "route": "/map",
+    "path": "#/map",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 126
+      }
+    ],
+    "passed": 48
+  },
+  {
+    "route": "/assistant?guide=E01",
+    "path": "#/assistant?guide=E01",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 43
+      }
+    ],
+    "passed": 39
+  },
+  {
+    "route": "/operations",
+    "path": "#/operations",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 135
+      }
+    ],
+    "passed": 52
+  },
+  {
+    "route": "/studio",
+    "path": "#/studio",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 62
+      }
+    ],
+    "passed": 42
+  }
+]

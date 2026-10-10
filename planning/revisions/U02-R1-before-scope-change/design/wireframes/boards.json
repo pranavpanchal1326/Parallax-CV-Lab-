@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "WF01",
+    "title": "Today: choose the next task",
+    "status": "Reconstructed React view",
+    "task": "A student finds preparation and their next action.",
+    "hierarchy": "Restriction notice, experiment choice, current journey state, supporting equipment list.",
+    "recovery": "Unavailable kit keeps the task visible and explains the blocker.",
+    "next": "Prepare E06 or E01; availability list is optional context.",
+    "question": "T1: can a new student say what must happen before booking?",
+    "rubric": "UI / UX / problem analysis",
+    "route": "../../apps/lab-web/dist/index.html#/",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          55
+        ],
+        "kind": "failure",
+        "lines": [
+          "1 / Notice when a resource is restricted",
+          "Named resource / consequence / review route"
+        ]
+      },
+      {
+        "box": [
+          20,
+          182,
+          348,
+          170
+        ],
+        "lines": [
+          "2 / Vision experiment",
+          "Question and evidence boundary",
+          "Kit / preparation state",
+          "[ Prepare E06 ]"
+        ]
+      },
+      {
+        "box": [
+          390,
+          182,
+          350,
+          170
+        ],
+        "lines": [
+          "3 / Signal experiment",
+          "Question and generated source",
+          "Kit / preparation state",
+          "[ Prepare E01 ]"
+        ]
+      },
+      {
+        "box": [
+          20,
+          374,
+          720,
+          80
+        ],
+        "lines": [
+          "4 / Supporting equipment list",
+          "Availability and occupancy in separate columns"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S01",
+        "S02",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-01"
+      ],
+      "requirements": [],
+      "boundary": "Task-first entry is an authored choice, not a measured preference."
+    }
+  },
+  {
+    "id": "WF02",
+    "title": "Preparation: method before reservation",
+    "status": "Reconstructed React view",
+    "task": "A student reads the method and identifies kit and safety requirements.",
+    "hierarchy": "Method question and source boundary, kit, acknowledgement checklist, next action.",
+    "recovery": "An incomplete checklist explains why reservation cannot proceed.",
+    "next": "Reserve a complete kit after preparation is acknowledged.",
+    "question": "T1: can they describe the method without repeating the interface?",
+    "rubric": "UX / safety / UI",
+    "route": "../../apps/lab-web/dist/index.html#/E06/prepare",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          44
+        ],
+        "lines": [
+          "1 / Prepare — Reserve — Arrive — Bench — Notebook — Submit — Return"
+        ]
+      },
+      {
+        "box": [
+          20,
+          170,
+          435,
+          110
+        ],
+        "lines": [
+          "2 / Method r01",
+          "One scene / two lights / fixed settings",
+          "Prepared illustrations, not measured accuracy"
+        ]
+      },
+      {
+        "box": [
+          475,
+          170,
+          265,
+          225
+        ],
+        "lines": [
+          "3 / Kit manifest",
+          "Fixed equipment",
+          "Portable items and quantities",
+          "Safety note / power-off point"
+        ]
+      },
+      {
+        "box": [
+          20,
+          302,
+          435,
+          93
+        ],
+        "lines": [
+          "4 / Acknowledge preparation",
+          "[ ] Method read   [ ] Kit known",
+          "[ ] Safety read"
+        ]
+      },
+      {
+        "box": [
+          20,
+          417,
+          720,
+          40
+        ],
+        "kind": "action",
+        "lines": [
+          "5 / Continue to Reserve — unmet requirements shown at action"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S04",
+        "S06",
+        "S07"
+      ],
+      "decisions": [
+        "D-U02-02"
+      ],
+      "requirements": [
+        "R01"
+      ],
+      "boundary": "Read acknowledgement is not training certification."
+    }
+  },
+  {
+    "id": "WF03",
+    "title": "Reserve: complete-kit conflict",
+    "status": "Reconstructed React view",
+    "task": "A student recovers from a booking that conflicts with one kit item.",
+    "hierarchy": "Conflict reason beside times; compatible alternative and kit ownership remain visible.",
+    "recovery": "10:00 conflicts with an existing booking; choose the offered compatible slot.",
+    "next": "Confirmed B-2041; proceed to arrival.",
+    "question": "T2: do they understand that one booking holds the whole kit?",
+    "rubric": "UX / problem analysis / prototype",
+    "route": "../../apps/lab-web/dist/index.html#/E06/reserve",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          435,
+          70
+        ],
+        "kind": "failure",
+        "lines": [
+          "1 / 10:00 unavailable",
+          "Existing booking holds part of this kit"
+        ]
+      },
+      {
+        "box": [
+          20,
+          195,
+          435,
+          130
+        ],
+        "lines": [
+          "2 / Pick a compatible time",
+          "10:00 — taken / reason",
+          "11:00 — all kit items available",
+          "[ Reserve 11:00 ]"
+        ]
+      },
+      {
+        "box": [
+          475,
+          105,
+          265,
+          220
+        ],
+        "lines": [
+          "3 / One booking holds this kit",
+          "Station / camera / lights",
+          "Tripod / target / quantities",
+          "Availability checked together"
+        ]
+      },
+      {
+        "box": [
+          20,
+          347,
+          720,
+          100
+        ],
+        "kind": "action",
+        "lines": [
+          "4 / Confirmation after success",
+          "B-2041 / time / station / manifest",
+          "[ Continue to arrival ]"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S06",
+        "S07",
+        "S13",
+        "S14"
+      ],
+      "decisions": [
+        "D-U02-02",
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R01",
+        "R02",
+        "R03"
+      ],
+      "boundary": "Local booking policy and dependency quantities are unverified."
+    }
+  },
+  {
+    "id": "WF04",
+    "title": "Arrive: typed ID and kit check",
+    "status": "Narrow reconstruction of React view",
+    "task": "A student checks in without relying on a camera or QR scanner.",
+    "hierarchy": "Station ID, check-in result, portable quantities, start-session gate.",
+    "recovery": "CV-04 is refused for this booking; retain entered value and explain CV-02.",
+    "next": "Check in at CV-02, verify quantities, start.",
+    "question": "T4: is the wrong-station message sufficient to recover unaided?",
+    "rubric": "Accessibility / UI / UX",
+    "route": "../../apps/lab-web/dist/index.html#/E06/arrive",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          330,
+          340
+        ],
+        "lines": [
+          "1 / Mobile task stack",
+          "Booked station: CV-02",
+          "Station ID [ CV-04 ]",
+          "[ Check in ]",
+          "Wrong station / explanation",
+          "Kit quantities [ 0 ] [ 0 ]",
+          "[ Start session ]",
+          "Incomplete kit keeps gate closed"
+        ]
+      },
+      {
+        "box": [
+          380,
+          105,
+          360,
+          100
+        ],
+        "kind": "failure",
+        "lines": [
+          "2 / Recovery remains adjacent",
+          "Typed ID is a first-class route",
+          "No camera permission required"
+        ]
+      },
+      {
+        "box": [
+          380,
+          227,
+          360,
+          100
+        ],
+        "lines": [
+          "3 / Count the physical kit",
+          "Names / IDs / required quantities",
+          "Do not assume scan means complete"
+        ]
+      },
+      {
+        "box": [
+          380,
+          349,
+          360,
+          96
+        ],
+        "kind": "action",
+        "lines": [
+          "4 / Start after confirmation",
+          "Arrival and start are separate states",
+          "Keyboard and labelled form controls"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-02",
+        "D-U02-07"
+      ],
+      "requirements": [
+        "R01",
+        "R04",
+        "R17"
+      ],
+      "boundary": "Typed path exists; physical item checks and QR devices need validation."
+    }
+  },
+  {
+    "id": "WF05",
+    "title": "Bench: capture with context",
+    "status": "React extension implemented",
+    "task": "A student records evidence and retains the method and source.",
+    "hierarchy": "Question, evidence limitation, two conditions, record action, context link.",
+    "recovery": "Interrupted camera retains recorded work and offers a labelled prepared illustration.",
+    "next": "Review retained conditions or write a notebook interpretation.",
+    "question": "T6: do they believe prior evidence is retained after interruption?",
+    "rubric": "Innovation / UI / prototype",
+    "route": "../../apps/lab-web/dist/index.html#/E06/bench",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          55
+        ],
+        "lines": [
+          "1 / Evidence boundary",
+          "Illustrative or generated / not a device performance measurement"
+        ]
+      },
+      {
+        "box": [
+          20,
+          181,
+          348,
+          158
+        ],
+        "lines": [
+          "2 / Frontal condition",
+          "[ illustration / retained settings ]",
+          "Source / ID / capture time",
+          "[ Record condition ]"
+        ]
+      },
+      {
+        "box": [
+          390,
+          181,
+          350,
+          158
+        ],
+        "lines": [
+          "3 / Side condition",
+          "[ illustration / retained settings ]",
+          "Prepared source if interrupted",
+          "[ Record condition ]"
+        ]
+      },
+      {
+        "box": [
+          20,
+          360,
+          720,
+          88
+        ],
+        "kind": "failure",
+        "lines": [
+          "4 / Feed stopped — original evidence retained",
+          "Prepared condition remains explicitly labelled",
+          "[ Review recorded conditions ]   [ Report issue ]"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R05",
+        "R06",
+        "R07",
+        "R10"
+      ],
+      "boundary": "Fixture or generated evidence is not a live device performance measurement."
+    }
+  },
+  {
+    "id": "WF06",
+    "title": "Compare: retained conditions",
+    "status": "React extension implemented",
+    "task": "A student inspects what changed without turning differences into causation.",
+    "hierarchy": "Retained method/source/geometry, scientific plate, observations, comparison table.",
+    "recovery": "Older records without context say Not recorded; current fixtures never replace them.",
+    "next": "Write the student's own interpretation in the notebook.",
+    "question": "U-T14: can they distinguish current scenario and recorded context?",
+    "rubric": "Innovation / UX / prototype",
+    "route": "../../apps/lab-web/dist/index.html#/E01/conditions",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          60
+        ],
+        "lines": [
+          "1 / Capture provenance",
+          "Method revision / fixture / geometry / recorded time"
+        ]
+      },
+      {
+        "box": [
+          20,
+          186,
+          348,
+          126
+        ],
+        "lines": [
+          "2 / Condition A",
+          "Scientific plate from retained reference",
+          "Stored settings / observation age"
+        ]
+      },
+      {
+        "box": [
+          390,
+          186,
+          350,
+          126
+        ],
+        "lines": [
+          "3 / Condition B",
+          "Scientific plate from retained reference",
+          "Stored settings / observation age"
+        ]
+      },
+      {
+        "box": [
+          20,
+          333,
+          720,
+          115
+        ],
+        "lines": [
+          "4 / Differences table",
+          "Field / A / B / same or different",
+          "Unknown context remains unknown",
+          "[ Write interpretation ]"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03"
+      ],
+      "requirements": [
+        "R05",
+        "R06"
+      ],
+      "boundary": "Difference does not establish causation; missing context stays unknown."
+    }
+  },
+  {
+    "id": "WF07",
+    "title": "Notebook: the student's claim",
+    "status": "Reconstructed React view",
+    "task": "A student writes what the evidence supports and its limitations.",
+    "hierarchy": "Prompt, editable draft, explicit save result, submission readiness.",
+    "recovery": "Failed save retains draft; a draft and a saved revision are distinct.",
+    "next": "Review evidence and submit a saved claim.",
+    "question": "T5: do they separate samples from claims about the underlying signal?",
+    "rubric": "UX / UI / prototype",
+    "route": "../../apps/lab-web/dist/index.html#/E01/notebook",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          480,
+          78
+        ],
+        "lines": [
+          "1 / Interpretation prompt",
+          "What changed? What cannot be concluded?",
+          "Reference to recorded evidence"
+        ]
+      },
+      {
+        "box": [
+          20,
+          205,
+          480,
+          143
+        ],
+        "lines": [
+          "2 / Labelled notebook textarea",
+          "Student-written interpretation",
+          "Draft retained during a failed save",
+          "[ Save claim ]"
+        ]
+      },
+      {
+        "box": [
+          520,
+          105,
+          220,
+          243
+        ],
+        "lines": [
+          "3 / Evidence links",
+          "Capture A / Capture B",
+          "Source boundary",
+          "Compare conditions"
+        ]
+      },
+      {
+        "box": [
+          20,
+          370,
+          720,
+          78
+        ],
+        "kind": "failure",
+        "lines": [
+          "4 / Save failed — draft still present",
+          "No submission acknowledgement is implied",
+          "Retry save / then continue"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R07",
+        "R08"
+      ],
+      "boundary": "The student writes the claim; no evaluated AI authoring exists."
+    }
+  },
+  {
+    "id": "WF08",
+    "title": "Submit: pending is not complete",
+    "status": "Reconstructed React view",
+    "task": "A student confirms that a submission has a receipt.",
+    "hierarchy": "Evidence revision and saved claim, action, acknowledgement state, receipt.",
+    "recovery": "Lost acknowledgement remains pending; retry uses the same request identity.",
+    "next": "Receipt EX-SUB-2042, then close the E01 fixed-bench session. E06 separately returns its portable kit.",
+    "question": "T6 extension: can they tell whether work was actually submitted?",
+    "rubric": "UX / prototype / system integrity",
+    "route": "../../apps/lab-web/dist/index.html#/E01/submit",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          110
+        ],
+        "lines": [
+          "1 / Submission summary",
+          "Evidence IDs / revision / saved notebook",
+          "Required evidence gaps listed before completion",
+          "[ Submit revision ]"
+        ]
+      },
+      {
+        "box": [
+          20,
+          237,
+          348,
+          110
+        ],
+        "kind": "failure",
+        "lines": [
+          "2 / Acknowledgement pending",
+          "Request EX-REQ-2042 retained",
+          "[ Retry acknowledgement ]",
+          "No success receipt yet"
+        ]
+      },
+      {
+        "box": [
+          390,
+          237,
+          350,
+          110
+        ],
+        "lines": [
+          "3 / Confirmed alternative state",
+          "Receipt EX-SUB-2042",
+          "Submitted revision frozen",
+          "[ Close E01 session ]"
+        ]
+      },
+      {
+        "box": [
+          20,
+          369,
+          720,
+          79
+        ],
+        "lines": [
+          "4 / Separate session-close responsibility",
+          "E01: close fixed bench / E06: return portable kit"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S05",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R09"
+      ],
+      "boundary": "Local receipt model does not prove server delivery."
+    }
+  },
+  {
+    "id": "WF09",
+    "title": "Smart Lab: attention and context",
+    "status": "React extension implemented",
+    "task": "Staff inspect restrictions, active work and pending acknowledgements.",
+    "hierarchy": "Distinct counts, attention actions, spatial context, source-aware observations.",
+    "recovery": "No sensor connection is explicit; no combined Ready or Safe score.",
+    "next": "Open an equipment issue, student receipt or environment detail.",
+    "question": "U-T11: can they explain why each item needs attention?",
+    "rubric": "Innovation / UI / space planning",
+    "route": "../../apps/lab-web/dist/index.html#/dashboard",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          64
+        ],
+        "lines": [
+          "1 / Restrictions | Active sessions | Pending receipts | Connections",
+          "Each metric has its own meaning; zero connections is explicit"
+        ]
+      },
+      {
+        "box": [
+          20,
+          190,
+          348,
+          147
+        ],
+        "lines": [
+          "2 / Needs attention",
+          "Asset consequence / review issue",
+          "Pending acknowledgement / retry route",
+          "Active sessions / bench link"
+        ]
+      },
+      {
+        "box": [
+          390,
+          190,
+          350,
+          147
+        ],
+        "lines": [
+          "3 / Plan from canonical geometry",
+          "Availability / occupancy",
+          "Text equipment list alternative",
+          "Assumed envelope, not a survey"
+        ]
+      },
+      {
+        "box": [
+          20,
+          358,
+          720,
+          90
+        ],
+        "lines": [
+          "4 / Environment observations",
+          "Temperature / CO2 / illuminance",
+          "Source / observation time / age / quality"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S06",
+        "S08",
+        "S09"
+      ],
+      "decisions": [
+        "D-U02-01",
+        "D-U02-05"
+      ],
+      "requirements": [
+        "R11",
+        "R18"
+      ],
+      "boundary": "Active sessions are not learning or utilisation; this is not cohort readiness."
+    }
+  },
+  {
+    "id": "WF10",
+    "title": "Environment: a visible boundary",
+    "status": "React extension implemented",
+    "task": "Staff review observation freshness and booking-aware standby assumptions.",
+    "hierarchy": "Scenario/source selection, observation quality, standby boundary, sustainability ledger.",
+    "recovery": "Stale/invalid/missing records remain distinct; essential services excluded.",
+    "next": "Human review only; no physical switching action exists.",
+    "question": "U-T12 and U-T13: are source limits and booking protection understood?",
+    "rubric": "Innovation / sustainability / safety",
+    "route": "../../apps/lab-web/dist/index.html#/environment",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          70
+        ],
+        "lines": [
+          "1 / Observation desk / example selection",
+          "Temperature / CO2 / illuminance — timestamps and quality"
+        ]
+      },
+      {
+        "box": [
+          20,
+          196,
+          348,
+          144
+        ],
+        "lines": [
+          "2 / Standby preview",
+          "Duration / nominal watts / formula",
+          "Booking and active-session checks",
+          "Modelled upper bound only"
+        ]
+      },
+      {
+        "box": [
+          390,
+          196,
+          350,
+          144
+        ],
+        "kind": "failure",
+        "lines": [
+          "3 / Protected from proposal",
+          "Essential services / unresolved time",
+          "Restrictions / overlapping bookings",
+          "Reason visible; no switch connected"
+        ]
+      },
+      {
+        "box": [
+          20,
+          361,
+          720,
+          87
+        ],
+        "lines": [
+          "4 / Five-part sustainability ledger",
+          "Lighting / natural ventilation / smart power",
+          "Recyclable furniture / green materials / evidence required"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S06",
+        "S09",
+        "S10"
+      ],
+      "decisions": [
+        "D-U02-05"
+      ],
+      "requirements": [],
+      "boundary": "No connected sensor, safety certification, measured savings or switch action."
+    }
+  },
+  {
+    "id": "WF11",
+    "title": "Technician: verify before release",
+    "status": "Reconstructed React view",
+    "task": "A technician handles an issue with visible consequences for bookings.",
+    "hierarchy": "Issue identity, classify/restrict sequence, affected bookings, repair/verification.",
+    "recovery": "Interrupted verification keeps the restriction active; release is refused.",
+    "next": "Successful verification, then explicit release.",
+    "question": "T8: do they restrict before repair and understand who is affected?",
+    "rubric": "Safety / UX / prototype",
+    "route": "../../apps/lab-web/dist/index.html#/tech",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          55
+        ],
+        "lines": [
+          "1 / ISS-0417 / C1-CAM / reported symptom",
+          "Report — classify — restrict — repair — verify — release"
+        ]
+      },
+      {
+        "box": [
+          20,
+          181,
+          435,
+          144
+        ],
+        "lines": [
+          "2 / Action record",
+          "Classification / restriction RST-0417",
+          "Repair note / verification outcome",
+          "[ Verify ]  [ Release after verified ]"
+        ]
+      },
+      {
+        "box": [
+          475,
+          181,
+          265,
+          144
+        ],
+        "lines": [
+          "3 / Consequences",
+          "Affected booking IDs",
+          "Students / technician / wall",
+          "Private detail stays off wall"
+        ]
+      },
+      {
+        "box": [
+          20,
+          347,
+          720,
+          101
+        ],
+        "kind": "failure",
+        "lines": [
+          "4 / Verification interrupted",
+          "Restriction retained / release refused",
+          "History records ownership and reason"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S06",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "boundary": "Demonstrated sequence requires authorised local release policy."
+    }
+  },
+  {
+    "id": "WF12",
+    "title": "Map fallback: plan and list",
+    "status": "Reconstructed existing map concept",
+    "task": "A student finds equipment when 3D is unavailable.",
+    "hierarchy": "Typed search, 2D canonical plan, text list, resource status and next action.",
+    "recovery": "WebGL unavailable removes the model dependency; plan/list remain usable.",
+    "next": "Inspect resource ID, availability and compatible task.",
+    "question": "T3 and T7: can they locate a station without the model?",
+    "rubric": "Accessibility / space / UI",
+    "route": "../phase-08/lab-map.html",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          50
+        ],
+        "lines": [
+          "1 / Search by equipment name or typed asset ID"
+        ]
+      },
+      {
+        "box": [
+          20,
+          177,
+          435,
+          179
+        ],
+        "lines": [
+          "2 / Canonical 2D plan",
+          "Zones / routes / station IDs",
+          "Safety points / status markers",
+          "Text alternative immediately available"
+        ]
+      },
+      {
+        "box": [
+          475,
+          177,
+          265,
+          179
+        ],
+        "lines": [
+          "3 / Equipment list",
+          "ID / name / availability",
+          "Occupancy separately",
+          "[ Open resource ]"
+        ]
+      },
+      {
+        "box": [
+          20,
+          378,
+          720,
+          70
+        ],
+        "kind": "failure",
+        "lines": [
+          "4 / 3D unavailable — core task continues",
+          "Geometry P4-D / assumed room / no live twin claim"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-07"
+      ],
+      "requirements": [
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "boundary": "Assumed room; plan/list preference and real circulation remain unverified."
+    }
+  },
+  {
+    "id": "WF13",
+    "title": "Faculty: readiness before class",
+    "status": "Supplementary reconstruction of original P7-A concept",
+    "task": "Faculty identify a cohort support action without treating completion as learning.",
+    "hierarchy": "Session identity, readiness definitions, unresolved kit/resource shortfall, named support action.",
+    "recovery": "A resource shortfall remains visible; change session plan or contact the owner, not mark everyone ready.",
+    "next": "Resolve the shortfall or offer preparation help; attendance is a separate task.",
+    "question": "U-T15: can faculty choose a support action and explain what readiness does not prove?",
+    "rubric": "UX / UI / problem analysis",
+    "route": "../figma-build/thumbs/phase-07_view-F1.jpg",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          55
+        ],
+        "lines": [
+          "1 / Teaching session / method / cohort / time",
+          "Definitions: prepared acknowledgement / permission / booked kit"
+        ]
+      },
+      {
+        "box": [
+          20,
+          182,
+          435,
+          160
+        ],
+        "lines": [
+          "2 / Cohort readiness list",
+          "Pseudonym / preparation / kit / reason",
+          "Filter to needs help / no learning score",
+          "[ Offer preparation support ]"
+        ]
+      },
+      {
+        "box": [
+          475,
+          182,
+          265,
+          160
+        ],
+        "kind": "failure",
+        "lines": [
+          "3 / Resource shortfall",
+          "Named missing resource",
+          "Affected session / owner",
+          "[ Review compatible plan ]"
+        ]
+      },
+      {
+        "box": [
+          20,
+          364,
+          720,
+          82
+        ],
+        "lines": [
+          "4 / Separate responsibilities",
+          "Attendance correction is a different record",
+          "Readiness does not establish understanding or marks"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S02"
+      ],
+      "decisions": [
+        "D-U02-01",
+        "D-U02-08"
+      ],
+      "requirements": [
+        "R14"
+      ],
+      "boundary": "Learning/readiness definitions and faculty workflow need local validation."
+    }
+  },
+  {
+    "id": "WF14",
+    "title": "Faculty: correct attendance",
+    "status": "Supplementary reconstruction of original P7-A concept",
+    "task": "Faculty correct a session attendance record with an explicit reason and audit history.",
+    "hierarchy": "Selected session and pseudonymous record, current value, correction reason, save outcome/history.",
+    "recovery": "Stale revision or failed save retains the proposed correction; reconcile current record before retry.",
+    "next": "Review recorded actor, reason, time and revision; no automatic grade change.",
+    "question": "U-T16: can faculty correct the intended record and tell whether it was saved?",
+    "rubric": "UX / UI / prototype",
+    "route": "../figma-build/thumbs/phase-07_view-F3.jpg",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          54
+        ],
+        "lines": [
+          "1 / Session / selected attendance record / revision",
+          "Private detail stays off public projections"
+        ]
+      },
+      {
+        "box": [
+          20,
+          181,
+          435,
+          150
+        ],
+        "lines": [
+          "2 / Correction form",
+          "Current state → proposed state",
+          "Reason [ labelled text field ]",
+          "[ Save correction ]"
+        ]
+      },
+      {
+        "box": [
+          475,
+          181,
+          265,
+          150
+        ],
+        "lines": [
+          "3 / Audit history",
+          "Actor / reason / timestamp",
+          "Previous and new value",
+          "No overwritten silent history"
+        ]
+      },
+      {
+        "box": [
+          20,
+          353,
+          720,
+          95
+        ],
+        "kind": "failure",
+        "lines": [
+          "4 / Record changed / save failed",
+          "Correction draft retained / reconcile current revision",
+          "Confirmation appears only after recorded success"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [],
+      "decisions": [
+        "D-U02-04",
+        "D-U02-08"
+      ],
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "boundary": "No direct secondary support for the local attendance hypothesis; concept, not new React implementation."
+    }
+  },
+  {
+    "id": "WF15",
+    "title": "Technician: record an asset move",
+    "status": "Supplementary concept from original P25 movement requirement",
+    "task": "A technician records a location change while keeping availability and physical handover separate.",
+    "hierarchy": "Asset identity, current location, destination and reason, confirmation and movement history.",
+    "recovery": "Location changed concurrently or destination unknown; retain proposal and reconcile before recording.",
+    "next": "Confirm recorded movement and physical handover; restriction remains independently controlled.",
+    "question": "U-T17: can a technician locate the record, propose a move and explain what availability means?",
+    "rubric": "UX / space planning / prototype",
+    "route": "../figma-build/thumbs/phase-07_view-T3.jpg",
+    "blocks": [
+      {
+        "box": [
+          20,
+          105,
+          720,
+          55
+        ],
+        "lines": [
+          "1 / Asset ID / current location / record revision",
+          "Movement does not release a restriction or verify a repair"
+        ]
+      },
+      {
+        "box": [
+          20,
+          181,
+          435,
+          160
+        ],
+        "lines": [
+          "2 / Movement form",
+          "From: current recorded location",
+          "To [ known destination ] / reason [ ]",
+          "[ Record move ]"
+        ]
+      },
+      {
+        "box": [
+          475,
+          181,
+          265,
+          160
+        ],
+        "lines": [
+          "3 / Movement history",
+          "From / to / actor / time",
+          "Reason / revision",
+          "Physical handover owner"
+        ]
+      },
+      {
+        "box": [
+          20,
+          363,
+          720,
+          85
+        ],
+        "kind": "failure",
+        "lines": [
+          "4 / Concurrent move or unknown destination",
+          "Proposal retained / check current record",
+          "No invented coordinates or silent overwrite"
+        ]
+      }
+    ],
+    "research": {
+      "sources": [
+        "S06",
+        "S10"
+      ],
+      "decisions": [
+        "D-U02-04",
+        "D-U02-08"
+      ],
+      "requirements": [
+        "R16",
+        "R18"
+      ],
+      "boundary": "Source context is indirect; real inventory, destinations and movement owner need confirmation."
+    }
+  }
+]

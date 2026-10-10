@@ -1,0 +1,8 @@
+{
+  "deadline": "5 August 20XX",
+  "members": [
+    {"name": "First student's full name", "contribution": "What this person actually did"},
+    {"name": "Second student's full name", "contribution": "What this person actually did"},
+    {"name": "Third student's full name", "contribution": "What this person actually did"}
+  ]
+}

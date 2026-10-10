@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF10 · Environment: a visible boundary</title><desc id="desc">Staff review observation freshness and booking-aware standby assumptions.. Stale/invalid/missing records remain distinct; essential services excluded.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Environment: a visible boundary</text>
+<rect x="20" y="105" width="720" height="70" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Observation desk / example selection</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Temperature / CO2 / illuminance — timestamps and quality</text>
+<rect x="20" y="196" width="348" height="144" fill="#fafafa" stroke="#555" />
+<text x="32" y="220" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Standby preview</text>
+<text x="32" y="240" font-family="Arial" font-size="12" font-weight="400" fill="#222">Duration / nominal watts / formula</text>
+<text x="32" y="260" font-family="Arial" font-size="12" font-weight="400" fill="#222">Booking and active-session checks</text>
+<text x="32" y="280" font-family="Arial" font-size="12" font-weight="400" fill="#222">Modelled upper bound only</text>
+<rect x="390" y="196" width="350" height="144" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="402" y="220" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Protected from proposal</text>
+<text x="402" y="240" font-family="Arial" font-size="12" font-weight="400" fill="#222">Essential services / unresolved time</text>
+<text x="402" y="260" font-family="Arial" font-size="12" font-weight="400" fill="#222">Restrictions / overlapping bookings</text>
+<text x="402" y="280" font-family="Arial" font-size="12" font-weight="400" fill="#222">Reason visible; no switch connected</text>
+<rect x="20" y="361" width="720" height="87" fill="#fafafa" stroke="#555" />
+<text x="32" y="385" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Five-part sustainability ledger</text>
+<text x="32" y="405" font-family="Arial" font-size="12" font-weight="400" fill="#222">Lighting / natural ventilation / smart power</text>
+<text x="32" y="425" font-family="Arial" font-size="12" font-weight="400" fill="#222">Recyclable furniture / green materials / evidence required</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF10 / React extension implemented / low fidelity / no fieldwork claimed</text></svg>

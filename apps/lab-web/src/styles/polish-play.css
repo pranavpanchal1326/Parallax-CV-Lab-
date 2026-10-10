@@ -1,0 +1,205 @@
+/* Product polish, play layer: the sampling playground and the role menu.
+   Presentation only; loaded last. */
+
+/* ---------- sampling playground ---------- */
+.playground {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+  margin: 8px 0 44px;
+  padding: clamp(24px, 3.4vw, 44px);
+  background: var(--ed-plate);
+  color: var(--ed-plate-text);
+}
+.lab-app .playground h2 {
+  color: var(--ed-plate-text);
+  margin-bottom: 12px;
+}
+.lab-app .playground .ed-kicker {
+  color: var(--ed-trace);
+}
+.lab-app .playground .ed-kicker::before {
+  background: var(--ed-trace);
+}
+.lab-app .playground p {
+  color: var(--ed-plate-muted);
+  max-width: 34em;
+}
+.playground-rates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 16px;
+}
+.lab-app .playground .pbtn {
+  min-width: 76px;
+  color: var(--ed-plate-text);
+  border-color: var(--ed-plate-rule);
+  font-family: var(--ed-mono);
+}
+.lab-app .playground .pbtn:hover {
+  background: var(--ed-plate-2);
+  color: var(--ed-plate-text);
+  border-color: var(--ed-plate-text);
+}
+.lab-app .playground .pbtn[aria-pressed="true"] {
+  background: var(--ed-trace);
+  border-color: var(--ed-trace);
+  color: var(--ed-plate);
+}
+.lab-app .playground .playground-reading {
+  min-height: 4.6em;
+  font: italic 400 19px/1.45 var(--ed-serif);
+  color: var(--ed-plate-text);
+}
+.lab-app .playground .ed-link {
+  color: var(--ed-plate-text);
+}
+.lab-app .playground :focus-visible {
+  outline-color: var(--ed-trace);
+}
+.playground-plate {
+  margin: 0;
+}
+.playground-plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--ed-plate-2);
+  border: 1px solid var(--ed-plate-rule);
+}
+.pg-axis {
+  stroke: var(--ed-plate-rule);
+  stroke-width: 1;
+}
+.pg-wave {
+  fill: none;
+  stroke: var(--ed-plate-text);
+  stroke-width: 1.6;
+  opacity: 0.85;
+}
+.pg-alias {
+  fill: none;
+  stroke: var(--ed-gold);
+  stroke-width: 1.8;
+  stroke-dasharray: 6 6;
+}
+.pg-stem {
+  stroke: var(--ed-trace);
+  stroke-width: 1.2;
+  opacity: 0.7;
+}
+.pg-dot {
+  fill: var(--ed-trace);
+  stroke: var(--ed-plate);
+  stroke-width: 1.5;
+}
+.pg-label {
+  fill: var(--ed-plate-muted);
+  font: 11px var(--ed-mono);
+}
+.playground-plate figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 10px;
+  font: 12px/1.5 var(--ed-mono);
+  color: var(--ed-plate-muted);
+}
+.playground-plate figcaption span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.playground-plate figcaption span::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: var(--ed-plate-text);
+}
+.playground-plate figcaption span[data-k="dot"]::before {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ed-trace);
+}
+.playground-plate figcaption span[data-k="alias"]::before {
+  background: repeating-linear-gradient(to right, var(--ed-gold) 0 4px, transparent 4px 7px);
+}
+.playground-plate figcaption em {
+  margin-left: auto;
+  font-style: normal;
+}
+@media (max-width: 900px) {
+  .playground {
+    grid-template-columns: 1fr;
+  }
+  .playground-plate figcaption em {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+
+/* ---------- role menu ---------- */
+.role-menu {
+  position: relative;
+}
+.lab-app .role-menu > summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 36px;
+  padding-block: 0;
+}
+.lab-app .role-menu > summary::-webkit-details-marker {
+  display: none;
+}
+.role-menu > summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: 4px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+.role-menu[open] > summary {
+  border-color: var(--ed-ink);
+}
+.role-menu-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 70;
+  min-width: 290px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid var(--ed-ink);
+  background: var(--ed-card);
+  box-shadow: 6px 6px 0 var(--ed-paper-2);
+}
+.role-menu-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 12px;
+  color: var(--ed-ink);
+  text-decoration: none;
+  font: 500 14px/1.2 var(--ed-body);
+}
+.role-menu-list a small {
+  font: 11px/1.2 var(--ed-mono);
+  color: var(--ed-ink-2);
+  white-space: nowrap;
+  align-self: center;
+}
+.role-menu-list a:hover,
+.role-menu-list a[aria-current="page"] {
+  background: var(--ed-paper-2);
+}
+@media (max-width: 700px) {
+  .role-menu {
+    display: none;
+  }
+}

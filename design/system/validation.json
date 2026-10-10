@@ -1,0 +1,107 @@
+{
+  "revision": "P5-A",
+  "components": 40,
+  "uniqueIDs": 40,
+  "missingContractsOrSpecimens": [],
+  "contrast": [
+    {
+      "fg": "text",
+      "bg": "canvas",
+      "ratio": 13.92,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "textSecondary",
+      "bg": "canvas",
+      "ratio": 6.09,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "actionText",
+      "bg": "action",
+      "ratio": 7.1,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "actionText",
+      "bg": "actionHover",
+      "ratio": 9.52,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "success",
+      "bg": "successSurface",
+      "ratio": 5.27,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "danger",
+      "bg": "dangerSurface",
+      "ratio": 5.78,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "warning",
+      "bg": "warningSurface",
+      "ratio": 5.9,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "instrumentText",
+      "bg": "instrument",
+      "ratio": 16.27,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "instrumentSecondary",
+      "bg": "instrument",
+      "ratio": 10.33,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "fg": "trace",
+      "bg": "instrument",
+      "ratio": 11.64,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "instrumentWarning",
+      "bg": "instrument",
+      "ratio": 10.48,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "border",
+      "bg": "surface",
+      "ratio": 4.26,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "action",
+      "bg": "canvas",
+      "ratio": 6.29,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "fg": "disabledText",
+      "bg": "disabled",
+      "ratio": 4.93,
+      "minimum": 4.5,
+      "pass": true
+    }
+  ],
+  "scope": "Source coverage and exact token pairs. Does not certify all rendered states, assistive technology or real lab integrations."
+}

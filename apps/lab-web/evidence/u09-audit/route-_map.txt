@@ -1,0 +1,263 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: Shared lab map · geometry P4-D · React example state
+  - heading "Find your place. Read its condition." [level=1]:
+    - text: Find your place.
+    - emphasis: Read its condition.
+  - figure "Geometry P4-D · assumed envelope, not a surveyed room. React session state.":
+    - img "Conceptual 10 by 7 metre floor plan from geometry revision P4-D. Equipment availability is listed below as text.":
+      - generic: CMP
+      - generic: STO
+      - generic: C1
+      - generic: SPN
+      - generic: FAC
+      - generic: COL
+      - generic: S1
+      - generic: CV-01
+      - generic: CV-02
+      - generic: CV-03
+      - generic: CV-05
+      - generic: CV-06
+      - generic: S1-B
+    - generic: Geometry P4-D · assumed envelope, not a surveyed room. React session state.
+  - paragraph: Availability and occupancy are separate. A bookable station may already be in use. This plan is derived from the canonical geometry; the 10 × 7 m room remains an assumed envelope.
+  - region "Equipment availability and occupancy":
+    - table:
+      - rowgroup:
+        - row "ID Item Availability Occupancy":
+          - columnheader "ID"
+          - columnheader "Item"
+          - columnheader "Availability"
+          - columnheader "Occupancy"
+      - rowgroup:
+        - row "CV-01 Computing station Bookable Free":
+          - rowheader "CV-01":
+            - link "CV-01":
+              - /url: "#/assets/CV-01"
+              - code: CV-01
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-02 Computing station Bookable Free":
+          - rowheader "CV-02":
+            - link "CV-02":
+              - /url: "#/assets/CV-02"
+              - code: CV-02
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-03 Computing station Bookable Free":
+          - rowheader "CV-03":
+            - link "CV-03":
+              - /url: "#/assets/CV-03"
+              - code: CV-03
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-04 Accessible computing station Bookable Free":
+          - rowheader "CV-04":
+            - link "CV-04":
+              - /url: "#/assets/CV-04"
+              - code: CV-04
+          - cell "Accessible computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-05 Computing station Bookable Free":
+          - rowheader "CV-05":
+            - link "CV-05":
+              - /url: "#/assets/CV-05"
+              - code: CV-05
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CV-06 Computing station Bookable Free":
+          - rowheader "CV-06":
+            - link "CV-06":
+              - /url: "#/assets/CV-06"
+              - code: CV-06
+          - cell "Computing station"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1 Capture area Bookable Free":
+          - rowheader "C1":
+            - link "C1":
+              - /url: "#/assets/C1"
+              - code: C1
+          - cell "Capture area"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1-CAM Capture camera + lens Bookable Free":
+          - rowheader "C1-CAM":
+            - link "C1-CAM":
+              - /url: "#/assets/C1-CAM"
+              - code: C1-CAM
+          - cell "Capture camera + lens"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1-L1 Softbox light L1 Bookable Free":
+          - rowheader "C1-L1":
+            - link "C1-L1":
+              - /url: "#/assets/C1-L1"
+              - code: C1-L1
+          - cell "Softbox light L1"
+          - cell "Bookable"
+          - cell "Free"
+        - row "C1-L2 Softbox light L2 Bookable Free":
+          - rowheader "C1-L2":
+            - link "C1-L2":
+              - /url: "#/assets/C1-L2"
+              - code: C1-L2
+          - cell "Softbox light L2"
+          - cell "Bookable"
+          - cell "Free"
+        - row "TRP-04 Tripod Bookable Free":
+          - rowheader "TRP-04":
+            - link "TRP-04":
+              - /url: "#/assets/TRP-04"
+              - code: TRP-04
+          - cell "Tripod"
+          - cell "Bookable"
+          - cell "Free"
+        - row "CAL-01 Calibration target Bookable Free":
+          - rowheader "CAL-01":
+            - link "CAL-01":
+              - /url: "#/assets/CAL-01"
+              - code: CAL-01
+          - cell "Calibration target"
+          - cell "Bookable"
+          - cell "Free"
+        - row "S1-B Signal acquisition bench Bookable Free":
+          - rowheader "S1-B":
+            - link "S1-B":
+              - /url: "#/assets/S1-B"
+              - code: S1-B
+          - cell "Signal acquisition bench"
+          - cell "Bookable"
+          - cell "Free"
+  - complementary:
+    - heading "Equipment index" [level=2]
+    - list:
+      - link "CV-01 Computing station":
+        - /url: "#/assets/CV-01"
+        - code: CV-01
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-02 Computing station":
+        - /url: "#/assets/CV-02"
+        - code: CV-02
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-03 Computing station":
+        - /url: "#/assets/CV-03"
+        - code: CV-03
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-04 Accessible computing station":
+        - /url: "#/assets/CV-04"
+        - code: CV-04
+        - generic: Accessible computing station
+      - generic: CMP · Bookable
+      - link "CV-05 Computing station":
+        - /url: "#/assets/CV-05"
+        - code: CV-05
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "CV-06 Computing station":
+        - /url: "#/assets/CV-06"
+        - code: CV-06
+        - generic: Computing station
+      - generic: CMP · Bookable
+      - link "C1 Capture area":
+        - /url: "#/assets/C1"
+        - code: C1
+        - generic: Capture area
+      - generic: C1 · Bookable
+      - link "C1-CAM Capture camera + lens":
+        - /url: "#/assets/C1-CAM"
+        - code: C1-CAM
+        - generic: Capture camera + lens
+      - generic: C1 · Bookable
+      - link "C1-L1 Softbox light L1":
+        - /url: "#/assets/C1-L1"
+        - code: C1-L1
+        - generic: Softbox light L1
+      - generic: C1 · Bookable
+      - link "C1-L2 Softbox light L2":
+        - /url: "#/assets/C1-L2"
+        - code: C1-L2
+        - generic: Softbox light L2
+      - generic: C1 · Bookable
+      - link "TRP-04 Tripod":
+        - /url: "#/assets/TRP-04"
+        - code: TRP-04
+        - generic: Tripod
+      - generic: C1 · Bookable
+      - link "CAL-01 Calibration target":
+        - /url: "#/assets/CAL-01"
+        - code: CAL-01
+        - generic: Calibration target
+      - generic: C1 · Bookable
+      - link "S1-B Signal acquisition bench":
+        - /url: "#/assets/S1-B"
+        - code: S1-B
+        - generic: Signal acquisition bench
+      - generic: S1 · Bookable
+    - link "Open original map reference ↗":
+      - /url: /design/phase-08/lab-map.html
+    - paragraph: The reference keeps its original demonstrator state. Load the linked explorer below to see the React projection.
+  - heading "Optional plan and 3D explorer" [level=2]
+  - paragraph: Search, filter and select with the list. The optional model uses the same geometry and React availability projection. Model positions show home geometry, not tracked equipment movement.
+  - button "Load the linked map explorer"
+  - paragraph:
+    - link "Explore art, wayfinding and physical references →":
+      - /url: "#/studio"
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+  - generic "Accessibility diagnostic result": "{ \"path\": \"#/dashboard\", \"violations\": [], \"passedRules\": 42, \"incomplete\": [ { \"id\": \"color-contrast\", \"nodes\": [ { \"target\": [ \".migration-strip > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"a[href=\\\"/prototype/index.html\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"#current-view > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h1 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pull\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(1) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(1) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(2) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(2) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(3) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \".smart-metrics > article:nth-child(3) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > .cap2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"article:nth-child(4) > strong\" ], \"summary\": \"Fix any of the following:\\n Element content is too short to determine if it is actual text content\" }, { \"target\": [ \"article:nth-child(4) > p\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".pzl[y=\\\"3.77\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"3.77\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"7.3\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[y=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[y=\\\"5.680000000000001\\\"][x=\\\"0.1\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"2.1\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".pzl[x=\\\"6.5\\\"][y=\\\"5.680000000000001\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"0.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.18\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"2.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"4.68\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \"text[x=\\\"6.88\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined because it is overlapped by another element\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .smart-heading > a[href$=\\\"#/environment\\\"][data-discover=\\\"true\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(1) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(2) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > h3\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-value > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .observation-state.state-unknown\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(4)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(5)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > .small:nth-child(6)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".observation:nth-child(3) > details > summary\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".smart-section:nth-child(6) > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > .ed-kicker\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"h2 > em\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".sustainability-teaser > p:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \"button[aria-controls=\\\"session-activity\\\"]\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > .quiet:nth-child(2)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".quiet:nth-child(3)\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".session-tools > span\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > h2\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" }, { \"target\": [ \".access-review > .small\" ], \"summary\": \"Fix any of the following:\\n Element's background color could not be determined due to a background image\" } ] } ], \"engine\": { \"name\": \"axe-core\", \"version\": \"4.10.2\" } }"

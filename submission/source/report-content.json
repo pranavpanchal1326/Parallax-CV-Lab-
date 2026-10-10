@@ -1,0 +1,246 @@
+{
+  "title": "PARALLAX",
+  "subtitle": "UI/UX proposal for a 70 m² Signal & Computer Vision Lab",
+  "revision": "U10-R1 · 4 October 2026",
+  "scope": "Local interactive edition, secondary research and conceptual physical design",
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "paragraphs": [
+        "PARALLAX brings the physical laboratory and its digital workflow into one proposal. Students prepare an experiment, reserve its complete kit, identify the station, retain evidence, explain a comparison and close the session. Faculty review readiness and learning records. Technicians follow equipment impact, verification and handover. A separate public view communicates useful status without exposing private records.",
+        "The assignment supplies a 70 m² area. P4-D uses an assumed 10 × 7 m inner envelope with a 3 m height. The proposal combines computing, controlled image capture, a signal bench, collaboration, faculty support, storage and a clear circulation spine. These dimensions establish a reproducible design model. No site survey or occupied-room trial has established actual capacity, daylight, ventilation, services or access.",
+        "The delivered system is a runnable local React prototype supported by preserved Figma designs, fifteen wireframes, Blender source, generated scientific demonstrations and documented recovery paths. The smart dashboard and energy ledger use declared example records. The assistant performs real inference through local Ollama but reads only reviewed public project guides. The intended contribution is a coherent, inspectable proposal with explicit source and authority boundaries. Learning improvement, actual energy savings and institutional operating approval remain unmeasured."
+      ],
+      "image": "design/phase-08/renders/R02_iso_cutaway.jpg",
+      "caption": "Conceptual P4-D room render. Authored project visualization, not a photograph of an installed laboratory.",
+      "evidence": [
+        "PARALLAX_EXCELLENCE_BLUEPRINT.md",
+        "spatial/lab_geometry.json",
+        "planning/EXCELLENCE_EXECUTION_PHASES.md"
+      ]
+    },
+    {
+      "title": "2. Problem Analysis",
+      "paragraphs": [
+        "The design problem spans scientific reasoning, shared resources and physical access. A student can hold a station reservation while a required accessory is missing. A displayed curve can look convincing while its sampling conditions remain ambiguous. A saved draft can appear complete before a submission receipt exists. An available asset can still be unsuitable for a task, and a recent-looking dashboard value can have a disconnected source.",
+        "These are prospective failure consequences and authored scenarios. The project does not establish their frequency in the intended cohort. The research traceability records twenty requirements, twelve assumptions and eight design decisions. Each requirement connects a problem, source rationale, wireframe and implementation boundary. Rejected shortcuts include a composite room-safety score, generic idle power-off, automatic physical setup transfer and an assistant that invents browser evidence.",
+        "The resulting design preserves distinctions that matter to a decision: availability versus occupancy, preparation versus training permission, recorded context versus current context, generated samples versus measured data, and draft versus confirmed receipt. Technical checks examine the implementation of these distinctions. A participant outcome or a real institution's policy cannot be inferred from passing domain tests."
+      ],
+      "table": {
+        "headers": [
+          "Problem",
+          "Design response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "Incomplete shared kit",
+            "Reserve all dependencies for one interval",
+            "R01-R03; U07 tests"
+          ],
+          [
+            "Evidence loses its context",
+            "Freeze source, method and settings at capture",
+            "R05-R07; U04/U05 tests"
+          ],
+          [
+            "Recovery appears complete too early",
+            "Pending receipt and verification gates",
+            "R08-R13; migration tests"
+          ],
+          [
+            "Unknown data looks authoritative",
+            "Source age, gap and manual fallback",
+            "R14-R20; smart-lab tests"
+          ]
+        ]
+      },
+      "evidence": [
+        "research/U02_TRACEABILITY.csv",
+        "research/U02_HYPOTHESIS_REVIEW.md",
+        "research/U02_DESIGN_DECISIONS.md"
+      ]
+    },
+    {
+      "title": "3. User Research",
+      "paragraphs": [
+        "The agreed research method is secondary research and design-artifact analysis. Local participants: zero. Interviews, surveys, recruitment, participant usability sessions and field observation are excluded by the user's scope decision. Fourteen public sources were reviewed. This focused review is not a systematic literature review or a claim of saturation. The register distinguishes full text, abstract-only, indexed partial access and an unread correction.",
+        "Five education or provenance studies inform evidence comparison and record reconstruction. Two institutional operating pages inform training, booking and fault ownership. WCAG, ventilation guidance and LEAF inform digital access and sustainability questions. Two AI education studies inform bounded assistance. Two public discussion threads generate questions and counterexamples. External findings support a design rationale, while local behavior, pain frequency and learning effects remain unknown.",
+        "The six role lenses are first-run students, returning students, faculty, technicians, administrators and visitors. Personas and empathy maps are explicitly hypothetical. Their jobs concern preparation, reconstructing evidence, supporting a cohort, restoring equipment, reconciling resources and finding a public destination. Invented quotations and demographic preferences do not appear as findings. The journey follows discover, prepare, reserve, arrive, run, compare, reflect, submit and return, with named ownership at transitions.",
+        "The synthesis prioritizes six tensions: defending evidence, securing the whole kit, understanding recovery state, interpreting room context, retaining independent reasoning with AI and maintaining usable access alongside spatial richness. The ranking reflects possible consequence and assignment relevance. It does not use invented reach, frequency or benefit scores."
+      ],
+      "evidence": [
+        "research/U02_SOURCE_REGISTER.md",
+        "research/U02_DESK_RESEARCH_METHOD.md",
+        "research/U02_RESEARCH_SYNTHESIS.md",
+        "research/PHASE_02_RESEARCH_AND_EXPERIENCE.md"
+      ]
+    },
+    {
+      "title": "4. UI/UX Methodology",
+      "paragraphs": [
+        "The project translates source evidence into requirements, compares alternatives, builds annotated wireframes and then implements the selected local workflow. The original phase-01 through phase-10 work and the later U01 through U10 upgrades are distinct histories. Dated delivery records retain the chronology instead of rewriting early plans as completed studies.",
+        "U01 preserves identities, fixtures, geometry and original entrypoints. U02 revises research under the desk-only scope. U03 migrates local functional parity to React. U04 adds the dashboard, observation provenance and sustainability ledger. U05 adds scientific rehearsals and fault consequences. U06 grounds local AI. U07 tests an independent operations desk. U08 completes authored art and physical proposals. U09 checks and refines the current implementation. U10 assembles this submission and its demonstration handoff.",
+        "Review combines designer walkthroughs, source integrity, domain tests, browser evidence and rendered artifact checks. The fourteen system scenarios examine conflicts, retries, retained context, policy changes, fault isolation, interrupted verification, unavailable models, public projections and scene lifecycle. A scenario's local closure is separate from a connected service or a human outcome. Changes receive preserved before evidence, bounded implementation, retest evidence and a stated residual limit."
+      ],
+      "table": {
+        "headers": [
+          "Review method",
+          "What it establishes",
+          "What it cannot establish"
+        ],
+        "rows": [
+          [
+            "Source and unit checks",
+            "Rules, scientific identities and immutability",
+            "Institutional authorization"
+          ],
+          [
+            "Browser/designer walkthrough",
+            "Rendered actions, messages and fallback paths",
+            "Student comprehension"
+          ],
+          [
+            "Automated accessibility scan",
+            "Covered machine-detectable conditions",
+            "Full WCAG or spoken AT usability"
+          ],
+          [
+            "Rendered report/deck review",
+            "Pagination, legibility and layout",
+            "A human presenter's delivery pace"
+          ]
+        ]
+      },
+      "evidence": [
+        "planning/U02_DELIVERY_RECORD.md",
+        "planning/REMAINING_WORK_AUDIT_2026-10-04.md",
+        "planning/U09_DELIVERY_RECORD.md"
+      ]
+    },
+    {
+      "title": "5. Design Process",
+      "paragraphs": [
+        "The visual system uses editorial typography, restrained blue accents, paper-toned surfaces and explicit task hierarchy. Forty component families and eighty-seven Figma variants support consistent state language. Student work starts with a named experiment. Staff tools use separate destinations. Task headings, source labels, recovery messages and next actions carry the information hierarchy across desktop, narrow and public views.",
+        "The physical and digital artifacts share canonical identities. C1-CAM and both C1 lights appear in the kit, map, fault impact and standby review. P4-D supplies the model coordinates and plan layers. REF-2HZ-v1 supplies the signal calculations and art. E06 lighting images remain authored illustrations. This shared source avoids inconsistent diagrams without claiming that a model measures the physical installation.",
+        "The final audit found three bounded UI issues. The typed-ID field omitted its explicit text type and missed the intended 16 px/44 px styling. Product copy still named older upgrade stages. The QA scan retained another route's result after navigation. The refinement corrects all three, preserves the previous release and adds a visible exact-text export alternative. Copied scene modules now own frame cancellation and resource disposal. Original models and scientific calculations remain preserved.",
+        "Physical proposals include six wayfinding/safety sign studies, five canonical plan layers and specifications for maintainable lighting, ventilation, protected power, repairable furniture and traceable materials. Trade-offs and responsible roles accompany each proposal. Procurement, circuit mapping, occupied-room measurement and qualified review remain outside this concept delivery."
+      ],
+      "evidence": [
+        "design/system/components.json",
+        "planning/U08_DELIVERY_RECORD.md",
+        "apps/lab-web/evidence/u09-final/mobile-after.json",
+        "planning/revisions/U09-before-implementation/manifest.json"
+      ]
+    },
+    {
+      "title": "6. Wireframes",
+      "paragraphs": [
+        "The fifteen annotated boards cover preparation, booking, arrival, evidence comparison, notebook, submission, technician recovery, public display and supplementary faculty/asset tasks. Twelve original block layouts remain preserved. Three supplementary boards cover cohort readiness, attendance correction and asset movement. An annotation names the relevant requirement, source, decision and implementation boundary.",
+        "WF03 shows complete-kit booking and conflict recovery. Its student-facing refusal identifies the resource clash and retains a compatible alternative. WF06 makes retained evidence, changed conditions, uncertainty and student reasoning visible. WF11 separates report, classification, restriction, repair, verification and restoration. The final app tests these local states, while the structural boards do not imply every hypothetical faculty interaction has a connected backend.",
+        "The editable board data and generator remain in design/wireframes. The local review page provides all fifteen SVGs and their source annotations. The Figma file retains the high-fidelity library and linked prototype paths. The current submission index points to these artifacts and the React edition without replacing the historical designs."
+      ],
+      "image": "submission/assets/WF03.png",
+      "caption": "WF03: authored booking structure. Source annotations remain in the complete local wireframe packet.",
+      "evidence": [
+        "design/wireframes/index.html",
+        "design/wireframes/boards.json",
+        "research/U02_DESK_REVIEW.md",
+        "design/figma-build/README.md"
+      ]
+    },
+    {
+      "title": "7. Final Prototype",
+      "paragraphs": [
+        "The current React edition delivers student E01/E06 paths, faculty and technician views, booking/check-in, typed equipment lookup, asset/calibration records, the linked map and a public projection. Local browser persistence preserves drafts and supports conflict/recovery behavior. Prepared actors and receipts are examples. No institutional account, authoritative booking database, real attendance service or grade delivery is connected.",
+        "The smart dashboard combines the same local resource state with explicit source context. Six observation scenarios distinguish missing, recent, delayed, invalid and disconnected records. The energy ledger separates watts from kilowatt-hours and preserves missing intervals. A standby proposal protects active dependencies and essential services. It shows modelled upper bounds rather than measured savings.",
+        "E01 retains a 2 Hz, 1 V sine reference over one second. Sampling at 3 Hz produces four inclusive samples and a signed -1 Hz alias fitting the same values. The 4 Hz zero-phase boundary is ambiguous. At 20 Hz, twenty-one samples are retained. E06 uses ILL-L1-v1 and ILL-L2-v1 images to discuss illumination, without detector accuracy claims. The separate geometry rehearsal holds P4-D fixed while changing horizontal field of view.",
+        "The assistant uses installed local Ollama llama3.2:3b to select published guide sections. The server verifies revision and fingerprint before and after inference and returns the reviewed passage wording with its citation. Missing context, provider failure, cancellation and withdrawn guides fail into bounded recovery/manual reading. The independent operations desk and ten-stage fault sandbox preserve the primary student record."
+      ],
+      "image": "submission/assets/dashboard.png",
+      "caption": "Current dashboard. Readings are examples; sensor connections are explicitly zero.",
+      "evidence": [
+        "apps/lab-web/PARITY.md",
+        "planning/U04_DELIVERY_RECORD.md",
+        "planning/U05_DELIVERY_RECORD.md",
+        "planning/U06_DELIVERY_RECORD.md",
+        "planning/U07_DELIVERY_RECORD.md"
+      ]
+    },
+    {
+      "title": "8. Floor Plan",
+      "paragraphs": [
+        "P4-D partitions the assumed 70 m² room into computing 24.96 m², storage 3.12 m², capture 10.92 m², circulation 15.00 m², faculty 3.20 m², collaboration 7.04 m² and signal work 5.76 m². Their sum is 70 m². The source declares metres, an origin at the north-west inner wall, x east and y south. The design retains a 1.5 m spine and a 1.2 × 0.9 m accessible workstation approach.",
+        "The C1 camera-to-stage distance is 2.05 m under the planning model. Entry/exit, first aid, extinguisher, electrical isolation, CCTV and ventilation appear as labelled conceptual landmarks. Power/network and installation layers identify proposed service locations. The window W1 and the collaboration zone inform daylight and ventilation questions while the capture area requires repeatable illumination.",
+        "Geometric checks confirm furniture stays inside the envelope, does not overlap the spine or each other, and retains the declared approach space. These checks establish model fit. They do not certify installed clearances, escape capacity, electrical protection, CCTV governance, airflow or safe occupancy. Whole-class teaching should use a reviewed rotation plan until actual capacity and supervision are established. The final handoff includes the editable Blender model, GLB views, renders and canonical geometry."
+      ],
+      "image": "apps/lab-web/evidence/u08-art/plan-orientation.png",
+      "caption": "Canonical P4-D orientation plan. Dimensions and landmarks describe an assumed design envelope.",
+      "evidence": [
+        "spatial/lab_geometry.json",
+        "spatial/exports/upgrade-validation.json",
+        "planning/U04_SUSTAINABILITY_SPECIFICATION.md",
+        "apps/lab-web/public/studio/reference.md"
+      ]
+    },
+    {
+      "title": "9. Technology Stack",
+      "paragraphs": [
+        "The current client uses React 19.3.0, TypeScript 7.0.2, Vite 8.3.2 and React Router 8.4.0 with pinned package-lock dependencies. Typed domain adapters preserve legacy fixture/rule behavior while cloning mutable input. Local storage uses versioned keys for the primary React example, rehearsals and operations exercise. These stores are local records and cannot implement shared multi-client transactions.",
+        "Three.js and retained P4-D geometry power optional scene views. Accessible 2D/list/text alternatives accompany them. The refined generated copies own animation frames, resize observation, controls and disposable GPU resources. The original scene/model source is preserved. QA-only route/scene/performance receipts remain explicit and collect no external telemetry.",
+        "The Node assistant service binds to loopback port 4192. The edition uses 4180, React development uses 4190 and isolated validation uses 4191. Ollama runs locally at 11434 with the installed completion model. The adapter rejects remote hosts/models and browser evidence. Reviewed guide JSON supplies facts and lifecycle metadata. The service has anonymous local session isolation, bounded concurrency and in-memory request recovery, rather than institutional authentication.",
+        "The handoff distinguishes a prebuilt assessor preview from a source rebuild. Node/npm are needed for serving or rebuilding. An Internet connection is needed only to restore missing development dependencies. Ollama and the installed model are optional for live hints because the manual remains readable. No API key or cloud provider is required. Rebuilding or replacing the model requires the documented regression/evaluation checks."
+      ],
+      "table": {
+        "headers": [
+          "Layer",
+          "Actual responsibility"
+        ],
+        "rows": [
+          [
+            "Fixtures and geometry",
+            "Canonical IDs, source reference and assumed room"
+          ],
+          [
+            "Domain / local persistence",
+            "Immutable records, local rules, drafts and retry state"
+          ],
+          [
+            "React / Three.js",
+            "Task views, declared models and readable alternatives"
+          ],
+          [
+            "Node / Ollama",
+            "Public-guide retrieval, passage selection and source validation"
+          ],
+          [
+            "Figma / Blender / documents",
+            "Editable design, physical model and assessor evidence"
+          ]
+        ]
+      },
+      "evidence": [
+        "apps/lab-web/package.json",
+        "apps/lab-web/package-lock.json",
+        "apps/lab-server/README.md",
+        "submission/README.md"
+      ]
+    },
+    {
+      "title": "10. Conclusion",
+      "paragraphs": [
+        "PARALLAX now supplies a coherent local proposal covering the assignment's physical and digital families, with a preserved original baseline, current prototype, scientific/source boundaries, sustainability specifications and recovery evidence. Its strongest supported outcome is inspectability: a reviewer can follow a source through a requirement, design decision, screen state and technical check.",
+        "The final source/build gate passes 139 React tests and 16 assistant service tests. Original checks retain 65 prototype, 25 scene and 16 spatial passes. The fresh narrow typed-ID control measures 16 px and 44 px with visible keyboard focus and no page overflow. Eight same-document scene remounts retain 22 geometries and three textures per renderer. Thirty-six two-frame feedback samples range below 26 ms on the local browser. These observations describe the tested machine and paths, without proving browser-wide leak freedom or general performance.",
+        "The fourteen scenario ledger explicitly distinguishes local test support from conditional integration. Late/out-of-order live stream ingestion remains unimplemented because the app has no live stream. This is a documented boundary rather than a fabricated passing sequence. The designer comparison walkthrough checks visible difference, uncertainty and next action without claiming student comprehension.",
+        "The remaining external verification list names spoken screen-reader use, actual browser zoom, a second browser/physical device, native download completion and a human presenter's rehearsal. Tool availability does not turn them into passes. Connected hardware, authenticated shared operations, institutional policies and physical installation approval remain future integrations. Team identities, actual contributions and the deadline year must be supplied by the team before institutional submission. No participant work or certification is invented."
+      ],
+      "evidence": [
+        "planning/U09_DELIVERY_RECORD.md",
+        "submission/EVIDENCE_INDEX.md",
+        "submission/EXTERNAL_CHECKS.md",
+        "apps/lab-web/evidence/u09-final/performance.json",
+        "apps/lab-web/evidence/u09-final/scene-lifecycle.json"
+      ]
+    }
+  ]
+}

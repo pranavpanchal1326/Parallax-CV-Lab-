@@ -1,0 +1,164 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Light edition"
+- region "Example session identity":
+  - generic: PARALLAX · local edition · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: Operations overview · Thu 1 Oct 2026 · 09:55 IST example clock
+  - heading "Smart Lab Dashboard." [level=1]:
+    - text: Smart Lab
+    - emphasis: Dashboard.
+  - link "Environment & energy ↗":
+    - /url: "#/environment"
+  - paragraph: A room, its resources, and the work in progress.
+  - region "Current example state":
+    - article:
+      - text: Equipment restrictions
+      - strong: "0"
+      - paragraph: Availability, independent of occupancy.
+    - article:
+      - text: Active student sessions
+      - strong: "1"
+      - paragraph: Started sessions awaiting closure.
+    - article:
+      - text: Pending acknowledgements
+      - strong: "0"
+      - paragraph: Receipt required before completion.
+    - article:
+      - text: Sensor connections
+      - strong: "0"
+      - paragraph: Demonstration readings only.
+  - heading "Needs attention" [level=2]
+  - paragraph: Environmental context is unavailable or unreliable. Equipment availability does not establish suitable room conditions.
+  - link "Review source status and manual fallback →":
+    - /url: "#/environment"
+  - heading "Sessions in progress" [level=3]
+  - paragraph:
+    - link "E01 · Sampling and aliasing":
+      - /url: "#/E01/bench"
+    - generic: CV-03 · 2 evidence records · session open
+  - heading "Upcoming reservations" [level=3]
+  - paragraph:
+    - link "10:00 IST · B-2040":
+      - /url: "#/bookings"
+    - generic: CV-02 · C1 · C1-CAM · C1-L1 · C1-L2 · TRP-04 · CAL-01 · Confirmed. Reservation-derived, not a sensor headcount.
+  - paragraph:
+    - link "10:00 IST · B-2042":
+      - /url: "#/bookings"
+    - generic: CV-03 · S1-B · Confirmed. Reservation-derived, not a sensor headcount.
+  - link "Open student journey →":
+    - /url: "#/"
+  - heading "The room in context" [level=2]
+  - figure "Geometry P4-D · assumed envelope, not a surveyed room. React session state.":
+    - img "Conceptual 10 by 7 metre floor plan from geometry revision P4-D. Equipment availability is listed below as text.":
+      - generic: CMP
+      - generic: STO
+      - generic: C1
+      - generic: SPN
+      - generic: FAC
+      - generic: COL
+      - generic: S1
+      - generic: CV-01
+      - generic: CV-02
+      - generic: CV-03
+      - generic: CV-05
+      - generic: CV-06
+      - generic: S1-B
+    - generic: Geometry P4-D · assumed envelope, not a surveyed room. React session state.
+  - paragraph: Geometry P4-D · assumed 10 × 7 m envelope. Resource markers use this local session. This is a spatial status projection; room surveying and live sensing remain open.
+  - generic "Read the equipment list"
+  - heading "Environment observations" [level=2]
+  - link "Inspect source & assumptions →":
+    - /url: "#/environment"
+  - article:
+    - heading "Temperature" [level=3]
+    - paragraph:
+      - text: —
+      - generic: Reading unavailable
+    - paragraph: No reading · simulated
+    - paragraph: Source disconnected
+    - paragraph: Check the source with the technician; retained values cannot establish current conditions.
+    - paragraph:
+      - text: Observed unavailable IST
+      - text: Received unavailable IST
+    - generic "Source and quality"
+  - article:
+    - heading "CO₂" [level=3]
+    - paragraph:
+      - text: —
+      - generic: Reading unavailable
+    - paragraph: No reading · simulated
+    - paragraph: Source disconnected
+    - paragraph: Check the source with the technician; retained values cannot establish current conditions.
+    - paragraph:
+      - text: Observed unavailable IST
+      - text: Received unavailable IST
+    - generic "Source and quality"
+  - article:
+    - heading "Illuminance" [level=3]
+    - paragraph:
+      - text: —
+      - generic: Reading unavailable
+    - paragraph: No reading · simulated
+    - paragraph: Source disconnected
+    - paragraph: Check the source with the technician; retained values cannot establish current conditions.
+    - paragraph:
+      - text: Observed unavailable IST
+      - text: Received unavailable IST
+    - generic "Source and quality"
+  - paragraph: Freshness uses a five-minute demonstration policy. These readings do not certify room safety or control ventilation.
+  - heading "Energy context · capture lighting" [level=2]
+  - link "Inspect periods and standby consequences →":
+    - /url: "#/environment"
+  - paragraph:
+    - text: "0.081"
+    - generic: kWh in known simulated intervals · 45/60 minutes covered
+  - paragraph: SIM-POWER-v1 · fixed 10:00–11:00 IST example on 1 October 2026. Period total unknown because of a gap. Essential services have no power source and are excluded from standby; measured savings are unknown.
+  - paragraph: Designing for a longer life
+  - heading "Less idle power. More useful equipment." [level=2]:
+    - text: Less idle power.
+    - emphasis: More useful equipment.
+  - paragraph: Review booking-aware standby proposals, daylight, ventilation and repairable materials together.
+  - link "Explore the sustainability ledger →":
+    - /url: "#/environment"
+- region "Example session controls":
+  - button "Activity · 5"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

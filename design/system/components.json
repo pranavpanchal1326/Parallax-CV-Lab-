@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "C01",
+    "name": "Application shell",
+    "variants": [
+      "Expanded desktop",
+      "Collapsed tablet",
+      "Compact mobile"
+    ],
+    "required_anatomy": [
+      "Authorised destinations",
+      "Active location",
+      "Contextual page title"
+    ],
+    "behaviour": [
+      "Navigate without losing saved work",
+      "Expose skip-to-content",
+      "Retain a safety destination"
+    ],
+    "constraints": [
+      "Do not show unauthorised navigation actions",
+      "Do not replace labels with obscure icons"
+    ],
+    "acceptance": [
+      "Keyboard order matches visible order",
+      "Role changes rebuild the authorised destination set"
+    ]
+  },
+  {
+    "id": "C02",
+    "name": "Page heading",
+    "variants": [
+      "Editorial",
+      "Operational",
+      "Instrument"
+    ],
+    "required_anatomy": [
+      "Title",
+      "Context",
+      "Primary action"
+    ],
+    "behaviour": [
+      "Keep one dominant action",
+      "Wrap long real titles gracefully",
+      "Expose contextual breadcrumbs"
+    ],
+    "constraints": [
+      "No essential clipped title",
+      "No decorative subtitle that obscures the task"
+    ],
+    "acceptance": [
+      "Heading hierarchy is semantic",
+      "Action remains visible at narrow widths"
+    ]
+  },
+  {
+    "id": "C03",
+    "name": "Primary action",
+    "variants": [
+      "Default",
+      "Busy",
+      "Unavailable"
+    ],
+    "required_anatomy": [
+      "Verb label",
+      "Action state",
+      "Optional explanatory text"
+    ],
+    "behaviour": [
+      "Show processing feedback",
+      "Prevent duplicate commitment",
+      "Preserve a readable disabled reason"
+    ],
+    "constraints": [
+      "Avoid vague labels such as Go",
+      "Do not indicate completion before save succeeds"
+    ],
+    "acceptance": [
+      "Focus remains visible",
+      "Action result is announced accessibly"
+    ]
+  },
+  {
+    "id": "C04",
+    "name": "Search",
+    "variants": [
+      "Empty",
+      "Querying",
+      "Results"
+    ],
+    "required_anatomy": [
+      "Query",
+      "Type label",
+      "Result count"
+    ],
+    "behaviour": [
+      "Search asset ID and descriptive terms",
+      "Clear filters explicitly",
+      "Open authorised deep links"
+    ],
+    "constraints": [
+      "No private search snippets",
+      "No silently truncated query"
+    ],
+    "acceptance": [
+      "Keyboard selection works",
+      "Zero results offers a useful adjustment"
+    ]
+  },
+  {
+    "id": "C05",
+    "name": "Filter group",
+    "variants": [
+      "Inline",
+      "Drawer",
+      "Applied summary"
+    ],
+    "required_anatomy": [
+      "Filter label",
+      "Selected values",
+      "Result count"
+    ],
+    "behaviour": [
+      "Apply capability constraints",
+      "Remove one filter",
+      "Reset all filters"
+    ],
+    "constraints": [
+      "No hidden active restriction",
+      "No colour-only selected state"
+    ],
+    "acceptance": [
+      "Counts update consistently",
+      "Mobile exposes current constraints"
+    ]
+  },
+  {
+    "id": "C06",
+    "name": "Status label",
+    "variants": [
+      "Available",
+      "Restricted",
+      "Unknown"
+    ],
+    "required_anatomy": [
+      "State name",
+      "Icon",
+      "Relevant timestamp"
+    ],
+    "behaviour": [
+      "Explain the state",
+      "Open related issue",
+      "Distinguish bookability from occupancy"
+    ],
+    "constraints": [
+      "Do not equate unknown with safe",
+      "Do not use green alone as approval"
+    ],
+    "acceptance": [
+      "State transitions match domain rules",
+      "Text works without colour"
+    ]
+  },
+  {
+    "id": "C07",
+    "name": "Experiment specimen",
+    "variants": [
+      "Image",
+      "Signal plot",
+      "Combined"
+    ],
+    "required_anatomy": [
+      "Research question",
+      "Topic",
+      "Prerequisites"
+    ],
+    "behaviour": [
+      "Open brief",
+      "Save for later",
+      "Inspect duration"
+    ],
+    "constraints": [
+      "No invented result imagery presented as real evidence",
+      "No ambiguous topic label"
+    ],
+    "acceptance": [
+      "Question stays legible",
+      "Tile has one clear destination"
+    ]
+  },
+  {
+    "id": "C08",
+    "name": "Equipment specimen",
+    "variants": [
+      "Gallery",
+      "Compact list",
+      "Compare selected"
+    ],
+    "required_anatomy": [
+      "Asset ID",
+      "Capabilities",
+      "Condition"
+    ],
+    "behaviour": [
+      "Open passport",
+      "Select for comparison",
+      "Inspect availability"
+    ],
+    "constraints": [
+      "No capability inferred from appearance",
+      "No mislabeled stock equipment"
+    ],
+    "acceptance": [
+      "Spec fields use consistent units",
+      "Selection is keyboard-operable"
+    ]
+  },
+  {
+    "id": "C09",
+    "name": "Booking time lane",
+    "variants": [
+      "Available",
+      "Booked",
+      "Maintenance"
+    ],
+    "required_anatomy": [
+      "Resource name",
+      "Time scale",
+      "Intervals"
+    ],
+    "behaviour": [
+      "Select an interval",
+      "Inspect conflict",
+      "Adjust with start/end fields"
+    ],
+    "constraints": [
+      "No drag-only action",
+      "No unavailable interval presented as selectable"
+    ],
+    "acceptance": [
+      "Overlap logic is consistent",
+      "Text alternative lists valid options"
+    ]
+  },
+  {
+    "id": "C10",
+    "name": "Booking summary",
+    "variants": [
+      "Draft",
+      "Confirmed",
+      "Changed"
+    ],
+    "required_anatomy": [
+      "Date and time",
+      "Kit contents",
+      "Access conditions"
+    ],
+    "behaviour": [
+      "Review selected assets",
+      "Confirm reservation",
+      "Inspect changed item"
+    ],
+    "constraints": [
+      "No hidden compulsory accessory",
+      "No omitted time context"
+    ],
+    "acceptance": [
+      "All reserved resources appear",
+      "Summary survives a conflict retry"
+    ]
+  },
+  {
+    "id": "C11",
+    "name": "Kit manifest",
+    "variants": [
+      "Required",
+      "Verified",
+      "Missing"
+    ],
+    "required_anatomy": [
+      "Item name",
+      "Quantity",
+      "Condition"
+    ],
+    "behaviour": [
+      "Check item presence",
+      "Record damage",
+      "Review substitute"
+    ],
+    "constraints": [
+      "No quantity guessed by checkbox state",
+      "No silent substitution"
+    ],
+    "acceptance": [
+      "Missing items persist",
+      "Completed check links to session state"
+    ]
+  },
+  {
+    "id": "C12",
+    "name": "Resource map selection",
+    "variants": [
+      "Unselected",
+      "Selected",
+      "Unavailable"
+    ],
+    "required_anatomy": [
+      "Zone ID",
+      "Resource name",
+      "Availability"
+    ],
+    "behaviour": [
+      "Select through scene or list",
+      "Open passport",
+      "Start appropriate booking"
+    ],
+    "constraints": [
+      "No canvas-only essential detail",
+      "No false live-state claim"
+    ],
+    "acceptance": [
+      "List and scene selection synchronise",
+      "Reset preserves resource context"
+    ]
+  },
+  {
+    "id": "C13",
+    "name": "3D viewer frame",
+    "variants": [
+      "Poster",
+      "Loading",
+      "Interactive"
+    ],
+    "required_anatomy": [
+      "Named views",
+      "Reset",
+      "Quality and fallback"
+    ],
+    "behaviour": [
+      "Opt into scene",
+      "Choose viewpoint",
+      "Switch to static representation"
+    ],
+    "constraints": [
+      "No full-page scroll hijack",
+      "No inaccessible floating hotspot-only UI"
+    ],
+    "acceptance": [
+      "Load failure preserves core task",
+      "Reduced motion avoids camera travel"
+    ]
+  },
+  {
+    "id": "C14",
+    "name": "Equipment hotspot",
+    "variants": [
+      "Port",
+      "Control",
+      "Accessory point"
+    ],
+    "required_anatomy": [
+      "Name",
+      "Function",
+      "Connection context"
+    ],
+    "behaviour": [
+      "Select from list",
+      "Highlight geometry",
+      "Open approved instruction"
+    ],
+    "constraints": [
+      "No guessed electrical compatibility",
+      "No hidden occluded information"
+    ],
+    "acceptance": [
+      "Hotspot has a text description",
+      "Instruction matches asset revision"
+    ]
+  },
+  {
+    "id": "C15",
+    "name": "Setup diagram",
+    "variants": [
+      "Signal chain",
+      "Camera rig",
+      "Combined"
+    ],
+    "required_anatomy": [
+      "Device labels",
+      "Connection arrows",
+      "Setup order"
+    ],
+    "behaviour": [
+      "Inspect connection",
+      "Open asset record",
+      "Read alternative text sequence"
+    ],
+    "constraints": [
+      "No unsupported connection implied",
+      "No safety instruction inferred from render"
+    ],
+    "acceptance": [
+      "Diagram and text agree",
+      "All device IDs resolve"
+    ]
+  },
+  {
+    "id": "C16",
+    "name": "Stage navigation",
+    "variants": [
+      "Completed",
+      "Current",
+      "Blocked"
+    ],
+    "required_anatomy": [
+      "Stage name",
+      "Readiness",
+      "Relevant help"
+    ],
+    "behaviour": [
+      "Move to allowed stage",
+      "Review prerequisite",
+      "Return to saved step"
+    ],
+    "constraints": [
+      "No hidden irreversible action",
+      "No arbitrary lock without explanation"
+    ],
+    "acceptance": [
+      "Current stage is announced",
+      "Saved state restores correctly"
+    ]
+  },
+  {
+    "id": "C17",
+    "name": "Parameter control",
+    "variants": [
+      "Numeric input",
+      "Slider plus input",
+      "Preset"
+    ],
+    "required_anatomy": [
+      "Name",
+      "Value and unit",
+      "Allowed range"
+    ],
+    "behaviour": [
+      "Adjust precisely",
+      "Reset to template",
+      "Inspect parameter explanation"
+    ],
+    "constraints": [
+      "No slider without numeric alternative",
+      "No unitless scientific value"
+    ],
+    "acceptance": [
+      "Validation preserves prior valid value",
+      "Changes enter processing provenance"
+    ]
+  },
+  {
+    "id": "C18",
+    "name": "Input source selector",
+    "variants": [
+      "Connected",
+      "Uploaded",
+      "Simulated"
+    ],
+    "required_anatomy": [
+      "Source type",
+      "Device or file",
+      "Permission state"
+    ],
+    "behaviour": [
+      "Choose source",
+      "Request device access",
+      "Select sample input"
+    ],
+    "constraints": [
+      "No implied device connection in demo",
+      "No surprise recording"
+    ],
+    "acceptance": [
+      "Selected source is visible throughout capture",
+      "Denied permission has a fallback"
+    ]
+  },
+  {
+    "id": "C19",
+    "name": "Recording indicator",
+    "variants": [
+      "Ready",
+      "Recording",
+      "Stopped"
+    ],
+    "required_anatomy": [
+      "Source",
+      "Elapsed time",
+      "Stop control"
+    ],
+    "behaviour": [
+      "Start deliberately",
+      "Stop immediately",
+      "Review saved capture"
+    ],
+    "constraints": [
+      "No recording hidden by another panel",
+      "No auto-start on page visit"
+    ],
+    "acceptance": [
+      "Indicator remains visible",
+      "Source permissions are handled clearly"
+    ]
+  },
+  {
+    "id": "C20",
+    "name": "Capture history",
+    "variants": [
+      "Image thumbnails",
+      "Signal previews",
+      "Mixed"
+    ],
+    "required_anatomy": [
+      "Capture ID",
+      "Time",
+      "Settings summary"
+    ],
+    "behaviour": [
+      "Select capture",
+      "Compare selected items",
+      "Insert into notebook"
+    ],
+    "constraints": [
+      "No silent overwrite",
+      "No uncertain save represented as complete"
+    ],
+    "acceptance": [
+      "History references actual saved records",
+      "Keyboard selection works"
+    ]
+  },
+  {
+    "id": "C21",
+    "name": "Waveform viewer",
+    "variants": [
+      "Single channel",
+      "Multiple channels",
+      "Selection"
+    ],
+    "required_anatomy": [
+      "Axes",
+      "Units",
+      "Sample context"
+    ],
+    "behaviour": [
+      "Zoom interval",
+      "Inspect values",
+      "Choose channel"
+    ],
+    "constraints": [
+      "No unlabeled amplitude",
+      "No implied synchronisation without shared timing"
+    ],
+    "acceptance": [
+      "Table or summary alternative exists",
+      "Capture settings remain accessible"
+    ]
+  },
+  {
+    "id": "C22",
+    "name": "Spectrum viewer",
+    "variants": [
+      "Magnitude",
+      "Power",
+      "Spectrogram"
+    ],
+    "required_anatomy": [
+      "Frequency scale",
+      "Value unit",
+      "Window context"
+    ],
+    "behaviour": [
+      "Inspect band",
+      "Compare processing",
+      "Read scale explanation"
+    ],
+    "constraints": [
+      "No misleading axis clipping",
+      "No omitted processing context"
+    ],
+    "acceptance": [
+      "Units and transforms are documented",
+      "Missing data is visible"
+    ]
+  },
+  {
+    "id": "C23",
+    "name": "Image viewer",
+    "variants": [
+      "Original",
+      "Overlay",
+      "Processed"
+    ],
+    "required_anatomy": [
+      "Capture reference",
+      "Dimensions",
+      "Overlay legend"
+    ],
+    "behaviour": [
+      "Zoom",
+      "Inspect coordinate",
+      "Toggle interpretation layer"
+    ],
+    "constraints": [
+      "No artistic colour grading of evidence",
+      "No hidden overlay opacity"
+    ],
+    "acceptance": [
+      "Coordinate mapping is clear",
+      "Original image remains available"
+    ]
+  },
+  {
+    "id": "C24",
+    "name": "Comparison viewer",
+    "variants": [
+      "Divider",
+      "Side-by-side",
+      "Time-aligned"
+    ],
+    "required_anatomy": [
+      "Input labels",
+      "Output labels",
+      "Shared context"
+    ],
+    "behaviour": [
+      "Move divider through keyboard or pointer",
+      "Link valid zoom",
+      "Swap comparison pair"
+    ],
+    "constraints": [
+      "No alignment across incompatible inputs",
+      "No drag-only control"
+    ],
+    "acceptance": [
+      "Labels remain visible",
+      "Comparison preserves provenance"
+    ]
+  },
+  {
+    "id": "C25",
+    "name": "Depth or point-cloud viewer",
+    "variants": [
+      "Depth map",
+      "Point cloud",
+      "Static view"
+    ],
+    "required_anatomy": [
+      "Units",
+      "Coordinate frame",
+      "Source"
+    ],
+    "behaviour": [
+      "Choose viewpoint",
+      "Inspect region",
+      "Open acquisition context"
+    ],
+    "constraints": [
+      "No uncalibrated depth presented as measurement",
+      "No decorative point cloud posing as result"
+    ],
+    "acceptance": [
+      "Static alternative is informative",
+      "Scale and origin are documented"
+    ]
+  },
+  {
+    "id": "C26",
+    "name": "Metric block",
+    "variants": [
+      "Value",
+      "Unavailable",
+      "Comparison"
+    ],
+    "required_anatomy": [
+      "Metric name",
+      "Definition",
+      "Unit or range"
+    ],
+    "behaviour": [
+      "Inspect calculation context",
+      "Open contributing evidence",
+      "Compare valid runs"
+    ],
+    "constraints": [
+      "No confidence labelled accuracy",
+      "No undefined precision"
+    ],
+    "acceptance": [
+      "Value links to computation",
+      "Rounding does not distort interpretation"
+    ]
+  },
+  {
+    "id": "C27",
+    "name": "Annotation",
+    "variants": [
+      "Point",
+      "Rectangle",
+      "Time interval"
+    ],
+    "required_anatomy": [
+      "Author",
+      "Evidence reference",
+      "Text"
+    ],
+    "behaviour": [
+      "Create through accessible controls",
+      "Edit own note",
+      "Inspect linked evidence"
+    ],
+    "constraints": [
+      "No annotation detached from input version",
+      "No private note leaked publicly"
+    ],
+    "acceptance": [
+      "Coordinates restore correctly",
+      "Nonvisual text describes the region"
+    ]
+  },
+  {
+    "id": "C28",
+    "name": "Notebook evidence block",
+    "variants": [
+      "Image",
+      "Plot",
+      "Dataset reference"
+    ],
+    "required_anatomy": [
+      "Caption",
+      "Evidence ID",
+      "Processing context"
+    ],
+    "behaviour": [
+      "Insert evidence",
+      "Write interpretation",
+      "Open original record"
+    ],
+    "constraints": [
+      "No copied figure losing provenance",
+      "No stale embed silently changing"
+    ],
+    "acceptance": [
+      "Submitted revision retains its evidence",
+      "Captions are readable"
+    ]
+  },
+  {
+    "id": "C29",
+    "name": "Save indicator",
+    "variants": [
+      "Saving",
+      "Saved",
+      "Failed"
+    ],
+    "required_anatomy": [
+      "Current persistence state",
+      "Time",
+      "Recovery action"
+    ],
+    "behaviour": [
+      "Retry save",
+      "Review unsaved changes",
+      "Recover local draft when supported"
+    ],
+    "constraints": [
+      "No false saved state",
+      "No silent destructive navigation"
+    ],
+    "acceptance": [
+      "Failure is perceivable",
+      "State matches storage outcome"
+    ]
+  },
+  {
+    "id": "C30",
+    "name": "Issue report",
+    "variants": [
+      "Asset-linked",
+      "Location-linked",
+      "Follow-up"
+    ],
+    "required_anatomy": [
+      "Symptoms",
+      "Setup context",
+      "Evidence"
+    ],
+    "behaviour": [
+      "Report",
+      "Add evidence",
+      "Track state"
+    ],
+    "constraints": [
+      "No vague success claiming repair",
+      "No forced unnecessary personal data"
+    ],
+    "acceptance": [
+      "Technician can identify the asset",
+      "Text survives upload failure"
+    ]
+  },
+  {
+    "id": "C31",
+    "name": "Maintenance queue",
+    "variants": [
+      "New",
+      "In progress",
+      "Awaiting verification"
+    ],
+    "required_anatomy": [
+      "Issue",
+      "Affected resources",
+      "Assigned owner"
+    ],
+    "behaviour": [
+      "Triage",
+      "Restrict resource",
+      "Record verification"
+    ],
+    "constraints": [
+      "No unresolved fault marked healthy",
+      "No private staff detail on student view"
+    ],
+    "acceptance": [
+      "Booking impact updates",
+      "History remains traceable"
+    ]
+  },
+  {
+    "id": "C32",
+    "name": "Rubric and feedback",
+    "variants": [
+      "Draft",
+      "Published",
+      "Returned"
+    ],
+    "required_anatomy": [
+      "Criterion",
+      "Evidence link",
+      "Feedback"
+    ],
+    "behaviour": [
+      "Assess criterion",
+      "Anchor comment",
+      "Publish according to policy"
+    ],
+    "constraints": [
+      "No feedback linked to wrong revision",
+      "No invented course rubric policy"
+    ],
+    "acceptance": [
+      "Reviewer sees submission version",
+      "Student sees published feedback only"
+    ]
+  },
+  {
+    "id": "C33",
+    "name": "Notice",
+    "variants": [
+      "General",
+      "Operational",
+      "Action required"
+    ],
+    "required_anatomy": [
+      "Audience",
+      "Date",
+      "Expiry"
+    ],
+    "behaviour": [
+      "Open linked resource",
+      "Acknowledge when required",
+      "Archive expired item"
+    ],
+    "constraints": [
+      "No permanent urgent banner for expired content",
+      "No private public-display notice"
+    ],
+    "acceptance": [
+      "Audience filtering works",
+      "Links match affected record"
+    ]
+  },
+  {
+    "id": "C34",
+    "name": "Safety information block",
+    "variants": [
+      "Emergency",
+      "Procedure",
+      "Readiness"
+    ],
+    "required_anatomy": [
+      "Approved instruction",
+      "Owner",
+      "Review date"
+    ],
+    "behaviour": [
+      "Read plain guidance",
+      "Locate confirmed equipment",
+      "Open approved contact"
+    ],
+    "constraints": [
+      "No decorative ambiguity",
+      "No unverified emergency details"
+    ],
+    "acceptance": [
+      "Content is accessible quickly",
+      "Cached copy identifies its revision"
+    ]
+  },
+  {
+    "id": "C35",
+    "name": "Data table",
+    "variants": [
+      "Read",
+      "Select",
+      "Edit"
+    ],
+    "required_anatomy": [
+      "Column labels",
+      "Units",
+      "Sort state"
+    ],
+    "behaviour": [
+      "Sort",
+      "Filter",
+      "Open record"
+    ],
+    "constraints": [
+      "No responsive layout that hides essential status",
+      "No hover-only action"
+    ],
+    "acceptance": [
+      "Header relationships remain accessible",
+      "Empty state explains scope"
+    ]
+  },
+  {
+    "id": "C36",
+    "name": "Confirmation dialog",
+    "variants": [
+      "Cancel booking",
+      "Publish project",
+      "Delete draft"
+    ],
+    "required_anatomy": [
+      "Affected record",
+      "Consequence",
+      "Explicit action"
+    ],
+    "behaviour": [
+      "Review impact",
+      "Choose safe exit",
+      "Confirm deliberately"
+    ],
+    "constraints": [
+      "No generic Are you sure without context",
+      "No accidental duplicate commitment"
+    ],
+    "acceptance": [
+      "Focus is managed",
+      "Result returns to a sensible location"
+    ]
+  },
+  {
+    "id": "C37",
+    "name": "Empty state",
+    "variants": [
+      "First use",
+      "No matches",
+      "No access"
+    ],
+    "required_anatomy": [
+      "Reason",
+      "Next action",
+      "Relevant help"
+    ],
+    "behaviour": [
+      "Create or discover",
+      "Clear constraints",
+      "Request access"
+    ],
+    "constraints": [
+      "No artwork replacing explanation",
+      "No false error for legitimate emptiness"
+    ],
+    "acceptance": [
+      "Cause is clear",
+      "Suggested action respects permissions"
+    ]
+  },
+  {
+    "id": "C38",
+    "name": "Loading and error",
+    "variants": [
+      "Asset load",
+      "Processing job",
+      "Network failure"
+    ],
+    "required_anatomy": [
+      "Operation name",
+      "Known progress",
+      "Recovery"
+    ],
+    "behaviour": [
+      "Cancel when permitted",
+      "Retry safely",
+      "Use fallback"
+    ],
+    "constraints": [
+      "No invented countdown",
+      "No blank screen hiding the task"
+    ],
+    "acceptance": [
+      "Recovery preserves entered data",
+      "Duplicate jobs are prevented"
+    ]
+  },
+  {
+    "id": "C39",
+    "name": "Provenance strip",
+    "variants": [
+      "Capture",
+      "Processing",
+      "Published evidence"
+    ],
+    "required_anatomy": [
+      "Input ID",
+      "Settings or version",
+      "Timestamp"
+    ],
+    "behaviour": [
+      "Open source",
+      "Inspect parameters",
+      "Export context"
+    ],
+    "constraints": [
+      "No stripped provenance in submission",
+      "No ambiguous generated output"
+    ],
+    "acceptance": [
+      "References resolve",
+      "Evidence revision remains stable"
+    ]
+  },
+  {
+    "id": "C40",
+    "name": "Media preference",
+    "variants": [
+      "Reduced motion",
+      "Poster first",
+      "Quality choice"
+    ],
+    "required_anatomy": [
+      "Preference label",
+      "Current value",
+      "Effect"
+    ],
+    "behaviour": [
+      "Change preference",
+      "Preview effect",
+      "Reset"
+    ],
+    "constraints": [
+      "No essential task dependent on high quality",
+      "No misleading alteration of scientific evidence"
+    ],
+    "acceptance": [
+      "Preference applies across viewers",
+      "Choice persists honestly"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "presentation-finalization.v2",
+  "revision": "U10-R3",
+  "date": "2026-10-05",
+  "finalSha256": "27b7a808cb3137759fb30322163e2dcc93d764f4a0232cc79f400251f61b0d84",
+  "byteCount": 2789105,
+  "packageIntegrity": {
+    "status": "pass",
+    "slide_count": 15,
+    "zipCrc": "pass",
+    "parts": 113,
+    "notesSlides": 15,
+    "picturesWithAltText": 14,
+    "claim_boundary": "ZIP CRC, python-pptx reopen, slide/notes counts and text parity with presentation-content.json."
+  },
+  "contentParity": {
+    "titlesAndBodyLinesMatchSource": true,
+    "speakerNotesMatchSource": true,
+    "plannedSeconds": 900
+  },
+  "fontPolicy": {
+    "observed_font_families": [
+      "Arial",
+      "Consolas",
+      "Georgia"
+    ],
+    "note": "Georgia, Arial and Consolas ship with Windows and Office; another platform may substitute Consolas."
+  },
+  "nativePowerPoint": {
+    "opened": true,
+    "version": "16.0",
+    "slidesExported": 15,
+    "method": "planning/u10-build/render-deck.ps1 (COM, read-only, no window); submission/deck-slides holds these exports",
+    "scope": "One machine. Slide show playback and other PowerPoint versions were not exercised."
+  },
+  "previousRevision": {
+    "preservedAt": "planning/revisions/U10-R1-before-editorial-20261005/"
+  },
+  "scope": "Editorial layout; wording, order, timings and notes unchanged from U10-R1. Interface figures re-captured after the product polish."
+}

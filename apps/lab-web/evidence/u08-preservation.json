@@ -1,0 +1,28 @@
+{
+  "baseline": "planning/revisions/U08-before-implementation/manifest.json",
+  "total": 61,
+  "unchanged": 57,
+  "modified": [
+    {
+      "path": "apps/lab-web/src/features/Assets.tsx",
+      "unchanged": false,
+      "allowed": true
+    },
+    {
+      "path": "apps/lab-web/src/features/Safety.tsx",
+      "unchanged": false,
+      "allowed": true
+    },
+    {
+      "path": "apps/lab-web/src/main.tsx",
+      "unchanged": false,
+      "allowed": true
+    },
+    {
+      "path": "apps/lab-web/src/styles/app.css",
+      "unchanged": false,
+      "allowed": true
+    }
+  ],
+  "unexpected": []
+}

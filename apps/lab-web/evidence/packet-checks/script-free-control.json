@@ -1,0 +1,10 @@
+{
+  "method": "New page and iframe child contain no scripts or dependencies",
+  "console": [
+    {
+      "level": "error",
+      "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "timestamp": "2026-10-03T22:14:50.724Z"
+    }
+  ]
+}

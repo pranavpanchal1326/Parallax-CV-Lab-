@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-02",
+  "edition": "P8-A",
+  "state": "Refined renders, resource-ID interactive model, working Lab Map and Scene Studio prototypes, and their Figma designs built; participant, device and accessibility testing remain open (Phase 9)",
+  "figma": {
+    "fileKey": "QaLr3W9rzW1WGhkDeHx9WF",
+    "pageId": "2131:82",
+    "pageName": "Phase 8 · 3D & Interaction — P8-A",
+    "views": {
+      "00": { "id": "2140:314", "name": "3D & interaction cover" },
+      "L1": { "id": "2132:82", "name": "Lab Map · plan, C1-CAM selected" },
+      "L2": { "id": "2133:110", "name": "Lab Map · 3D model, Capture C1 view" },
+      "L3": { "id": "2133:286", "name": "Lab Map · model failed, plan kept" },
+      "L4": { "id": "2134:173", "name": "Lab Map · mobile, list first" },
+      "S1": { "id": "2135:198", "name": "Scene Studio · frontal preset" },
+      "S2": { "id": "2137:227", "name": "Scene Studio · occlusion example" },
+      "S3": { "id": "2137:458", "name": "Scene Studio · impossible position explained" },
+      "S4": { "id": "2139:285", "name": "Scene Studio · WebGL unavailable" },
+      "S5": { "id": "2139:484", "name": "Scene Studio · mobile, camera tab" }
+    },
+    "renderLibrary": "2131:83",
+    "illustrationVariables": { "collection": "VariableCollectionId:2141:350", "name": "PH8 · Illustration / P8-A", "count": 14, "scopes": ["FRAME_FILL", "SHAPE_FILL", "STROKE_COLOR"] },
+    "startingPoints": ["2140:314", "2132:82", "2135:198"],
+    "projectIndex": { "row": "2034:1019", "historyBeforeP8": "2141:1831" },
+    "validation": {
+      "roots": 10, "prototypeLinks": 20, "navLinks": 12, "selfLinksRemoved": 3, "brokenDestinations": [],
+      "topLevelOverlap": [], "unresolvedBindings": 0, "rawPaintsBound": 165,
+      "scaledPreviewTextExceptions": 52,
+      "preservation": { "p5Owners": "40/40", "p5Variants": "87/87", "p6Roots": "28/28", "p7Roots": "28/28", "p7Reactions": 132 }
+    }
+  },
+  "renders": {
+    "script": "spatial/blender/render_phase8.py",
+    "engine": "Cycles · OptiX (RTX 5060 Laptop) · 128 samples · denoised · AgX",
+    "output": "spatial/renders/phase-08/*.png (full) · design/phase-08/renders/*.jpg (web 1600 w)",
+    "shots": ["R01 entry", "R02 iso cutaway", "R03 student eye CV-05", "R04 capture", "R05 signal bench", "R06 collaboration", "R07 storage STO-1", "R08 plan base", "R04 restricted (S-05 tag)", "R02 restricted"],
+    "addedToModel": ["S-02 zone headers CMP/C1/S1", "S-03 station plates", "W wall display", "S-05 restriction tag (variant)", "interior ceiling + luminaires (eye-level shots only)", "full-height S/W walls above cutaway (eye-level only)"],
+    "fixedFromP4": ["Demonstration display title faced the wall (mirrored)"],
+    "figmaImageHashes": {
+      "R01": "3dcbe79189aa42e6219314c53256625d78e8b51c", "R02": "3f6014c65d2d90063ca9979cf78f88cf3b46cea9", "R03": "584fe56a1a432f800461414864473a1eb588db2e",
+      "R04": "c91ccd7dfe259bbcced316c95167398e1454cec4", "R04r": "4eee8303c24a13f1187b76ae36b1cc6b5af17ab0", "R05": "988ab430ac9979f7c4ccc522c636fb317ecce23b",
+      "R06": "2524867d754ea03efdc1f46fff4e76d227d6d6fe", "R07": "a41469b8083e64328ef2f539fc325b946620b1d4", "R08": "709270d1f4023670327f106441d6886bd0ff19fa",
+      "R02r": "9dd108a78a75593951bf8b0933e71ed4d4f1ec6f"
+    }
+  },
+  "interactiveModel": { "file": "spatial/exports/lab_interactive.glb", "nodes": 43, "triangles": 69052, "bytes": 3313680, "budget": "150,000 triangles / 5 MB", "naming": "one node per resource ID (CV-01…, C1-CAM, CAL-01, S1-B, STO-1, ZONE-*, SAFETY-*, SIGN-*)" },
+  "prototypes": {
+    "serve": "node design/serve-review.cjs 4180 → http://127.0.0.1:4180/design/phase-08/",
+    "labMap": { "file": "design/phase-08/lab-map.html", "states": ["normal", "stale data", "3D model fails to load", "WebGL unavailable"], "deepLink": "?id=C1-CAM" },
+    "sceneStudio": { "file": "design/phase-08/scene-studio.html", "presets": ["frontal", "occlusion", "side", "wide", "tele", "invalid"], "params": "?preset=… or ?dist=&lateral=&height=&yaw=&tilt=&fov=", "noWebGL": "?webgl=off" },
+    "dependency": "three@0.170.0 vendored via npm in design/phase-08/node_modules (works offline)",
+    "validator": "node design/phase-08/validate.cjs → 19 / 19 pass"
+  },
+  "limits": [
+    "Scene Studio simulates geometry only: no lens distortion, exposure, noise or detector",
+    "Lab Map states are example data, not a live twin",
+    "Equipment forms in renders are illustrative",
+    "Figma camera images are vector redraws of prototype output; L2 uses the R02 render as a representative 3D frame",
+    "Participant, keyboard/screen-reader and low-end device testing pending (Phase 9)"
+  ],
+  "p8b": {
+    "summary": "Visual upgrade on identical geometry; P8-A outputs and hub retained as the record",
+    "script": "spatial/blender/render_phase8b.py (execs render_phase8.py, then materials/light/lens/post only)",
+    "look": ["procedural terrazzo, plaster, quarter-sawn ash, clear-coat HPL, graphite metal, woven fabric with sheen, lacquered fins, emissive phosphor", "multiple-scattering sky + low warm sun through W1", "graphite reflective plinth for ortho shots; area lights hidden from glossy rays", "depth of field on R03/R04/R06/R10", "compositor glare on emissives (threshold 2.6 interior / 5.0 ortho)"],
+    "shots": { "new": ["H01 spine at golden hour", "R09 KIT-C1-v1 layout (G17.09)", "R10 sculpture (G17.10)"], "upgraded": ["R01", "R02", "R03", "R04", "R04 restricted", "R05", "R06", "R07"], "engine": "Cycles OptiX 160 samples, 2400 px wide" },
+    "animation": { "A01": "spatial/renders/phase-08b/A01_orbit.mp4 → design/phase-08/media/A01_orbit.mp4 (1600×900, 24 fps, 8 s)", "A03": "design/phase-08/assets/signal-pixel.js (live, exact alias)" },
+    "web": ["index.html hub rebuilt (video hero with pause, A03, gallery lightbox, A↔B compare, R09 story); index-p8a.html preserved", "lab-3d.js: environment light, AgX, soft shadows, availability halos, ID pin buttons with declutter and tooltips, eased moves, reduced-motion aware", "scene-studio.js: softbox spot lights with soft shadows, clear-coat objects, filled FOV pyramid; measurements unchanged"],
+    "figma": { "board": "2144:334 · P8-B / 01 · Visual upgrade", "renderLibrary": "2143:334", "coverUpdated": "2140:314 hero, gallery and restriction comparison now P8-B", "L2Frame": "2133:110 representative frame now P8-B R02" },
+    "figmaImageHashes": { "H01": "baadd6eee1232f9f8cee21f1dce573e0c669bfb6", "R01": "c0a6cf313df7f3bc391bb0d0c4e035ae6f087ebd", "R02": "cd598a51bacee994cafa4435220c5f98709fd0dc", "R03": "b70a34b1ca0b6037d56c50a2eef7df9d7629795f", "R04": "ea28099f877d73adefc7ef6df7110b18d403fdf4", "R04r": "722fbd3854f5ca52cae948a28c044f8dc6be2bd3", "R05": "17f27a5fcfc5a6ce240d662e6c0bea3132e2d484", "R06": "36487435f30383b17764ca80cff7b27147e89078", "R07": "c94fe631a18a8c65deab19286a0eace0b16f6305", "R09": "14fbce820ef415323c933f74f87267242c6a6cb2", "R10": "9940f46db9e924e60d0da7a4fa9a85f86deaae0f" }
+  },
+  "nextPhase": "9 / Prototype & verification"
+}

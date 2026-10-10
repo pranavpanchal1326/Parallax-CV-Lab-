@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF02 · Preparation: method before reservation</title><desc id="desc">A student reads the method and identifies kit and safety requirements.. An incomplete checklist explains why reservation cannot proceed.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Preparation: method before reservation</text>
+<rect x="20" y="105" width="720" height="44" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Prepare — Reserve — Arrive — Bench — Notebook — Submit — Return</text>
+<rect x="20" y="170" width="435" height="110" fill="#fafafa" stroke="#555" />
+<text x="32" y="194" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Method r01</text>
+<text x="32" y="214" font-family="Arial" font-size="12" font-weight="400" fill="#222">One scene / two lights / fixed settings</text>
+<text x="32" y="234" font-family="Arial" font-size="12" font-weight="400" fill="#222">Prepared illustrations, not measured accuracy</text>
+<rect x="475" y="170" width="265" height="225" fill="#fafafa" stroke="#555" />
+<text x="487" y="194" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Kit manifest</text>
+<text x="487" y="214" font-family="Arial" font-size="12" font-weight="400" fill="#222">Fixed equipment</text>
+<text x="487" y="234" font-family="Arial" font-size="12" font-weight="400" fill="#222">Portable items and quantities</text>
+<text x="487" y="254" font-family="Arial" font-size="12" font-weight="400" fill="#222">Safety note / power-off point</text>
+<rect x="20" y="302" width="435" height="93" fill="#fafafa" stroke="#555" />
+<text x="32" y="326" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Acknowledge preparation</text>
+<text x="32" y="346" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ ] Method read   [ ] Kit known</text>
+<text x="32" y="366" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ ] Safety read</text>
+<rect x="20" y="417" width="720" height="40" fill="#ddd" stroke="#555" />
+<text x="32" y="441" font-family="Arial" font-size="14" font-weight="700" fill="#222">5 / Continue to Reserve — unmet requirements shown at action</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF02 / Reconstructed React view / low fidelity / no fieldwork claimed</text></svg>

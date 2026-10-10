@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-02",
+  "passed": 25,
+  "total": 25,
+  "checks": [
+    {
+      "name": "Every Lab Map resource is a named node in lab_interactive.glb",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Every resource has plan geometry or a declared home position",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Portable items outside plan geometry are declared (CAL-01)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Every resource zone exists in geometry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Every resource has a defined named viewpoint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Five named viewpoints (G16.02)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Interactive triangles within 150,000 budget",
+      "pass": true,
+      "detail": "69052"
+    },
+    {
+      "name": "Interactive GLB within 5 MB budget",
+      "pass": true,
+      "detail": "3313680"
+    },
+    {
+      "name": "modelBytes in resources.json matches the GLB",
+      "pass": true,
+      "detail": "3313680 vs 3313680"
+    },
+    {
+      "name": "Availability and occupancy recorded separately for every resource",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "C1-CAM carries the Phase 7 restriction RST-0417",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: lab-map.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: scene-studio.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: assets/lab-map.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: assets/lab-3d.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: assets/scene-studio.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Prototype file present: node_modules/three/build/three.module.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All 10 shot-list renders exist (full and web size)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "P8-B: 11 look-dev renders exist (full and web size), incl. new H01, R09, R10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "P8-B: A01 orbit animation present for the hub hero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "P8-B: A03 signal-to-pixel module present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "P8-B: P8-A hub page preserved as index-p8a.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "P8-B: P8-A renders untouched (10 originals still present)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "A03: alias curve passes through every sample (max error < 1e-9)",
+      "pass": true,
+      "detail": "7.445780103587651e-14"
+    }
+  ],
+  "glbNodes": [
+    "ARCHITECTURE",
+    "ARTWORK-CAND04",
+    "C1-BD",
+    "C1-CAM",
+    "C1-L1",
+    "C1-L2",
+    "C1-TB",
+    "C1-WALL",
+    "CAL-01",
+    "COL-D",
+    "COL-T",
+    "CV-01",
+    "CV-02",
+    "CV-03",
+    "CV-04",
+    "CV-05",
+    "CV-06",
+    "FAC-1",
+    "FURNISHING",
+    "LGT-01",
+    "S1-B",
+    "SAFETY-CCTV-1",
+    "SAFETY-CCTV-2",
+    "SAFETY-EPO-1",
+    "SAFETY-EPO-2",
+    "SAFETY-EX-1",
+    "SAFETY-EX-2",
+    "SAFETY-FA-1",
+    "SAFETY-FE-1",
+    "SAFETY-FE-2",
+    "SAFETY-MCP-1",
+    "SAFETY-MCP-2",
+    "SIGN-S-02",
+    "SIGN-W",
+    "STO-1",
+    "ZONE-C1",
+    "ZONE-CMP",
+    "ZONE-COL",
+    "ZONE-CV-04-APPROACH",
+    "ZONE-FAC",
+    "ZONE-S1",
+    "ZONE-SPN",
+    "ZONE-STO"
+  ]
+}

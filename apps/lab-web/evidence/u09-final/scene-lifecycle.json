@@ -1,0 +1,105 @@
+{
+  "method": "Eight same-document React route removals and reattachments. Renderer-local counters, not a browser-wide GPU memory measurement.",
+  "rows": [
+    {
+      "phase": "initial",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "idle-after-other-work",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-1",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-2",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-3",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-4",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-5",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-6",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-7",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    },
+    {
+      "phase": "React-mount-8",
+      "value": {
+        "frames": 2,
+        "queued": false,
+        "disposed": false,
+        "geometries": 22,
+        "textures": 3
+      }
+    }
+  ]
+}

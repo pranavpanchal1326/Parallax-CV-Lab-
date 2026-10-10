@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "experiment": "E06",
+  "prediction": "A prediction written for the export check.",
+  "reflection": "",
+  "parameter": "side",
+  "reference": null,
+  "sourceLabel": "Teaching fixture · method 01",
+  "runAt": "2026-10-07T03:56:42.388Z",
+  "heldSettings": {
+    "exposure": "1/120 s",
+    "gain": "0 dB",
+    "lightIntensity": "40%"
+  }
+}

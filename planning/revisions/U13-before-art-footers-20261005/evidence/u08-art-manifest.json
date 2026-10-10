@@ -1,0 +1,161 @@
+{
+  "phase": "U08",
+  "artworkDate": "2026-10-03",
+  "verifiedDate": "2026-10-04",
+  "sourceFiles": [
+    {
+      "file": "apps/lab-shared/studio-catalog.json",
+      "sha256": "d71cd548a5f403236e6983961fe72ef4f3e39743cdd8aba650c99d5904033909"
+    },
+    {
+      "file": "apps/lab-shared/studio-graphics.mjs",
+      "sha256": "26714de555d2e0cb10e9a31622955e11642bd954fe4fe157921a25d7ea01505d"
+    },
+    {
+      "file": "prototype/fixtures.json",
+      "sha256": "53ef14be6b468aa0b7b380d98dd1e82d5c07eadfb1a53a2cbe8602d57a2ac60d"
+    },
+    {
+      "file": "spatial/lab_geometry.json",
+      "sha256": "772cc7617573e064feb1f0a38ffbf20a7e42da57f56fd6711b14bfa43c2b3f57"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "ART-01.svg",
+      "sha256": "0d88bc15829f7bfa61907ca9687a3a1303afcf7ea39b4f4e83644355551c21dd",
+      "bytes": 15324,
+      "renderSha256": "49a8dd639dbf179355a4ad9903a2abc2aa1581aa5eba8f5f0802be59add59751"
+    },
+    {
+      "file": "ART-02.svg",
+      "sha256": "ca86eeadfcec898bf3d27a853ee195a1bf498293ddabc61513e415aca286dd05",
+      "bytes": 3480,
+      "renderSha256": "baef5851de4aab201f8e717d471e6a1829e76659613d743a5346129db2db85e6"
+    },
+    {
+      "file": "ART-03.svg",
+      "sha256": "3282fa515de220c855e7c731163aa2e6090f457df4cc8ed83a6ead86b4ba9488",
+      "bytes": 3470,
+      "renderSha256": "0f9846c49856a46737969494d061bfcb08c6b48a259f38cb24e994cb2162bf53"
+    },
+    {
+      "file": "ART-04-E01.svg",
+      "sha256": "7623fedc40fc2bf7006896b2586d13ff345308e9144df683e895b4e1ec491273",
+      "bytes": 26900,
+      "renderSha256": "4b441f7b1f66494a2ac37a3c40d0bf09660b940e41c6c5be6574e4183acb8195"
+    },
+    {
+      "file": "ART-04-E06.svg",
+      "sha256": "faf41fa752480a642fd218576cd7dcda698fef1f7a6f90bfcecc4971c434fc5f",
+      "bytes": 5292,
+      "renderSha256": "bdc479e348c1f3480408c482d5e80c34fa55b32dc4f31cc7625eab4b7a85ef55"
+    },
+    {
+      "file": "ART-05.svg",
+      "sha256": "b6f4d2cfe826107aeefe95dd70def4a7d7415b30f5fe14ceb539ee64e92c82bd",
+      "bytes": 3261,
+      "renderSha256": "a2f90d4bb05ec2fea5b7fcdde019088c2507fc6dee3eaad6492c7825eaf28a9f"
+    },
+    {
+      "file": "ART-06.svg",
+      "sha256": "a741bb163b52e08b9d1c4a23429ba4e655f4772794951d6b1632bab1f4faf490",
+      "bytes": 2997,
+      "renderSha256": "cd75cbbe00d6aade89f811fe4d2e5e5bdceba85d31728bef26f7dd5d05624ce3"
+    },
+    {
+      "file": "ART-07.svg",
+      "sha256": "0db605b968097f7269a7df5fb646a478af3350934032ba749f075f0872f4a5b4",
+      "bytes": 16115,
+      "renderSha256": "947afae39325108b832d0ba93d707ebbef71cf1df69c3dfb98937f4de88c1fc7"
+    },
+    {
+      "file": "ART-08-20Hz.svg",
+      "sha256": "223e09413f1d230bd6861a9d9ef619678bb4f012a651696d68f14345b1d83c76",
+      "bytes": 14379,
+      "renderSha256": "b1769d59bb643914b8c7280d07bef32ffe5709ba64971dc9598fa5138e4d6be5"
+    },
+    {
+      "file": "ART-08.svg",
+      "sha256": "a1a3b962d5bfebc49b8d11a93cfdcded122f9f63734c3e1056a10b05554e50d6",
+      "bytes": 15365,
+      "renderSha256": "a3f25ee294feb3f63ec4406182059c012618762272654767cf9637fee6d46790"
+    },
+    {
+      "file": "index.html",
+      "sha256": "759ce7dd07fcdfc4e06bbc0deee36cb305bba884bffcaab3af922822635ab925",
+      "bytes": 22204
+    },
+    {
+      "file": "plan-cctv.svg",
+      "sha256": "e465d2fcb0aafe426e1d97ee34aa73a4c96f009d5a20a74aaba77627f3b2a42f",
+      "bytes": 6867,
+      "renderSha256": "a729e5cf71dfd73bd022fcc9f1508ab6776d740a05b254b132c19ada023a90d2"
+    },
+    {
+      "file": "plan-emergency.svg",
+      "sha256": "48f1feb743d0ba116f972b045dea12397e3bb8e0f86ae3b1940dbb49687b7d7b",
+      "bytes": 8097,
+      "renderSha256": "740845b565eb8f4d499997b01201bda80e2835412a0c4c77c5f0ba138f5cb633"
+    },
+    {
+      "file": "plan-installation.svg",
+      "sha256": "fecab833f2011ba7a46d4daf4c19cef86d9d0f9d608ef2a6bff1ccafd9099f09",
+      "bytes": 6424,
+      "renderSha256": "48bebb76064e369acbb9cd265053a3578a47fcd9a35155790f4f6ed26c88c36f"
+    },
+    {
+      "file": "plan-orientation.svg",
+      "sha256": "5c63e9b5314148761949009e2ed9fcc7178e137bb6a1b83f37db02761bb59b29",
+      "bytes": 6433,
+      "renderSha256": "58944ccc987d10faaddb24d2c5cea545a2b00bbc36fa7d4e6a9c469c34bd051e"
+    },
+    {
+      "file": "plan-ventilation.svg",
+      "sha256": "9b157400139639dbfe78f84dfb4a01fdc5460139ac49bc154522458ba35a51c8",
+      "bytes": 7190,
+      "renderSha256": "4fa65f63b6cd05815fd75b746d30b2fd4af695ee3d3f35b4cec34fdc6e40a56a"
+    },
+    {
+      "file": "reference.md",
+      "sha256": "b3e947fb65d54553cf1a55292c97b47c5d16f04cdc45f235257b13b2460b0810",
+      "bytes": 13887
+    },
+    {
+      "file": "S-01.svg",
+      "sha256": "d1e0e9f74aef6656c84141ca21475d98674dec58c40801c9f6147ecf04daf37a",
+      "bytes": 854,
+      "renderSha256": "94b92b8b82bd7390b1ed13a3356349f85d79c8905302d91290207c6a94a2ffa6"
+    },
+    {
+      "file": "S-02.svg",
+      "sha256": "f307116ec11fc38856bc91dd0dc43c559499d151f6e40d1a42acae3c57a4e18a",
+      "bytes": 913,
+      "renderSha256": "a3fde22f77ef35dab325c2093ac50873b8d72ab3a71b1e774a537fc681f999b1"
+    },
+    {
+      "file": "S-03.svg",
+      "sha256": "c0bdb459b1ca568a6b4dcab65f7d847548ef47f0c3bf2e269d625442053e1993",
+      "bytes": 856,
+      "renderSha256": "7527045e315566adafd0f160a120f1cef69388977b653e863f76bd7c4a7596d1"
+    },
+    {
+      "file": "S-04.svg",
+      "sha256": "6a6ccc9218e2b8ab6db47daa44cce057e6b149aab24d7dbf84a7f3bc575be928",
+      "bytes": 901,
+      "renderSha256": "87b81b02d7ab12ec3288561101a8a7e49c4b87bc33a201dac1fd3e78253e6453"
+    },
+    {
+      "file": "S-05.svg",
+      "sha256": "80e6014b2acfaf205074f6803598b6ffc4785a90b4b20365dd190f9ac87eec0d",
+      "bytes": 934,
+      "renderSha256": "3b10360209d97d38c72ea9652eeb6158f6249644f20fa4144d174251ef34906e"
+    },
+    {
+      "file": "S-06.svg",
+      "sha256": "05756906a9ee22a0a85a47d988d97a1fe90a91787399d0e1a1e38e7d7b6e5179",
+      "bytes": 924,
+      "renderSha256": "6c55d12eb8c5e0dae67194fa0764efbf1c418447e4c561d4ac7efbbea3edaa55"
+    }
+  ]
+}

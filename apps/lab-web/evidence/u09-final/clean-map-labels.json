@@ -1,0 +1,70 @@
+[
+  {
+    "id": "CV-01",
+    "label": "CV-01, Computing station, Bookable, Free"
+  },
+  {
+    "id": "CV-02",
+    "label": "CV-02, Computing station, Bookable, Free"
+  },
+  {
+    "id": "CV-03",
+    "label": "CV-03, Computing station, Bookable, In use · B-2042"
+  },
+  {
+    "id": "CV-04",
+    "label": "CV-04, Accessible computing station, Bookable, Free"
+  },
+  {
+    "id": "CV-05",
+    "label": "CV-05, Computing station, Bookable, Free"
+  },
+  {
+    "id": "CV-06",
+    "label": "CV-06, Computing station, Bookable, Free"
+  },
+  {
+    "id": "STO-1",
+    "label": "STO-1, Kit storage, 3 bays, Unknown, Unknown"
+  },
+  {
+    "id": "C1-BD",
+    "label": "C1-BD, Matte backdrop, Unknown, Unknown"
+  },
+  {
+    "id": "C1-TB",
+    "label": "C1-TB, Object stage, Unknown, Unknown"
+  },
+  {
+    "id": "C1-L1",
+    "label": "C1-L1, Softbox light L1, Bookable, Free"
+  },
+  {
+    "id": "C1-L2",
+    "label": "C1-L2, Softbox light L2, Bookable, Free"
+  },
+  {
+    "id": "C1-CAM",
+    "label": "C1-CAM, Capture camera + lens, Bookable, Free"
+  },
+  {
+    "id": "FAC-1",
+    "label": "FAC-1, Faculty desk, Unknown, Unknown"
+  },
+  {
+    "id": "COL-T",
+    "label": "COL-T, Collaboration table, Unknown, Unknown"
+  },
+  {
+    "id": "COL-D",
+    "label": "COL-D, Demonstration display, Unknown, Unknown"
+  },
+  {
+    "id": "S1-B",
+    "label": "S1-B, Signal acquisition bench, Bookable, In use · B-2042"
+  },
+  {
+    "id": "CAL-01",
+    "label": "CAL-01, Calibration target, home position, Bookable"
+  }
+]

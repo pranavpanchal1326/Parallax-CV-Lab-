@@ -1,0 +1,72 @@
+{
+  "revision": "U02-R1",
+  "date": "2026-10-03",
+  "researchMobile": {
+    "client": 305,
+    "scroll": 305,
+    "tableRegions": [
+      {
+        "client": 267,
+        "keyboard": true,
+        "scroll": 700
+      },
+      {
+        "client": 267,
+        "keyboard": true,
+        "scroll": 700
+      },
+      {
+        "client": 267,
+        "keyboard": true,
+        "scroll": 700
+      }
+    ]
+  },
+  "wireframeDesktop": {
+    "boards": 15,
+    "client": 1265,
+    "loadedImages": 15,
+    "scroll": 1265
+  },
+  "wireframeMobile": {
+    "client": 305,
+    "loadedImages": 15,
+    "scroll": 305
+  },
+  "storyImages": [
+    {
+      "loaded": true,
+      "source": "../../design/figma-build/thumbs/phase-06_view-2089-1403.jpg"
+    },
+    {
+      "loaded": true,
+      "source": "../../design/figma-build/thumbs/phase-06_view-2089-925.jpg"
+    },
+    {
+      "loaded": true,
+      "source": "../../design/figma-build/thumbs/phase-06_view-2089-1040.jpg"
+    },
+    {
+      "loaded": true,
+      "source": "../../apps/lab-web/evidence/conditions-light.png"
+    },
+    {
+      "loaded": true,
+      "source": "../../design/figma-build/thumbs/phase-06_view-2089-1409.jpg"
+    },
+    {
+      "loaded": true,
+      "source": "../../design/figma-build/thumbs/phase-06_view-2089-1413.jpg"
+    },
+    {
+      "loaded": true,
+      "source": "../../design/figma-build/thumbs/phase-06_view-2089-1415.jpg"
+    }
+  ],
+  "sourceNavigation": "http://localhost:4180/design/research-u02/index.html#S02",
+  "skipLink": {
+    "focused": "main",
+    "hash": "#main"
+  },
+  "scope": "Desktop/narrow browser review and selected link/keyboard checks; not participant, screen-reader or full WCAG conformance testing"
+}

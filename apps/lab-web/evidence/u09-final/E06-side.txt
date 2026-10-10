@@ -1,0 +1,103 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · local edition · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main:
+  - paragraph: E06 · S-EXP-02 · independent rehearsal
+  - heading "Change one variable. Keep your reasoning." [level=1]:
+    - text: Change one variable.
+    - emphasis: Keep your reasoning.
+  - paragraph: Does moving the light from the front to the side change what the annotation can show?
+  - paragraph: Two authored lighting illustrations; no camera, ray-tracing or detector calculation is running here. Rehearsal does not change bookings, physical setup, notebook claims or recorded evidence.
+  - paragraph:
+    - link "Rehearse camera framing with the existing Scene Studio geometry model →":
+      - /url: "#/scene/rehearsal"
+  - heading "1. Predict before comparing" [level=2]
+  - generic: What do you expect, and why?
+  - textbox "What do you expect, and why?": Side light should change the shadow in these authored illustrations. It cannot establish detector accuracy.
+  - heading "2. Change one variable" [level=2]
+  - generic: Candidate light position
+  - combobox "Candidate light position":
+    - option "Frontal light · L1 on, L2 off"
+    - option "Side light · L2 on, L1 off" [selected]
+  - paragraph: "Source for the next run: Teaching fixture · method 01."
+  - button "Run another rehearsal" [active]
+  - status: Rehearsal computed. Your prediction is retained with this run; compare the result and write your reflection. It has not been saved yet.
+  - region "3. Compare under the declared model":
+    - heading "3. Compare under the declared model" [level=2]
+    - paragraph: Run 04/10/2026, 01:35:38 IST · Teaching fixture · method 01 · unsaved rehearsal
+    - blockquote:
+      - paragraph:
+        - strong: Your prediction.
+        - text: Side light should change the shadow in these authored illustrations. It cannot establish detector accuracy.
+    - figure "Baseline · frontal light":
+      - generic: Baseline · frontal light
+      - 'img "Prepared illustration: frontal light, short shadows. Annotation boxes are illustrative."':
+        - generic: ILL-L1-v1 · FRONT · ILLUSTRATION
+    - figure "Candidate · side light":
+      - generic: Candidate · side light
+      - 'img "Prepared illustration: side light, long shadows to the right. Annotation boxes are illustrative."':
+        - generic: ILL-L2-v1 · SIDE · ILLUSTRATION
+    - paragraph: The authored side-light image shows longer shadows and differently lit faces; the scene objects and annotation boxes remain the same.
+    - paragraph: "Held constant in the authored scenario: scene and camera placement. Retained settings: exposure: 1/120 s · gain: 0 dB · lightIntensity: 40%. These are recorded settings, not measured equivalence; the illustration does not compute their effects. The illustrations do not model real irradiance, lens response, noise or detection accuracy."
+  - heading "4. Reflect in your own words" [level=2]
+  - paragraph: What changed, what stayed fixed, and what can this result support? Name one limitation. Rehearsal notes are separate from your experimental notebook.
+  - generic: Your reflection
+  - textbox "Your reflection"
+  - button "Save rehearsal reflection" [disabled]
+  - button "Export rehearsal"
+  - generic "Saved record and recovery"
+  - link "← Return to preparation":
+    - /url: "#/E06/prepare"
+  - link "Inspect recorded conditions":
+    - /url: "#/E06/conditions"
+  - link "Continue through the normal bench →":
+    - /url: "#/E06/bench"
+  - paragraph: The bench retains the approved example conditions. Additional sampling rates remain rehearsal-only; running this preview does not complete preparation or create an evidence record. Grounded assistance follows in U06.
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.
+- region "Local accessibility diagnostics":
+  - heading "Local accessibility check" [level=2]
+  - paragraph: Axe-core 4.10.2 · current rendered view only. Automated results do not establish full accessibility conformance or screen-reader usability.
+  - button "Check this rendered view"
+- generic "Local performance receipt"

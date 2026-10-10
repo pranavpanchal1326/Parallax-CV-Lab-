@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARALLAX — Record</title>
+<meta name="description" content="Reader for the written records of the PARALLAX project.">
+<script src="theme.js"></script><link rel="stylesheet" href="edition.css">
+<style>
+.opener{padding:clamp(32px,5vw,72px) 0 clamp(24px,3vw,40px)}
+.opener .ed-h1{font-size:clamp(38px,5.6vw,92px);max-width:18ch}
+.src{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;margin-top:clamp(24px,3vw,40px);padding-top:14px;border-top:1px solid var(--ed-ink);font:400 12px/1.6 var(--ed-mono);color:var(--ed-ink-2)}
+.src a{color:inherit;text-underline-offset:4px}.src a:hover{color:var(--ed-spot)}
+.layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(24px,4vw,72px);padding-bottom:clamp(56px,8vw,112px);align-items:start}
+.toc{position:sticky;top:calc(var(--ed-mast) + 24px);max-height:calc(100dvh - var(--ed-mast) - 48px);overflow:auto;scrollbar-width:thin;border-top:1px solid var(--ed-ink);padding-top:14px}
+.toc ol{margin:0;padding:0;list-style:none}
+.toc a{display:block;padding:7px 10px 7px 0;border-bottom:1px solid var(--ed-rule-soft);color:var(--ed-ink-2);text-decoration:none;font:400 15px/1.3 var(--ed-serif);transition:color .15s,padding .2s var(--ed-ease)}
+.toc a:hover,.toc a.on{color:var(--ed-spot);padding-left:8px}
+.toc a.on{box-shadow:inset 2px 0 0 var(--ed-spot)}
+/* article */
+.prose{min-width:0;overflow-wrap:anywhere;border-top:1px solid var(--ed-ink);padding-top:8px;font:400 17px/1.65 var(--ed-body);color:var(--ed-ink)}
+.prose>*{max-width:44em}
+.prose>.tw,.prose>pre,.prose>h2,.prose>hr{max-width:none}
+.prose h2{margin:clamp(40px,5vw,72px) 0 18px;padding-top:18px;border-top:1px solid var(--ed-ink);font:400 clamp(28px,3vw,44px)/1.05 var(--ed-serif);letter-spacing:-.025em;text-wrap:balance;scroll-margin-top:calc(var(--ed-mast) + 20px)}
+.prose h2:first-child{margin-top:20px;border-top:0;padding-top:0}
+.prose h3{margin:36px 0 10px;font:400 clamp(22px,2vw,28px)/1.15 var(--ed-serif);letter-spacing:-.015em;scroll-margin-top:calc(var(--ed-mast) + 20px)}
+.prose h4{margin:28px 0 8px;font:500 11px/1.5 var(--ed-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ed-ink-2)}
+.prose p{margin:0 0 16px}
+.prose a{color:var(--ed-ink);text-decoration:underline;text-decoration-color:var(--ed-spot);text-decoration-thickness:2px;text-underline-offset:4px;overflow-wrap:anywhere}
+.prose a:hover{color:var(--ed-spot)}
+.prose strong{font-weight:700}
+.prose code{font:400 .86em var(--ed-mono);padding:1px 5px;background:var(--ed-paper-2);border:1px solid var(--ed-rule-soft);overflow-wrap:anywhere}
+.prose pre{margin:0 0 20px;padding:16px 18px;overflow:auto;background:var(--ed-plate);color:var(--ed-plate-text);font:400 13px/1.6 var(--ed-mono)}
+.prose pre code{padding:0;border:0;background:none;font-size:inherit}
+.prose ul,.prose ol{margin:0 0 18px;padding:0;list-style:none}
+.prose li{position:relative;padding:7px 0 7px 26px;border-bottom:1px solid var(--ed-rule-soft)}
+.prose ul>li::before{content:'';position:absolute;left:0;top:1.25em;width:12px;height:1px;background:var(--ed-spot)}
+.prose ol{counter-reset:o}
+.prose ol>li{counter-increment:o;padding-left:36px}
+.prose ol>li::before{content:counter(o,decimal-leading-zero);position:absolute;left:0;top:.72em;font:500 11px var(--ed-mono);color:var(--ed-spot)}
+.prose li>ul,.prose li>ol{margin:6px 0 -7px}
+.prose li>ul>li:last-child,.prose li>ol>li:last-child{border-bottom:0}
+.prose li.has-id{padding-left:86px}
+.prose li.has-id::before{display:none}
+.prose .rid{position:absolute;left:0;top:.72em;font:500 11px var(--ed-mono);letter-spacing:.04em;color:var(--ed-spot);padding:0;border:0;background:none}
+.prose blockquote{margin:0 0 20px;padding:2px 0 2px 20px;border-left:3px solid var(--ed-spot);font:400 italic 21px/1.4 var(--ed-serif)}
+.prose blockquote p{margin:0}
+.prose hr{border:0;border-top:1px solid var(--ed-rule);margin:32px 0}
+.prose dl.meta{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 20px;margin:0 0 24px;max-width:none;border-top:1px solid var(--ed-rule)}
+.prose dl.meta dt{padding:9px 0;border-bottom:1px solid var(--ed-rule);font:500 11px/1.9 var(--ed-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ed-ink-2);white-space:nowrap}
+.prose dl.meta dd{margin:0;padding:9px 0;border-bottom:1px solid var(--ed-rule);font-size:15.5px}
+.tw{overflow:auto;margin:0 0 24px}
+.prose table{width:100%;border-collapse:collapse;font-size:14.5px;line-height:1.5;text-align:left}
+.prose th{font:500 11px/1.5 var(--ed-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ed-ink-2);padding:10px 16px 10px 0;border-block:1px solid var(--ed-ink);vertical-align:bottom;white-space:nowrap}
+.prose td{padding:11px 16px 11px 0;border-bottom:1px solid var(--ed-rule);vertical-align:top}
+.prose td:first-child{color:var(--ed-ink);font-weight:500}
+.prose td{color:var(--ed-ink-2)}
+.prose tbody tr:hover td{background:var(--ed-paper-2)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--ed-ink)}
+.pager a{display:grid;gap:6px;padding:22px 0 26px;color:var(--ed-ink);text-decoration:none;transition:color .18s}
+.pager a+a{padding-left:clamp(16px,3vw,40px);border-left:1px solid var(--ed-ink);text-align:right}
+.pager a:only-child{grid-column:1/-1}
+.pager small{font:500 11px var(--ed-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ed-ink-2)}
+.pager span{font:400 clamp(22px,2.4vw,34px)/1.1 var(--ed-serif);letter-spacing:-.02em}
+.pager a:hover{color:var(--ed-spot)}
+.state{padding:40px 0;font:400 21px/1.4 var(--ed-serif)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:static;max-height:240px}.prose li.has-id{padding-left:0}.prose .rid{position:static;display:block;margin-bottom:2px}}
+@media print{.toc,.pager,.ed-colophon{display:none}.layout{grid-template-columns:1fr}}
+</style></head>
+<body class="ed">
+<a class="ed-skip" href="#doc">Skip to the text</a>
+<div class="ed-progress" aria-hidden="true"></div>
+<header class="mast">
+ <a class="mast-brand" href="index.html" aria-label="PARALLAX — contents"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="14" height="14" fill="none" stroke-width="2"/><rect x="8" y="8" width="14" height="14"/></svg>PARALLAX</a>
+ <nav class="mast-nav" aria-label="Project sections"><a href="index.html">Contents</a><a href="research.html"><i>02</i>Research</a><a href="direction.html"><i>03</i>Direction</a><a href="review.html"><i>04</i>Space</a><a href="system/index.html"><i>05</i>System</a><a href="journey.html"><i>06</i>Journey</a><a href="complete.html"><i>07</i>Roles</a><a href="phase-08/index.html"><i>08</i>In 3D</a><a href="../prototype/index.html"><i>09</i>Prototype</a><a href="phase-08/lab-map.html">Lab Map</a><a href="phase-08/scene-studio.html">Scene Studio</a></nav>
+</header>
+<main>
+<div class="opener"><div class="ed-wrap">
+ <p class="ed-kicker" id="kicker">Written record</p>
+ <h1 class="ed-h1" id="title">Loading…</h1>
+ <p class="src"><span id="path"></span><span><a id="raw" href="#">Open the source file</a></span></p>
+</div></div>
+<div class="ed-wrap layout">
+ <nav class="toc" aria-label="Sections of this record"><p class="ed-kicker">In this record</p><ol id="toc"></ol></nav>
+ <article class="prose" id="doc" aria-live="polite"><p class="state">Loading the record…</p></article>
+</div>
+<nav class="pager ed-wrap" id="pager" aria-label="Other records"></nav>
+</main>
+<footer class="ed-colophon">
+ <div><b>PARALLAX</b>A living atlas of perception. Written records.</div>
+ <div>Records are shown as written; nothing is edited by this reader.</div>
+ <div>Back to <a href="index.html">Contents</a></div>
+</footer>
+<script src="edition.js"></script>
+<script>
+// Only these files can be opened; the key in ?doc= is looked up here, never used as a path.
+const DOCS = [
+  ['blueprint', '../PARALLAX_DESIGN_BLUEPRINT.md', 'Part 00 · The blueprint'],
+  ['phase-01', '../planning/PHASE_01_EXECUTION_BRIEF.md', 'Part 01 · Brief and scope'],
+  ['decisions', '../planning/DECISIONS_AND_ASSUMPTIONS.md', 'Part 01 · Decisions and assumptions'],
+  ['phase-02', '../research/PHASE_02_RESEARCH_AND_EXPERIENCE.md', 'Part 02 · Research and experience'],
+  ['sources', '../research/STANDARDS_AND_SOURCES.md', 'Part 02 · Standards and sources'],
+  ['phase-03', 'PHASE_03_CREATIVE_DIRECTION.md', 'Part 03 · Creative direction'],
+  ['phase-03b', 'PHASE_03_COMPOSITION_UPGRADE.md', 'Part 03 · Composition upgrade'],
+  ['phase-04', '../spatial/PHASE_04_SPACE_AND_3D.md', 'Part 04 · Space and 3D'],
+  ['phase-05', 'PHASE_05_DESIGN_SYSTEM.md', 'Part 05 · Design system'],
+  ['phase-06', 'PHASE_06_CORE_STUDENT_EXPERIENCE.md', 'Part 06 · The student’s journey'],
+  ['phase-07', 'PHASE_07_COMPLETE_SYSTEM.md', 'Part 07 · The complete system'],
+  ['phase-08', 'PHASE_08_3D_AND_INTERACTION.md', 'Part 08 · 3D and interaction'],
+  ['phase-09', 'PHASE_09_PROTOTYPE_AND_VERIFICATION.md', 'Part 09 · Prototype and verification'],
+  ['phase-09-plan', '../research/PHASE_09_TEST_PLAN.md', 'Part 09 · Participant test plan'],
+  ['brief', '../.design/brief.md', 'Project brief']];
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const abs = p => new URL(p, location.href).pathname;
+const byPath = new Map(DOCS.map(d => [abs(d[1]), d[0]]));
+const key = new URLSearchParams(location.search).get('doc') || 'blueprint';
+const at = DOCS.findIndex(d => d[0] === key);
+
+function inline(t, base) {
+  const keep = [];
+  const stash = h => '\u0000' + (keep.push(h) - 1) + '\u0000';
+  t = t.replace(/`([^`]+)`/g, (m, c) => stash('<code>' + esc(c) + '</code>'));
+  t = t.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, label, href) => {
+    let url = href, ext = /^https?:/i.test(href);
+    if (!ext && !href.startsWith('#')) { const u = new URL(href, base); const k = byPath.get(u.pathname); url = k ? 'read.html?doc=' + k + u.hash : u.pathname + u.hash; }
+    if (/^\s*javascript:/i.test(url)) url = '#';
+    return stash('<a href="' + esc(url) + '"' + (ext ? ' rel="noopener"' : '') + '>') + label + stash('</a>');
+  });
+  t = t.replace(/(^|[\s(])(https?:\/\/[^\s<)]+[^\s<).,;:])/g, (m, pre, u) => pre + stash('<a href="' + esc(u) + '" rel="noopener">' + esc(u) + '</a>'));
+  t = esc(t).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[^*\w])\*([^*\s][^*]*)\*(?!\w)/g, '$1<em>$2</em>');
+  return t.replace(/\u0000(\d+)\u0000/g, (m, i) => keep[+i]);
+}
+const slug = (s, used) => { let b = s.toLowerCase().replace(/[`*]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section', id = b, n = 2; while (used.has(id)) id = b + '-' + n++; used.add(id); return id; };
+
+function render(md, base) {
+  const L = md.replace(/\r/g, '').split('\n'), out = [], toc = [], used = new Set(); let i = 0, title = '', tables = 0;
+  const isBlock = l => /^(#{1,6} |```|\s*([-*+]|\d+\.) |\||> |---+\s*$)/.test(l);
+  function list(indent) {
+    const ordered = /^\s*\d+\. /.test(L[i]); let h = ordered ? '<ol>' : '<ul>';
+    while (i < L.length) {
+      const m = L[i].match(/^(\s*)([-*+]|\d+\.) (.*)$/); if (!m || m[1].length < indent) break;
+      if (m[1].length > indent) { h = h.replace(/<\/li>$/, '') + list(m[1].length) + '</li>'; continue; }
+      let text = m[3]; i++;
+      while (i < L.length && L[i].trim() && !isBlock(L[i]) && /^\s{2,}\S/.test(L[i])) text += ' ' + L[i++].trim();
+      const id = text.match(/^([A-Z]{1,3}\d{1,3}(?:\.\d{1,3})?):\s+(.*)$/);
+      h += id ? '<li class="has-id"><code class="rid">' + esc(id[1]) + '</code>' + inline(id[2], base) + '</li>' : '<li>' + inline(text, base) + '</li>';
+    }
+    return h + (ordered ? '</ol>' : '</ul>');
+  }
+  while (i < L.length) {
+    const l = L[i];
+    if (!l.trim()) { i++; continue; }
+    if (l.startsWith('```')) { const buf = []; i++; while (i < L.length && !L[i].startsWith('```')) buf.push(L[i++]); i++; out.push('<pre><code>' + esc(buf.join('\n')) + '</code></pre>'); continue; }
+    const h = l.match(/^(#{1,6}) (.*)$/);
+    if (h) { i++; const n = h[1].length, t = h[2].trim();
+      if (n === 1 && !title) { title = t; continue; }
+      const lvl = Math.min(Math.max(n, 2), 4), id = slug(t, used); if (lvl === 2) toc.push([id, t.replace(/[`*]/g, '')]);
+      out.push('<h' + lvl + ' id="' + id + '">' + inline(t, base) + '</h' + lvl + '>'); continue; }
+    if (/^---+\s*$/.test(l)) { i++; out.push('<hr>'); continue; }
+    if (l.startsWith('|')) { const rows = []; while (i < L.length && L[i].startsWith('|')) rows.push(L[i++]);
+      const cells = r => r.replace(/^\||\|\s*$/g, '').split(/(?<!\\)\|/).map(c => c.trim().replace(/\\\|/g, '|'));
+      const hasHead = rows[1] && /^\|[\s:|-]+\|?\s*$/.test(rows[1]), al = hasHead ? cells(rows[1]).map(c => /:$/.test(c) ? (/^:/.test(c) ? 'center' : 'right') : '') : [];
+      const st = k => al[k] ? ' style="text-align:' + al[k] + '"' : '';
+      let t = '<div class="tw" tabindex="0" role="group" aria-label="Table ' + (++tables) + (toc.length ? ', ' + esc(toc[toc.length - 1][1]) : '') + '. Scrolls sideways when wide."><table>';
+      if (hasHead) t += '<thead><tr>' + cells(rows[0]).map((c, k) => '<th scope="col"' + st(k) + '>' + inline(c, base) + '</th>').join('') + '</tr></thead>';
+      t += '<tbody>' + rows.slice(hasHead ? 2 : 0).map(r => '<tr>' + cells(r).map((c, k) => '<td' + st(k) + '>' + inline(c, base) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
+      out.push(t); continue; }
+    if (/^\s*([-*+]|\d+\.) /.test(l)) { out.push(list(l.match(/^\s*/)[0].length)); continue; }
+    if (l.startsWith('> ')) { const buf = []; while (i < L.length && L[i].startsWith('>')) buf.push(L[i++].replace(/^>\s?/, '')); out.push('<blockquote><p>' + inline(buf.join(' '), base) + '</p></blockquote>'); continue; }
+    const para = []; while (i < L.length && L[i].trim() && !isBlock(L[i])) para.push(L[i++].trim());
+    const meta = para.map(p => p.match(/^([A-Z][A-Za-z ]{1,26}):\s+(.+)$/));
+    if (para.length > 1 && meta.every(Boolean)) out.push('<dl class="meta">' + meta.map(m => '<dt>' + esc(m[1]) + '</dt><dd>' + inline(m[2], base) + '</dd>').join('') + '</dl>');
+    else out.push('<p>' + inline(para.join(' '), base) + '</p>');
+  }
+  return { html: out.join('\n'), toc, title };
+}
+
+(async () => {
+  const pager = $('pager');
+  const link = (d, label) => '<a href="read.html?doc=' + d[0] + '"><small>' + label + '</small><span>' + esc(d[2].replace(/^.*· /, '')) + '</span></a>';
+  if (at < 0) { $('title').textContent = 'That record is not in this edition.'; $('doc').innerHTML = '<p class="state">Choose a record from the <a href="index.html#contents">contents page</a>.</p>'; $('raw').hidden = true; return; }
+  const [k, p, label] = DOCS[at]; $('kicker').textContent = label + ' · Written record'; $('path').textContent = abs(p).replace(/^\//, ''); $('raw').href = p;
+  pager.innerHTML = (at > 0 ? link(DOCS[at - 1], '← Previous record') : '') + (at < DOCS.length - 1 ? link(DOCS[at + 1], 'Next record →') : '');
+  try {
+    const r = await fetch(p); if (!r.ok) throw Error(r.status);
+    const { html, toc, title } = render(await r.text(), new URL(p, location.href));
+    $('title').textContent = title || label; document.title = 'PARALLAX — ' + (title || label);
+    $('doc').innerHTML = html; $('doc').removeAttribute('aria-live');
+    $('toc').innerHTML = toc.map(([id, t]) => '<li><a href="#' + id + '">' + esc(t) + '</a></li>').join('');
+    if (!toc.length) document.querySelector('.toc').hidden = true;
+    const links = [...document.querySelectorAll('#toc a')], heads = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const mark = () => { let c = -1; heads.forEach((h, n) => { if (h.getBoundingClientRect().top < innerHeight * .35) c = n; }); links.forEach((a, n) => a.classList.toggle('on', n === c)); };
+    addEventListener('scroll', mark, { passive: true }); mark();
+    if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  } catch (e) {
+    $('title').textContent = label.replace(/^.*· /, '');
+    $('doc').innerHTML = '<p class="state">This record could not be loaded. Start the local review server and reload, or open the source file directly.</p>';
+  }
+})();
+</script>
+</body></html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect x=%272%27 y=%272%27 width=%2714%27 height=%2714%27 fill=%27none%27 stroke=%27%2320232B%27 stroke-width=%272%27/%3E%3Crect x=%278%27 y=%278%27 width=%2714%27 height=%2714%27 fill=%27%233346D3%27/%3E%3C/svg%3E"><title>PARALLAX - current submission</title><style>
+:root{--paper:#f4f1e9;--paper-2:#eae6dc;--card:#fbfaf5;--ink:#20232b;--ink-2:#535b66;--rule:rgba(32,35,43,.22);--spot:#3346d3;--spot-hover:#2737a9;--serif:Georgia,"Times New Roman",serif;--sans:"Segoe UI",Arial,sans-serif;--mono:Consolas,"Courier New",monospace}
+*{box-sizing:border-box}html{background:var(--paper)}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--spot);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--spot);outline-offset:4px}
+.wrap{max-width:1240px;margin:auto;padding:0 clamp(18px,4vw,56px)}
+.mast{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:11px;font:700 15px/1 var(--sans);letter-spacing:.2em}.brand svg{flex:none}
+.kicker{font:12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:0}
+.kicker.spot{color:var(--spot)}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(36px,6vw,76px) 0 clamp(28px,4vw,52px)}
+h1{font:400 clamp(38px,5.2vw,68px)/1.06 var(--serif);letter-spacing:-.02em;margin:14px 0 20px}h1 em{color:var(--spot)}
+.intro{font:italic 400 clamp(18px,1.7vw,22px)/1.45 var(--serif);max-width:34em;margin:0 0 28px;padding-left:18px;border-left:3px solid var(--spot)}
+.actions{display:flex;gap:12px 22px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;background:var(--spot);color:#fff;text-decoration:none;font:500 16px/1 var(--sans);border-radius:4px;transition:background .15s}.btn:hover{background:var(--spot-hover)}.btn span{font-family:var(--mono)}
+figure{margin:0}.plate{position:relative;padding:10px;border:1px solid var(--rule);background:var(--card)}.plate img{display:block;width:100%;height:auto}
+.plate::before,.plate::after{content:"";position:absolute;width:14px;height:14px;border:solid var(--ink);border-width:0}.plate::before{left:-9px;top:-9px;border-width:1px 0 0 1px}.plate::after{right:-9px;bottom:-9px;border-width:0 1px 1px 0}
+figcaption{margin-top:12px;font:12px/1.5 var(--mono);color:var(--ink-2)}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.trio a{display:grid;gap:8px;padding:26px 26px 28px 0;text-decoration:none;color:var(--ink);border-right:1px solid var(--rule);transition:background .15s}.trio a+a{padding-left:26px}.trio a:last-child{border-right:0}.trio a:hover{background:var(--paper-2)}
+.trio i{font:italic 400 34px/1 var(--serif);color:var(--spot)}.trio b{font:400 24px/1.2 var(--serif)}.trio span{font-size:15px;color:var(--ink-2)}.trio u{font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--spot);margin-top:6px}
+section{padding:clamp(34px,5vw,60px) 0 0}h2{font:400 clamp(26px,2.8vw,34px)/1.15 var(--serif);letter-spacing:-.01em;margin:8px 0 22px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px)}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}.list li{display:grid;grid-template-columns:54px 1fr;gap:4px 14px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule)}
+.list code{font:500 11px/1.6 var(--mono);letter-spacing:.08em;color:var(--ink-2)}.list a{font-weight:500}.list small{grid-column:2;font-size:14px;color:var(--ink-2)}
+.order{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
+.order li{counter-increment:s;padding:18px 20px 20px 0;border-bottom:1px solid var(--rule);font-size:15px;line-height:1.45}.order li::before{content:counter(s,decimal-leading-zero);display:block;font:italic 400 26px/1 var(--serif);color:var(--spot);margin-bottom:8px}.order b{display:block;font-size:16px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.stats div{padding:22px 20px 24px 0;border-right:1px solid var(--rule)}.stats div+div{padding-left:22px}.stats div:last-child{border-right:0}
+.stats strong{display:block;font:400 40px/1.1 var(--mono);margin:6px 0 8px}.stats p{margin:0;font-size:14px;line-height:1.45;color:var(--ink-2)}
+.note{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);padding:26px 28px;background:var(--paper-2);border-left:3px solid var(--ink-2)}.note p{margin:0 0 10px;font-size:15px}.note h3{font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px}
+.small{font-size:14px;color:var(--ink-2)}code{font-family:var(--mono);font-size:.92em}
+footer{margin-top:clamp(40px,6vw,72px);padding:24px 0 44px;border-top:1px solid var(--ink);display:flex;gap:10px 28px;flex-wrap:wrap;justify-content:space-between;font-size:14px;color:var(--ink-2)}footer div{display:flex;gap:8px 22px;flex-wrap:wrap}
+@media(max-width:900px){.hero,.cols,.note{grid-template-columns:1fr}.trio{grid-template-columns:1fr}.trio a,.trio a+a{padding:22px 0;border-right:0;border-bottom:1px solid var(--rule)}.order,.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div{border-bottom:1px solid var(--rule)}}
+@media(max-width:520px){.order,.stats{grid-template-columns:1fr}.stats div,.stats div+div{padding:18px 0;border-right:0}.list li{grid-template-columns:1fr}.list small{grid-column:1}}
+@media print{html,body{background:#fff}.btn{background:none;color:var(--ink);border:1px solid var(--ink)}.trio a:hover{background:none}section{break-inside:avoid}}
+</style></head><body><div class="wrap"><main>
+<header class="mast"><span class="brand"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="14" height="14" fill="none" stroke="#20232b" stroke-width="2"/><rect x="8" y="8" width="14" height="14" fill="#3346d3"/></svg>PARALLAX</span><span class="kicker">Current submission</span></header>
+<div class="hero"><div>
+<p class="kicker spot">Signal &amp; Computer Vision Lab · 70 m²</p>
+<h1>A laboratory proposal.<br><em>With the evidence in view.</em></h1>
+<p class="intro">The 70 m² Signal &amp; Computer Vision Lab connects physical planning, student evidence, equipment recovery, sustainability and local guide AI.</p>
+<nav class="actions" aria-label="Primary submission links"><a class="btn" href="../apps/lab-web/dist/index.html#/">Open the current prototype <span aria-hidden="true">→</span></a><a href="PARALLAX-Final-Report.pdf">Read the final report</a><a href="presentation.html">View the 15-minute presentation</a></nav>
+</div>
+<figure><div class="plate"><img src="../design/phase-08/renders/R02_iso_cutaway.jpg" width="1600" height="1111" alt="Authored cutaway render of the assumed P4-D laboratory, with computing, capture, collaboration, signal work, storage and circulation."></div><figcaption>P4-D: assumed 10 × 7 m envelope. This project render represents a conceptual room.</figcaption></figure>
+</div>
+<nav class="trio" aria-label="The three deliverables">
+<a href="../apps/lab-web/dist/index.html#/"><i>01</i><b>The working prototype</b><span>Student, staff and room views: booking, attendance, assets, dashboard, lab map, local AI guide.</span><u>Open the app</u></a>
+<a href="PARALLAX-Final-Report.pdf"><i>02</i><b>The report</b><span>Ten sections with personas, empathy map, journey map, wireframes, floor plan and references.</span><u>PDF · 23 pages</u></a>
+<a href="presentation.html"><i>03</i><b>The presentation</b><span>Fifteen slides planned for fifteen minutes, with speaker notes and a backup walkthrough.</span><u>Slide player</u></a>
+</nav>
+<section aria-labelledby="order"><p class="kicker spot">A fifteen-minute path</p><h2 id="order">Suggested demonstration order</h2>
+<ol class="order"><li><b>Student journey</b>Prepare, reserve the whole kit, check in, record, submit, return.</li><li><b>Sampling rehearsal</b>Predict, then compare a 2 Hz reference at 3 Hz and 20 Hz.</li><li><b>Smart lab</b>Dashboard, source age of readings, energy and protected standby.</li><li><b>Fault recovery</b>Restriction, interrupted verification, refused release, restoration.</li><li><b>Lab map</b>Plan, equipment status and the optional 3D explorer.</li><li><b>On site</b>Typed label lookup shown as a phone.</li><li><b>Ask a guide</b>Local Ollama answer with its cited guide section.</li><li><b>Room</b>Public display and safety landmarks.</li></ol>
+<p class="small" style="margin-top:14px"><a href="DEMO-SCRIPT.md">Page-by-page demonstration script</a> · what to say, what to click and what to show in Figma. Inside the prototype, <b>Guided tour</b> in the top bar follows this order.</p></section>
+<section><div class="cols"><div><p class="kicker spot">Packet</p><h2>Submission and demonstration</h2><ul class="list">
+<li><code>PDF</code><a href="PARALLAX-Final-Report.pdf">Ten-section report with references and requirement/rubric index</a></li>
+<li><code>PPTX</code><a href="PARALLAX-Presentation-Final.pptx">Editable PowerPoint: fifteen slides and speaker notes</a></li>
+<li><code>PDF</code><a href="PARALLAX-Poster.pdf">One-page project poster for the viva (A2)</a></li>
+<li><code>MD</code><a href="Presenter-Notes.md">Presenter notes and timed live-demo cues</a></li>
+<li><code>MD</code><a href="DEMO-SCRIPT.md">Page-by-page demonstration script</a></li>
+<li><code>MP4</code><a href="PARALLAX-Walkthrough-Review.mp4">Two-minute narrated walkthrough video, recorded from the live prototype</a></li>
+<li><code>HTML</code><a href="demo/index.html">Offline recorded-frame walkthrough: E01, E06, AI and fault recovery</a></li>
+<li><code>WEBM</code><a href="demo/PARALLAX-Recorded-Walkthrough.webm">Saved 80-second WebM backup</a></li>
+<li><code>MD</code><a href="README.md">Clean launch, source rebuild and local Ollama instructions</a></li>
+<li><code>JSON</code><a href="SOURCE_MANIFEST.json">Source handoff manifest: pinned dependencies and prebuilt preview</a><small>The PARALLAX-Source-Handoff.zip archive accompanies this packet.</small></li>
+</ul></div><div><p class="kicker spot">Sources</p><h2>Design and physical sources</h2><ul class="list">
+<li><code>FIGMA</code><a href="https://www.figma.com/design/QaLr3W9rzW1WGhkDeHx9WF?node-id=2159-102">Current Figma handoff board</a></li>
+<li><code>HTML</code><a href="../design/wireframes/index.html">Fifteen source-annotated wireframes</a></li>
+<li><code>HTML</code><a href="../design/research-u02/index.html">Reviewed secondary research, personas and journeys</a></li>
+<li><code>HTML</code><a href="../apps/lab-web/dist/studio/index.html">Art, wayfinding and physical reference packet</a></li>
+<li><code>JSON</code><a href="../spatial/lab_geometry.json">Canonical dimensioned geometry</a><small><a href="../spatial/exports/lab_studio.blend">Editable Blender model</a></small></li>
+<li><code>HTML</code><a href="../design/phase-08/index.html">Preserved spatial edition</a><small><a href="../prototype/index.html">Original demonstrator</a></small></li>
+</ul></div></div></section>
+<section id="evidence" aria-labelledby="ev"><p class="kicker spot">Verification</p><h2 id="ev">What the evidence establishes</h2>
+<div class="stats"><div><p class="kicker">Automated tests</p><strong>155</strong><p>139 application tests and 16 assistant-service tests pass. Local rules and controlled service behaviour.</p></div><div><p class="kicker">Browser engines</p><strong>4</strong><p>Eleven tasks pass in Edge, Chrome, Firefox and WebKit. A physical phone was not used.</p></div><div><p class="kicker">Accessibility scan</p><strong>0</strong><p>Violations on 16 pages in the light and dark editions. Machine-detectable rules only.</p></div><div><p class="kicker">System scenarios</p><strong>14</strong><p>Reconciled, with local passes kept apart from connected-service boundaries.</p></div></div>
+<p style="margin-top:18px"><a href="EVIDENCE_INDEX.md">Read the complete evidence index</a> · <a href="../planning/U09_SCENARIO_LEDGER.md">Fourteen system scenarios</a> · <a href="EXTERNAL_CHECKS.md">External checks and acceptance steps</a></p></section>
+<section aria-labelledby="scope"><p class="kicker spot">Honest boundaries</p><h2 id="scope">Local scope and final review</h2>
+<div class="note"><div><h3>What this is</h3><p>Research is secondary-only, with fourteen reviewed sources and zero local participants. Scientific examples, sensors, energy and room geometry carry their declared model and source boundaries. Ollama reads reviewed public guides and receives no student records.</p></div><div><h3>What remains open</h3><p>A spoken screen-reader pass, a physical phone and a human presenter rehearsal remain unverified. Team names, contributions and the deadline year were not supplied. Live hardware, shared authenticated operations and site approval remain separate integrations.</p></div></div>
+<p class="small" style="margin-top:16px">Open through the local server for the interactive prototype. The report, slide images and recorded-frame sequence also remain readable from the extracted packet. Root <code>npm start</code> still opens the original edition.</p></section>
+<footer><span>PARALLAX · Signal &amp; Computer Vision Lab</span><div><a href="source/Final-Report.md">Editable report source</a><a href="source/presentation-content.json">Editable presentation content</a><a href="SOURCE_MANIFEST.json">Handoff integrity manifest</a></div></footer>
+</main></div></body></html>

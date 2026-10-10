@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF09 · Smart Lab: attention and context</title><desc id="desc">Staff inspect restrictions, active work and pending acknowledgements.. No sensor connection is explicit; no combined Ready or Safe score.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Smart Lab: attention and context</text>
+<rect x="20" y="105" width="720" height="64" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Restrictions | Active sessions | Pending receipts | Connections</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Each metric has its own meaning; zero connections is explicit</text>
+<rect x="20" y="190" width="348" height="147" fill="#fafafa" stroke="#555" />
+<text x="32" y="214" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Needs attention</text>
+<text x="32" y="234" font-family="Arial" font-size="12" font-weight="400" fill="#222">Asset consequence / review issue</text>
+<text x="32" y="254" font-family="Arial" font-size="12" font-weight="400" fill="#222">Pending acknowledgement / retry route</text>
+<text x="32" y="274" font-family="Arial" font-size="12" font-weight="400" fill="#222">Active sessions / bench link</text>
+<rect x="390" y="190" width="350" height="147" fill="#fafafa" stroke="#555" />
+<text x="402" y="214" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Plan from canonical geometry</text>
+<text x="402" y="234" font-family="Arial" font-size="12" font-weight="400" fill="#222">Availability / occupancy</text>
+<text x="402" y="254" font-family="Arial" font-size="12" font-weight="400" fill="#222">Text equipment list alternative</text>
+<text x="402" y="274" font-family="Arial" font-size="12" font-weight="400" fill="#222">Assumed envelope, not a survey</text>
+<rect x="20" y="358" width="720" height="90" fill="#fafafa" stroke="#555" />
+<text x="32" y="382" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Environment observations</text>
+<text x="32" y="402" font-family="Arial" font-size="12" font-weight="400" fill="#222">Temperature / CO2 / illuminance</text>
+<text x="32" y="422" font-family="Arial" font-size="12" font-weight="400" fill="#222">Source / observation time / age / quality</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF09 / React extension implemented / low fidelity / no fieldwork claimed</text></svg>

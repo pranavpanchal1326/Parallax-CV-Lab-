@@ -1,0 +1,388 @@
+{
+  "path": "#/studio",
+  "violations": [],
+  "passedRules": 42,
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "target": [
+            ".migration-strip > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href=\"/prototype/index.html\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".ed-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "em"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".studio-lead"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#studio-art\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#studio-physical\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#studio-signs\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#studio-packet\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".studio-boundary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".studio-text-toggle"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-heading > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"studio-plate\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > figure > figcaption > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > figure > figcaption > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-explanation > div:nth-child(1) > h3:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-explanation > div:nth-child(1) > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-explanation > div:nth-child(1) > h3:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-explanation > div:nth-child(1) > p:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-explanation > div:nth-child(2) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-art > .studio-explanation > div:nth-child(2) > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"ART-01.svg\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-heading > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"studio-study\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > figure > figcaption > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > figure > figcaption > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-explanation > div:nth-child(1) > h3:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-explanation > div:nth-child(1) > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-explanation > div:nth-child(1) > h3:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-explanation > div:nth-child(1) > p:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-explanation > div:nth-child(2) > h3:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-physical > .studio-explanation > div:nth-child(2) > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(2) > h3:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "div:nth-child(2) > p:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"plan-orientation.svg\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".studio-related > a[href$=\"#/safety\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"#/environment\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".studio-related > a[href$=\"#/map\"][data-discover=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-signs-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-signs > .studio-heading > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "label[for=\"studio-sign\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-signs > figure > figcaption > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-signs > figure > figcaption > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-signs > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "p:nth-child(6)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-signs > p:nth-child(7)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"S-01.svg\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-packet-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-packet > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "a[href$=\"reference.md\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "#studio-packet > .small:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".small:nth-child(5)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            "button[aria-controls=\"session-activity\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > .quiet:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".quiet:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".session-tools > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".access-review > h2"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": [
+            ".access-review > .small"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        }
+      ]
+    }
+  ],
+  "engine": {
+    "name": "axe-core",
+    "version": "4.10.2"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-04",
+  "review": "senior regression follow-up",
+  "manifestEntriesVerified": 2089,
+  "manifestSha256": "pass",
+  "testedArchiveSha256": "5e6c76f562e7c2cedc1467ceb4e15c562917429b7091a8d197608e133da32175",
+  "sourceExtraction": "fresh folder; no browser state reset",
+  "checks": [
+    {
+      "name": "react",
+      "exitCode": 0,
+      "log": "apps/lab-web/evidence/senior-regression/clean-react.log"
+    },
+    {
+      "name": "service",
+      "exitCode": 0,
+      "log": "apps/lab-web/evidence/senior-regression/clean-service.log"
+    },
+    {
+      "name": "build",
+      "exitCode": 0,
+      "log": "apps/lab-web/evidence/senior-regression/clean-build.log"
+    },
+    {
+      "name": "root",
+      "exitCode": 0,
+      "log": "apps/lab-web/evidence/senior-regression/clean-root.log"
+    }
+  ],
+  "scope": "Fresh extraction hashes, pinned dependency installation, 139 client tests, 16 service tests, source/type build and original root checks. Program bytes match both the working-copy browser check and tested archive. Final archive includes refreshed evidence/receipt metadata and is independently hash-checked. The final archive also contains the subsequent attributes-only packet fix; its before/after ledger and nine rendered scans are checked separately. Application source is unchanged.",
+  "dependencyInstall": "Fresh npm ci passed: 50 installed packages; 0 reported audit vulnerabilities.",
+  "programFilesVerifiedAfterRebuild": 175,
+  "programBytesMatchWorkingCopyAndTestedArchive": true,
+  "browserEvidence": "Separate-origin rebuilt working copy: 12 alternating 3D selections, keyboard plan selection, route scan invalidation, export equality and public isolation. Program bytes match the extracted rebuild; a second browser launch of this extraction was not repeated.",
+  "packetFollowUp": {
+    "date": "2026-10-04",
+    "applicationFilesUnchanged": 175,
+    "attributeOnlyChanges": [
+      "submission/presentation.html",
+      "submission/demo/index.html",
+      "planning/u10-build/build-handoff.cjs"
+    ],
+    "scans": 9,
+    "layouts": 9,
+    "confirmedViolations": 0,
+    "physicalDeviceOrZoomVerified": false,
+    "applicationTestsRepeated": false,
+    "evidence": "planning/U10_PACKET_VERIFICATION_2026-10-04.md",
+    "consoleLimit": "Observer error reproduces in script-free parent/child; exact browser/tooling integration remains unidentified."
+  },
+  "u10R2CleanCheck": {
+    "date": "2026-10-05",
+    "testedArchiveSha256": "56c072482da367bbdcf6e8f99b52219593410f1ce0c14aa0bc8615688e6ca1a9",
+    "extraction": "empty temporary folder",
+    "dependencyInstall": "npm ci passed; 0 reported vulnerabilities",
+    "reactTests": "139/139",
+    "serviceTests": "16/16",
+    "typeAndProductionBuild": "pass; rebuilt dist has 0 differing files against the packaged dist",
+    "rootChecks": "exit 0",
+    "launch": "submission/serve.cjs on port 4191; entry, Today, dashboard, E01 rehearsal, lab map, slide player and walkthrough rendered in Edge with 0 console errors",
+    "note": "The final archive differs from the tested one only by this receipt and the record text describing it; application files are identical and are hash-checked in package-receipt.json.",
+    "repeated": "U10-R3 with the play pass and poster: empty folder, npm ci (0 vulnerabilities), 139/139 React tests, 16/16 service tests, production build with 0 differing dist files, root checks exit 0.",
+    "accessibilityScan": "axe-core 4.10.2, 35 scans (16 routes in the light and dark editions plus three packet pages) at 1280 px: 0 violations (machine-detectable rules only). See apps/lab-web/evidence/u12-checks/axe-scan.json."
+  }
+}

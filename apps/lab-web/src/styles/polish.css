@@ -1,0 +1,978 @@
+/* Product polish layer. Loaded last; presentation only.
+   Keeps the Edition language (paper, ink, hairlines, one spot colour) and tightens
+   hierarchy, controls and density. No rule, record or model is styled away. */
+
+/* ---------- page frame ---------- */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.lab-app .lab-main {
+  flex: 1 0 auto;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+/* The view container takes focus on navigation for assistive technology; it is not a control. */
+.lab-app .lab-main:focus,
+.lab-app .lab-main:focus-visible {
+  outline: 0;
+}
+
+/* ---------- masthead ---------- */
+.lab-app .mast {
+  gap: 10px 28px;
+  padding-block: 10px;
+}
+.lab-app .mast .mast-nav {
+  gap: 4px 20px;
+  align-items: center;
+  height: 44px;
+}
+.lab-app .mast .mast-nav a {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  height: 100%;
+}
+.lab-app .mast .nav-group {
+  font: 500 10px/1 var(--ed-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+  padding-left: 18px;
+  border-left: 1px solid var(--ed-rule);
+  white-space: nowrap;
+  align-self: center;
+  line-height: 20px;
+}
+.lab-app .mast .nav-group:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+.lab-app .mast .mast-tools {
+  order: 3;
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lab-app .mast .mast-tools .pbtn {
+  margin: 0;
+}
+.role-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 12px 0 8px;
+  border: 1px solid var(--ed-rule);
+  background: var(--ed-card);
+  font: 500 13px/1 var(--ed-body);
+  color: var(--ed-ink);
+  white-space: nowrap;
+}
+.role-chip svg,
+.theme-switch svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.role-chip svg {
+  color: var(--ed-spot);
+}
+.lab-app .mast .theme-switch {
+  min-height: 36px;
+  padding: 0 12px;
+  gap: 7px;
+  border-color: var(--ed-rule);
+}
+@media (max-width: 1100px) {
+  .lab-app .mast .mast-tools {
+    order: 2;
+  }
+}
+@media (max-width: 700px) {
+  .lab-app .mast .nav-group {
+    flex-basis: 100%;
+    padding: 8px 0 0;
+    border: 0;
+  }
+  .role-chip {
+    display: none;
+  }
+}
+
+/* ---------- colophon ---------- */
+.lab-app .ed-colophon {
+  grid-template-columns: 1.1fr 1.4fr auto;
+  align-items: start;
+  gap: 12px 40px;
+  padding-block: 26px 30px;
+  font: 13px/1.6 var(--ed-body);
+  color: var(--ed-ink-2);
+}
+.colophon-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+}
+.colophon-session {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--ed-rule-soft);
+  padding-top: 4px;
+}
+.lab-app .session-drawer > summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding-block: 6px;
+  font: 500 11px/1 var(--ed-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+}
+.lab-app .session-drawer .session-tools {
+  padding: 8px 0 4px;
+  border: 0;
+}
+@media (max-width: 760px) {
+  .lab-app .ed-colophon {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- type scale: one display size, calmer inner pages, readable small text ---------- */
+.lab-app .lab-main h1 {
+  font-size: clamp(34px, 3.7vw, 52px);
+  line-height: 1.08;
+  margin: 6px 0 22px;
+}
+.lab-app .lab-main .ed-kicker {
+  margin-bottom: 10px;
+}
+.lab-app .pull {
+  font-size: clamp(18px, 1.5vw, 21px);
+  margin-bottom: 24px;
+}
+.lab-app .small,
+.lab-app .assistant-small,
+.lab-app .field .hint {
+  font-size: 14px;
+  line-height: 1.55;
+}
+.lab-app .lab-main p {
+  max-width: 72ch;
+}
+.lab-app .msg p,
+.lab-app td p,
+.lab-app .smart-metrics p {
+  max-width: none;
+}
+
+/* ---------- controls ---------- */
+.lab-app .pbtn {
+  border-color: var(--ed-ink);
+  background: transparent;
+  font-weight: 500;
+  transition:
+    background 0.15s var(--ed-ease),
+    color 0.15s var(--ed-ease),
+    border-color 0.15s var(--ed-ease);
+}
+.lab-app .pbtn:hover {
+  background: var(--ed-ink);
+  color: var(--ed-paper);
+}
+.lab-app .pbtn.primary {
+  background: var(--ed-spot);
+  border-color: var(--ed-spot);
+  color: var(--ed-on-spot);
+}
+.lab-app .pbtn.primary:hover {
+  background: var(--ed-spot-hover);
+  border-color: var(--ed-spot-hover);
+  color: var(--ed-on-spot);
+}
+.lab-app .pbtn.quiet {
+  border-color: var(--ed-rule);
+}
+.lab-app .pbtn.quiet:hover {
+  background: var(--ed-paper-2);
+  color: var(--ed-ink);
+  border-color: var(--ed-ink);
+}
+.lab-app .pbtn[aria-disabled="true"],
+.lab-app .pbtn:disabled,
+.lab-app .pbtn:disabled:hover {
+  background: transparent;
+  border: 1px dashed var(--ed-rule);
+  color: var(--ed-ink-2);
+  opacity: 0.75;
+}
+.lab-app :is(select, textarea, input[type="text"], input[type="date"], input[type="search"], input:not([type])) {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid var(--ed-ink-2);
+  border-radius: var(--radius-control, 4px);
+  background-color: var(--ed-card);
+  color: var(--ed-ink);
+  font: 400 16px/1.4 var(--ed-body);
+  transition: border-color 0.15s var(--ed-ease), box-shadow 0.15s var(--ed-ease);
+}
+.lab-app :is(select, textarea, input):hover {
+  border-color: var(--ed-ink);
+}
+.lab-app :is(select, textarea, input[type="text"], input[type="date"], input:not([type])):focus-visible {
+  outline: 0;
+  border-color: var(--ed-spot);
+  box-shadow: 0 0 0 3px var(--ed-spot-soft);
+}
+.lab-app select {
+  appearance: none;
+  padding-right: 42px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none' stroke='%23535B66' stroke-width='1.6'%3E%3Cpath d='M1 1l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+.lab-app textarea {
+  min-height: 108px;
+  resize: vertical;
+}
+.lab-app :is(input[type="checkbox"], input[type="radio"]) {
+  appearance: none;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 1.5px solid var(--ed-ink);
+  background: var(--ed-card);
+  display: inline-grid;
+  place-content: center;
+  cursor: pointer;
+}
+.lab-app input[type="radio"] {
+  border-radius: 50%;
+}
+.lab-app input[type="checkbox"]::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: scale(0);
+  background: var(--ed-on-spot);
+  clip-path: polygon(14% 52%, 0 66%, 38% 100%, 100% 22%, 86% 10%, 37% 70%);
+}
+.lab-app input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  background: var(--ed-on-spot);
+}
+.lab-app :is(input[type="checkbox"], input[type="radio"]):checked {
+  background: var(--ed-spot);
+  border-color: var(--ed-spot);
+}
+.lab-app :is(input[type="checkbox"], input[type="radio"]):checked::before {
+  transform: scale(1);
+}
+.lab-app .field label,
+.lab-app legend {
+  font: 500 14px/1.4 var(--ed-body);
+  color: var(--ed-ink);
+}
+
+/* ---------- task links: quiet tabs, not default hyperlinks ---------- */
+.lab-app .task-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 30px;
+  padding: 0;
+  border: 0;
+}
+.lab-app .task-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--ed-rule);
+  background: var(--ed-card);
+  color: var(--ed-ink);
+  font: 500 14px/1 var(--ed-body);
+  text-decoration: none;
+  transition: border-color 0.15s var(--ed-ease), background 0.15s var(--ed-ease);
+}
+.lab-app .task-links a::after {
+  content: "→";
+  font-family: var(--ed-mono);
+  color: var(--ed-spot);
+  transition: transform 0.15s var(--ed-ease);
+}
+.lab-app .task-links a:hover {
+  border-color: var(--ed-ink);
+  background: var(--ed-paper-2);
+}
+.lab-app .task-links a:hover::after {
+  transform: translateX(3px);
+}
+
+/* ---------- notices: one calm style, colour only for real problems ---------- */
+.lab-app .msg {
+  border-radius: 0;
+  border-width: 0 0 0 3px;
+  padding: 14px 18px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.lab-app .msg.info,
+.lab-app .msg:not(.warn):not(.bad):not(.good) {
+  background: var(--ed-paper-2);
+  border-color: var(--ed-ink-2);
+}
+.lab-app .data-note {
+  margin: 14px 0 0;
+  max-width: 72ch;
+}
+.lab-app .data-note > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0;
+  font: 500 11px/1 var(--ed-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+  list-style: none;
+}
+.lab-app .data-note > summary::-webkit-details-marker {
+  display: none;
+}
+.lab-app .data-note > summary::before {
+  content: "i";
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font: italic 600 11px/1 var(--ed-serif);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.lab-app .data-note > summary:hover {
+  color: var(--ed-spot);
+}
+.lab-app .data-note[open] > summary {
+  color: var(--ed-ink);
+}
+.lab-app .data-note > :not(summary) {
+  margin: 4px 0 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ed-ink-2);
+}
+
+/* ---------- status marks ---------- */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+.status::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ed-ink-2);
+  flex: none;
+}
+.status[data-state="bookable"]::before,
+.status[data-state="free"]::before,
+.status[data-state="ok"]::before {
+  background: var(--success, #1f7a4d);
+}
+.status[data-state="in-use"]::before {
+  background: var(--ed-spot);
+}
+.status[data-state="restricted"]::before,
+.status[data-state="bad"]::before {
+  background: var(--danger, #b3261e);
+  border-radius: 0;
+}
+.status[data-state="unknown"]::before,
+.status[data-state="not-located"]::before {
+  background: transparent;
+  border: 1.5px solid var(--warning, #9a6700);
+}
+
+/* ---------- tables ---------- */
+.lab-app .led th {
+  font: 500 11px/1.4 var(--ed-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+}
+.lab-app .led td,
+.lab-app .led th {
+  padding-block: 11px;
+}
+.lab-app .led tbody tr:hover {
+  background: var(--ed-paper-2);
+}
+
+/* ---------- tabs ---------- */
+.lab-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0 0 28px;
+  border-bottom: 1px solid var(--ed-ink);
+}
+.lab-app .lab-tabs button {
+  appearance: none;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  background: none;
+  color: var(--ed-ink-2);
+  font: 500 14px/1 var(--ed-sans);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.lab-app .lab-tabs button:hover {
+  color: var(--ed-ink);
+}
+.lab-app .lab-tabs button[aria-selected="true"] {
+  color: var(--ed-ink);
+  border-bottom-color: var(--ed-spot);
+}
+
+/* ---------- stepper ---------- */
+.lab-app .stepper li[data-s="locked"] {
+  opacity: 0.55;
+}
+
+.lab-app .lab-tabs button[aria-pressed="true"] {
+  color: var(--ed-ink);
+  border-bottom-color: var(--ed-spot);
+}
+/* One section at a time on screen; print and text extraction keep every section. */
+@media screen {
+  .env-tabs[data-active="observations"] ~ :is([aria-labelledby="energy-period-title"], [aria-labelledby="standby-title"], #physical-sheet),
+  .env-tabs[data-active="energy"] ~ :is(#observation-desk, [aria-labelledby="standby-title"], #physical-sheet),
+  .env-tabs[data-active="standby"] ~ :is(#observation-desk, [aria-labelledby="energy-period-title"], #physical-sheet),
+  .env-tabs[data-active="sheet"] ~ :is(#observation-desk, [aria-labelledby="energy-period-title"], [aria-labelledby="standby-title"]),
+  .ops-tabs[data-active="allocation"] ~ .ops-section:not(#ops-allocation),
+  .ops-tabs[data-active="method"] ~ .ops-section:not(#ops-method),
+  .ops-tabs[data-active="handover"] ~ .ops-section:not(#ops-handover),
+  .ops-tabs[data-active="save"] ~ .ops-section:not(#ops-save),
+  .ops-tabs[data-active="runbooks"] ~ .ops-section:not(#ops-runbooks) {
+    display: none;
+  }
+}
+.lab-app .lab-main section:focus {
+  outline: 0;
+}
+
+/* ---------- dashboard ---------- */
+.lab-app .smart-metrics strong {
+  font-size: clamp(34px, 3.4vw, 46px);
+}
+.lab-app .smart-metrics article[data-tone="clear"] strong,
+.lab-app .smart-metrics article[data-tone="quiet"] strong {
+  color: var(--ed-ink-2);
+}
+.lab-app .smart-metrics article[data-tone="alert"] strong {
+  color: var(--danger, #b3261e);
+}
+.lab-app .smart-metrics article[data-tone="active"] strong {
+  color: var(--ed-spot);
+}
+.lab-app .smart-metrics article[data-tone="clear"] p::before {
+  content: "✓ ";
+  color: var(--success, #1f7a4d);
+  font-weight: 700;
+}
+.lab-app .all-clear {
+  display: flex;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--success-surface, #e8f3ec);
+  border-left: 3px solid var(--success, #1f7a4d);
+}
+.lab-app .observation-value {
+  font: 400 clamp(30px, 3vw, 40px) / 1.1 var(--ed-mono);
+}
+
+/* ---------- masthead: brand and tools above, views below ---------- */
+.lab-app .mast .mast-nav {
+  order: 4;
+  flex: 0 0 100%;
+  height: 42px;
+  border-top: 1px solid var(--ed-rule-soft);
+  margin: 0;
+}
+.lab-app .mast {
+  padding-bottom: 0;
+}
+.lab-app .mast .mast-tools {
+  order: 2;
+}
+@media (max-width: 700px) {
+  .lab-app .mast .mast-nav {
+    height: auto;
+    padding-bottom: 8px;
+  }
+}
+
+/* ---------- today ---------- */
+.today-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+  margin-bottom: 36px;
+}
+.room-figure {
+  margin: 0;
+}
+.room-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ed-rule);
+  background: var(--ed-card);
+}
+.room-figure figcaption,
+.lab-app .lab-plan figcaption {
+  margin-top: 8px;
+  font: 12px/1.5 var(--ed-mono);
+  color: var(--ed-ink-2);
+}
+@media (max-width: 900px) {
+  .today-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- equipment overview ---------- */
+.lab-app .equipment-overview > summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 20px;
+  padding: 14px 0;
+  border-block: 1px solid var(--ed-rule);
+  font: 500 15px/1.4 var(--ed-body);
+}
+
+/* ---------- practice note ---------- */
+.lab-app .practice-note {
+  margin: 0 0 22px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ed-ink-2);
+  max-width: 80ch;
+}
+
+/* ---------- on-site companion: shown as the phone it is designed for ---------- */
+.phone-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
+  gap: clamp(28px, 6vw, 96px);
+  align-items: start;
+}
+.phone-steps {
+  list-style: none;
+  counter-reset: step;
+  margin: 8px 0 0;
+  padding: 0;
+  max-width: 440px;
+}
+.phone-steps li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 2px 14px;
+  padding: 18px 0;
+  border-top: 1px solid var(--ed-rule);
+}
+.phone-steps li::before {
+  content: counter(step, decimal-leading-zero);
+  grid-row: span 2;
+  font: italic 400 30px/1 var(--ed-serif);
+  color: var(--ed-spot);
+}
+.phone-steps b {
+  font: 500 17px/1.3 var(--ed-body);
+}
+.phone-steps span {
+  font-size: 14px;
+  color: var(--ed-ink-2);
+}
+.lab-app .phone-frame {
+  max-width: none;
+  padding: 44px 22px 28px;
+  border: 1.5px solid var(--ed-ink);
+  border-radius: 34px;
+  background: var(--ed-card);
+  box-shadow: 10px 10px 0 var(--ed-paper-2);
+  position: relative;
+}
+.lab-app .phone-frame::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  width: 72px;
+  height: 6px;
+  margin-left: -36px;
+  border-radius: 3px;
+  background: var(--ed-ink);
+  opacity: 0.8;
+}
+@media (max-width: 800px) {
+  .phone-stage {
+    grid-template-columns: 1fr;
+  }
+  .phone-steps {
+    display: none;
+  }
+  .lab-app .phone-frame {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+  }
+  .lab-app .phone-frame::before {
+    display: none;
+  }
+}
+
+/* ---------- public display: a sign, read from across the room ---------- */
+.wall-sign {
+  padding: clamp(28px, 5vw, 64px);
+  background: var(--ed-plate);
+  color: var(--ed-plate-text);
+  margin-bottom: 20px;
+}
+.lab-app .wall-sign h1 {
+  color: var(--ed-plate-text);
+  font-size: clamp(40px, 6vw, 84px);
+}
+.lab-app .wall-sign h1 em {
+  color: #9daaff;
+}
+.lab-app .wall-sign .ed-kicker,
+.lab-app .wall-sign .small,
+.lab-app .wall-sign .pull {
+  color: var(--ed-plate-muted);
+}
+.lab-app .wall-sign .pull {
+  border-left-color: #9daaff;
+}
+.lab-app .wall-sign .ed-kicker::before {
+  background: #9daaff;
+}
+.lab-app .wall-sign .msg {
+  font-size: clamp(18px, 2vw, 26px);
+  color: var(--ed-ink);
+}
+.wall-zones {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 32px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--ed-plate-rule);
+}
+.wall-zones li {
+  padding: 18px 16px 0 0;
+  font: 400 clamp(15px, 1.4vw, 19px) / 1.3 var(--ed-body);
+  color: var(--ed-plate-muted);
+}
+.wall-zones b {
+  display: block;
+  font: 500 clamp(24px, 3vw, 40px) / 1.1 var(--ed-mono);
+  color: var(--ed-trace);
+  margin-bottom: 4px;
+}
+@media (max-width: 700px) {
+  .wall-zones {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+  }
+}
+
+/* ---------- equipment index: one line per resource ---------- */
+.lab-app .resource-index li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  padding-block: 10px;
+}
+.lab-app .resource-index a {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--ed-ink);
+}
+.lab-app .resource-index a code {
+  color: var(--ed-spot);
+  font-size: 13px;
+  min-width: 58px;
+}
+.lab-app .resource-index a:hover span {
+  text-decoration: underline;
+}
+.lab-app .resource-index small {
+  font: 12px/1.4 var(--ed-mono);
+  color: var(--ed-ink-2);
+  white-space: nowrap;
+}
+.phone-stage {
+  max-width: 1040px;
+}
+
+/* ---------- step pages: fixed action bar must not cover the colophon ---------- */
+.lab-app:has(.journey-actions) .lab-main {
+  padding-bottom: 72px;
+}
+.lab-app:has(.journey-actions) .ed-colophon {
+  padding-bottom: 120px;
+}
+.lab-app .workspace-aside h2:not(:first-child) {
+  margin-top: 28px;
+}
+.lab-app .workspace-aside .pbtn + h2 {
+  margin-top: 32px;
+}
+
+.lab-app .studio-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 0;
+  padding: 0;
+}
+.lab-app .studio-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--ed-rule);
+  background: var(--ed-card);
+  color: var(--ed-ink);
+  font: 500 14px/1 var(--ed-body);
+  text-decoration: none;
+}
+.lab-app .studio-jump a:hover {
+  border-color: var(--ed-ink);
+  background: var(--ed-paper-2);
+}
+
+.lab-app .smart-heading {
+  margin-bottom: 14px;
+}
+
+/* ---------- today: status strip instead of a second floor plan ---------- */
+.lab-now {
+  margin-top: 40px;
+}
+.lab-now .lab-status dl {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.lab-now .lab-status dl div {
+  padding-right: 24px;
+}
+.lab-now .lab-status {
+  display: grid;
+  gap: 12px;
+}
+@media (max-width: 700px) {
+  .lab-now .lab-status dl {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- headlines: a two-line title reads as title plus strapline ---------- */
+.lab-app .lab-main h1:has(> br) em {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.58em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.lab-app .lab-main h1:has(> br) br {
+  display: none;
+}
+.lab-app .wall-sign h1 em {
+  display: inline;
+  font-size: 1em;
+}
+
+/* ---------- floor plan: labels large enough to read ---------- */
+.lab-app .lab-plan .pl,
+.lab-app .lab-plan .pzl {
+  font-size: 0.17px;
+}
+.lab-app .lab-plan .plan-free,
+.lab-app .lab-plan circle {
+  r: 0.11;
+}
+
+/* ---------- one type scale: 11 label · 13 meta · 14 secondary · 16 body · 18 · 21 · 28 · 40 numerals · display ---------- */
+.lab-app .lab-main code {
+  font-size: 13px;
+}
+.lab-app .lab-main small,
+.lab-app .lab-main figcaption,
+.lab-app .lab-main dt,
+.lab-app .resource-index small,
+.lab-app .observation-state,
+.lab-app .observation-value span {
+  font-size: 13px;
+}
+.lab-app .lab-main th small,
+.lab-app .stepper .lb {
+  font-size: 11px;
+}
+.lab-app .lab-main label,
+.lab-app .lab-main caption {
+  font-size: 14px;
+}
+.lab-app .pbtn {
+  font-size: 16px;
+}
+.lab-app .pbtn.quiet,
+.lab-app .pbtn span {
+  font-size: 14px;
+}
+.lab-app .lab-main h3 {
+  font-size: 18px;
+  line-height: 1.3;
+}
+.lab-app .assistant-intro,
+.lab-app .ops-intro,
+.lab-app .studio-lead {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.lab-app .lab-main h2:not(.cap2) {
+  font-size: 28px;
+}
+.lab-app .energy-number,
+.lab-app .observation-value,
+.lab-app .lab-status dd,
+.lab-app .smart-metrics strong {
+  font-size: 40px;
+  line-height: 1.1;
+}
+.lab-app .energy-number span {
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .lab-app .lab-main h2:not(.cap2) {
+    font-size: 24px;
+  }
+  .lab-app .energy-number,
+  .lab-app .observation-value,
+  .lab-app .lab-status dd,
+  .lab-app .smart-metrics strong {
+    font-size: 32px;
+  }
+}
+
+/* ---------- review pass 3 ---------- */
+/* Map index rows are links plus a status; other lists that reuse the class keep a simple stack. */
+.lab-app .resource-index li:not(:has(> a)) {
+  display: block;
+}
+.lab-app .resource-index li:not(:has(> a)) small {
+  display: block;
+  margin-top: 2px;
+}
+.lab-app .resource-index li:not(:has(> a)) code {
+  display: inline-block;
+  min-width: 64px;
+  color: var(--ed-spot);
+}
+/* One label voice for every form. */
+.lab-app .lab-main label,
+.lab-app .lab-main legend {
+  font-family: var(--ed-body);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ed-ink);
+}
+.lab-app .smart-table th,
+.lab-app .smart-table td {
+  text-align: left;
+}
+.lab-app .smart-table thead th {
+  font: 500 11px/1.4 var(--ed-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+  border-top: 1px solid var(--ed-ink);
+  border-bottom: 1px solid var(--ed-ink);
+}
+.lab-app .ops-feedback {
+  margin-bottom: 24px;
+}
+.route-loading {
+  padding: 80px 0;
+  font: 500 11px/1 var(--ed-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ed-ink-2);
+}
+.route-loading::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 12px;
+  background: var(--ed-spot);
+  animation: route-pulse 1s var(--ed-ease) infinite alternate;
+}
+@keyframes route-pulse {
+  from { opacity: 0.25; }
+  to { opacity: 1; }
+}
+.lab-main.route-error {
+  padding-block: 96px;
+}
+.lab-main.route-error .pbtn {
+  margin-top: 12px;
+}
+.journey-complete {
+  margin-top: 28px;
+  padding: 24px 28px;
+  border: 1px solid var(--ed-ink);
+  border-left: 4px solid var(--success, #1f7a4d);
+  background: var(--ed-card);
+  max-width: 720px;
+}
+.lab-app .journey-complete h2 {
+  margin-bottom: 18px;
+}

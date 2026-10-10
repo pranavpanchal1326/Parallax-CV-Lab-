@@ -1,0 +1,10 @@
+{
+  "field": {
+    "font": "16px",
+    "height": 44
+  },
+  "focus": "Find the record",
+  "outline": "rgb(51, 70, 211) solid 2.4px",
+  "viewport": 320,
+  "width": 305
+}

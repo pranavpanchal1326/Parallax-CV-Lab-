@@ -1,0 +1,45 @@
+{
+  "post": true,
+  "shots": {
+    "H01": {
+      "file": "H01_spine_golden.png",
+      "purpose": "Hero: down the spine at golden hour, sculpture overhead, signs and stations in depth"
+    },
+    "R01": {
+      "file": "R01_entry.png",
+      "purpose": "Entry perspective"
+    },
+    "R02": {
+      "file": "R02_iso_cutaway.png",
+      "purpose": "Isometric cutaway, studio-lit on a graphite plinth"
+    },
+    "R03": {
+      "file": "R03_student_eye.png",
+      "purpose": "Student eye at CV-05, shallow depth of field"
+    },
+    "R04": {
+      "file": "R04_capture.png",
+      "purpose": "Controlled capture C1"
+    },
+    "R05": {
+      "file": "R05_signal_bench.png",
+      "purpose": "Signal bench S1"
+    },
+    "R06": {
+      "file": "R06_collaboration.png",
+      "purpose": "Collaboration table in window light"
+    },
+    "R07": {
+      "file": "R07_storage.png",
+      "purpose": "Kit storage STO-1"
+    },
+    "R09": {
+      "file": "R09_kit_layout.png",
+      "purpose": "KIT-C1-v1 laid out: every portable item with its ID, as the return check sees it"
+    },
+    "R10": {
+      "file": "R10_sculpture.png",
+      "purpose": "Signal-to-pixel sculpture: the analogue waveform resolving into samples"
+    }
+  }
+}

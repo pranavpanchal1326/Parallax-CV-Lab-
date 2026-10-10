@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF15 · Technician: record an asset move</title><desc id="desc">A technician records a location change while keeping availability and physical handover separate.. Location changed concurrently or destination unknown; retain proposal and reconcile before recording.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Technician: record an asset move</text>
+<rect x="20" y="105" width="720" height="55" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Asset ID / current location / record revision</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Movement does not release a restriction or verify a repair</text>
+<rect x="20" y="181" width="435" height="160" fill="#fafafa" stroke="#555" />
+<text x="32" y="205" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Movement form</text>
+<text x="32" y="225" font-family="Arial" font-size="12" font-weight="400" fill="#222">From: current recorded location</text>
+<text x="32" y="245" font-family="Arial" font-size="12" font-weight="400" fill="#222">To [ known destination ] / reason [ ]</text>
+<text x="32" y="265" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Record move ]</text>
+<rect x="475" y="181" width="265" height="160" fill="#fafafa" stroke="#555" />
+<text x="487" y="205" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Movement history</text>
+<text x="487" y="225" font-family="Arial" font-size="12" font-weight="400" fill="#222">From / to / actor / time</text>
+<text x="487" y="245" font-family="Arial" font-size="12" font-weight="400" fill="#222">Reason / revision</text>
+<text x="487" y="265" font-family="Arial" font-size="12" font-weight="400" fill="#222">Physical handover owner</text>
+<rect x="20" y="363" width="720" height="85" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="387" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Concurrent move or unknown destination</text>
+<text x="32" y="407" font-family="Arial" font-size="12" font-weight="400" fill="#222">Proposal retained / check current record</text>
+<text x="32" y="427" font-family="Arial" font-size="12" font-weight="400" fill="#222">No invented coordinates or silent overwrite</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF15 / Supplementary concept from original P25 movement requirement / low fidelity / no fieldwork claimed</text></svg>

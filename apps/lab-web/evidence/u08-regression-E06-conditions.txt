@@ -1,0 +1,61 @@
+- link "Skip to the current task":
+  - /url: "#current-view"
+- banner:
+  - link "PARALLAX — Today":
+    - /url: "#/"
+    - text: PARALLAX
+  - navigation "Lab views":
+    - link "Today":
+      - /url: "#/"
+    - link "Smart Lab":
+      - /url: "#/dashboard"
+    - link "Technician":
+      - /url: "#/tech"
+    - link "Faculty":
+      - /url: "#/faculty"
+    - link "On site":
+      - /url: "#/mobile"
+    - link "Lab Map":
+      - /url: "#/map"
+    - link "Ask a guide":
+      - /url: "#/assistant"
+    - link "Public display":
+      - /url: "#/wall"
+    - link "Project edition":
+      - /url: /design/index.html
+    - link "Safety":
+      - /url: "#/safety"
+  - button "Night edition"
+- region "Example session identity":
+  - generic: PARALLAX · U07 · isolated example session
+  - link "Original demonstrator ↗":
+    - /url: /prototype/index.html
+- main [active]:
+  - paragraph: E06 · evidence provenance
+  - heading "Replay the conditions. Keep the context." [level=1]:
+    - text: Replay the conditions.
+    - emphasis: Keep the context.
+  - paragraph: Object detection under changing light
+  - paragraph: Recorded context is retained with each capture. Changing the environment example cannot rewrite it. Replay presents a stored condition; it does not reproduce a physical experiment.
+  - heading "No condition recorded yet" [level=2]
+  - paragraph: Prepare, book and start your session, then record a condition at the bench.
+  - link "Prepare E06 →":
+    - /url: "#/E06/prepare"
+  - link "← Return to bench":
+    - /url: "#/E06/bench"
+  - link "Write your own interpretation →":
+    - /url: "#/E06/notebook"
+- region "Example session controls":
+  - button "Activity · 0"
+  - button "Export this session"
+  - button "Reset React example"
+  - generic: Saved in this browser
+- contentinfo:
+  - generic: PARALLAX
+  - text: Signal & Computer Vision Lab.
+  - text: Example fixtures P9-A · geometry P4-D.
+  - text: React + TypeScript. Existing domain rules retained.
+  - text: No device, account or operational booking service connected.
+  - link "Existing verification record":
+    - /url: /design/read.html?doc=phase-09
+  - text: Local guide AI · no student records; sensors remain simulated.

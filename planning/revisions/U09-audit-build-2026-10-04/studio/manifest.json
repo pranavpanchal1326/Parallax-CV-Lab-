@@ -1,0 +1,45 @@
+{
+  "phase": "U08",
+  "plates": [
+    "ART-01",
+    "ART-02",
+    "ART-03",
+    "ART-04-E01",
+    "ART-04-E06",
+    "ART-05",
+    "ART-06",
+    "ART-07",
+    "ART-08"
+  ],
+  "signs": [
+    "S-01",
+    "S-02",
+    "S-03",
+    "S-04",
+    "S-05",
+    "S-06"
+  ],
+  "layers": [
+    "orientation",
+    "emergency",
+    "cctv",
+    "ventilation",
+    "installation"
+  ],
+  "reference": {
+    "id": "REF-2HZ-v1",
+    "formula": "y(t) = sin(4πt) V",
+    "frequencyHz": 2,
+    "durationS": 1,
+    "amplitudeV": 1
+  },
+  "kit": [
+    "CV-02",
+    "C1",
+    "C1-CAM",
+    "C1-L1",
+    "C1-L2",
+    "TRP-04",
+    "CAL-01"
+  ]
+}

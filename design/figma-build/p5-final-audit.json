@@ -1,0 +1,1057 @@
+{
+  "fileKey": "QaLr3W9rzW1WGhkDeHx9WF",
+  "pageId": "2045:22",
+  "componentFamilies": 40,
+  "variantCount": 87,
+  "families": [
+    {
+      "id": "C03",
+      "nodeId": "2045:124",
+      "variants": [
+        {
+          "id": "2045:100",
+          "name": "Style=Primary, State=Default"
+        },
+        {
+          "id": "2045:102",
+          "name": "Style=Primary, State=Hover"
+        },
+        {
+          "id": "2045:104",
+          "name": "Style=Primary, State=Pressed"
+        },
+        {
+          "id": "2045:106",
+          "name": "Style=Primary, State=Focus"
+        },
+        {
+          "id": "2045:108",
+          "name": "Style=Primary, State=Loading"
+        },
+        {
+          "id": "2045:110",
+          "name": "Style=Primary, State=Disabled"
+        },
+        {
+          "id": "2045:112",
+          "name": "Style=Secondary, State=Default"
+        },
+        {
+          "id": "2045:114",
+          "name": "Style=Secondary, State=Hover"
+        },
+        {
+          "id": "2045:116",
+          "name": "Style=Secondary, State=Pressed"
+        },
+        {
+          "id": "2045:118",
+          "name": "Style=Secondary, State=Focus"
+        },
+        {
+          "id": "2045:120",
+          "name": "Style=Secondary, State=Loading"
+        },
+        {
+          "id": "2045:122",
+          "name": "Style=Secondary, State=Disabled"
+        }
+      ],
+      "properties": {
+        "Label#2045:0": {
+          "type": "TEXT",
+          "defaultValue": "Save evidence"
+        },
+        "Busy label#2054:30": {
+          "type": "TEXT",
+          "defaultValue": "Working…"
+        },
+        "Style": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focus",
+            "Loading",
+            "Disabled"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C06",
+      "nodeId": "2045:133",
+      "variants": [
+        {
+          "id": "2045:125",
+          "name": "State=Ready"
+        },
+        {
+          "id": "2045:127",
+          "name": "State=Restricted"
+        },
+        {
+          "id": "2045:129",
+          "name": "State=Review"
+        },
+        {
+          "id": "2045:131",
+          "name": "State=Unknown"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Ready",
+          "variantOptions": [
+            "Ready",
+            "Restricted",
+            "Review",
+            "Unknown"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C01",
+      "nodeId": "2045:158",
+      "variants": [
+        {
+          "id": "2045:134",
+          "name": "State=Desktop"
+        },
+        {
+          "id": "2045:146",
+          "name": "State=Compact"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Desktop",
+          "variantOptions": [
+            "Desktop",
+            "Compact"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C02",
+      "nodeId": "2045:177",
+      "variants": [
+        {
+          "id": "2045:159",
+          "name": "State=Editorial"
+        },
+        {
+          "id": "2045:165",
+          "name": "State=Operational"
+        },
+        {
+          "id": "2045:171",
+          "name": "State=Instrument"
+        }
+      ],
+      "properties": {
+        "Title / Editorial#2054:0": {
+          "type": "TEXT",
+          "defaultValue": "When does a signal become something else?"
+        },
+        "Title / Operational#2054:4": {
+          "type": "TEXT",
+          "defaultValue": "Review a complete setup"
+        },
+        "Title / Instrument#2054:8": {
+          "type": "TEXT",
+          "defaultValue": "Sampling & aliasing"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Editorial",
+          "variantOptions": [
+            "Editorial",
+            "Operational",
+            "Instrument"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C04",
+      "nodeId": "2045:215",
+      "variants": [
+        {
+          "id": "2045:178",
+          "name": "State=Default"
+        },
+        {
+          "id": "2045:184",
+          "name": "State=Results"
+        },
+        {
+          "id": "2045:206",
+          "name": "State=No results"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Results",
+            "No results"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C05",
+      "nodeId": "2045:283",
+      "variants": [
+        {
+          "id": "2045:216",
+          "name": "State=All assets"
+        },
+        {
+          "id": "2045:253",
+          "name": "State=Ready only"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "All assets",
+          "variantOptions": [
+            "All assets",
+            "Ready only"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C07",
+      "nodeId": "2048:185",
+      "variants": [
+        {
+          "id": "2048:171",
+          "name": "State=Signal"
+        },
+        {
+          "id": "2048:178",
+          "name": "State=Vision"
+        }
+      ],
+      "properties": {
+        "Title / Signal#2054:12": {
+          "type": "TEXT",
+          "defaultValue": "When does a signal become something else?"
+        },
+        "Title / Vision#2054:15": {
+          "type": "TEXT",
+          "defaultValue": "Light changes what the camera can infer."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Signal",
+          "variantOptions": [
+            "Signal",
+            "Vision"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C08",
+      "nodeId": "2048:256",
+      "variants": [
+        {
+          "id": "2048:186",
+          "name": "State=Ready"
+        },
+        {
+          "id": "2048:221",
+          "name": "State=Restricted"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Ready",
+          "variantOptions": [
+            "Ready",
+            "Restricted"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C09",
+      "nodeId": "2048:333",
+      "variants": [
+        {
+          "id": "2048:257",
+          "name": "State=Compatible"
+        },
+        {
+          "id": "2048:295",
+          "name": "State=Restricted"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Compatible",
+          "variantOptions": [
+            "Compatible",
+            "Restricted"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C10",
+      "nodeId": "2048:334",
+      "variants": [
+        {
+          "id": "2048:334",
+          "name": "C10 / Booking summary"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C11",
+      "nodeId": "2048:413",
+      "variants": [
+        {
+          "id": "2048:372",
+          "name": "State=Missing"
+        },
+        {
+          "id": "2048:392",
+          "name": "State=Complete"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Missing",
+          "variantOptions": [
+            "Missing",
+            "Complete"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C12",
+      "nodeId": "2048:486",
+      "variants": [
+        {
+          "id": "2048:414",
+          "name": "State=Computing"
+        },
+        {
+          "id": "2048:450",
+          "name": "State=Capture"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Computing",
+          "variantOptions": [
+            "Computing",
+            "Capture"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C13",
+      "nodeId": "2048:487",
+      "variants": [
+        {
+          "id": "2048:487",
+          "name": "C13 / 3D viewer frame"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C14",
+      "nodeId": "2048:507",
+      "variants": [
+        {
+          "id": "2048:495",
+          "name": "State=Closed"
+        },
+        {
+          "id": "2048:499",
+          "name": "State=Open"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Closed",
+          "variantOptions": [
+            "Closed",
+            "Open"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C15",
+      "nodeId": "2048:508",
+      "variants": [
+        {
+          "id": "2048:508",
+          "name": "C15 / Setup diagram"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C16",
+      "nodeId": "2048:554",
+      "variants": [
+        {
+          "id": "2048:520",
+          "name": "State=Prepare"
+        },
+        {
+          "id": "2048:537",
+          "name": "State=Capture"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Prepare",
+          "variantOptions": [
+            "Prepare",
+            "Capture"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C17",
+      "nodeId": "2049:608",
+      "variants": [
+        {
+          "id": "2049:543",
+          "name": "State=20 Hz"
+        },
+        {
+          "id": "2049:584",
+          "name": "State=3 Hz"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "20 Hz",
+          "variantOptions": [
+            "20 Hz",
+            "3 Hz"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C18",
+      "nodeId": "2049:636",
+      "variants": [
+        {
+          "id": "2049:609",
+          "name": "State=Generated"
+        },
+        {
+          "id": "2049:621",
+          "name": "State=Hardware unavailable"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Generated",
+          "variantOptions": [
+            "Generated",
+            "Hardware unavailable"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C19",
+      "nodeId": "2049:664",
+      "variants": [
+        {
+          "id": "2049:637",
+          "name": "State=Idle"
+        },
+        {
+          "id": "2049:645",
+          "name": "State=Recording example"
+        },
+        {
+          "id": "2049:653",
+          "name": "State=Interrupted"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Idle",
+          "variantOptions": [
+            "Idle",
+            "Recording example",
+            "Interrupted"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C20",
+      "nodeId": "2049:665",
+      "variants": [
+        {
+          "id": "2049:665",
+          "name": "C20 / Capture history"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C21",
+      "nodeId": "2049:833",
+      "variants": [
+        {
+          "id": "2049:697",
+          "name": "State=Full interval"
+        },
+        {
+          "id": "2049:770",
+          "name": "State=First half"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Full interval",
+          "variantOptions": [
+            "Full interval",
+            "First half"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C22",
+      "nodeId": "2049:834",
+      "variants": [
+        {
+          "id": "2049:834",
+          "name": "C22 / Spectrum viewer"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C23",
+      "nodeId": "2049:868",
+      "variants": [
+        {
+          "id": "2049:846",
+          "name": "State=Overlay visible"
+        },
+        {
+          "id": "2049:859",
+          "name": "State=Original image"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Overlay visible",
+          "variantOptions": [
+            "Overlay visible",
+            "Original image"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C24",
+      "nodeId": "2049:869",
+      "variants": [
+        {
+          "id": "2049:869",
+          "name": "C24 / Comparison viewer"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C25",
+      "nodeId": "2049:925",
+      "variants": [
+        {
+          "id": "2049:925",
+          "name": "C25 / Depth or point-cloud viewer"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C26",
+      "nodeId": "2049:950",
+      "variants": [
+        {
+          "id": "2049:934",
+          "name": "State=Above critical rate"
+        },
+        {
+          "id": "2049:942",
+          "name": "State=Insufficient rate"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Above critical rate",
+          "variantOptions": [
+            "Above critical rate",
+            "Insufficient rate"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C27",
+      "nodeId": "2049:968",
+      "variants": [
+        {
+          "id": "2049:951",
+          "name": "State=Editing"
+        },
+        {
+          "id": "2049:959",
+          "name": "State=Attached"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Editing",
+          "variantOptions": [
+            "Editing",
+            "Attached"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C28",
+      "nodeId": "2049:984",
+      "variants": [
+        {
+          "id": "2049:969",
+          "name": "State=Evidence"
+        },
+        {
+          "id": "2049:978",
+          "name": "State=Empty"
+        }
+      ],
+      "properties": {
+        "Title / Evidence#2054:18": {
+          "type": "TEXT",
+          "defaultValue": "Sampling changes what we can infer."
+        },
+        "Title / Empty#2054:21": {
+          "type": "TEXT",
+          "defaultValue": "Your first run starts here."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Evidence",
+          "variantOptions": [
+            "Evidence",
+            "Empty"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C29",
+      "nodeId": "2049:1013",
+      "variants": [
+        {
+          "id": "2049:985",
+          "name": "State=Unsaved"
+        },
+        {
+          "id": "2049:992",
+          "name": "State=Saving"
+        },
+        {
+          "id": "2049:999",
+          "name": "State=Saved example"
+        },
+        {
+          "id": "2049:1006",
+          "name": "State=Failed"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Unsaved",
+          "variantOptions": [
+            "Unsaved",
+            "Saving",
+            "Saved example",
+            "Failed"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C30",
+      "nodeId": "2050:1009",
+      "variants": [
+        {
+          "id": "2050:984",
+          "name": "State=Editing"
+        },
+        {
+          "id": "2050:995",
+          "name": "State=Submitted example"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Editing",
+          "variantOptions": [
+            "Editing",
+            "Submitted example"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C31",
+      "nodeId": "2050:1010",
+      "variants": [
+        {
+          "id": "2050:1010",
+          "name": "C31 / Maintenance queue"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C32",
+      "nodeId": "2050:1062",
+      "variants": [
+        {
+          "id": "2050:1040",
+          "name": "State=Unreviewed"
+        },
+        {
+          "id": "2050:1051",
+          "name": "State=Feedback example"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Unreviewed",
+          "variantOptions": [
+            "Unreviewed",
+            "Feedback example"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C33",
+      "nodeId": "2050:1075",
+      "variants": [
+        {
+          "id": "2050:1063",
+          "name": "State=Restriction"
+        },
+        {
+          "id": "2050:1069",
+          "name": "State=Alternative found"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Restriction",
+          "variantOptions": [
+            "Restriction",
+            "Alternative found"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C34",
+      "nodeId": "2050:1076",
+      "variants": [
+        {
+          "id": "2050:1076",
+          "name": "C34 / Safety information block"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C35",
+      "nodeId": "2050:1169",
+      "variants": [
+        {
+          "id": "2050:1083",
+          "name": "State=Default order"
+        },
+        {
+          "id": "2050:1126",
+          "name": "State=Sorted by ID"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default order",
+          "variantOptions": [
+            "Default order",
+            "Sorted by ID"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C36",
+      "nodeId": "2050:1190",
+      "variants": [
+        {
+          "id": "2050:1170",
+          "name": "State=Reservation"
+        },
+        {
+          "id": "2050:1180",
+          "name": "State=Discard draft"
+        }
+      ],
+      "properties": {
+        "Title / Reservation#2054:24": {
+          "type": "TEXT",
+          "defaultValue": "Reserve this example setup?"
+        },
+        "Title / Discard draft#2054:27": {
+          "type": "TEXT",
+          "defaultValue": "Discard the unsaved example draft?"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Reservation",
+          "variantOptions": [
+            "Reservation",
+            "Discard draft"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C37",
+      "nodeId": "2050:1191",
+      "variants": [
+        {
+          "id": "2050:1191",
+          "name": "C37 / Empty state"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C38",
+      "nodeId": "2050:1225",
+      "variants": [
+        {
+          "id": "2050:1197",
+          "name": "State=Loading"
+        },
+        {
+          "id": "2050:1209",
+          "name": "State=Recoverable error"
+        },
+        {
+          "id": "2050:1217",
+          "name": "State=Permission limited"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Loading",
+          "variantOptions": [
+            "Loading",
+            "Recoverable error",
+            "Permission limited"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C39",
+      "nodeId": "2050:1226",
+      "variants": [
+        {
+          "id": "2050:1226",
+          "name": "C39 / Provenance strip"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "id": "C40",
+      "nodeId": "2050:1281",
+      "variants": [
+        {
+          "id": "2050:1267",
+          "name": "State=Standard"
+        },
+        {
+          "id": "2050:1274",
+          "name": "State=Reduced motion"
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Standard",
+          "variantOptions": [
+            "Standard",
+            "Reduced motion"
+          ]
+        }
+      }
+    }
+  ],
+  "boards": [
+    {
+      "id": "2045:284",
+      "name": "5B · Core controls",
+      "width": 1680,
+      "height": 3608
+    },
+    {
+      "id": "2047:1355",
+      "name": "5A · Identity & foundations",
+      "width": 1680,
+      "height": 1162
+    },
+    {
+      "id": "2047:1416",
+      "name": "5A.2 · Token & type specimens",
+      "width": 1680,
+      "height": 1231
+    },
+    {
+      "id": "2048:555",
+      "name": "5C · Preparation & space",
+      "width": 1680,
+      "height": 7093.86279296875
+    },
+    {
+      "id": "2049:1014",
+      "name": "5D · Scientific measurement",
+      "width": 1680,
+      "height": 6749
+    },
+    {
+      "id": "2049:1455",
+      "name": "5E · Evidence & reasoning",
+      "width": 1680,
+      "height": 3986
+    },
+    {
+      "id": "2050:1282",
+      "name": "5F · Operations & recovery",
+      "width": 1680,
+      "height": 7398
+    }
+  ],
+  "reviewInstanceCount": 151,
+  "unshownVariants": [],
+  "variableCount": 64,
+  "aliasCount": 33,
+  "textStyles": 9,
+  "variablesMissingSyntax": [],
+  "variablesAllScopes": [],
+  "unstyledNativeText": [],
+  "unboundPaints": [],
+  "overflow": [],
+  "topLevelOverlaps": [],
+  "missingComponentSpacing": [],
+  "missingComponentRadius": [],
+  "priorPagesPreserved": [
+    {
+      "id": "2034:910",
+      "name": "◆ Start here · Project index"
+    },
+    {
+      "id": "0:1",
+      "name": "Phase 2 · Research & Experience"
+    },
+    {
+      "id": "2:4",
+      "name": "Foundations · Tokens & Components"
+    },
+    {
+      "id": "2006:902",
+      "name": "Phase 3 · Creative Direction"
+    },
+    {
+      "id": "2019:902",
+      "name": "Phase 4 · Space & 3D Foundation"
+    }
+  ],
+  "scope": "Representative design library. Target variants in blueprint are broader; no live device or persistent application is claimed.",
+  "radiusAuditFields": [
+    "topLeftRadius",
+    "topRightRadius",
+    "bottomLeftRadius",
+    "bottomRightRadius"
+  ],
+  "reviewedOn": "2026-10-02",
+  "visualReview": {
+    "status": "passed",
+    "coverage": "All seven boards; targeted post-fix state titles, busy labels, slider, map key and spectrum line",
+    "screenshotsDirectory": "screenshots"
+  },
+  "codeConnect": {
+    "status": "not_applicable",
+    "reason": "Static HTML catalogue; no eligible framework component exports."
+  }
+}

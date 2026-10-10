@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "method": "Fixed iframe CSS viewports in the existing in-app browser",
+  "pages": 3,
+  "widths": [
+    320,
+    768,
+    1280
+  ],
+  "layoutChecks": 9,
+  "automatedScans": 9,
+  "confirmedViolations": 0,
+  "incompleteRules": 0,
+  "pageOverflow": false,
+  "keyboardForwardSteps": 23,
+  "applicationFilesUnchanged": 175,
+  "artifacts": [
+    {
+      "path": "submission/PARALLAX-Final-Report.pdf",
+      "sha256": "89e4215422a07f7f548f1167851db65be21a4fffde95fa48e610fff6638b9118",
+      "unchanged": true
+    },
+    {
+      "path": "submission/PARALLAX-Presentation-Final.pptx",
+      "sha256": "16eae2b2d93ca81db8458224e2c93ebc72dd2df3eea905baf25887553ec0883b",
+      "unchanged": true
+    },
+    {
+      "path": "submission/demo/PARALLAX-Recorded-Walkthrough.webm",
+      "sha256": "c5807f7a51b964cdce9d96b032cb5357c2652e52a41b7fb375864400180168b4",
+      "unchanged": true
+    }
+  ],
+  "scope": "Packet-only navigation names; no application, styling, timing, image, note or recording change. Not physical-device, actual browser zoom or spoken screen-reader verification."
+}

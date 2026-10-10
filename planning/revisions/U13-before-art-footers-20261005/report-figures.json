@@ -1,0 +1,60 @@
+{
+  "revision": "U10-R2 · 5 October 2026",
+  "note": "Figure data added in U10-R2. Every entry restates an existing project record; nothing here is a participant finding. Sources: research/U02_RESEARCH_SYNTHESIS.md (role lenses) and research/PHASE_02_RESEARCH_AND_EXPERIENCE.md sections 4 and 5 (H-labelled empathy and journey hypotheses).",
+  "personas": {
+    "caption": "Six role lenses, written as jobs to be done. Authored for testing; not validated biographies. Source: U02 research synthesis.",
+    "roles": [
+      {"id": "PA", "role": "First-run student", "tier": "Primary", "job": "When a practical is unfamiliar, identify the method, complete kit and next action so I can begin with an understood question.", "outcome": "First preparation → explain the task and readiness requirements", "check": "Previous familiarity, how preparation happens, acceptable help and real stopping points"},
+      {"id": "PB", "role": "Returning / advanced student", "tier": "Primary", "job": "When conditions change, reconstruct and compare what I actually recorded so I can defend a bounded interpretation.", "outcome": "Variation, failed capture or later report → trace evidence without rewriting history", "check": "Current notebook habits, significance of parameter differences, preferred comparison depth"},
+      {"id": "PC", "role": "Instructor", "tier": "Primary staff", "job": "When preparing or teaching a cohort, distinguish readiness from learning so I can offer the right support.", "outcome": "Upcoming practical or confusing evidence → a support action, not a completion ranking", "check": "Assessment expectations, attendance ownership, what readiness signals actually mean"},
+      {"id": "PD", "role": "Technician", "tier": "Primary staff", "job": "When an asset fails or a kit returns incomplete, establish impact and ownership so the next user has a reliable status.", "outcome": "Incident or handover → restriction, repair verification and clear next action", "check": "Existing SOPs, notification responsibility, inventory accuracy and release authority"},
+      {"id": "PE", "role": "Administrator", "tier": "Secondary", "job": "When reviewing demand and resources, reconcile definitions and scope so I can make a documented decision.", "outcome": "Planning review → qualified utilisation and resource evidence", "check": "Real reporting period, permitted data, baseline and denominators"},
+      {"id": "PF", "role": "Visitor", "tier": "Tertiary", "job": "When finding the lab or an activity, obtain useful location information without seeing private operational records.", "outcome": "Arrival and orientation → accessible destination and public explanation", "check": "Signage comprehension, public information policy and physical access"}
+    ]
+  },
+  "empathy": {
+    "caption": "Empathy map for the first-run student during the vision experiment, with the instructor and technician maps beside it. Every entry is an anticipated hypothesis from the Phase 2 record. No participant said, thought or felt these; zero participants were studied.",
+    "primary": {
+      "id": "PA", "role": "First-run student", "moment": "During the vision experiment",
+      "says": ["Which camera are we supposed to use?", "Is this the right cable?"],
+      "thinks": ["Everyone else seems to know what they're doing.", "Did I save that?"],
+      "does": ["Checks the brief on a phone", "Waits for the instructor", "Retakes captures"],
+      "feels": ["Anxious at setup", "Relieved after the first good capture", "Uncertain about the report"],
+      "pains": ["Incomplete kit", "Unclear first step", "Lost settings"],
+      "gains": ["A clear checklist", "Confidence before arriving", "Evidence that writes the report's method"]
+    },
+    "others": [
+      {"id": "PC", "role": "Instructor", "moment": "Running a teaching session",
+       "says": "Has everyone checked in? Which station is free?",
+       "thinks": "Two kits are probably incomplete again.",
+       "does": "Walks the room; marks attendance; fixes setups; answers repeated questions.",
+       "feels": "Stretched across stations; frustrated by preventable delays.",
+       "pains": "No readiness signal; manual attendance; inconsistent evidence quality.",
+       "gains": "Readiness at a glance; attendance from check-in; rubric linked to evidence."},
+      {"id": "PD", "role": "Technician", "moment": "Handling a faulty camera kit",
+       "says": "When did this stop working? Who had it last?",
+       "thinks": "Who else booked this kit this week?",
+       "does": "Tests the device; searches for accessories; updates a log; tells faculty.",
+       "feels": "Interrupted; responsible for problems they could not see coming.",
+       "pains": "Symptom-free reports; unknown last user; no link from a fault to future bookings.",
+       "gains": "Structured reports with asset ID; automatic impact on bookings; verification record."}
+    ]
+  },
+  "journey": {
+    "caption": "Student journey for vision experiment E06 (J1). Emotions and pain points are anticipated hypotheses (H-numbered in the Phase 2 record), not observations. Touchpoint codes refer to the page and component specifications.",
+    "stages": ["Discover", "Prepare", "Reserve", "Arrive & check in", "Capture", "Analyse", "Document", "Submit & return"],
+    "emotion": ["Curious", "Uncertain", "Neutral", "Anxious", "Focused", "Engaged", "Tired", "Relieved"],
+    "level": [1, -1, 0, -2, 1, 2, -1, 2],
+    "rows": [
+      {"label": "Actions", "cells": ["Opens assigned experiment", "Reads objective, checks prerequisites", "Picks time, reserves full kit", "Finds station CV-03, verifies kit", "Sets lighting and camera, captures", "Runs detection, compares lighting conditions", "Records observations and limits", "Submits revision, returns kit"]},
+      {"label": "Touchpoints", "cells": ["P02, P04", "P05", "P06, P07", "Signage, P10, P11", "Capture zone C1, P12", "P14", "P15", "P16, P11 return"]},
+      {"label": "Pain points", "cells": ["Too many similar experiments", "Kit list unclear (H01)", "Room booked, devices not (H02)", "Missing accessory (H01)", "Light changes mid-capture (H10)", "Confidence read as correctness (H12)", "Settings lost (H03)", "Unclear if submission is final"]},
+      {"label": "Opportunities", "cells": ["Topic filters, duration, prerequisites", "Checklist that transfers to booking", "Complete-kit reservation with conflicts", "Same manifest at check-in; report issue inline", "Recording indicator; settings captured automatically", "Confidence vs ground truth explained", "Evidence embeds with provenance", "Stable revision + return checklist"]}
+    ]
+  },
+  "extra": {
+    "5. Design Process": {"grid": ["apps/lab-web/evidence/u08-art/S-01.png", "apps/lab-web/evidence/u08-art/S-02.png", "apps/lab-web/evidence/u08-art/S-03.png", "apps/lab-web/evidence/u08-art/S-04.png", "apps/lab-web/evidence/u08-art/S-05.png", "apps/lab-web/evidence/u08-art/S-06.png"], "columns": 3, "caption": "Six wayfinding and safety sign studies, S-01 to S-06. Conceptual designs; no signage has been installed or approved."},
+    "6. Wireframes": {"grid": ["submission/assets/WF06.png", "submission/assets/WF11.png"], "columns": 2, "caption": "WF06, retained evidence comparison, and WF11, technician recovery. Authored structures from the fifteen-board packet."},
+    "7. Final Prototype": {"grid": ["submission/assets/E01-3Hz.png", "submission/assets/fault-8.png"], "columns": 2, "caption": "Left: E01 rehearsal at 3 Hz, a generated teaching fixture. Right: fault sandbox stage 8, where early release is refused."}
+  }
+}

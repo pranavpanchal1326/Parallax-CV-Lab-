@@ -1,0 +1,215 @@
+.ops-intro {
+  max-width: 760px;
+  font-size: 19px;
+  line-height: 1.6;
+  margin: -12px 0 28px;
+}
+.ops-identity {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  margin: 32px 0;
+  padding: 24px 0;
+  border-block: 1px solid var(--ed-rule);
+}
+.ops-identity > div {
+  max-width: 560px;
+}
+.ops-section {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid var(--ed-ink);
+  scroll-margin-top: 90px;
+}
+.ops-section:focus,
+.ops-feedback:focus {
+  outline: 2px solid var(--ed-spot);
+  outline-offset: 6px;
+}
+.ops-workspace {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.6fr);
+  gap: 48px;
+  align-items: start;
+  margin-top: 24px;
+}
+.ops-controls {
+  min-width: 0;
+}
+.ops-controls form {
+  margin: 0 0 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--ed-rule);
+}
+.ops-section label,
+.ops-identity label {
+  display: block;
+  font: 500 12px/1.5 var(--ed-mono);
+  margin: 18px 0 8px;
+}
+.ops-identity label {
+  margin-top: 0;
+}
+.ops-section select,
+.ops-section input,
+.ops-section textarea,
+.ops-identity select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--ed-rule);
+  border-radius: 0;
+  background: var(--ed-paper);
+  color: var(--ed-ink);
+  font: 16px/1.5 var(--ed-sans);
+}
+.ops-section textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+.ops-section form button {
+  margin-top: 16px;
+}
+.ops-section p {
+  line-height: 1.65;
+}
+.ops-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  margin-block: 20px;
+}
+.ops-controls > .ops-actions {
+  flex-direction: column;
+}
+.ops-ledger {
+  min-width: 0;
+}
+.ops-section h3 {
+  font: 500 18px/1.4 var(--ed-sans);
+  margin: 12px 0;
+}
+.ops-ledger table {
+  width: 100%;
+  min-width: 560px;
+}
+.ops-ledger th small {
+  display: block;
+  margin-top: 6px;
+  font-weight: 400;
+}
+.ops-section details {
+  border-top: 1px solid var(--ed-rule);
+  padding-block: 14px;
+  line-height: 1.65;
+}
+.ops-section summary {
+  cursor: pointer;
+  min-height: 32px;
+  padding-block: 4px;
+}
+.ops-section code {
+  overflow-wrap: anywhere;
+}
+.ops-empty {
+  padding: 24px;
+  border: 1px dashed var(--ed-rule);
+}
+.ops-policy-facts,
+.ops-owners {
+  margin: 0;
+}
+.ops-policy-facts > div,
+.ops-owners > div {
+  border-bottom: 1px solid var(--ed-rule);
+  padding: 18px 0;
+}
+.ops-policy-facts dt,
+.ops-owners dt {
+  font-weight: 600;
+  line-height: 1.5;
+}
+.ops-policy-facts dd,
+.ops-owners dd {
+  margin: 12px 0 0;
+  line-height: 1.7;
+}
+.ops-retained {
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--ed-paper-2, var(--ed-paper));
+  border-left: 3px solid var(--ed-spot);
+}
+.ops-retained blockquote {
+  margin: 22px 0 0;
+  border: 0;
+  padding: 0;
+}
+.ops-handover-record {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--ed-rule);
+}
+.ops-public {
+  border-top: 3px solid var(--ed-spot);
+  margin-top: 30px;
+  padding: 24px;
+  background: var(--ed-paper-2, var(--ed-paper));
+}
+.ops-notice-history {
+  padding-block: 14px;
+  border-bottom: 1px solid var(--ed-rule);
+  font-size: 14px;
+}
+.ops-current {
+  border-top: 3px solid var(--ed-ink);
+  padding-top: 18px;
+}
+.ops-runbook-list {
+  margin-top: 28px;
+}
+.ops-runbook-list dl > div {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 24px;
+  margin-bottom: 14px;
+}
+.ops-runbook-list dt {
+  font-weight: 600;
+}
+.ops-runbook-list dd {
+  margin: 0;
+  max-width: 70ch;
+}
+@media (max-width: 800px) {
+  .ops-workspace,
+  .ops-identity {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .ops-runbook-list dl > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .ops-retained,
+  .ops-public,
+  .ops-empty {
+    padding: 18px;
+  }
+  .ops-actions .pbtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.ops-export pre {
+  max-height: 28rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  padding: 1rem;
+  border: 1px solid var(--ed-rule);
+}

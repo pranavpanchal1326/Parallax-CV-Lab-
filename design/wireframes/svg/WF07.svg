@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">WF07 · Notebook: the student&#39;s claim</title><desc id="desc">A student writes what the evidence supports and its limitations.. Failed save retains draft; a draft and a saved revision are distinct.</desc>
+<rect width="760" height="500" fill="#fff"/>
+<rect x="16" y="16" width="728" height="36" fill="#eee" stroke="#444"/>
+<text x="28" y="39" font-family="Arial" font-size="12" fill="#222">PARALLAX / task navigation / role preview</text>
+<text x="20" y="83" font-family="Arial" font-size="23" fill="#222">Notebook: the student&#39;s claim</text>
+<rect x="20" y="105" width="480" height="78" fill="#fafafa" stroke="#555" />
+<text x="32" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">1 / Interpretation prompt</text>
+<text x="32" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">What changed? What cannot be concluded?</text>
+<text x="32" y="169" font-family="Arial" font-size="12" font-weight="400" fill="#222">Reference to recorded evidence</text>
+<rect x="20" y="205" width="480" height="143" fill="#fafafa" stroke="#555" />
+<text x="32" y="229" font-family="Arial" font-size="14" font-weight="700" fill="#222">2 / Labelled notebook textarea</text>
+<text x="32" y="249" font-family="Arial" font-size="12" font-weight="400" fill="#222">Student-written interpretation</text>
+<text x="32" y="269" font-family="Arial" font-size="12" font-weight="400" fill="#222">Draft retained during a failed save</text>
+<text x="32" y="289" font-family="Arial" font-size="12" font-weight="400" fill="#222">[ Save claim ]</text>
+<rect x="520" y="105" width="220" height="243" fill="#fafafa" stroke="#555" />
+<text x="532" y="129" font-family="Arial" font-size="14" font-weight="700" fill="#222">3 / Evidence links</text>
+<text x="532" y="149" font-family="Arial" font-size="12" font-weight="400" fill="#222">Capture A / Capture B</text>
+<text x="532" y="169" font-family="Arial" font-size="12" font-weight="400" fill="#222">Source boundary</text>
+<text x="532" y="189" font-family="Arial" font-size="12" font-weight="400" fill="#222">Compare conditions</text>
+<rect x="20" y="370" width="720" height="78" fill="#fafafa" stroke="#555" stroke-dasharray="5 3"/>
+<text x="32" y="394" font-family="Arial" font-size="14" font-weight="700" fill="#222">4 / Save failed — draft still present</text>
+<text x="32" y="414" font-family="Arial" font-size="12" font-weight="400" fill="#222">No submission acknowledgement is implied</text>
+<text x="32" y="434" font-family="Arial" font-size="12" font-weight="400" fill="#222">Retry save / then continue</text>
+<text x="20" y="484" font-family="Arial" font-size="11" fill="#444">WF07 / Reconstructed React view / low fidelity / no fieldwork claimed</text></svg>

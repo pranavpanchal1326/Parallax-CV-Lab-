@@ -1,0 +1,2585 @@
+{
+  "scenarios": [
+    {
+      "scenario": "disconnected",
+      "records": [
+        "Temperature—Reading unavailableNo reading · simulatedSource disconnectedCheck the source with the technician; retained values cannot establish current conditions.Observed unavailable ISTReceived unavailable ISTSource and qualitySIM-C1-temperature-01 · zone C1Demo fixture · temperature · quality: unavailable",
+        "CO₂—Reading unavailableNo reading · simulatedSource disconnectedCheck the source with the technician; retained values cannot establish current conditions.Observed unavailable ISTReceived unavailable ISTSource and qualitySIM-C1-co2-01 · zone C1Demo fixture · co2 · quality: unavailable",
+        "Illuminance—Reading unavailableNo reading · simulatedSource disconnectedCheck the source with the technician; retained values cannot establish current conditions.Observed unavailable ISTReceived unavailable ISTSource and qualitySIM-C1-illuminance-01 · zone C1Demo fixture · illuminance · quality: unavailable"
+      ]
+    },
+    {
+      "scenario": "unknown",
+      "records": [
+        "Temperature—Reading unavailableNo reading · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed unavailable ISTReceived unavailable ISTSource and qualitySIM-C1-temperature-01 · zone C1Demo fixture · temperature · quality: unavailable",
+        "CO₂—Reading unavailableNo reading · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed unavailable ISTReceived unavailable ISTSource and qualitySIM-C1-co2-01 · zone C1Demo fixture · co2 · quality: unavailable",
+        "Illuminance—Reading unavailableNo reading · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed unavailable ISTReceived unavailable ISTSource and qualitySIM-C1-illuminance-01 · zone C1Demo fixture · illuminance · quality: unavailable"
+      ]
+    },
+    {
+      "scenario": "fresh",
+      "records": [
+        "Temperature23.5°CRecent example · simulatedSource connected in example onlyRecent context only; equipment restrictions and manual checks still apply.Observed 09:39 ISTReceived 09:40 ISTAge at review: 30 secondsSource and qualitySIM-C1-temperature-01 · zone C1Demo fixture · temperature · quality: valid",
+        "CO₂640ppmRecent example · simulatedSource connected in example onlyRecent context only; equipment restrictions and manual checks still apply.Observed 09:39 ISTReceived 09:40 ISTAge at review: 30 secondsSource and qualitySIM-C1-co2-01 · zone C1Demo fixture · co2 · quality: valid",
+        "Illuminance420lxRecent example · simulatedSource connected in example onlyRecent context only; equipment restrictions and manual checks still apply.Observed 09:39 ISTReceived 09:40 ISTAge at review: 30 secondsSource and qualitySIM-C1-illuminance-01 · zone C1Demo fixture · illuminance · quality: valid"
+      ]
+    },
+    {
+      "scenario": "delayed",
+      "records": [
+        "Temperature23.5°CStale example · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed 09:25 ISTReceived 09:40 ISTAge at review: 900 secondsSource and qualitySIM-C1-temperature-01 · zone C1Demo fixture · temperature · quality: valid",
+        "CO₂640ppmStale example · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed 09:25 ISTReceived 09:40 ISTAge at review: 900 secondsSource and qualitySIM-C1-co2-01 · zone C1Demo fixture · co2 · quality: valid",
+        "Illuminance420lxStale example · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed 09:25 ISTReceived 09:40 ISTAge at review: 900 secondsSource and qualitySIM-C1-illuminance-01 · zone C1Demo fixture · illuminance · quality: valid"
+      ]
+    },
+    {
+      "scenario": "invalid",
+      "records": [
+        "Temperature23.5°CInvalid reading · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed 09:39 ISTReceived 09:40 ISTSource and qualitySIM-C1-temperature-01 · zone C1Demo fixture · temperature · quality: invalid",
+        "CO₂640ppmInvalid reading · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed 09:39 ISTReceived 09:40 ISTSource and qualitySIM-C1-co2-01 · zone C1Demo fixture · co2 · quality: invalid",
+        "Illuminance420lxInvalid reading · simulatedSource connected in example onlyUse the approved manual checks and request a source review; suitability is unknown.Observed 09:39 ISTReceived 09:40 ISTSource and qualitySIM-C1-illuminance-01 · zone C1Demo fixture · illuminance · quality: invalid"
+      ]
+    },
+    {
+      "scenario": "offline",
+      "records": [
+        "Temperature23.5°CStale example · simulatedSource disconnectedCheck the source with the technician; retained values cannot establish current conditions.Observed 09:25 ISTReceived 09:25 ISTAge at review: 900 secondsSource and qualitySIM-C1-temperature-01 · zone C1Demo fixture · temperature · quality: valid",
+        "CO₂640ppmStale example · simulatedSource disconnectedCheck the source with the technician; retained values cannot establish current conditions.Observed 09:25 ISTReceived 09:25 ISTAge at review: 900 secondsSource and qualitySIM-C1-co2-01 · zone C1Demo fixture · co2 · quality: valid",
+        "Illuminance420lxStale example · simulatedSource disconnectedCheck the source with the technician; retained values cannot establish current conditions.Observed 09:25 ISTReceived 09:25 ISTAge at review: 900 secondsSource and qualitySIM-C1-illuminance-01 · zone C1Demo fixture · illuminance · quality: valid"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "source recovery",
+      "text": [
+        "Selected: Recent example readings. Dashboard and new captures use these same records."
+      ]
+    },
+    {
+      "name": "confirm gated",
+      "enabled": false
+    },
+    {
+      "name": "confirmation",
+      "text": [
+        "Selected: Recent example readings. Dashboard and new captures use these same records.",
+        "Simulation confirmed for Capture lighting. No device command was sent; no savings were measured. This review is not saved on reload."
+      ]
+    },
+    {
+      "name": "interval clears review",
+      "enabled": false,
+      "text": [
+        "Selected: Recent example readings. Dashboard and new captures use these same records.",
+        "The selected group is now protected. Its previous review is cleared; inspect the reasons above."
+      ]
+    },
+    {
+      "name": "complete energy",
+      "rows": "Capture lighting\nC1-L1 · C1-L2\n\t120 W\n10:45–11:00 IST\n\t0.103 kWh\nComplete modelled period\n\t60 / 60 minutes\nSimulated\n\nComputing stations\nCV-01 · CV-02 · CV-03 · CV-04 · CV-05 · CV-06\n\t600 W\n10:45–11:00 IST\n\t0.517 kWh\nComplete modelled period\n\t60 / 60 minutes\nSimulated\n\nSignal bench\nS1-B\n\t50 W\n10:45–11:00 IST\n\t0.043 kWh\nComplete modelled period\n\t60 / 60 minutes\nSimulated\n\nNetwork and essential services\nCircuit map unavailable\n\tUnknown W\n10:45–11:00 IST\n\tUnknown kWh\nPeriod total unknown\n\t0 / 60 minutes\nProtected; no source"
+    },
+    {
+      "name": "short gapped energy",
+      "rows": "Capture lighting\nC1-L1 · C1-L2\n\t120 W\n10:22–10:30 IST\n\t0.041 kWh\nPeriod total unknown\n\t22.5 / 30 minutes\nGap retained\n\nComputing stations\nCV-01 · CV-02 · CV-03 · CV-04 · CV-05 · CV-06\n\t600 W\n10:22–10:30 IST\n\t0.203 kWh\nPeriod total unknown\n\t22.5 / 30 minutes\nGap retained\n\nSignal bench\nS1-B\n\t50 W\n10:22–10:30 IST\n\t0.017 kWh\nPeriod total unknown\n\t22.5 / 30 minutes\nGap retained\n\nNetwork and essential services\nCircuit map unavailable\n\tUnknown W\n10:22–10:30 IST\n\tUnknown kWh\nPeriod total unknown\n\t0 / 30 minutes\nProtected; no source"
+    },
+    {
+      "name": "keyboard section jump",
+      "url": "http://127.0.0.1:4190/?qa=1#/environment",
+      "focused": "physical-sheet"
+    },
+    {
+      "name": "energy keyboard focus",
+      "target": "energy-period-title"
+    },
+    {
+      "name": "production dashboard",
+      "url": "http://127.0.0.1:4180/apps/lab-web/dist/index.html#/dashboard",
+      "title": "dashboard — PARALLAX",
+      "reservation": "10:00 IST · B-2040",
+      "scrollTop": 0
+    },
+    {
+      "name": "packaged standalone sheet",
+      "url": "http://127.0.0.1:4180/apps/lab-web/dist/sustainability-sheet.html",
+      "requirements": [
+        "Design for a longeruseful life.",
+        "Zone the light; preserve the experiment",
+        "An opening is a starting point",
+        "Review work before reducing load",
+        "Replace a part, keep the frame",
+        "Make each claim traceable"
+      ]
+    }
+  ],
+  "audits": [
+    {
+      "state": "environment expanded review light",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      },
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".migration-strip > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#current-view > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "em"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".pull"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#energy-period-title"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"energy-period-title\"] > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "label[for=\"energy-period\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "label[for=\"energy-coverage\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "caption"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"energy-period-title\"] > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#standby-title"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"standby-title\"] > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "label[for=\"standby-duration\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"standby-title\"] > .small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-sheet > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-title"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-sheet > p:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"3.77\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"3.77\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"7.3\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[y=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"5.680000000000001\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"2.1\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"0.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.68\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"6.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "figcaption"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-plan > div > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-plan > div > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "div > a[href$=\"#/safety\"][data-discover=\"true\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-sheet > .small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".small > a:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".small > a:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > .quiet:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > .small"
+              ]
+            }
+          ]
+        }
+      ],
+      "passedRules": 52,
+      "path": "#/environment",
+      "violations": []
+    },
+    {
+      "state": "environment narrow night",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      },
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".migration-strip > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#current-view > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "em"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".pull"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "nav[aria-label=\"Environment sections\"] > .quiet:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#energy-period-title"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"energy-period-title\"] > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "label[for=\"energy-period\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "label[for=\"energy-coverage\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "caption"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "th[scope=\"col\"]:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(1) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(2) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(3) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > th[scope=\"row\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > th[scope=\"row\"] > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(2) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(3) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "tr:nth-child(4) > td:nth-child(4) > small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"energy-period-title\"] > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#standby-title"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"standby-title\"] > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "label[for=\"standby-duration\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".msg"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "section[aria-labelledby=\"standby-title\"] > .small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-sheet > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-title"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-sheet > p:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"3.77\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"3.77\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"7.3\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[y=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"5.680000000000001\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"2.1\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"0.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.68\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"6.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "figcaption"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-plan > div > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-plan > div > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "div > a[href$=\"#/safety\"][data-discover=\"true\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > .small:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > p:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > p:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > p:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(5) > div:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#physical-sheet > .small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".small > a:nth-child(1)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".small > a:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > .quiet:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > .small"
+              ]
+            }
+          ]
+        }
+      ],
+      "passedRules": 52,
+      "path": "#/environment",
+      "violations": []
+    },
+    {
+      "state": "dashboard desktop light",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      },
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".migration-strip > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#current-view > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h1 > em"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".pull"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(1) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-metrics > article:nth-child(1) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-metrics > article:nth-child(2) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(3) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-metrics > article:nth-child(3) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(4) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"3.77\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"3.77\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"7.3\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[y=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"5.680000000000001\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"2.1\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"0.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.68\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"6.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-section:nth-child(6) > .smart-heading > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-section:nth-child(6) > .smart-heading > a[href$=\"#/environment\"][data-discover=\"true\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .observation-value"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .observation-value > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .observation-state.state-fresh"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(5)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(6)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(7)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .observation-value"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .observation-value > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .observation-state.state-fresh"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(5)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(6)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(7)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .observation-value"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .observation-value > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .observation-state.state-fresh"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(5)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(6)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(7)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-section:nth-child(6) > .small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-teaser > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-teaser > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h2 > em"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-teaser > p:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".quiet:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > .small"
+              ]
+            }
+          ]
+        }
+      ],
+      "passedRules": 42,
+      "path": "#/dashboard",
+      "violations": []
+    },
+    {
+      "state": "dashboard narrow night",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      },
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".migration-strip > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "a[href=\"/prototype/index.html\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "#current-view > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h1 > em"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".pull"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(1) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(1) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-metrics > article:nth-child(1) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(2) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(2) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-metrics > article:nth-child(2) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(3) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(3) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-metrics > article:nth-child(3) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > .cap2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+              "target": [
+                "article:nth-child(4) > strong"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "article:nth-child(4) > p"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"3.77\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"3.77\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"7.3\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[y=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[y=\"5.680000000000001\"][x=\"0.1\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"2.1\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                ".pzl[x=\"6.5\"][y=\"5.680000000000001\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"0.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.18\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"2.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"4.68\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+              "target": [
+                "text[x=\"6.88\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-section:nth-child(6) > .smart-heading > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-section:nth-child(6) > .smart-heading > a[href$=\"#/environment\"][data-discover=\"true\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .observation-value"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .observation-value > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .observation-state.state-fresh"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(5)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(6)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > .small:nth-child(7)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(1) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .observation-value"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .observation-value > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .observation-state.state-fresh"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(5)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(6)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > .small:nth-child(7)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(2) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > h3"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .observation-value"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .observation-value > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .observation-state.state-fresh"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(4)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(5)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(6)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > .small:nth-child(7)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".observation:nth-child(3) > details > summary"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".smart-section:nth-child(6) > .small"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-teaser > .ed-kicker"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-teaser > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "h2 > em"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".sustainability-teaser > p:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                "button[aria-controls=\"session-activity\"]"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > .quiet:nth-child(2)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".quiet:nth-child(3)"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".session-tools > span"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > h2"
+              ]
+            },
+            {
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
+              "target": [
+                ".access-review > .small"
+              ]
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "path": "#/dashboard",
+      "violations": []
+    }
+  ],
+  "reflow": [
+    {
+      "document": 305,
+      "route": "#/environment",
+      "theme": "light",
+      "viewport": 320
+    },
+    {
+      "document": 305,
+      "route": "#/environment",
+      "theme": "dark",
+      "viewport": 320
+    },
+    {
+      "document": 753,
+      "route": "#/environment",
+      "theme": "dark",
+      "viewport": 768
+    },
+    {
+      "document": 1350,
+      "route": "#/environment",
+      "theme": "light",
+      "viewport": 1366
+    },
+    {
+      "document": 1350,
+      "route": "#/dashboard",
+      "theme": "light",
+      "viewport": 1366
+    },
+    {
+      "document": 305,
+      "route": "#/dashboard",
+      "theme": "dark",
+      "viewport": 320
+    }
+  ],
+  "console": [],
+  "revision": "U04",
+  "date": "2026-10-03",
+  "scope": "Designer/technical verification of local demonstrator and physical proposals; no participant, hardware, full accessibility or site approval claims"
+}

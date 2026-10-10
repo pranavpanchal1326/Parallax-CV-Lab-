@@ -1,0 +1,24 @@
+{
+  "mutatedNodeIds": [
+    "I2034:1004;3:13"
+  ],
+  "fills": [
+    {
+      "type": "SOLID",
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "NORMAL",
+      "color": {
+        "r": 0.10588235408067703,
+        "g": 0.3019607961177826,
+        "b": 0.1764705926179886
+      },
+      "boundVariables": {
+        "color": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:2:18"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "scope": "Prepared example fixtures for the P9-A demonstrator, continuing the P6-A and P7-A identities. Not institutional records, measured results or live device data. Nothing is sent anywhere; state lives in this browser only.",
+  "revision": "P9-A",
+  "clock": { "today": "Thu 1 Oct 2026", "start": "09:40" },
+  "zones": { "CMP": "Computing", "C1": "Controlled capture", "S1": "Signal bench", "STO": "Kit storage" },
+  "resources": [
+    { "id": "CV-01", "name": "Computing station", "zone": "CMP", "kind": "Station", "bookable": true },
+    { "id": "CV-02", "name": "Computing station", "zone": "CMP", "kind": "Station", "bookable": true },
+    { "id": "CV-03", "name": "Computing station", "zone": "CMP", "kind": "Station", "bookable": true },
+    { "id": "CV-04", "name": "Accessible computing station", "zone": "CMP", "kind": "Station", "bookable": true },
+    { "id": "CV-05", "name": "Computing station", "zone": "CMP", "kind": "Station", "bookable": true },
+    { "id": "CV-06", "name": "Computing station", "zone": "CMP", "kind": "Station", "bookable": true },
+    { "id": "C1", "name": "Capture area", "zone": "C1", "kind": "Fixed area", "bookable": true },
+    { "id": "C1-CAM", "name": "Capture camera + lens", "zone": "C1", "kind": "Portable", "bookable": true },
+    { "id": "C1-L1", "name": "Softbox light L1", "zone": "C1", "kind": "Portable · LGT-01", "bookable": true },
+    { "id": "C1-L2", "name": "Softbox light L2", "zone": "C1", "kind": "Portable · LGT-01", "bookable": true },
+    { "id": "TRP-04", "name": "Tripod", "zone": "C1", "kind": "Portable", "bookable": true },
+    { "id": "CAL-01", "name": "Calibration target", "zone": "C1", "kind": "Portable", "bookable": true },
+    { "id": "S1-B", "name": "Signal acquisition bench", "zone": "S1", "kind": "Fixed", "bookable": true }
+  ],
+  "kits": {
+    "KIT-C1-v1": {
+      "name": "Capture kit",
+      "fixed": [ { "id": "CV-02", "qty": 1 }, { "id": "C1", "qty": 1 } ],
+      "portable": [
+        { "id": "C1-CAM", "qty": 1 },
+        { "id": "LGT-01", "qty": 2, "members": ["C1-L1", "C1-L2"], "name": "Softbox lights" },
+        { "id": "TRP-04", "qty": 1 },
+        { "id": "CAL-01", "qty": 1 }
+      ]
+    },
+    "KIT-S1-v1": {
+      "name": "Signal kit",
+      "fixed": [ { "id": "CV-03", "qty": 1 }, { "id": "S1-B", "qty": 1 } ],
+      "portable": []
+    }
+  },
+  "experiments": {
+    "E06": {
+      "title": "Object detection under changing light",
+      "strand": "Vision",
+      "question": "Does moving the light from the front to the side change what the annotation can show?",
+      "methodRevision": "01",
+      "kit": "KIT-C1-v1",
+      "station": "CV-02",
+      "booking": "B-2041", "session": "EX-S-2041",
+      "revision": "EVID-E06-r03", "request": "EX-REQ-2041", "receipt": "EX-SUB-2041",
+      "settings": { "exposure": "1/120 s", "gain": "0 dB", "lightIntensity": "40%" },
+      "evidence": [
+        { "id": "ILL-L1-v1", "label": "Frontal light", "detail": "Softbox L1 at the front, L2 off" },
+        { "id": "ILL-L2-v1", "label": "Side light", "detail": "Softbox L2 at the side, L1 off" }
+      ],
+      "evidenceKind": "Prepared illustration, not a camera capture. No detection confidence or accuracy is shown.",
+      "prepare": [
+        "I have read method r01: one arrangement, two lighting conditions, nothing else changes.",
+        "I know the kit: camera, two softbox lights, tripod and calibration target CAL-01.",
+        "I have read the capture-area safety note: lights get warm; cables stay inside C1."
+      ],
+      "duration": "50 min"
+    },
+    "E01": {
+      "title": "Sampling and aliasing",
+      "strand": "Signal",
+      "question": "What happens to a 2 Hz reference when it is sampled at 20 Hz and at 3 Hz?",
+      "methodRevision": "01",
+      "kit": "KIT-S1-v1",
+      "station": "CV-03",
+      "booking": "B-2042", "session": "EX-S-2042",
+      "revision": "EVID-E01-r03", "request": "EX-REQ-2042", "receipt": "EX-SUB-2042",
+      "source": { "id": "REF-2HZ-v1", "formula": "y(t) = sin(4πt) V", "frequencyHz": 2, "durationS": 1, "amplitudeV": 1 },
+      "evidence": [
+        { "id": "EX-RUN-20", "label": "20 Hz run", "detail": "21 samples over 0–1 s", "rateHz": 20 },
+        { "id": "EX-RUN-03", "label": "3 Hz run", "detail": "4 samples over 0–1 s", "rateHz": 3 }
+      ],
+      "evidenceKind": "Samples computed in this browser from a generated reference, not acquired from a device.",
+      "prepare": [
+        "I have read method r01: the same 0–1 s reference is sampled at two rates.",
+        "I know REF-2HZ-v1 is a generated input, not a booked acquisition device.",
+        "I have read the bench safety note: emergency power-off EPO-2 is at the signal bench."
+      ],
+      "duration": "50 min"
+    }
+  },
+  "slots": ["10:00", "11:00", "14:00"],
+  "bookings": [
+    { "id": "B-2040", "who": "Another group", "day": "Thu 1 Oct", "slot": "10:00", "kit": "KIT-C1-v1", "resources": ["CV-02", "C1", "C1-CAM", "C1-L1", "C1-L2", "TRP-04", "CAL-01"], "status": "Confirmed", "label": "Existing booking" },
+    { "id": "B-2047", "who": "Teaching session EX-TS-07 · C1 rotation", "day": "Tue 6 Oct", "slot": "10:00–12:00", "kit": "KIT-C1-v1", "resources": ["C1", "C1-CAM", "C1-L1", "C1-L2", "TRP-04", "CAL-01"], "status": "Confirmed", "label": "Teaching" },
+    { "id": "B-2048", "who": "Teaching session EX-TS-07 · S1 rotation", "day": "Tue 6 Oct", "slot": "10:00–12:00", "kit": "KIT-S1-v1", "resources": ["S1-B"], "status": "Confirmed", "label": "Teaching" },
+    { "id": "B-2049", "who": "A student", "day": "Wed 7 Oct", "slot": "14:00", "kit": "KIT-C1-v1", "resources": ["CV-02", "C1", "C1-CAM", "C1-L1", "C1-L2", "TRP-04", "CAL-01"], "status": "Confirmed", "label": "Student" }
+  ],
+  "fault": {
+    "issue": "ISS-0417", "asset": "C1-CAM", "restriction": "RST-0417", "repair": "MNT-0417-01", "verification": "VER-0417",
+    "symptoms": [
+      "Image feed stops during capture; reconnecting restores it",
+      "Image is out of focus and will not sharpen",
+      "Camera does not power on",
+      "Something else (describe below)"
+    ],
+    "classifications": [
+      { "id": "safety", "label": "Safety: stop use now", "restrict": true },
+      { "id": "availability", "label": "Availability: cannot be relied on for capture", "restrict": true },
+      { "id": "quality", "label": "Quality: usable, results may be affected", "restrict": false },
+      { "id": "comfort", "label": "Comfort: usable, minor annoyance", "restrict": false }
+    ],
+    "repairText": "USB-C cable CBL-07 replaced; port inspected",
+    "verificationText": "20 min continuous capture at 1/120 s, 0 dB with CAL-01; no interruption observed (example)"
+  },
+  "returnFollowUp": { "exception": "EX-RETURN-2041", "followUp": "FU-2041" }
+}

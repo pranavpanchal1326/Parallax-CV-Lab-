@@ -1,0 +1,46 @@
+/* Screen plates: captured Figma views shown as printed plates, with a shared full-size viewer (plates.js). */
+.plates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,40px) clamp(14px,2vw,28px);margin:0;padding:0;list-style:none}
+.plates.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.plates.wide{grid-template-columns:1fr}
+.plates.phones{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.plate{all:unset;box-sizing:border-box;display:grid;grid-template-rows:auto auto;gap:0;width:100%;cursor:zoom-in;color:var(--ed-ink)}
+.plate:focus-visible{outline:2px solid var(--ed-spot);outline-offset:5px}
+.plate .ph{position:relative;display:block;overflow:hidden;aspect-ratio:4/3;background:var(--ed-paper-2);border:1px solid var(--ed-ink);box-shadow:6px 6px 0 var(--ed-rule-soft);transition:box-shadow .25s var(--ed-ease),transform .25s var(--ed-ease)}
+.plate:hover .ph{box-shadow:9px 9px 0 var(--ed-spot);transform:translate(-2px,-2px)}
+.plate .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.plates.wide .plate .ph{aspect-ratio:16/9}
+.plates.phones .plate .ph{aspect-ratio:390/844}
+.plate.cover-plate .ph{aspect-ratio:16/10}
+.plate .cap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 12px;align-items:baseline;padding:12px 0 0}
+.plate .cap b{font:500 11px/1.5 var(--ed-mono);letter-spacing:.1em;color:var(--ed-spot)}
+.plate .cap strong{font:400 19px/1.2 var(--ed-serif);letter-spacing:-.01em}
+.plate .cap small{grid-column:2;font:400 13px/1.45 var(--ed-body);color:var(--ed-ink-2)}
+.plates.phones .plate .cap{grid-template-columns:1fr}
+.plates.phones .plate .cap small{grid-column:1}
+.plates.phones .plate .cap strong{font-size:16px}
+/* a recovery state: the branch taken when something goes wrong */
+.plate.rec .ph{border-style:dashed}
+.plate .flag{position:absolute;left:0;top:0;z-index:1;padding:5px 9px;background:var(--ed-ink);color:var(--ed-paper);font:500 10px/1.4 var(--ed-mono);letter-spacing:.12em;text-transform:uppercase}
+.plate.rec .flag{background:#B42318;color:#fff}
+.plate .route{position:absolute;right:0;top:0;z-index:1;padding:5px 9px;background:var(--ed-paper);color:var(--ed-ink);border-left:1px solid var(--ed-ink);border-bottom:1px solid var(--ed-ink);font:500 10px/1.4 var(--ed-mono);letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:980px){.plates{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.plates,.plates.two{grid-template-columns:1fr}.plates.phones{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* viewer */
+dialog.pv{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#0B0D11;color:#EDE9DF}
+dialog.pv::backdrop{background:#0B0D11}
+dialog.pv[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.pv-top,.pv-bot{display:flex;align-items:center;gap:12px 20px;padding:12px clamp(14px,3vw,36px);border-bottom:1px solid rgba(237,233,223,.2)}
+.pv-bot{border-bottom:0;border-top:1px solid rgba(237,233,223,.2);justify-content:space-between}
+.pv-id{font:500 11px var(--ed-mono);letter-spacing:.12em;color:#9DAAFF;white-space:nowrap}
+.pv-title{flex:1;min-width:0;margin:0;font:400 clamp(17px,1.6vw,22px)/1.2 var(--ed-serif);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pv-count{font:400 11px var(--ed-mono);letter-spacing:.1em;color:#A9A79F;white-space:nowrap}
+.pv-stage{overflow:auto;display:grid;justify-items:center;align-items:start;padding:clamp(12px,2.4vw,32px);scrollbar-color:#3A3D45 transparent}
+.pv-stage img{display:block;max-width:min(100%,1440px);height:auto;background:#F4F1E9;box-shadow:0 0 0 1px rgba(237,233,223,.25)}
+.pv-stage img.phone{max-width:min(100%,390px)}
+.pv-note{margin:0;font:400 13px/1.45 var(--ed-body);color:#A9A79F;flex:1;min-width:0}
+dialog.pv button{min-height:40px;padding:8px 16px;border:1px solid rgba(237,233,223,.6);border-radius:0;background:transparent;color:#EDE9DF;font:500 13px var(--ed-sans);letter-spacing:.04em;cursor:pointer;white-space:nowrap}
+dialog.pv button:hover{background:#EDE9DF;color:#0B0D11}
+dialog.pv :focus-visible{outline:2px solid #9DAAFF;outline-offset:3px}
+.pv-nav{display:flex;gap:8px}
+@media(max-width:560px){.pv-note{display:none}.pv-bot{justify-content:center}}

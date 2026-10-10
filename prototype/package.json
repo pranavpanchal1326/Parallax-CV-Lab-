@@ -1,0 +1,6 @@
+{
+  "name": "parallax-prototype",
+  "private": true,
+  "type": "module",
+  "description": "PARALLAX P9-A connected demonstrator. No dependencies; served by design/serve-review.cjs."
+}

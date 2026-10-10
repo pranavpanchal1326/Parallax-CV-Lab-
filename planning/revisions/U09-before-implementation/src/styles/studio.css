@@ -1,0 +1,199 @@
+.art-studio {
+  max-width: 1180px;
+  margin-inline: auto;
+}
+.art-studio h1 {
+  margin-bottom: 18px;
+}
+.studio-lead {
+  max-width: 850px;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-block: 14px;
+}
+.studio-jump,
+.studio-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  align-items: center;
+}
+.studio-jump {
+  border-block: 1px solid var(--ed-rule);
+  padding-block: 12px;
+  margin-top: 18px;
+}
+.studio-boundary {
+  font: 13px/1.6 var(--ed-mono);
+  max-width: 850px;
+}
+.studio-text-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+}
+.studio-text-toggle input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--ed-spot);
+}
+.studio-section {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--ed-ink);
+  scroll-margin-top: 140px;
+}
+.studio-section:first-of-type {
+  margin-top: 24px;
+}
+.studio-section:focus {
+  outline: 2px solid var(--ed-spot);
+  outline-offset: 6px;
+}
+.studio-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 24px;
+  margin-bottom: 12px;
+}
+.studio-heading h2 {
+  margin: 0;
+}
+.studio-heading > span {
+  font: 12px/1.5 var(--ed-mono);
+}
+.studio-section label {
+  display: block;
+  font: 13px/1.5 var(--ed-mono);
+  margin: 16px 0 8px;
+}
+.studio-section select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  background: var(--ed-paper);
+  color: var(--ed-ink);
+  border: 1px solid var(--ed-rule);
+  font: 16px/1.5 var(--ed-sans);
+  border-radius: 0;
+}
+.studio-figure {
+  margin: 24px 0;
+  border: 1px solid var(--ed-rule);
+}
+.studio-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.studio-figure figcaption {
+  padding: 16px 20px;
+  font: 13px/1.7 var(--ed-mono);
+  border-top: 1px solid var(--ed-rule);
+}
+.studio-figure figcaption strong,
+.studio-figure figcaption span {
+  display: block;
+}
+.studio-explanation {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  margin: 24px 0;
+}
+.studio-explanation h3 {
+  font: 500 14px/1.5 var(--ed-mono);
+  margin-top: 20px;
+}
+.studio-explanation p {
+  line-height: 1.7;
+}
+.studio-section details {
+  padding-block: 16px;
+  border-block: 1px solid var(--ed-rule);
+  margin-top: 18px;
+}
+.studio-section summary {
+  padding-block: 8px;
+  cursor: pointer;
+}
+.studio-image-message {
+  padding: 28px;
+  line-height: 1.7;
+}
+.studio-sample-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+.studio-sample-controls > p,
+.studio-sample-controls > details {
+  grid-column: 1 / -1;
+}
+.studio-anchor-list {
+  padding-left: 20px;
+}
+.studio-anchor-list li {
+  padding: 10px 0;
+}
+.studio-anchor-list span {
+  display: block;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.studio-table-wrap {
+  overflow-x: auto;
+}
+.studio-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.studio-table-wrap th,
+.studio-table-wrap td {
+  text-align: left;
+  padding: 10px 6px;
+  border-bottom: 1px solid var(--ed-rule);
+}
+.studio-table-wrap caption {
+  text-align: left;
+  padding-block: 12px;
+}
+.art-studio a,
+.art-studio p,
+.art-studio span {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .studio-explanation,
+  .studio-sample-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .studio-lead {
+    font-size: 18px;
+  }
+  .studio-heading > span {
+    width: 100%;
+  }
+  .studio-figure figcaption {
+    padding: 12px;
+  }
+  .studio-section {
+    margin-top: 32px;
+  }
+}
+@media print {
+  .studio-jump,
+  .studio-text-toggle {
+    display: none;
+  }
+  .studio-section,
+  .studio-figure {
+    break-inside: avoid;
+  }
+}

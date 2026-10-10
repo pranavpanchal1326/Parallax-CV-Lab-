@@ -1,0 +1,46 @@
+{
+  "revision": "U06-G1",
+  "reviewedAt": "2026-10-03",
+  "reviewOwner": "Project designer — desk review against preserved demonstrator sources",
+  "scope": "Public project guides for a local teaching demonstrator. No institutional procedure approval, connected observations, student records or operational authority.",
+  "guides": [
+    {
+      "id": "E01", "revision": "01", "title": "Sampling & aliasing", "state": "published", "task": "/E01/prepare",
+      "references": ["prototype/fixtures.json · E01 / REF-2HZ-v1", "apps/lab-web/src/domain/rehearsal.ts"],
+      "sections": [
+        {"id": "E01-reference", "title": "Keep the reference fixed", "terms": "signal reference amplitude frequency duration sine formula 2hz", "text": "The E01 reference is REF-2HZ-v1: sin(4πt) volts, with frequency 2 Hz, amplitude 1 V and duration 1 second. Keep that reference fixed when comparing sampling rates. These are generated teaching samples, not readings from a connected device.", "hint": "Which reference settings must stay the same for your comparison?"},
+        {"id": "E01-alias", "title": "An ambiguous low-rate trace", "terms": "alias aliasing 3hz 3 hz low sampling rate ambiguous reconstruct reconstruction", "text": "At 3 Hz, four samples cover 0 through 1 second. For the 2 Hz reference, a signed −1 Hz alias fits those same samples: its apparent frequency is 1 Hz. Matching the sample points does not identify the original waveform. Record the sampling rate and reference revision with your claim.", "hint": "Could two different continuous signals pass through the same sample points?"},
+        {"id": "E01-boundary", "title": "The 4 Hz boundary", "terms": "4hz 4 hz nyquist boundary zero phase twice double", "text": "A rate of 4 Hz is exactly twice the 2 Hz reference frequency. For this zero-phase sine reference, every sample at that boundary is zero within numerical precision. This boundary is an ambiguous demonstration, not a reliable reconstruction. A different phase would change the sampled values.", "hint": "What would a row of zero samples tell you about the original signal?"},
+        {"id": "E01-higher", "title": "Compare higher rates", "terms": "8hz 8 hz 20hz 20 hz higher sample count points comparison", "text": "Across the inclusive interval from 0 to 1 second, 8 Hz produces 9 samples and 20 Hz produces 21 samples. Both rates exceed twice the 2 Hz reference frequency. More sample points show the reference more clearly in this ideal example; they do not establish the accuracy of a real instrument.", "hint": "What changes in the trace when the reference stays fixed and the rate increases?"}
+      ]
+    },
+    {
+      "id": "E06", "revision": "01", "title": "Light & image evidence", "state": "published", "task": "/E06/prepare",
+      "references": ["prototype/fixtures.json · E06 / ILL-L1-v1 / ILL-L2-v1"],
+      "sections": [
+        {"id": "E06-control", "title": "Change one condition", "terms": "light frontal side control compare exposure gain intensity settings condition", "text": "The prepared E06 examples use exposure 1/120 second, gain 0 dB and light intensity 40%. ILL-L1-v1 uses frontal light L1 with L2 off; ILL-L2-v1 uses side light L2 with L1 off. Keep the other recorded settings fixed when comparing the light direction.", "hint": "Which settings would you hold fixed to isolate the effect of light direction?"},
+        {"id": "E06-evidence", "title": "Describe what the source supports", "terms": "accuracy detection detector confidence image camera capture illustration evidence shadows highlight", "text": "These E06 images are prepared illustrations, not camera captures or measured detector outputs. You can describe visible shadows, highlights and edge differences. They cannot establish detection confidence, accuracy or current camera health. A claim about a real detector needs measured outputs and a documented method.", "hint": "Which part of your claim is visible in the illustration, and which part needs a measurement?"},
+        {"id": "E06-handling", "title": "Use the local safety procedure", "terms": "warm hot lamp cables cable safety safe lighting hazard heat", "text": "The project example notes that lighting can become warm and cables should stay within the C1 work area. This guide is not an approved site safety procedure. Follow the actual lab procedure and contact responsible staff when equipment, wiring or heat conditions are uncertain; the assistant cannot declare equipment safe.", "hint": "What needs staff confirmation before you handle an uncertain setup?"}
+      ]
+    },
+    {
+      "id": "WORKFLOW", "revision": "01", "title": "Evidence & equipment decisions", "state": "published", "task": "/walkthrough",
+      "references": ["prototype/domain.js · restriction / verification rules", "apps/lab-web/src/features/StudentJourney.tsx"],
+      "sections": [
+        {"id": "WORKFLOW-notebook", "title": "Keep the claim yours", "terms": "notebook evidence note claim reasoning submit submission receipt draft saved", "text": "Write your own notebook claim and connect it to recorded evidence, settings and source revisions. A local draft is not a saved claim, and a saved claim is not a submission receipt. This assistant reads the selected public guide and your question; it cannot inspect browser evidence, verify your submission or author a notebook entry for you.", "hint": "What evidence and settings would another reader need to check your claim?"},
+        {"id": "WORKFLOW-restrict", "title": "Restriction and occupancy differ", "terms": "restriction restricted booking availability occupancy report fault camera kit component consequences", "text": "A fault report alone does not impose a restriction. In the demonstrator, classification and a recorded restriction determine the affected component and kit. A restricted required camera makes its complete capture kit unavailable, while unrelated signal equipment stays available. Availability and current occupancy are separate states; this guide does not provide current booking or equipment status.", "hint": "Which required component causes the kit to become unavailable?"},
+        {"id": "WORKFLOW-release", "title": "Repair is not release", "terms": "repair repaired release verify verification interrupted restoration staff technician", "text": "Recording a repair does not prove verification. An interrupted verification leaves the restriction in place; release follows a recorded successful verification by the responsible workflow. The assistant cannot repair, verify, release equipment or make bookings. Contact responsible staff for an actual equipment decision.", "hint": "What evidence must exist between recording a repair and releasing a restriction?"}
+      ]
+    },
+    {
+      "id": "GEOMETRY", "revision": "01", "title": "Camera geometry rehearsal", "state": "published", "task": "/scene/rehearsal",
+      "references": ["design/phase-08/assets/scene-studio.js · P4-D", "apps/lab-web/src/features/GeometryRehearsal.tsx"],
+      "sections": [
+        {"id": "GEOMETRY-field", "title": "Field of view changes framing", "terms": "field view fov 18 40 90 angle camera framing geometry", "text": "The geometry rehearsal compares fields of view of 18°, 40° and 90° with the camera and objects fixed. A wider field includes more of the conceptual scene while each object occupies less of the frame. This is a teaching model, not a surveyed installation or a calibration of a real lens.", "hint": "What happens to an object's share of the frame as the field of view widens?"},
+        {"id": "GEOMETRY-occlusion", "title": "Visibility is not detection accuracy", "terms": "occlusion occluded visible visibility pixel object id detection accuracy percentage raster plan", "text": "Scene Studio estimates visible object pixels using a 320 × 180 object-ID raster and compares them with an unobstructed view. Its plan-only angular approximation ignores height and lens projection. These geometry measures are not detector accuracy and do not model exposure, sensor noise or lighting performance.", "hint": "Which effects are outside a geometry-only visibility calculation?"}
+      ]
+    },
+    {"id": "E01", "revision": "02-draft", "title": "Sampling & aliasing — draft", "state": "draft", "references": [], "sections": []},
+    {"id": "E06", "revision": "00", "title": "Light & image evidence — superseded", "state": "withdrawn", "references": [], "sections": []}
+  ]
+}

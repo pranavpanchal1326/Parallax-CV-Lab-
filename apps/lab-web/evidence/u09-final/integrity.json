@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-04",
+  "preservedTrackedSources": 48,
+  "totalTrackedSources": 76,
+  "reviewedChanges": 28,
+  "reviewedAdditions": 15,
+  "scenarios": 14,
+  "faultStages": 10,
+  "sceneRemounts": 8,
+  "feedbackSamples": 37,
+  "feedbackMaxMs": 25.5,
+  "externalChecksStillOpen": true,
+  "scope": "Local technical evidence and source preservation; not complete external accessibility/device verification or hardware/production readiness."
+}

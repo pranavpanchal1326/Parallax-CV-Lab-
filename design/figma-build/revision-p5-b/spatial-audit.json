@@ -1,0 +1,313 @@
+{
+  "revision": "P4-D",
+  "issues": [],
+  "plans": [
+    {
+      "layer": "2031:1078",
+      "checked": [
+        {
+          "id": "CV-01",
+          "matches": true
+        },
+        {
+          "id": "CV-02",
+          "matches": true
+        },
+        {
+          "id": "CV-03",
+          "matches": true
+        },
+        {
+          "id": "CV-04",
+          "matches": true
+        },
+        {
+          "id": "CV-05",
+          "matches": true
+        },
+        {
+          "id": "CV-06",
+          "matches": true
+        },
+        {
+          "id": "STO-1",
+          "matches": true
+        },
+        {
+          "id": "C1-WALL",
+          "matches": true
+        },
+        {
+          "id": "C1-BD",
+          "matches": true
+        },
+        {
+          "id": "C1-TB",
+          "matches": true
+        },
+        {
+          "id": "C1-L1",
+          "matches": true
+        },
+        {
+          "id": "C1-L2",
+          "matches": true
+        },
+        {
+          "id": "C1-CAM",
+          "matches": true
+        },
+        {
+          "id": "FAC-1",
+          "matches": true
+        },
+        {
+          "id": "COL-T",
+          "matches": true
+        },
+        {
+          "id": "COL-D",
+          "matches": true
+        },
+        {
+          "id": "S1-B",
+          "matches": true
+        }
+      ],
+      "servicePass": true
+    },
+    {
+      "layer": "2031:1395",
+      "checked": [
+        {
+          "id": "CV-01",
+          "matches": true
+        },
+        {
+          "id": "CV-02",
+          "matches": true
+        },
+        {
+          "id": "CV-03",
+          "matches": true
+        },
+        {
+          "id": "CV-04",
+          "matches": true
+        },
+        {
+          "id": "CV-05",
+          "matches": true
+        },
+        {
+          "id": "CV-06",
+          "matches": true
+        },
+        {
+          "id": "STO-1",
+          "matches": true
+        },
+        {
+          "id": "C1-WALL",
+          "matches": true
+        },
+        {
+          "id": "C1-BD",
+          "matches": true
+        },
+        {
+          "id": "C1-TB",
+          "matches": true
+        },
+        {
+          "id": "C1-L1",
+          "matches": true
+        },
+        {
+          "id": "C1-L2",
+          "matches": true
+        },
+        {
+          "id": "C1-CAM",
+          "matches": true
+        },
+        {
+          "id": "FAC-1",
+          "matches": true
+        },
+        {
+          "id": "COL-T",
+          "matches": true
+        },
+        {
+          "id": "COL-D",
+          "matches": true
+        },
+        {
+          "id": "S1-B",
+          "matches": true
+        }
+      ],
+      "servicePass": true
+    },
+    {
+      "layer": "2031:1636",
+      "checked": [
+        {
+          "id": "CV-01",
+          "matches": true
+        },
+        {
+          "id": "CV-02",
+          "matches": true
+        },
+        {
+          "id": "CV-03",
+          "matches": true
+        },
+        {
+          "id": "CV-04",
+          "matches": true
+        },
+        {
+          "id": "CV-05",
+          "matches": true
+        },
+        {
+          "id": "CV-06",
+          "matches": true
+        },
+        {
+          "id": "STO-1",
+          "matches": true
+        },
+        {
+          "id": "C1-WALL",
+          "matches": true
+        },
+        {
+          "id": "C1-BD",
+          "matches": true
+        },
+        {
+          "id": "C1-TB",
+          "matches": true
+        },
+        {
+          "id": "C1-L1",
+          "matches": true
+        },
+        {
+          "id": "C1-L2",
+          "matches": true
+        },
+        {
+          "id": "C1-CAM",
+          "matches": true
+        },
+        {
+          "id": "FAC-1",
+          "matches": true
+        },
+        {
+          "id": "COL-T",
+          "matches": true
+        },
+        {
+          "id": "COL-D",
+          "matches": true
+        },
+        {
+          "id": "S1-B",
+          "matches": true
+        }
+      ],
+      "servicePass": true
+    }
+  ],
+  "checks": [
+    "P4-D check / Zone area equals 70 m²",
+    "P4-D check / Spine is at least 1.5 m",
+    "P4-D check / Accessible floor is 1.2 × 0.9 m",
+    "P4-D check / Accessible floor does not overlap spine",
+    "P4-D check / Accessible floor does not overlap furniture",
+    "P4-D check / Furniture stays outside spine",
+    "P4-D check / Furniture stays in room",
+    "P4-D check / Furniture footprints do not overlap",
+    "P4-D check / Camera-to-subject meets 2 m planning rule",
+    "P4-D check / Camera axis matches actual subject centre",
+    "P4-D check / lab_blockout GLB header / chunks valid",
+    "P4-D check / lab_blockout under 5 MB / 150k triangle budget",
+    "P4-D check / lab_blockout furniture IDs preserved",
+    "P4-D check / lab_studio GLB header / chunks valid",
+    "P4-D check / lab_studio under 5 MB / 150k triangle budget",
+    "P4-D check / lab_studio furniture IDs preserved"
+  ],
+  "archive": {
+    "id": "2064:173",
+    "boards": [
+      {
+        "id": "2064:174",
+        "name": "P4-C history / 4D · 3D Blockout & Export Test"
+      },
+      {
+        "id": "2064:366",
+        "name": "P4-C history / 4E · Standards & Sources"
+      },
+      {
+        "id": "2064:829",
+        "name": "P4-C history / 4B · General Arrangement Plan"
+      },
+      {
+        "id": "2064:1143",
+        "name": "P4-C history / 4C · Safety, Services & Circulation Overlays"
+      },
+      {
+        "id": "2064:1665",
+        "name": "P4-C history / 4A · Programme & Fit Checks"
+      },
+      {
+        "id": "2064:2501",
+        "name": "P4-C history / 4F · Concept Renders"
+      }
+    ]
+  },
+  "boards": [
+    {
+      "id": "2031:1054",
+      "name": "4B · General Arrangement Plan",
+      "width": 1920,
+      "height": 1692
+    },
+    {
+      "id": "2031:1368",
+      "name": "4C · Safety, Services & Circulation Overlays",
+      "width": 1920,
+      "height": 1418.5999755859375
+    },
+    {
+      "id": "2033:1054",
+      "name": "4A · Programme & Fit Checks",
+      "width": 1920,
+      "height": 3666
+    },
+    {
+      "id": "2022:976",
+      "name": "4D · 3D Blockout & Export Test",
+      "width": 1920,
+      "height": 3284
+    },
+    {
+      "id": "2027:1790",
+      "name": "4E · Standards & Sources",
+      "width": 1920,
+      "height": 3178
+    },
+    {
+      "id": "2036:1054",
+      "name": "4F · Concept Renders",
+      "width": 1920,
+      "height": 2912
+    }
+  ]
+}

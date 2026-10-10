@@ -1,0 +1,79 @@
+{
+  "revision": "U09-R1",
+  "date": "2026-10-04",
+  "changes": [
+    {
+      "path": "apps/lab-web/scripts/build-map.cjs",
+      "beforeSha256": "90d29e00abfe728836df58f69cbadfc79a0c327f3f4433c8b87e9c2caf37fcb0",
+      "afterSha256": "e6e9a55ee36ad8b8fded1340c9ec317e749aa64a38786fa869f8e89670fddb35",
+      "reason": "Copied renderer owns frame/visibility/detach/disposal resources; superseded highlight clones are released and base materials retained for final disposal; projected plan shapes/names refresh while preserving focus; original source preserved."
+    },
+    {
+      "path": "apps/lab-web/scripts/build-rehearsal.cjs",
+      "beforeSha256": "cd4b8cbe9f1b9083333744ee3fb8ebe9c264fd877300ec8115bb3080e7b1edec",
+      "afterSha256": "79a46b0f76efc29f6e16f551d6fb3ded62d061c6e588d706a1d7dd5fc95358a3",
+      "reason": "Copied renderer settles on demand and owns resources; scientific blocks preserved."
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u08.cjs",
+      "beforeSha256": "5c266fdee13b0b6010cbab2480bdda61420192693c5b78555cffb8e36e6481c2",
+      "afterSha256": "9e56272f56ac8982820612952e3b5904aa1d616ce8d6d11f8bcf902c44bf040d",
+      "reason": "Preserve the original U08 release gate using archived pre-U09 sources; independently assert reviewed U09 after hashes."
+    },
+    {
+      "path": "apps/lab-web/src/app/App.tsx",
+      "beforeSha256": "da6e63ca1029c18d55ed142b18487a6e5f6740f2e97b5f67479d254266073067",
+      "afterSha256": "3a3b00b358897be612a5dde82312218163ff93356f6f35718ddc7c3695490be6",
+      "reason": "Current edition copy, explicit QA metrics and private exact-text export recovery."
+    },
+    {
+      "path": "apps/lab-web/src/components/AccessReview.tsx",
+      "beforeSha256": "3f6b1ed0fc1fffea27fc639821595922e971144bbf4d497e6885c5a1188ef9c4",
+      "afterSha256": "1baedacdbab637ba72a8e4951e78155a1c0f1ffde01e8e264b58fe14343af252",
+      "reason": "Capture starting route and invalidate late results; retain the engine lock across navigation and skip obsolete work after dynamic import."
+    },
+    {
+      "path": "apps/lab-web/src/features/GeometryRehearsal.tsx",
+      "beforeSha256": "3707ece2b42a57126888b599e4be53582b7d1de0d3e13bceb8ae1599e29cdfb1",
+      "afterSha256": "0125fbc80b4308cb51176148ef3f5253daa4803418709f669d9db457e176d16a",
+      "reason": "Current guide link and explicitly gated local lifecycle diagnostics."
+    },
+    {
+      "path": "apps/lab-web/src/features/Mobile.tsx",
+      "beforeSha256": "efabab20d06dc5e4bcfe0385affd13587399c9e19b1d877a699c265eb502253e",
+      "afterSha256": "7d9740ece5a0747fe25c881e70eca1f126776e355df417e49e9b077e131f0800",
+      "reason": "Explicit text type restores inherited 16 px / 44 px field styling."
+    },
+    {
+      "path": "apps/lab-web/src/features/OperationsDesk.tsx",
+      "beforeSha256": "854a309d0f7fb9a8557383fde088edecda63f59fa0b44bdf61b6d2fc313a9cf3",
+      "afterSha256": "6c7f2a290f0f6cb3476d2ca497b7a89c1963c784939597a708705da5e0bb4b4b",
+      "reason": "Shared exact-text export recovery; operations domain unchanged."
+    },
+    {
+      "path": "apps/lab-web/src/features/Rehearsal.tsx",
+      "beforeSha256": "90879ef794ca8d61167634d624d59abe6e4d94525ea06f1ab5bc3d103a580097",
+      "afterSha256": "627f0ac0547079f31bdd01cc9bd7760f422953a6efdfb2c0a1b76fecb900dbc7",
+      "reason": "Shared exact-text export recovery and current guide link; model unchanged."
+    }
+  ],
+  "additions": [
+    {
+      "path": "apps/lab-web/src/components/ExportFallback.tsx",
+      "sha256": "0fbe3dd86dc290cb7cc21b40f781be8113964e3811c9cdd2aeddb6df0fe8b0ab"
+    },
+    {
+      "path": "apps/lab-web/src/components/PerformanceReview.tsx",
+      "sha256": "486271fb8dfc98267e4e9805ee8a6e02c08fbcf8abcaefec50397975c607ba99"
+    },
+    {
+      "path": "apps/lab-web/tests/export.test.ts",
+      "sha256": "f98a118b8da63a66c64a52133713464b0a7dba3aa3441178ae88396f9809d3a4"
+    },
+    {
+      "path": "apps/lab-web/scripts/validate-u09.cjs",
+      "sha256": "1b2a33065dbe835f38488dcde5ebb91f2b94d0278147d3eb2340c2d44ffcc0c5"
+    }
+  ],
+  "historicalU08Validation": "Existing U08 gate evaluates preserved pre-U09 files for the eight declared changes, while requiring current after hashes. Other files and scientific/art hashes retain the original checks."
+}

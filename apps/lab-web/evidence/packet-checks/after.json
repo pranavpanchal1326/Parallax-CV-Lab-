@@ -1,0 +1,1045 @@
+{
+  "method": "Fixed same-origin iframe CSS viewport; no physical-device or zoom claim",
+  "layouts": [
+    {
+      "page": "/submission/index.html",
+      "requestedWidth": 320,
+      "viewport": 320,
+      "documentWidth": 305,
+      "scrollWidth": 305,
+      "pageOverflow": false,
+      "heading": "A laboratory proposal.With the evidence in view.",
+      "controls": [
+        {
+          "label": "Open the current prototype",
+          "width": 257,
+          "height": 82,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Read the final report",
+          "width": 163,
+          "height": 29,
+          "right": 187,
+          "left": 24
+        },
+        {
+          "label": "View the 15-minute presentation",
+          "width": 257,
+          "height": 58,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Ten-section report with references and requirement/rubric index",
+          "width": 194,
+          "height": 78,
+          "right": 240,
+          "left": 46
+        },
+        {
+          "label": "Editable PowerPoint: fifteen slides and speaker notes",
+          "width": 221,
+          "height": 49,
+          "right": 267,
+          "left": 46
+        },
+        {
+          "label": "Presenter notes and timed live-demo cues",
+          "width": 211,
+          "height": 49,
+          "right": 257,
+          "left": 46
+        },
+        {
+          "label": "Offline recorded-frame walkthrough: E01, E06, AI and fault recovery",
+          "width": 207,
+          "height": 78,
+          "right": 253,
+          "left": 46
+        },
+        {
+          "label": "Saved 80-second WebM backup",
+          "width": 197,
+          "height": 49,
+          "right": 243,
+          "left": 46
+        },
+        {
+          "label": "Clean launch, source rebuild and local Ollama instructions",
+          "width": 230,
+          "height": 49,
+          "right": 276,
+          "left": 46
+        },
+        {
+          "label": "Source handoff manifest: pinned dependencies and prebuilt preview",
+          "width": 206,
+          "height": 78,
+          "right": 252,
+          "left": 46
+        },
+        {
+          "label": "Current Figma handoff board",
+          "width": 231,
+          "height": 20,
+          "right": 277,
+          "left": 46
+        },
+        {
+          "label": "Fifteen source-annotated wireframes",
+          "width": 200,
+          "height": 49,
+          "right": 246,
+          "left": 46
+        },
+        {
+          "label": "Reviewed secondary research, personas and journeys",
+          "width": 189,
+          "height": 78,
+          "right": 235,
+          "left": 46
+        },
+        {
+          "label": "Art, wayfinding and physical reference packet",
+          "width": 223,
+          "height": 49,
+          "right": 269,
+          "left": 46
+        },
+        {
+          "label": "Canonical dimensioned geometry",
+          "width": 187,
+          "height": 49,
+          "right": 233,
+          "left": 46
+        },
+        {
+          "label": "Editable Blender model",
+          "width": 223,
+          "height": 49,
+          "right": 269,
+          "left": 46
+        },
+        {
+          "label": "Preserved spatial edition",
+          "width": 197,
+          "height": 20,
+          "right": 243,
+          "left": 46
+        },
+        {
+          "label": "Original demonstrator",
+          "width": 173,
+          "height": 20,
+          "right": 219,
+          "left": 46
+        },
+        {
+          "label": "Read the complete evidence index",
+          "width": 228,
+          "height": 49,
+          "right": 252,
+          "left": 24
+        },
+        {
+          "label": "Fourteen system scenarios",
+          "width": 193,
+          "height": 49,
+          "right": 217,
+          "left": 24
+        },
+        {
+          "label": "External checks and acceptance steps",
+          "width": 255,
+          "height": 49,
+          "right": 279,
+          "left": 24
+        },
+        {
+          "label": "Editable report source",
+          "width": 176,
+          "height": 20,
+          "right": 200,
+          "left": 24
+        },
+        {
+          "label": "Editable presentation content",
+          "width": 233,
+          "height": 20,
+          "right": 257,
+          "left": 24
+        },
+        {
+          "label": "Handoff integrity manifest",
+          "width": 204,
+          "height": 20,
+          "right": 228,
+          "left": 24
+        }
+      ]
+    },
+    {
+      "page": "/submission/index.html",
+      "requestedWidth": 768,
+      "viewport": 768,
+      "documentWidth": 753,
+      "scrollWidth": 753,
+      "pageOverflow": false,
+      "heading": "A laboratory proposal.With the evidence in view.",
+      "controls": [
+        {
+          "label": "Open the current prototype",
+          "width": 263,
+          "height": 53,
+          "right": 287,
+          "left": 24
+        },
+        {
+          "label": "Read the final report",
+          "width": 163,
+          "height": 53,
+          "right": 474,
+          "left": 311
+        },
+        {
+          "label": "View the 15-minute presentation",
+          "width": 258,
+          "height": 29,
+          "right": 282,
+          "left": 24
+        },
+        {
+          "label": "Ten-section report with references and requirement/rubric index",
+          "width": 306,
+          "height": 49,
+          "right": 352,
+          "left": 46
+        },
+        {
+          "label": "Editable PowerPoint: fifteen slides and speaker notes",
+          "width": 307,
+          "height": 49,
+          "right": 353,
+          "left": 46
+        },
+        {
+          "label": "Presenter notes and timed live-demo cues",
+          "width": 294,
+          "height": 49,
+          "right": 340,
+          "left": 46
+        },
+        {
+          "label": "Offline recorded-frame walkthrough: E01, E06, AI and fault recovery",
+          "width": 287,
+          "height": 49,
+          "right": 333,
+          "left": 46
+        },
+        {
+          "label": "Saved 80-second WebM backup",
+          "width": 260,
+          "height": 20,
+          "right": 306,
+          "left": 46
+        },
+        {
+          "label": "Clean launch, source rebuild and local Ollama instructions",
+          "width": 305,
+          "height": 49,
+          "right": 351,
+          "left": 46
+        },
+        {
+          "label": "Source handoff manifest: pinned dependencies and prebuilt preview",
+          "width": 278,
+          "height": 49,
+          "right": 324,
+          "left": 46
+        },
+        {
+          "label": "Current Figma handoff board",
+          "width": 231,
+          "height": 20,
+          "right": 649,
+          "left": 418
+        },
+        {
+          "label": "Fifteen source-annotated wireframes",
+          "width": 293,
+          "height": 20,
+          "right": 712,
+          "left": 418
+        },
+        {
+          "label": "Reviewed secondary research, personas and journeys",
+          "width": 247,
+          "height": 49,
+          "right": 666,
+          "left": 418
+        },
+        {
+          "label": "Art, wayfinding and physical reference packet",
+          "width": 304,
+          "height": 49,
+          "right": 723,
+          "left": 418
+        },
+        {
+          "label": "Canonical dimensioned geometry",
+          "width": 267,
+          "height": 20,
+          "right": 686,
+          "left": 418
+        },
+        {
+          "label": "Editable Blender model",
+          "width": 186,
+          "height": 20,
+          "right": 605,
+          "left": 418
+        },
+        {
+          "label": "Preserved spatial edition",
+          "width": 197,
+          "height": 20,
+          "right": 616,
+          "left": 418
+        },
+        {
+          "label": "Original demonstrator",
+          "width": 275,
+          "height": 49,
+          "right": 694,
+          "left": 418
+        },
+        {
+          "label": "Read the complete evidence index",
+          "width": 276,
+          "height": 20,
+          "right": 300,
+          "left": 24
+        },
+        {
+          "label": "Fourteen system scenarios",
+          "width": 216,
+          "height": 20,
+          "right": 532,
+          "left": 316
+        },
+        {
+          "label": "External checks and acceptance steps",
+          "width": 686,
+          "height": 49,
+          "right": 710,
+          "left": 24
+        },
+        {
+          "label": "Editable report source",
+          "width": 176,
+          "height": 20,
+          "right": 200,
+          "left": 24
+        },
+        {
+          "label": "Editable presentation content",
+          "width": 233,
+          "height": 20,
+          "right": 449,
+          "left": 216
+        },
+        {
+          "label": "Handoff integrity manifest",
+          "width": 204,
+          "height": 20,
+          "right": 669,
+          "left": 465
+        }
+      ]
+    },
+    {
+      "page": "/submission/index.html",
+      "requestedWidth": 1280,
+      "viewport": 1280,
+      "documentWidth": 1265,
+      "scrollWidth": 1265,
+      "pageOverflow": false,
+      "heading": "A laboratory proposal.With the evidence in view.",
+      "controls": [
+        {
+          "label": "Open the current prototype",
+          "width": 263,
+          "height": 53,
+          "right": 330,
+          "left": 66
+        },
+        {
+          "label": "Read the final report",
+          "width": 163,
+          "height": 53,
+          "right": 517,
+          "left": 354
+        },
+        {
+          "label": "View the 15-minute presentation",
+          "width": 258,
+          "height": 53,
+          "right": 798,
+          "left": 541
+        },
+        {
+          "label": "Ten-section report with references and requirement/rubric index",
+          "width": 505,
+          "height": 20,
+          "right": 594,
+          "left": 88
+        },
+        {
+          "label": "Editable PowerPoint: fifteen slides and speaker notes",
+          "width": 425,
+          "height": 20,
+          "right": 514,
+          "left": 88
+        },
+        {
+          "label": "Presenter notes and timed live-demo cues",
+          "width": 337,
+          "height": 20,
+          "right": 426,
+          "left": 88
+        },
+        {
+          "label": "Offline recorded-frame walkthrough: E01, E06, AI and fault recovery",
+          "width": 466,
+          "height": 49,
+          "right": 554,
+          "left": 88
+        },
+        {
+          "label": "Saved 80-second WebM backup",
+          "width": 260,
+          "height": 20,
+          "right": 348,
+          "left": 88
+        },
+        {
+          "label": "Clean launch, source rebuild and local Ollama instructions",
+          "width": 463,
+          "height": 20,
+          "right": 552,
+          "left": 88
+        },
+        {
+          "label": "Source handoff manifest: pinned dependencies and prebuilt preview",
+          "width": 475,
+          "height": 49,
+          "right": 563,
+          "left": 88
+        },
+        {
+          "label": "Current Figma handoff board",
+          "width": 231,
+          "height": 20,
+          "right": 905,
+          "left": 674
+        },
+        {
+          "label": "Fifteen source-annotated wireframes",
+          "width": 293,
+          "height": 20,
+          "right": 968,
+          "left": 674
+        },
+        {
+          "label": "Reviewed secondary research, personas and journeys",
+          "width": 434,
+          "height": 20,
+          "right": 1109,
+          "left": 674
+        },
+        {
+          "label": "Art, wayfinding and physical reference packet",
+          "width": 362,
+          "height": 20,
+          "right": 1037,
+          "left": 674
+        },
+        {
+          "label": "Canonical dimensioned geometry",
+          "width": 267,
+          "height": 20,
+          "right": 942,
+          "left": 674
+        },
+        {
+          "label": "Editable Blender model",
+          "width": 186,
+          "height": 20,
+          "right": 1144,
+          "left": 958
+        },
+        {
+          "label": "Preserved spatial edition",
+          "width": 197,
+          "height": 20,
+          "right": 872,
+          "left": 674
+        },
+        {
+          "label": "Original demonstrator",
+          "width": 173,
+          "height": 20,
+          "right": 1061,
+          "left": 888
+        },
+        {
+          "label": "Read the complete evidence index",
+          "width": 276,
+          "height": 20,
+          "right": 343,
+          "left": 66
+        },
+        {
+          "label": "Fourteen system scenarios",
+          "width": 216,
+          "height": 20,
+          "right": 575,
+          "left": 359
+        },
+        {
+          "label": "External checks and acceptance steps",
+          "width": 307,
+          "height": 20,
+          "right": 898,
+          "left": 591
+        },
+        {
+          "label": "Editable report source",
+          "width": 176,
+          "height": 20,
+          "right": 243,
+          "left": 66
+        },
+        {
+          "label": "Editable presentation content",
+          "width": 233,
+          "height": 20,
+          "right": 492,
+          "left": 259
+        },
+        {
+          "label": "Handoff integrity manifest",
+          "width": 204,
+          "height": 20,
+          "right": 711,
+          "left": 508
+        }
+      ]
+    },
+    {
+      "page": "/submission/presentation.html",
+      "requestedWidth": 320,
+      "viewport": 320,
+      "documentWidth": 305,
+      "scrollWidth": 305,
+      "pageOverflow": false,
+      "heading": "Presentation rehearsal",
+      "controls": [
+        {
+          "label": "Submission entry",
+          "width": 138,
+          "height": 29,
+          "right": 162,
+          "left": 24
+        },
+        {
+          "label": "Editable PowerPoint",
+          "width": 162,
+          "height": 29,
+          "right": 186,
+          "left": 24
+        },
+        {
+          "label": "Speaker notes",
+          "width": 116,
+          "height": 29,
+          "right": 140,
+          "left": 24
+        },
+        {
+          "label": "Previous slide",
+          "width": 146,
+          "height": 46,
+          "right": 170,
+          "left": 24
+        },
+        {
+          "label": "Next slide",
+          "width": 113,
+          "height": 46,
+          "right": 137,
+          "left": 24
+        },
+        {
+          "label": "Start timed technical rehearsal",
+          "width": 257,
+          "height": 75,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Speaker notes for this slide",
+          "width": 257,
+          "height": 29,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Technical rehearsal receipt",
+          "width": 257,
+          "height": 29,
+          "right": 281,
+          "left": 24
+        }
+      ]
+    },
+    {
+      "page": "/submission/presentation.html",
+      "requestedWidth": 768,
+      "viewport": 768,
+      "documentWidth": 753,
+      "scrollWidth": 753,
+      "pageOverflow": false,
+      "heading": "Presentation rehearsal",
+      "controls": [
+        {
+          "label": "Submission entry",
+          "width": 138,
+          "height": 29,
+          "right": 162,
+          "left": 24
+        },
+        {
+          "label": "Editable PowerPoint",
+          "width": 162,
+          "height": 29,
+          "right": 340,
+          "left": 178
+        },
+        {
+          "label": "Speaker notes",
+          "width": 116,
+          "height": 29,
+          "right": 472,
+          "left": 356
+        },
+        {
+          "label": "Previous slide",
+          "width": 146,
+          "height": 46,
+          "right": 170,
+          "left": 24
+        },
+        {
+          "label": "Next slide",
+          "width": 113,
+          "height": 46,
+          "right": 298,
+          "left": 186
+        },
+        {
+          "label": "Start timed technical rehearsal",
+          "width": 277,
+          "height": 46,
+          "right": 591,
+          "left": 314
+        },
+        {
+          "label": "Speaker notes for this slide",
+          "width": 705,
+          "height": 29,
+          "right": 729,
+          "left": 24
+        },
+        {
+          "label": "Technical rehearsal receipt",
+          "width": 705,
+          "height": 29,
+          "right": 729,
+          "left": 24
+        }
+      ]
+    },
+    {
+      "page": "/submission/presentation.html",
+      "requestedWidth": 1280,
+      "viewport": 1280,
+      "documentWidth": 1265,
+      "scrollWidth": 1265,
+      "pageOverflow": false,
+      "heading": "Presentation rehearsal",
+      "controls": [
+        {
+          "label": "Submission entry",
+          "width": 138,
+          "height": 29,
+          "right": 204,
+          "left": 66
+        },
+        {
+          "label": "Editable PowerPoint",
+          "width": 162,
+          "height": 29,
+          "right": 383,
+          "left": 220
+        },
+        {
+          "label": "Speaker notes",
+          "width": 116,
+          "height": 29,
+          "right": 515,
+          "left": 399
+        },
+        {
+          "label": "Previous slide",
+          "width": 146,
+          "height": 46,
+          "right": 212,
+          "left": 66
+        },
+        {
+          "label": "Next slide",
+          "width": 113,
+          "height": 46,
+          "right": 341,
+          "left": 228
+        },
+        {
+          "label": "Start timed technical rehearsal",
+          "width": 277,
+          "height": 46,
+          "right": 633,
+          "left": 357
+        },
+        {
+          "label": "Speaker notes for this slide",
+          "width": 1132,
+          "height": 29,
+          "right": 1198,
+          "left": 66
+        },
+        {
+          "label": "Technical rehearsal receipt",
+          "width": 1132,
+          "height": 29,
+          "right": 1198,
+          "left": 66
+        }
+      ]
+    },
+    {
+      "page": "/submission/demo/index.html",
+      "requestedWidth": 320,
+      "viewport": 320,
+      "documentWidth": 305,
+      "scrollWidth": 305,
+      "pageOverflow": false,
+      "heading": "Recorded frame walkthrough",
+      "controls": [
+        {
+          "label": "Submission entry",
+          "width": 138,
+          "height": 29,
+          "right": 162,
+          "left": 24
+        },
+        {
+          "label": "Presentation rehearsal",
+          "width": 181,
+          "height": 29,
+          "right": 205,
+          "left": 24
+        },
+        {
+          "label": "Previous frame",
+          "width": 155,
+          "height": 46,
+          "right": 179,
+          "left": 24
+        },
+        {
+          "label": "Next frame",
+          "width": 122,
+          "height": 46,
+          "right": 146,
+          "left": 24
+        },
+        {
+          "label": "Create an 80-second WebM walkthrough",
+          "width": 257,
+          "height": 75,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Read this frame as text",
+          "width": 257,
+          "height": 29,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Movie recording and saved copy",
+          "width": 257,
+          "height": 58,
+          "right": 281,
+          "left": 24
+        },
+        {
+          "label": "Download recorded WebM",
+          "width": 213,
+          "height": 20,
+          "right": 237,
+          "left": 24
+        }
+      ]
+    },
+    {
+      "page": "/submission/demo/index.html",
+      "requestedWidth": 768,
+      "viewport": 768,
+      "documentWidth": 753,
+      "scrollWidth": 753,
+      "pageOverflow": false,
+      "heading": "Recorded frame walkthrough",
+      "controls": [
+        {
+          "label": "Submission entry",
+          "width": 138,
+          "height": 29,
+          "right": 162,
+          "left": 24
+        },
+        {
+          "label": "Presentation rehearsal",
+          "width": 181,
+          "height": 29,
+          "right": 359,
+          "left": 178
+        },
+        {
+          "label": "Previous frame",
+          "width": 155,
+          "height": 46,
+          "right": 179,
+          "left": 24
+        },
+        {
+          "label": "Next frame",
+          "width": 122,
+          "height": 46,
+          "right": 316,
+          "left": 195
+        },
+        {
+          "label": "Create an 80-second WebM walkthrough",
+          "width": 360,
+          "height": 46,
+          "right": 693,
+          "left": 332
+        },
+        {
+          "label": "Read this frame as text",
+          "width": 705,
+          "height": 29,
+          "right": 729,
+          "left": 24
+        },
+        {
+          "label": "Movie recording and saved copy",
+          "width": 705,
+          "height": 29,
+          "right": 729,
+          "left": 24
+        },
+        {
+          "label": "Download recorded WebM",
+          "width": 213,
+          "height": 20,
+          "right": 237,
+          "left": 24
+        }
+      ]
+    },
+    {
+      "page": "/submission/demo/index.html",
+      "requestedWidth": 1280,
+      "viewport": 1280,
+      "documentWidth": 1265,
+      "scrollWidth": 1265,
+      "pageOverflow": false,
+      "heading": "Recorded frame walkthrough",
+      "controls": [
+        {
+          "label": "Submission entry",
+          "width": 138,
+          "height": 29,
+          "right": 204,
+          "left": 66
+        },
+        {
+          "label": "Presentation rehearsal",
+          "width": 181,
+          "height": 29,
+          "right": 402,
+          "left": 220
+        },
+        {
+          "label": "Previous frame",
+          "width": 155,
+          "height": 46,
+          "right": 221,
+          "left": 66
+        },
+        {
+          "label": "Next frame",
+          "width": 122,
+          "height": 46,
+          "right": 359,
+          "left": 237
+        },
+        {
+          "label": "Create an 80-second WebM walkthrough",
+          "width": 360,
+          "height": 46,
+          "right": 735,
+          "left": 375
+        },
+        {
+          "label": "Read this frame as text",
+          "width": 1132,
+          "height": 29,
+          "right": 1198,
+          "left": 66
+        },
+        {
+          "label": "Movie recording and saved copy",
+          "width": 1132,
+          "height": 29,
+          "right": 1198,
+          "left": 66
+        },
+        {
+          "label": "Download recorded WebM",
+          "width": 213,
+          "height": 20,
+          "right": 279,
+          "left": 66
+        }
+      ]
+    }
+  ],
+  "scans": [
+    {
+      "page": "/submission/index.html",
+      "viewport": 320,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 36,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/index.html",
+      "viewport": 768,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 36,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/index.html",
+      "viewport": 1280,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 36,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/presentation.html",
+      "viewport": 320,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 32,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/presentation.html",
+      "viewport": 768,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 32,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/presentation.html",
+      "viewport": 1280,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 32,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/demo/index.html",
+      "viewport": 320,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 33,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/demo/index.html",
+      "viewport": 768,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 33,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    },
+    {
+      "page": "/submission/demo/index.html",
+      "viewport": 1280,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 33,
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.2"
+      }
+    }
+  ]
+}

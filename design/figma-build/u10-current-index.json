@@ -1,0 +1,104 @@
+{
+  "board": {
+    "id": "2159:102",
+    "name": "Current handoff · U10-R1",
+    "x": 10400,
+    "y": 0,
+    "width": 1440,
+    "height": 1643
+  },
+  "nodes": [
+    {
+      "id": "2159:103",
+      "text": "PARALLAX",
+      "url": null
+    },
+    {
+      "id": "2159:104",
+      "text": "Current submission handoff\nU10-R1 · 4 October 2026",
+      "url": null
+    },
+    {
+      "id": "2159:105",
+      "text": "70 m² Signal & Computer Vision Lab. Runnable local edition, reviewed secondary research and conceptual P4-D room. Original boards and model sources remain preserved.",
+      "url": null
+    },
+    {
+      "id": "2159:106",
+      "text": "START WITH THE CURRENT LOCAL PACKET",
+      "url": null
+    },
+    {
+      "id": "2159:107",
+      "text": "Open submission entry · run the local server first",
+      "url": "http://127.0.0.1:4180/submission/index.html"
+    },
+    {
+      "id": "2159:108",
+      "text": "Current React prototype · student, staff, smart lab and local guide AI",
+      "url": "http://127.0.0.1:4180/apps/lab-web/dist/index.html#/dashboard"
+    },
+    {
+      "id": "2159:109",
+      "text": "Read the final ten-section report · PDF",
+      "url": "http://127.0.0.1:4180/submission/PARALLAX-Final-Report.pdf"
+    },
+    {
+      "id": "2159:110",
+      "text": "DESIGN EVIDENCE IN THIS FILE",
+      "url": null
+    },
+    {
+      "id": "2159:111",
+      "text": "Core student paths · retained Phase 6 prototype",
+      "url": "https://www.figma.com/design/QaLr3W9rzW1WGhkDeHx9WF?node-id=2089-1400"
+    },
+    {
+      "id": "2159:112",
+      "text": "Phase 7 · equipment interruption and restoration",
+      "url": "https://www.figma.com/design/QaLr3W9rzW1WGhkDeHx9WF?node-id=2108-62"
+    },
+    {
+      "id": "2159:113",
+      "text": "Phase 8 · spatial and model experience",
+      "url": "https://www.figma.com/design/QaLr3W9rzW1WGhkDeHx9WF?node-id=2131-82"
+    },
+    {
+      "id": "2159:114",
+      "text": "VALIDATION AND DELIVERY SCOPE",
+      "url": null
+    },
+    {
+      "id": "2159:115",
+      "text": "U01–U08: local/proposal deliveries retained. U09: confirmed UI fixes, regression checks, keyboard/reflow, export fallback and eight scene-remount observations. U10: ten-section report and fifteen-slide editable deck, source notes and current handoff.",
+      "url": null
+    },
+    {
+      "id": "2159:116",
+      "text": "139 React tests + 16 service tests pass. Original prototype, scientific identities and geometry remain preserved. Earlier Ollama evaluation: 39/39 authored cases, including 27 real local calls. These checks do not establish student learning, physical safety or production readiness.",
+      "url": null
+    },
+    {
+      "id": "2159:117",
+      "text": "External checks remain explicit: spoken screen reader, real browser zoom, second browser/physical device, native download completion and human presenter rehearsal. Live sensor streams, shared authenticated operations and institutional/site approval are separate integrations.",
+      "url": null
+    },
+    {
+      "id": "2159:118",
+      "text": "Secondary research only: fourteen sources, zero local participants. Modelled energy upper bounds are not measured savings. Local Ollama reads reviewed public guides only. Team identities/contributions and the deadline year remain unconfirmed.",
+      "url": null
+    },
+    {
+      "id": "2159:119",
+      "text": "Read evidence index and external-check instructions in the local submission packet",
+      "url": "http://127.0.0.1:4180/submission/index.html#evidence"
+    }
+  ],
+  "preservedOldFrames": [
+    "2034:911",
+    "2074:3046",
+    "2101:42",
+    "2129:1103",
+    "2141:1831"
+  ]
+}

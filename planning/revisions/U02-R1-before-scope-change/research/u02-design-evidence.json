@@ -1,0 +1,1014 @@
+{
+  "revision": "U02-R1",
+  "localValidation": "open",
+  "hypotheses": [
+    {
+      "id": "H01",
+      "claim": "Students discover missing or incompatible kit only at the bench.",
+      "sources": [
+        "S04",
+        "S06",
+        "S07"
+      ],
+      "supports": "Preparation and equipment permissions are meaningful design contexts; none establishes when our students discover problems.",
+      "status": "Open local hypothesis",
+      "test": "M1/M2 plus T1/T4: recount a recent missing-kit incident, inspect current preparation, explain complete-kit dependencies.",
+      "counter": "Current manifests and staff checks already prevent missing-kit surprises."
+    },
+    {
+      "id": "H02",
+      "claim": "Current booking covers room and time, not individual devices and accessories.",
+      "sources": [
+        "S06",
+        "S07",
+        "S13",
+        "S14"
+      ],
+      "supports": "External policies and accounts show several equipment-booking practices; the local system remains unknown.",
+      "status": "Open local hypothesis",
+      "test": "M4/M1 plus T2: collect the actual booking form/policy and walk through a real dependency conflict.",
+      "counter": "The local system already reserves resources, or station-only booking is appropriate for fixed equipment."
+    },
+    {
+      "id": "H03",
+      "claim": "Acquisition settings are lost between capture and report writing.",
+      "sources": [
+        "S01",
+        "S05"
+      ],
+      "supports": "Reasoning and structured provenance justify traceable records; actual loss and its frequency are not established.",
+      "status": "Open local hypothesis",
+      "test": "M2/M4 plus T5/U-T14: reconstruct a recent capture from existing notes before showing the prototype.",
+      "counter": "Current instruments and notebooks retain the settings students need without extra work."
+    },
+    {
+      "id": "H04",
+      "claim": "Faults are reported verbally and do not reach future bookers.",
+      "sources": [
+        "S06",
+        "S13"
+      ],
+      "supports": "Fault ownership and coordination warrant investigation; neither source describes our reporting chain.",
+      "status": "Open local hypothesis",
+      "test": "M1 technician/M4 plus T7/T8: trace the latest incident from report to affected booking and verified release.",
+      "counter": "Existing logbooks and staff handovers already communicate faults reliably."
+    },
+    {
+      "id": "H05",
+      "claim": "Attendance is taken on paper and corrected informally.",
+      "sources": [],
+      "supports": "No selected source establishes the local attendance method. Preserve the requirement as provisional.",
+      "status": "Open local hypothesis — no direct secondary support",
+      "test": "M4/M1 faculty: inspect an anonymised attendance workflow and correction policy; test the correction task.",
+      "counter": "The institution already has a mandatory digital attendance system with an audit trail."
+    },
+    {
+      "id": "H06",
+      "claim": "Novice students hesitate with unfamiliar instruments and wait for help.",
+      "sources": [
+        "S04",
+        "S01",
+        "S12"
+      ],
+      "supports": "Preparation and scaffolding are plausible responses; waiting behaviour is a local question, not an observed finding.",
+      "status": "Open local hypothesis",
+      "test": "M2/T1: observe unfamiliar preparation without prompting and distinguish productive thinking from blocked action.",
+      "counter": "Pauses are deliberate reasoning, and peer/faculty help is already timely and educationally useful."
+    },
+    {
+      "id": "H07",
+      "claim": "Faculty cannot see cohort readiness before a session starts.",
+      "sources": [
+        "S02"
+      ],
+      "supports": "Learning expectations merit explicit investigation; E-CLASS does not demonstrate a missing cohort-readiness view.",
+      "status": "Open local hypothesis — indirect context only",
+      "test": "M1 faculty/M4: ask about the last readiness decision and the evidence actually used; test a cohort task.",
+      "counter": "Faculty already get sufficient readiness information; aggregate completion would not improve support."
+    },
+    {
+      "id": "H08",
+      "claim": "Asset location relies on technician memory.",
+      "sources": [
+        "S06",
+        "S10"
+      ],
+      "supports": "Equipment responsibility and organisation are relevant contexts; no selected source establishes memory dependence.",
+      "status": "Open local hypothesis — indirect context only",
+      "test": "M1 technician/M3/M4: locate an unfamiliar asset using current records and trace a recent movement.",
+      "counter": "A maintained register and labels already resolve location accurately."
+    },
+    {
+      "id": "H09",
+      "claim": "Students already use phones for reference during experiments.",
+      "sources": [],
+      "supports": "Responsive design is a product commitment; it does not prove phone use in this lab. Earlier confidence is not evidence.",
+      "status": "Open local hypothesis — no direct secondary support",
+      "test": "M2/M5: observe permitted device use and ask about access preferences, connectivity and phone restrictions.",
+      "counter": "Phones are prohibited, inconvenient or inaccessible; shared bench displays are the usual reference."
+    },
+    {
+      "id": "H10",
+      "claim": "Circulation and uncontrolled light disturb camera capture.",
+      "sources": [],
+      "supports": "The assumed geometry and illustrative lighting fixture do not establish real room disturbances.",
+      "status": "Open site hypothesis — no direct secondary support",
+      "test": "M2/M3: survey routes, light sources and actual capture disturbance with qualified staff; log time/conditions.",
+      "counter": "Existing separation and controlled lighting already protect capture; another cause explains failures."
+    },
+    {
+      "id": "H11",
+      "claim": "A 3D map helps orientation more than it helps booking.",
+      "sources": [
+        "S08"
+      ],
+      "supports": "Accessibility supports equivalent task paths, not a ranking of 3D usefulness.",
+      "status": "Open comparative hypothesis",
+      "test": "M7/T3/T7: counterbalance plan/list and 3D tasks; record comprehension, assistance and access barriers.",
+      "counter": "3D adds effort or distraction; the list/plan is equally effective for orientation."
+    },
+    {
+      "id": "H12",
+      "claim": "Students treat model confidence as correctness.",
+      "sources": [
+        "S02",
+        "S03",
+        "S11",
+        "S12"
+      ],
+      "supports": "Epistemic expectations and AI-learning evidence justify probing interpretation; none directly tests this model-confidence claim.",
+      "status": "Open local hypothesis — indirect context only",
+      "test": "M7/T5/U-T14: interpret a high-confidence incorrect illustrative result and explain what evidence establishes correctness.",
+      "counter": "Students already distinguish model score, calibration and independent ground truth."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-U02-01",
+      "title": "Preserve the student task entry; keep Smart Lab as a distinct overview",
+      "sources": [
+        "S01",
+        "S02",
+        "S08"
+      ],
+      "chosen": "Today → method → kit → experiment; dashboard leads staff to an owned attention task.",
+      "alternative": "Make metrics the universal homepage.",
+      "reason": "Authored hierarchy keeps the learning task legible while satisfying the dashboard deliverable. The sources support reasoning/access, not proof that this navigation is best.",
+      "state": "Implemented direction; not participant validated",
+      "gate": "T1/U-T11: find a next action and explain why it matters; test timetable-first as a counterexample."
+    },
+    {
+      "id": "D-U02-02",
+      "title": "Preparation, training permission and reservation are separate",
+      "sources": [
+        "S04",
+        "S06",
+        "S07",
+        "S13",
+        "S14"
+      ],
+      "chosen": "Show method, versioned quantities, conflict reason and retained alternative; expose permission as a future policy boundary.",
+      "alternative": "Treat a completed read checklist as equipment certification, or automatically book only the room.",
+      "reason": "External facilities supply relevant operating examples. Local booking and training policy still need confirmation; a complex scheduler is not automatically the right product.",
+      "state": "Kit and acknowledgement demonstrated; real permission/policy integration open",
+      "gate": "T1/T2/T4 and local policy/manifest review; faculty approves preparation goals."
+    },
+    {
+      "id": "D-U02-03",
+      "title": "Record before interpreting; compare immutable context",
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "chosen": "Retain method/source/settings/time at capture; unknown historical context stays unknown; ask for the student's bounded interpretation.",
+      "alternative": "Reconstruct old context from current settings or optimise for a predetermined correct answer.",
+      "reason": "A traceable record supports the intended scientific experience. Visual or numeric differences alone do not establish causation.",
+      "state": "Local condition replay implemented; full processing/provenance parity open",
+      "gate": "T5/U-T14: reconstruct both conditions, identify uncertainty and propose a justified next test."
+    },
+    {
+      "id": "D-U02-04",
+      "title": "Make recovery and responsibility observable",
+      "sources": [
+        "S05",
+        "S06",
+        "S08"
+      ],
+      "chosen": "Distinguish draft/saved/submitted/receipt and physical return; faults retain restrictions until verification and have an owner.",
+      "alternative": "Celebrate success on click or let an incomplete repair silently restore availability.",
+      "reason": "This is a service and state-integrity decision informed by provenance, policy examples and status-message requirements, not evidence of local failure frequency.",
+      "state": "Local recovery and technician sequence demonstrated; authoritative shared service open",
+      "gate": "T6/T7/T8; ask expectations before interruption/retry; confirm release authority with technician."
+    },
+    {
+      "id": "D-U02-05",
+      "title": "Observations and energy previews remain qualified",
+      "sources": [
+        "S06",
+        "S09",
+        "S10"
+      ],
+      "chosen": "Source/age/quality first; modelled upper bound, protected bookings/essential services and five-part sustainability ledger; human review.",
+      "alternative": "One green Safe score, generic idle auto-off or invented savings.",
+      "reason": "Guidance and operating examples require context-specific interpretation. Every physical decision needs approved measurements and asset policy.",
+      "state": "Simulated observations and energy model implemented; connected hardware/physical approval open",
+      "gate": "U-T12/U-T13; verify source and protection comprehension; obtain sampling and shutdown policy before connection."
+    },
+    {
+      "id": "D-U02-06",
+      "title": "Build AI as narrow help with a visible evidence boundary",
+      "sources": [
+        "S01",
+        "S03",
+        "S11",
+        "S12"
+      ],
+      "chosen": "Manual lookup cites an approved revision; reasoning mode requests an attempt and offers a hint; unknown facts trigger abstention/staff route.",
+      "alternative": "General answer chatbot, automatic notebook claims or equipment control.",
+      "reason": "Research supports evaluating pedagogy and unaided understanding rather than assuming all AI assistance helps. These studies do not validate our proposed assistant.",
+      "state": "Concept and evaluation brief only; implementation belongs to U06",
+      "gate": "Faculty source approval, server-held provider configuration, unsupported/withdrawn/injected-source tests and unaided learning check."
+    },
+    {
+      "id": "D-U02-07",
+      "title": "Access alternatives are first-class paths",
+      "sources": [
+        "S08"
+      ],
+      "chosen": "Typed ID, plan/list, keyboard, reflow and explicit status; optional scan/3D/voice/AR cannot be the sole path.",
+      "alternative": "Spatial or camera interaction as the only way to complete a task.",
+      "reason": "Selected WCAG criteria are normative design inputs. They do not confirm full conformance, preferred device or physical circulation.",
+      "state": "Alternatives exist across prototypes; complete applicable-AA audit and participant validation open",
+      "gate": "Keyboard, 320px reflow, screen-reader and chosen device tasks; qualified site audit separately."
+    },
+    {
+      "id": "D-U02-08",
+      "title": "Measure adoption and learning separately from completion",
+      "sources": [
+        "S02",
+        "S10",
+        "S13",
+        "S14"
+      ],
+      "chosen": "Document policy owner, evidence definition and denominator; collect baseline before utilisation/learning/savings claims.",
+      "alternative": "Dashboard completion as learning, reservations as utilisation or modelled watts as savings.",
+      "reason": "Institutional and public evidence raises organisation and expectation questions. The unspecified old utilisation citation cannot establish a local baseline.",
+      "state": "Research/measurement contract delivered; no baseline or operational analytics result",
+      "gate": "Local artefacts, faculty learning criteria, technician policy and participant evidence; no invented percentages."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "requirement": "Versioned kit with accessory quantities",
+      "problems": [
+        "PS1"
+      ],
+      "hypotheses": [
+        "H01",
+        "H02"
+      ],
+      "sources": [
+        "S06",
+        "S07"
+      ],
+      "decisions": [
+        "D-U02-02"
+      ],
+      "wireframes": [
+        "WF02",
+        "WF03",
+        "WF04"
+      ],
+      "test": "T1/T2/T4; real manifest review",
+      "state": "Local kit demonstrator; real quantities/policy unverified"
+    },
+    {
+      "id": "R02",
+      "requirement": "Reserve all required resources for the same interval",
+      "problems": [
+        "PS1"
+      ],
+      "hypotheses": [
+        "H02"
+      ],
+      "sources": [
+        "S06",
+        "S07"
+      ],
+      "decisions": [
+        "D-U02-02"
+      ],
+      "wireframes": [
+        "WF03"
+      ],
+      "test": "T2; real booking dependency review",
+      "state": "Local complete-kit conflict model; shared transaction and local policy open"
+    },
+    {
+      "id": "R03",
+      "requirement": "Preserve conflict choices and offer alternatives",
+      "problems": [
+        "PS1"
+      ],
+      "hypotheses": [
+        "H02"
+      ],
+      "sources": [
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-02",
+        "D-U02-04"
+      ],
+      "wireframes": [
+        "WF03"
+      ],
+      "test": "T2; explain conflicting item and recover",
+      "state": "Local conflict/recovery demonstrated; participant evidence open"
+    },
+    {
+      "id": "R04",
+      "requirement": "Check-in reuses manifest and records attendance",
+      "problems": [
+        "PS1",
+        "PS4"
+      ],
+      "hypotheses": [
+        "H01",
+        "H05"
+      ],
+      "sources": [
+        "S06",
+        "S07"
+      ],
+      "decisions": [
+        "D-U02-02",
+        "D-U02-08"
+      ],
+      "wireframes": [
+        "WF04"
+      ],
+      "test": "T4; inspect attendance ownership/policy",
+      "state": "Local arrival demonstrated; institutional attendance integration open"
+    },
+    {
+      "id": "R05",
+      "requirement": "Capture stores source, settings and timestamp automatically",
+      "problems": [
+        "PS2"
+      ],
+      "hypotheses": [
+        "H03"
+      ],
+      "sources": [
+        "S01",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03"
+      ],
+      "wireframes": [
+        "WF05",
+        "WF06"
+      ],
+      "test": "T5/U-T14; reconstruct before current scenario changes",
+      "state": "Immutable example context implemented; live device acquisition absent"
+    },
+    {
+      "id": "R06",
+      "requirement": "Processing output links input, parameters and version",
+      "problems": [
+        "PS2"
+      ],
+      "hypotheses": [
+        "H03"
+      ],
+      "sources": [
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03"
+      ],
+      "wireframes": [
+        "WF05",
+        "WF06",
+        "WF07"
+      ],
+      "test": "T5/U-T14; inspect revision and input lineage",
+      "state": "Demonstrator source/parameters retained; full processing parity open"
+    },
+    {
+      "id": "R07",
+      "requirement": "Confidence labelled separately from correctness",
+      "problems": [
+        "PS2"
+      ],
+      "hypotheses": [
+        "H12"
+      ],
+      "sources": [
+        "S02",
+        "S03"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-06"
+      ],
+      "wireframes": [
+        "WF05",
+        "WF07"
+      ],
+      "test": "T5; interpret an incorrect high-score illustration",
+      "state": "Illustrative evidence boundary exists; local comprehension untested"
+    },
+    {
+      "id": "R08",
+      "requirement": "Notebook evidence identity and provenance",
+      "problems": [
+        "PS2"
+      ],
+      "hypotheses": [
+        "H03"
+      ],
+      "sources": [
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-04"
+      ],
+      "wireframes": [
+        "WF07"
+      ],
+      "test": "T5/T6; distinguish draft and evidence revision",
+      "state": "Local notebook/evidence route; full embed parity open"
+    },
+    {
+      "id": "R09",
+      "requirement": "Submission freezes stable manifest revision",
+      "problems": [
+        "PS2"
+      ],
+      "hypotheses": [
+        "H03"
+      ],
+      "sources": [
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-04"
+      ],
+      "wireframes": [
+        "WF08"
+      ],
+      "test": "T6 extension; verify revision and receipt after retry",
+      "state": "Local frozen submission/receipt implemented; server authority absent"
+    },
+    {
+      "id": "R10",
+      "requirement": "Issue preselects asset and captures symptoms",
+      "problems": [
+        "PS3"
+      ],
+      "hypotheses": [
+        "H04"
+      ],
+      "sources": [
+        "S06"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "wireframes": [
+        "WF05",
+        "WF11"
+      ],
+      "test": "T7/T8; follow incident identity to owner",
+      "state": "Local seeded issue and technician route; broader reporting parity open"
+    },
+    {
+      "id": "R11",
+      "requirement": "Restriction updates passport, booking and map together",
+      "problems": [
+        "PS3"
+      ],
+      "hypotheses": [
+        "H04"
+      ],
+      "sources": [
+        "S06"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "wireframes": [
+        "WF03",
+        "WF09",
+        "WF11",
+        "WF12"
+      ],
+      "test": "T7/T8; reconcile projections and affected bookings",
+      "state": "Local restriction projections; authoritative cross-user synchronisation open"
+    },
+    {
+      "id": "R12",
+      "requirement": "Notify affected bookings with an alternative",
+      "problems": [
+        "PS3"
+      ],
+      "hypotheses": [
+        "H04",
+        "H02"
+      ],
+      "sources": [
+        "S06"
+      ],
+      "decisions": [
+        "D-U02-04",
+        "D-U02-08"
+      ],
+      "wireframes": [
+        "WF03",
+        "WF11"
+      ],
+      "test": "T8; inspect recipient/owner and compatible alternative",
+      "state": "Design/legacy demonstration; real notification delivery absent"
+    },
+    {
+      "id": "R13",
+      "requirement": "Restore availability only after recorded verification",
+      "problems": [
+        "PS3"
+      ],
+      "hypotheses": [
+        "H04"
+      ],
+      "sources": [
+        "S06"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "wireframes": [
+        "WF11"
+      ],
+      "test": "T8; attempt release after interrupted verification",
+      "state": "Local verification gate demonstrated; authorised physical release unverified"
+    },
+    {
+      "id": "R14",
+      "requirement": "Instructor cohort readiness before session",
+      "problems": [
+        "PS4"
+      ],
+      "hypotheses": [
+        "H07"
+      ],
+      "sources": [
+        "S02"
+      ],
+      "decisions": [
+        "D-U02-01",
+        "D-U02-08"
+      ],
+      "wireframes": [
+        "WF13"
+      ],
+      "test": "U-T15; faculty readiness decision and actual session artefact",
+      "state": "Original faculty design plus dedicated low-fidelity reconstruction; React flow/local validation open"
+    },
+    {
+      "id": "R15",
+      "requirement": "Attendance correction actor, reason and time",
+      "problems": [
+        "PS4"
+      ],
+      "hypotheses": [
+        "H05"
+      ],
+      "sources": [],
+      "decisions": [
+        "D-U02-08"
+      ],
+      "wireframes": [
+        "WF14"
+      ],
+      "test": "U-T16; faculty correction task and local record/policy review",
+      "state": "Original attendance design plus dedicated low-fidelity reconstruction; policy/React flow open"
+    },
+    {
+      "id": "R16",
+      "requirement": "Asset move from/to, actor, time and reason",
+      "problems": [
+        "PS5"
+      ],
+      "hypotheses": [
+        "H08"
+      ],
+      "sources": [
+        "S06",
+        "S10"
+      ],
+      "decisions": [
+        "D-U02-04",
+        "D-U02-08"
+      ],
+      "wireframes": [
+        "WF15"
+      ],
+      "test": "U-T17; technician movement task and current asset register review",
+      "state": "Original operational requirement plus dedicated movement wireframe; React flow and real inventory open"
+    },
+    {
+      "id": "R17",
+      "requirement": "QR and manual ID resolve to same record",
+      "problems": [
+        "PS5"
+      ],
+      "hypotheses": [
+        "H08",
+        "H09"
+      ],
+      "sources": [
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-07"
+      ],
+      "wireframes": [
+        "WF04",
+        "WF12"
+      ],
+      "test": "T4/T7; typed and scanned identifier equivalence",
+      "state": "Typed path demonstrated; actual QR scanner/device validation open"
+    },
+    {
+      "id": "R18",
+      "requirement": "Shared zone/asset IDs across signage, plan and software",
+      "problems": [
+        "PS6"
+      ],
+      "hypotheses": [
+        "H08",
+        "H10"
+      ],
+      "sources": [],
+      "decisions": [
+        "D-U02-07",
+        "D-U02-08"
+      ],
+      "wireframes": [
+        "WF09",
+        "WF12"
+      ],
+      "test": "T3/T7; reconcile real signage against canonical IDs",
+      "state": "Canonical assumed geometry reused; installed signage/site verification absent"
+    },
+    {
+      "id": "R19",
+      "requirement": "Every 3D task has list or 2D equivalent",
+      "problems": [
+        "PS6"
+      ],
+      "hypotheses": [
+        "H11"
+      ],
+      "sources": [
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-07"
+      ],
+      "wireframes": [
+        "WF12"
+      ],
+      "test": "T3/T7; no-WebGL and keyboard equivalence",
+      "state": "Existing map fallback; complete all-task/access review open"
+    },
+    {
+      "id": "R20",
+      "requirement": "Capture zone avoids through-circulation",
+      "problems": [
+        "PS6"
+      ],
+      "hypotheses": [
+        "H10"
+      ],
+      "sources": [],
+      "decisions": [
+        "D-U02-07"
+      ],
+      "wireframes": [
+        "WF12"
+      ],
+      "test": "M3 qualified site/circulation audit",
+      "state": "Assumed 10 × 7 m planning concept; not a surveyed or approved physical layout"
+    }
+  ],
+  "wireframeResearch": {
+    "WF01": {
+      "sources": [
+        "S01",
+        "S02",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-01"
+      ],
+      "requirements": [],
+      "boundary": "Task-first entry is an authored choice, not a measured preference."
+    },
+    "WF02": {
+      "sources": [
+        "S04",
+        "S06",
+        "S07"
+      ],
+      "decisions": [
+        "D-U02-02"
+      ],
+      "requirements": [
+        "R01"
+      ],
+      "boundary": "Read acknowledgement is not training certification."
+    },
+    "WF03": {
+      "sources": [
+        "S06",
+        "S07",
+        "S13",
+        "S14"
+      ],
+      "decisions": [
+        "D-U02-02",
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R01",
+        "R02",
+        "R03"
+      ],
+      "boundary": "Local booking policy and dependency quantities are unverified."
+    },
+    "WF04": {
+      "sources": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-02",
+        "D-U02-07"
+      ],
+      "requirements": [
+        "R01",
+        "R04",
+        "R17"
+      ],
+      "boundary": "Typed path exists; physical item checks and QR devices need validation."
+    },
+    "WF05": {
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R05",
+        "R06",
+        "R07",
+        "R10"
+      ],
+      "boundary": "Fixture or generated evidence is not a live device performance measurement."
+    },
+    "WF06": {
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03"
+      ],
+      "requirements": [
+        "R05",
+        "R06"
+      ],
+      "boundary": "Difference does not establish causation; missing context stays unknown."
+    },
+    "WF07": {
+      "sources": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "decisions": [
+        "D-U02-03",
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R07",
+        "R08"
+      ],
+      "boundary": "The student writes the claim; no evaluated AI authoring exists."
+    },
+    "WF08": {
+      "sources": [
+        "S05",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R09"
+      ],
+      "boundary": "Local receipt model does not prove server delivery."
+    },
+    "WF09": {
+      "sources": [
+        "S06",
+        "S08",
+        "S09"
+      ],
+      "decisions": [
+        "D-U02-01",
+        "D-U02-05"
+      ],
+      "requirements": [
+        "R11",
+        "R18"
+      ],
+      "boundary": "Active sessions are not learning or utilisation; this is not cohort readiness."
+    },
+    "WF10": {
+      "sources": [
+        "S06",
+        "S09",
+        "S10"
+      ],
+      "decisions": [
+        "D-U02-05"
+      ],
+      "requirements": [],
+      "boundary": "No connected sensor, safety certification, measured savings or switch action."
+    },
+    "WF11": {
+      "sources": [
+        "S06",
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-04"
+      ],
+      "requirements": [
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "boundary": "Demonstrated sequence requires authorised local release policy."
+    },
+    "WF12": {
+      "sources": [
+        "S08"
+      ],
+      "decisions": [
+        "D-U02-07"
+      ],
+      "requirements": [
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "boundary": "Assumed room; plan/list preference and real circulation remain unverified."
+    },
+    "WF13": {
+      "sources": [
+        "S02"
+      ],
+      "decisions": [
+        "D-U02-01",
+        "D-U02-08"
+      ],
+      "requirements": [
+        "R14"
+      ],
+      "boundary": "Learning/readiness definitions and faculty workflow need local validation."
+    },
+    "WF14": {
+      "sources": [],
+      "decisions": [
+        "D-U02-04",
+        "D-U02-08"
+      ],
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "boundary": "No direct secondary support for the local attendance hypothesis; concept, not new React implementation."
+    },
+    "WF15": {
+      "sources": [
+        "S06",
+        "S10"
+      ],
+      "decisions": [
+        "D-U02-04",
+        "D-U02-08"
+      ],
+      "requirements": [
+        "R16",
+        "R18"
+      ],
+      "boundary": "Source context is indirect; real inventory, destinations and movement owner need confirmation."
+    }
+  },
+  "storyboard": [
+    {
+      "id": "ST01",
+      "title": "Understand the question",
+      "image": "design/figma-build/thumbs/phase-06_view-2089-1403.jpg",
+      "origin": "Original Figma P6-A · preparation E01",
+      "alt": "E01 preparation screen: method and generated-signal boundary before reservation.",
+      "intent": "An authored student prepares to compare sampling conditions and identifies the required kit before reserving.",
+      "decision": "D-U02-02",
+      "wireframe": "WF02",
+      "test": "T1: explain the method and what is required before booking."
+    },
+    {
+      "id": "ST02",
+      "title": "Record a first condition",
+      "image": "design/figma-build/thumbs/phase-06_view-2089-925.jpg",
+      "origin": "Original Figma P6-A · E01 20 Hz fixture",
+      "alt": "E01 signal bench with the labelled 20 Hz generated sampling fixture.",
+      "intent": "The student records the higher-rate generated example. A fixture is a teaching reference, not a measurement from hardware.",
+      "decision": "D-U02-03",
+      "wireframe": "WF05",
+      "test": "T5: identify source and recorded settings without interpreting first."
+    },
+    {
+      "id": "ST03",
+      "title": "Change a condition, retain both",
+      "image": "design/figma-build/thumbs/phase-06_view-2089-1040.jpg",
+      "origin": "Original Figma P6-A · E01 3 Hz fixture",
+      "alt": "E01 signal bench with the labelled 3 Hz generated sampling fixture.",
+      "intent": "A second example changes sampling rate. The proposed reasoning task asks what is held constant and what could explain the difference.",
+      "decision": "D-U02-03",
+      "wireframe": "WF05",
+      "test": "T5: distinguish sampling behaviour from claims about the underlying signal."
+    },
+    {
+      "id": "ST04",
+      "title": "Replay what was retained",
+      "image": "apps/lab-web/evidence/conditions-light.png",
+      "origin": "React EX-2.2 · captured condition comparison",
+      "alt": "React condition replay: retained examples, provenance and comparison table.",
+      "intent": "The current React extension exposes recorded context, including observation freshness; it never replaces an old record with current settings.",
+      "decision": "D-U02-03",
+      "wireframe": "WF06",
+      "test": "U-T14: identify changes, missing context and what cannot be concluded."
+    },
+    {
+      "id": "ST05",
+      "title": "Write a bounded claim",
+      "image": "design/figma-build/thumbs/phase-06_view-2089-1409.jpg",
+      "origin": "Original Figma P6-A · E01 notebook",
+      "alt": "E01 notebook with student interpretation and evidence references.",
+      "intent": "The student explains the comparison and limitations. No AI-authored final claim or automatically proven conclusion is implied.",
+      "decision": "D-U02-03",
+      "wireframe": "WF07",
+      "test": "T5/T6: connect an own-word claim to evidence and distinguish draft from saved work."
+    },
+    {
+      "id": "ST06",
+      "title": "Notice the missing acknowledgement",
+      "image": "design/figma-build/thumbs/phase-06_view-2089-1413.jpg",
+      "origin": "Original Figma P6-A · E01 pending submission",
+      "alt": "E01 submission failure state indicating pending acknowledgement and recovery.",
+      "intent": "A lost acknowledgement leaves the request pending. The student can recover without treating a click as confirmation.",
+      "decision": "D-U02-04",
+      "wireframe": "WF08",
+      "test": "T6 extension: state what is known before retrying."
+    },
+    {
+      "id": "ST07",
+      "title": "Confirm the receipt; close the session",
+      "image": "design/figma-build/thumbs/phase-06_view-2089-1415.jpg",
+      "origin": "Original Figma P6-A · E01 confirmed receipt",
+      "alt": "E01 confirmed receipt with separate guidance to leave the fixed bench ready for the next session.",
+      "intent": "E01 has no portable items to return. Its fixed-bench session still needs a separate close action after receipt; E06 includes a physical kit return. The frozen revision remains the submitted record.",
+      "decision": "D-U02-04",
+      "wireframe": "WF08",
+      "test": "T6 extension: distinguish confirmed receipt from a closed session."
+    }
+  ]
+}

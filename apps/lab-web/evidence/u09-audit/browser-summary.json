@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-04",
+  "browser": "In-app browser; Chromium-based desktop only",
+  "routeRecords": "routes.json",
+  "desktopDashboard": "dashboard-desktop.png",
+  "narrow": "narrow.json",
+  "axe": "axe-summary.json",
+  "automatedScans": 8,
+  "confirmedViolations": 0,
+  "contrastIncomplete": true,
+  "normalAppConsole": [],
+  "fault": "fault-frames.json",
+  "geometryFallback": "geometry-plan-only.txt",
+  "ollama": {
+    "model": "llama3.2:3b",
+    "freshQuestion": "Why can the 3 Hz samples show a 1 Hz alias?",
+    "observedPassage": "E01-alias",
+    "revision": "01",
+    "evidence": "ollama-smoke.txt",
+    "scope": "One fresh smoke call; original 39-case evaluation was not rerun."
+  },
+  "preservation": {
+    "activity": "Activity · 0 throughout all private views, including all ten fault stages",
+    "actions": "No primary domain commands, save/reset/restore, policy update or guide edit. Only explicit guide question and transient sandbox/fallback/navigation/QA controls."
+  },
+  "limits": [
+    "No screen-reader session",
+    "No actual browser zoom",
+    "No second browser/device",
+    "No runtime performance or GPU resource trace",
+    "No print pagination or download completion test"
+  ]
+}

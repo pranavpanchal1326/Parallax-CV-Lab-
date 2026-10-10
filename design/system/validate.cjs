@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+const p=path.resolve(__dirname);const tokens=JSON.parse(fs.readFileSync(path.join(p,'tokens.json'),'utf8')),components=JSON.parse(fs.readFileSync(path.join(p,'components.json'),'utf8')),js=fs.readFileSync(path.join(p,'system.js'),'utf8');
+const lum=h=>{const a=[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return .2126*a[0]+.7152*a[1]+.0722*a[2];};
+const color=k=>tokens.primitives[tokens.semantic[k]],ratio=(a,b)=>{const l=[lum(color(a)),lum(color(b))].sort((a,b)=>b-a);return(l[0]+.05)/(l[1]+.05);};
+const pairs=[['text','canvas',4.5],['textSecondary','canvas',4.5],['actionText','action',4.5],['actionText','actionHover',4.5],['success','successSurface',4.5],['danger','dangerSurface',4.5],['warning','warningSurface',4.5],['instrumentText','instrument',4.5],['instrumentSecondary','instrument',4.5],['trace','instrument',3],['instrumentWarning','instrument',3],['border','surface',3],['action','canvas',3],['disabledText','disabled',4.5]];
+const contrast=pairs.map(([fg,bg,min])=>({fg,bg,ratio:Number(ratio(fg,bg).toFixed(2)),minimum:min,pass:ratio(fg,bg)>=min}));
+const missing=components.filter(c=>!js.includes("case '"+c.id+"':")||['variants','required_anatomy','behaviour','constraints','acceptance'].some(k=>!Array.isArray(c[k])||!c[k].length)).map(c=>c.id);
+const result={revision:'P5-A',components:components.length,uniqueIDs:new Set(components.map(x=>x.id)).size,missingContractsOrSpecimens:missing,contrast,scope:'Source coverage and exact token pairs. Does not certify all rendered states, assistive technology or real lab integrations.'};
+fs.writeFileSync(path.join(p,'validation.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));if(components.length!==40||missing.length||contrast.some(c=>!c.pass))process.exitCode=1;
+const prepared=fs.readFileSync(path.join(p,'../figma-build/phase-05-foundations.js'),'utf8');new Function('figma','return (async()=>{'+prepared+'})()');

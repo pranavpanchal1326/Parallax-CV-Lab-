@@ -1,0 +1,708 @@
+{
+  "meta": {
+    "name": "PARALLAX Signal & Computer Vision Lab — conceptual plan",
+    "revision": "P4-D",
+    "date": "2026-10-02",
+    "units": "metres",
+    "origin": "inner face of north-west wall corner; x east, y south",
+    "status": "Conceptual envelope (A02/A03 open). Not a surveyed room. Clearances are planning assumptions pending local code review (G12.15).",
+    "room": {
+      "width": 10,
+      "depth": 7,
+      "height": 3,
+      "wall": 0.2
+    }
+  },
+  "planning_rules": {
+    "spine_min": {
+      "value": 1.5,
+      "source": "HG 2021 cl. 4.4.1(2): accessible route ≥ 1500 mm for a wheelchair and a walking person to pass"
+    },
+    "aisle_min": {
+      "value": 0.9,
+      "source": "HG 2021 cl. 4.4.1(4): accessible routes within office work areas ≥ 900 mm"
+    },
+    "access_gap_min": {
+      "value": 0.9,
+      "source": "HG 2021 cl. 4.10.2: door clear opening ≥ 900 mm"
+    },
+    "door_clear_min": {
+      "value": 1,
+      "source": "NBC 2016 Part 4 cl. 4.4.2.4.1(b): exit doorway ≥ 1000 mm"
+    },
+    "door_height_min": {
+      "value": 2,
+      "source": "NBC 2016 Part 4 cl. 4.4.2.4.1(b): doorway height ≥ 2000 mm"
+    },
+    "turning_circle_d": {
+      "value": 1.5,
+      "source": "HG 2021: 1500 mm turning circle"
+    },
+    "work_surface_h": {
+      "value": [
+        0.75,
+        0.8
+      ],
+      "source": "HG 2021 cl. 4.3(3): wheelchair counter height 750–800 mm"
+    },
+    "knee_clearance": {
+      "value": 0.68,
+      "source": "HG 2021 cl. 4.3(5): knee clearance 680 mm below counter"
+    },
+    "occupant_load_factor": {
+      "value": 4,
+      "source": "NBC 2016 Part 4 Table 3: Educational (Group B) 4.0 m²/person"
+    },
+    "exit_capacity_mm_per_person": {
+      "value": 6.5,
+      "source": "NBC 2016 Part 4 Table 4: Educational level components 6.5 mm/person"
+    },
+    "travel_distance_max": {
+      "value": 30,
+      "source": "NBC 2016 Part 4 Table 5: Educational, construction types 1–2"
+    },
+    "dead_end_max": {
+      "value": 6,
+      "source": "NBC 2016 Part 4 cl. 4.4.2.2(c): educational dead end ≤ 6 m"
+    },
+    "extinguisher_travel_max": {
+      "value": 15,
+      "source": "IS 2190: travel distance to extinguisher ≤ 15 m"
+    },
+    "seat_zone": {
+      "value": 0.75,
+      "source": "Planning assumption"
+    },
+    "bench_user_zone_rec": {
+      "value": 1,
+      "source": "Planning assumption"
+    },
+    "camera_distance_min": {
+      "value": 2,
+      "source": "Planning assumption for 1080p framing of the object stage"
+    },
+    "wheelchair_floor_space": {
+      "value": [
+        0.9,
+        1.2
+      ],
+      "source": "HG 2021 cl. 4.2(6): clear floor space ≥ 900 × 1200 mm at work surfaces"
+    },
+    "controls_height": {
+      "value": [
+        0.6,
+        1.2
+      ],
+      "source": "HG 2021 cl. 4.15(2b): operable controls 600–1200 mm"
+    },
+    "controls_corner_min": {
+      "value": 0.4,
+      "source": "HG 2021 cl. 4.15(2c): controls ≥ 400 mm from room corners (≥ 350 mm cl. 4.15(9))"
+    },
+    "storage_front_clear": {
+      "value": 0.9,
+      "source": "HG 2021 cl. 4.15(2a): clear floor ≥ 900 mm wide at operable parts"
+    },
+    "socket_height": {
+      "value": 0.9,
+      "source": "HG 2021 cl. 4.15(1e, 2b): sockets are operable controls, 600–1200 mm — desk-level 900 mm chosen"
+    }
+  },
+  "zones": [
+    {
+      "id": "CMP",
+      "name": "Computing & analysis · CV-01–06",
+      "x": 0,
+      "y": 0,
+      "w": 6.4,
+      "d": 3.9,
+      "target": 24
+    },
+    {
+      "id": "STO",
+      "name": "Kit storage bay",
+      "x": 6.4,
+      "y": 0,
+      "w": 0.8,
+      "d": 3.9,
+      "target": 0,
+      "group": "FAC"
+    },
+    {
+      "id": "C1",
+      "name": "Controlled capture C1",
+      "x": 7.2,
+      "y": 0,
+      "w": 2.8,
+      "d": 3.9,
+      "target": 10
+    },
+    {
+      "id": "SPN",
+      "name": "Circulation spine",
+      "x": 0,
+      "y": 3.9,
+      "w": 10,
+      "d": 1.5,
+      "target": 12
+    },
+    {
+      "id": "FAC",
+      "name": "Faculty supervision",
+      "x": 0,
+      "y": 5.4,
+      "w": 2,
+      "d": 1.6,
+      "target": 6
+    },
+    {
+      "id": "COL",
+      "name": "Collaboration & demonstration",
+      "x": 2,
+      "y": 5.4,
+      "w": 4.4,
+      "d": 1.6,
+      "target": 10
+    },
+    {
+      "id": "S1",
+      "name": "Signal acquisition bench S1",
+      "x": 6.4,
+      "y": 5.4,
+      "w": 3.6,
+      "d": 1.6,
+      "target": 8
+    }
+  ],
+  "openings": [
+    {
+      "id": "D1",
+      "type": "door",
+      "name": "Main entry",
+      "wall": "W",
+      "from": 4.15,
+      "to": 5.15,
+      "swing": "out",
+      "height": 2.1
+    },
+    {
+      "id": "D2",
+      "type": "door",
+      "name": "Second exit",
+      "wall": "E",
+      "from": 4.15,
+      "to": 5.15,
+      "swing": "out",
+      "height": 2.1
+    },
+    {
+      "id": "W1",
+      "type": "window",
+      "name": "Daylight · operable",
+      "wall": "S",
+      "from": 4.4,
+      "to": 6.2
+    }
+  ],
+  "furniture": [
+    {
+      "id": "CV-01",
+      "type": "desk",
+      "x": 0.1,
+      "y": 0,
+      "w": 1.4,
+      "d": 0.7,
+      "h": 0.75,
+      "seat": "S"
+    },
+    {
+      "id": "CV-02",
+      "type": "desk",
+      "x": 2.1,
+      "y": 0,
+      "w": 1.4,
+      "d": 0.7,
+      "h": 0.75,
+      "seat": "S"
+    },
+    {
+      "id": "CV-03",
+      "type": "desk",
+      "x": 4.1,
+      "y": 0,
+      "w": 1.4,
+      "d": 0.7,
+      "h": 0.75,
+      "seat": "S"
+    },
+    {
+      "id": "CV-04",
+      "type": "desk",
+      "x": 0.1,
+      "y": 2.35,
+      "w": 0.7,
+      "d": 1.4,
+      "h": 0.75,
+      "seat": "E",
+      "accessible": true,
+      "note": "Rotated accessible workstation; east approach and dedicated clear floor outside circulation spine. Concept geometry pending qualified review."
+    },
+    {
+      "id": "CV-05",
+      "type": "desk",
+      "x": 2.8,
+      "y": 2.45,
+      "w": 1.4,
+      "d": 0.7,
+      "h": 0.75,
+      "seat": "S"
+    },
+    {
+      "id": "CV-06",
+      "type": "desk",
+      "x": 4.6,
+      "y": 2.45,
+      "w": 1.4,
+      "d": 0.7,
+      "h": 0.75,
+      "seat": "S"
+    },
+    {
+      "id": "STO-1",
+      "type": "cabinet",
+      "x": 6.4,
+      "y": 0.2,
+      "w": 0.45,
+      "d": 2.1,
+      "h": 1.9,
+      "note": "3 kit bays, open WEST into computing aisle"
+    },
+    {
+      "id": "C1-WALL",
+      "type": "partition",
+      "x": 7.15,
+      "y": 0,
+      "w": 0.05,
+      "d": 3.9,
+      "h": 2.4,
+      "note": "Blackout partition"
+    },
+    {
+      "id": "C1-BD",
+      "type": "backdrop",
+      "x": 9.85,
+      "y": 0.6,
+      "w": 0.15,
+      "d": 2.6,
+      "h": 2.4
+    },
+    {
+      "id": "C1-TB",
+      "type": "table",
+      "x": 9.25,
+      "y": 1.4,
+      "w": 0.6,
+      "d": 1,
+      "h": 0.75,
+      "note": "object stage"
+    },
+    {
+      "id": "C1-L1",
+      "type": "light",
+      "x": 8.1,
+      "y": 0.45,
+      "w": 0.6,
+      "d": 0.6,
+      "h": 1.8
+    },
+    {
+      "id": "C1-L2",
+      "type": "light",
+      "x": 8.1,
+      "y": 2.75,
+      "w": 0.6,
+      "d": 0.6,
+      "h": 1.8
+    },
+    {
+      "id": "C1-CAM",
+      "type": "tripod",
+      "x": 7.2,
+      "y": 1.6,
+      "w": 0.6,
+      "d": 0.6,
+      "h": 1.5
+    },
+    {
+      "id": "FAC-1",
+      "type": "desk",
+      "x": 0.2,
+      "y": 6.2,
+      "w": 1.4,
+      "d": 0.7,
+      "h": 0.75,
+      "seat": "N",
+      "note": "faces the room for supervision"
+    },
+    {
+      "id": "COL-T",
+      "type": "table",
+      "x": 3.1,
+      "y": 6,
+      "w": 2.4,
+      "d": 0.8,
+      "h": 0.75
+    },
+    {
+      "id": "COL-D",
+      "type": "display",
+      "x": 2.3,
+      "y": 6.9,
+      "w": 1.65,
+      "d": 0.1,
+      "h": 1,
+      "note": "75-inch demo display"
+    },
+    {
+      "id": "S1-B",
+      "type": "bench",
+      "x": 6.8,
+      "y": 6.4,
+      "w": 3,
+      "d": 0.6,
+      "h": 0.9,
+      "seat": "N"
+    }
+  ],
+  "safety": [
+    {
+      "id": "FE-1",
+      "type": "extinguisher",
+      "label": "CO₂ extinguisher (electrical)",
+      "x": 0.15,
+      "y": 5.7,
+      "mount_top": 1
+    },
+    {
+      "id": "FE-2",
+      "type": "extinguisher",
+      "label": "CO₂ extinguisher (electrical)",
+      "x": 9.85,
+      "y": 3.6,
+      "mount_top": 1
+    },
+    {
+      "id": "FA-1",
+      "type": "firstaid",
+      "label": "First-aid kit",
+      "x": 0.15,
+      "y": 6.1
+    },
+    {
+      "id": "EPO-1",
+      "type": "epo",
+      "label": "Emergency power-off",
+      "x": 0.15,
+      "y": 3.6,
+      "mount": 1.1
+    },
+    {
+      "id": "EPO-2",
+      "type": "epo",
+      "label": "Emergency power-off · S1",
+      "x": 9.85,
+      "y": 5.8,
+      "mount": 1.1
+    },
+    {
+      "id": "MCP-1",
+      "type": "callpoint",
+      "label": "Fire alarm call point",
+      "x": 0.15,
+      "y": 5.4,
+      "mount": 1.1
+    },
+    {
+      "id": "MCP-2",
+      "type": "callpoint",
+      "label": "Fire alarm call point",
+      "x": 9.85,
+      "y": 5.4,
+      "mount": 1.1
+    },
+    {
+      "id": "CCTV-1",
+      "type": "cctv",
+      "label": "Security CCTV (separate from research capture)",
+      "x": 0.25,
+      "y": 0.25
+    },
+    {
+      "id": "CCTV-2",
+      "type": "cctv",
+      "label": "Security CCTV",
+      "x": 9.75,
+      "y": 6.75
+    },
+    {
+      "id": "EX-1",
+      "type": "exitsign",
+      "label": "Exit sign + emergency light",
+      "x": 0.15,
+      "y": 4.65
+    },
+    {
+      "id": "EX-2",
+      "type": "exitsign",
+      "label": "Exit sign + emergency light",
+      "x": 9.85,
+      "y": 4.65
+    }
+  ],
+  "services": [
+    {
+      "id": "PW-A",
+      "type": "power",
+      "label": "Wall sockets · CV-01",
+      "x": 0.8,
+      "y": 0.1,
+      "mount": 0.9
+    },
+    {
+      "id": "PW-A2",
+      "type": "power",
+      "label": "Wall sockets · CV-02",
+      "x": 2.8,
+      "y": 0.1,
+      "mount": 0.9
+    },
+    {
+      "id": "PW-A3",
+      "type": "power",
+      "label": "Wall sockets · CV-03",
+      "x": 4.8,
+      "y": 0.1,
+      "mount": 0.9
+    },
+    {
+      "id": "PW-B",
+      "type": "power",
+      "label": "Floor box · CV-04",
+      "x": 0.45,
+      "y": 2.85,
+      "mount": "under workstation; flush floor box"
+    },
+    {
+      "id": "PW-B2",
+      "type": "power",
+      "label": "Floor box · CV-05",
+      "x": 3.95,
+      "y": 3,
+      "mount": "floor box"
+    },
+    {
+      "id": "PW-B3",
+      "type": "power",
+      "label": "Floor box · CV-06",
+      "x": 5.75,
+      "y": 3,
+      "mount": "floor box"
+    },
+    {
+      "id": "PW-S1",
+      "type": "power",
+      "label": "Dedicated RCD circuit · S1",
+      "x": 8.3,
+      "y": 6.95,
+      "mount": 0.9
+    },
+    {
+      "id": "PW-C1",
+      "type": "power",
+      "label": "Separate lighting circuit · C1",
+      "x": 9.9,
+      "y": 0.6,
+      "mount": 0.9
+    },
+    {
+      "id": "NW-A",
+      "type": "network",
+      "label": "2 data points per station",
+      "x": 1.1,
+      "y": 0.1
+    },
+    {
+      "id": "NW-A2",
+      "type": "network",
+      "label": "Data",
+      "x": 3.1,
+      "y": 0.1
+    },
+    {
+      "id": "NW-A3",
+      "type": "network",
+      "label": "Data",
+      "x": 5.1,
+      "y": 0.1
+    },
+    {
+      "id": "NW-B",
+      "type": "network",
+      "label": "Data · floor box",
+      "x": 0.45,
+      "y": 2.85,
+      "mount": "under workstation; flush floor box"
+    },
+    {
+      "id": "NW-B2",
+      "type": "network",
+      "label": "Data",
+      "x": 4.1,
+      "y": 3
+    },
+    {
+      "id": "NW-B3",
+      "type": "network",
+      "label": "Data",
+      "x": 5.9,
+      "y": 3
+    },
+    {
+      "id": "NW-C1",
+      "type": "network",
+      "label": "Camera data · C1",
+      "x": 9.9,
+      "y": 3.3
+    },
+    {
+      "id": "NW-S1",
+      "type": "network",
+      "label": "Data · S1",
+      "x": 7.3,
+      "y": 6.95
+    },
+    {
+      "id": "NW-D",
+      "type": "network",
+      "label": "Display · COL",
+      "x": 3.1,
+      "y": 6.95
+    },
+    {
+      "id": "NW-F",
+      "type": "network",
+      "label": "Data · faculty",
+      "x": 0.9,
+      "y": 6.95
+    },
+    {
+      "id": "AP-1",
+      "type": "wifi",
+      "label": "Ceiling Wi-Fi access point",
+      "x": 3.4,
+      "y": 1.95
+    },
+    {
+      "id": "VS-1",
+      "type": "supply",
+      "label": "Ventilation supply diffuser",
+      "x": 2.5,
+      "y": 1.9
+    },
+    {
+      "id": "VS-2",
+      "type": "supply",
+      "label": "Ventilation supply diffuser",
+      "x": 4.5,
+      "y": 6.2
+    },
+    {
+      "id": "VE-1",
+      "type": "extract",
+      "label": "Extract grille · heat from stations",
+      "x": 5.9,
+      "y": 1.9
+    },
+    {
+      "id": "VE-2",
+      "type": "extract",
+      "label": "Extract grille",
+      "x": 8.6,
+      "y": 5.8
+    }
+  ],
+  "turning_circles": [
+    {
+      "id": "TC-1",
+      "cx": 2.6,
+      "cy": 4.65,
+      "r": 0.75
+    }
+  ],
+  "camera_axis": {
+    "from": [
+      7.5,
+      1.9
+    ],
+    "to": [
+      9.55,
+      1.9
+    ],
+    "target": "object-stage centre",
+    "backdrop": [
+      9.85,
+      1.9
+    ],
+    "note": "2.05 m camera-to-subject planning distance. Lens and field of view still require physical calibration."
+  },
+  "lighting": [
+    {
+      "zone": "CMP",
+      "Em_lux": 500,
+      "UGR_max": 19,
+      "Ra_min": 80,
+      "Uo_min": 0.6,
+      "note": "EN 12464-1 laboratories; IS 3646 gives 300–500 lux for computer work — 500 chosen for paper + screen tasks"
+    },
+    {
+      "zone": "S1",
+      "Em_lux": 500,
+      "UGR_max": 19,
+      "Ra_min": 80,
+      "Uo_min": 0.6,
+      "note": "Bench task lighting, separately switched"
+    },
+    {
+      "zone": "C1",
+      "Em_lux": "0–1000 dimmable",
+      "UGR_max": 19,
+      "Ra_min": 90,
+      "Uo_min": 0.7,
+      "note": "Controlled capture: high-CRI, flicker-free, own circuit; daylight excluded"
+    },
+    {
+      "zone": "COL",
+      "Em_lux": 500,
+      "UGR_max": 19,
+      "Ra_min": 80,
+      "Uo_min": 0.6,
+      "note": "Dimmable for display use"
+    },
+    {
+      "zone": "SPN",
+      "Em_lux": "≥ 100 circulation; emergency lighting on exit routes",
+      "Ra_min": 80,
+      "note": "Exit signs + emergency luminaires at D1, D2"
+    }
+  ],
+  "accessible_clear_floors": [
+    {
+      "id": "AC-CV04",
+      "station": "CV-04",
+      "x": 0.8,
+      "y": 2.6,
+      "w": 1.2,
+      "d": 0.9
+    }
+  ]
+}

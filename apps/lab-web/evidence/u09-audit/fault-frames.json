@@ -1,0 +1,52 @@
+[
+  {
+    "stage": 1,
+    "heading": "Before interruption",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 2,
+    "heading": "Feed interrupted",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 3,
+    "heading": "Report created",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 4,
+    "heading": "Risk classified",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 5,
+    "heading": "Restriction propagated",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 6,
+    "heading": "Repair recorded",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 7,
+    "heading": "Verification interrupted",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 8,
+    "heading": "Early release refused",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 9,
+    "heading": "Verification recorded",
+    "activity": "Activity · 0"
+  },
+  {
+    "stage": 10,
+    "heading": "Released after verification",
+    "activity": "Activity · 0"
+  }
+]
